@@ -1,0 +1,925 @@
+/*
+Kontrol:
+	w, a, s, d: 
+		pergerakan player
+		
+	Arrow keys (kiri, kanan, atas, bawah):
+		pergerakan kamera
+		
+	q: taruh block
+ */
+ 
+ 
+#include <vector>
+#include <math.h>
+#include <GL/glut.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <algorithm>
+
+// Definisi M_PI jika belum didefinisikan
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+// Kamus
+float ratio;
+int place = 0, displace = 0, clear = 0;
+int h,w;
+int bitmapHeight=12; 
+std::vector<std::vector<float> > vecOfBlocks;
+
+float cameraX, cameraY, cameraZ;
+float playerX=0.0f, playerY=0.0f, playerZ=0.0f;
+float sunY, sunZ;
+float l[] = { 0.0, 10, 0}; // koordinat sumber cahaya
+float n[] = { 0.0, -40.0, 0.0 };
+float e[] = { 0.0, 0, 0.0 };
+
+float cameraDistance = 10, horizontalAngle = 0, verticalAngle = 70;
+float deltaHorizontalAngle = 0, deltaVerticalAngle = 0;
+float horizontalDistance, verticalDistance;
+
+float forwardX = 1, forwardZ = 0, sidewardX = 0, sidewardZ = 1;
+float deltaMove = 0, deltaSlide = 0;
+float moveSpeed = 0.01, cameraSpeed = 0.1;
+
+int grab = 0;
+
+float sunAngle = 0.0f; // Sudut awal matahari
+
+float BearHeight = 0.0f;  // Current height of the bear (vertical position)
+float JumpVelocity = 0.0f; // Velocity used for the jump
+float Gravity = -0.02f; // Gravitational acceleration (negative for downward)
+bool isJumping = false; // Is the bear currently jumping?
+float armAngle = 0.0f;
+float armSpeed = 1.0f;
+bool armForward = true;
+bool grabTidak = true;
+
+// Algoritma
+float calculateHorizontalDistance(){
+	return cameraDistance * cos((verticalAngle*M_PI/180));
+}
+
+float calculateVerticalDistance(){
+	return cameraDistance * sin((verticalAngle*M_PI/180));
+}
+
+void calculateCameraPosition(float horizDistance, float vertDistance){
+	cameraY = playerY + vertDistance;
+	cameraX = playerX - horizDistance * sin(horizontalAngle*M_PI/180);
+	cameraZ = playerZ - horizDistance * cos(horizontalAngle*M_PI/180);
+	forwardX = sin(horizontalAngle*M_PI/180);
+	forwardZ = cos(horizontalAngle*M_PI/180);
+	sidewardX = sin((horizontalAngle-90)*M_PI/180);
+	sidewardZ = cos((horizontalAngle-90)*M_PI/180);
+	glLoadIdentity();
+	 gluLookAt(
+	 cameraX, cameraY, cameraZ,
+	 playerX, playerY, playerZ,
+	 0.0f,1.0f,0.0f);
+}
+
+float roundOff(float n){
+	return n >= 0 ? int(n)+0.5 : int(n)-0.5;
+}
+
+bool isCollided(std::vector<float> coord){
+	for (int i = 0; i <vecOfBlocks.size(); i++){
+		if (vecOfBlocks[i] == coord)
+			return true;
+	}
+	return false;
+}
+
+void moveMeFlat(int i, int j){
+
+	std::vector<float> coordForwardX, coordForwardZ;
+	
+	coordForwardX.push_back(roundOff(playerX + i*forwardX*0.5)); 
+	coordForwardX.push_back(int(playerY)); 
+	coordForwardX.push_back(roundOff(playerZ));
+	
+	coordForwardZ.push_back(roundOff(playerX)); 
+	coordForwardZ.push_back(int(playerY)); 
+	coordForwardZ.push_back(roundOff(playerZ + i*forwardZ*0.5));
+	
+	std::vector<float> coordSideX, coordSideZ;
+	
+	coordSideX.push_back(roundOff(playerX + j*sidewardX*0.5)); 
+	coordSideX.push_back(int(playerY)); 
+	coordSideX.push_back(roundOff(playerZ));
+	
+	coordSideZ.push_back(roundOff(playerX)); 
+	coordSideZ.push_back(int(playerY)); 
+	coordSideZ.push_back(roundOff(playerZ + j*sidewardZ*0.5));
+	
+	if (!isCollided(coordForwardX))
+		playerX += i*forwardX*moveSpeed;
+		
+	if (!isCollided(coordForwardZ))
+	 	playerZ += i*forwardZ*moveSpeed;
+	
+	if (!isCollided(coordSideX))
+		playerX += j*sidewardX*moveSpeed;
+		
+	if (!isCollided(coordSideZ))
+	 	playerZ += j*sidewardZ*moveSpeed;
+	 	
+	
+	 glLoadIdentity();
+	 gluLookAt(cameraX, cameraY, cameraZ,
+	 playerX, playerY, playerZ,
+	 0.0f,1.0f,0.0f);
+}
+
+void Grid() {
+    // Mengatur warna lantai menjadi hijau
+    glColor3f(15.0f/255, 94.0f/255, 23.0f/255);
+    
+    // Menggambar lantai menggunakan GL_QUADS
+    glBegin(GL_QUADS);
+    glVertex3f(-50, -0.1, -50);
+    glVertex3f(-50, -0.1, 50);
+    glVertex3f(50, -0.1, 50);
+    glVertex3f(50, -0.1, -50);
+    glEnd();
+    
+    // Menggambar garis kotak-kotak menggunakan GL_LINES
+    glBegin(GL_LINES);
+    glColor3f(0.0f, 0.0f, 0.4f); // Biru tua
+    for (float i = -50; i <= 50; i += 1.0) {
+        glVertex3f(i, 0, -50); // Garis horizontal bawah
+        glVertex3f(i, 0, 50);
+        
+        glVertex3f(-50, 0, i); // Garis vertikal kiri
+        glVertex3f(50, 0, i);
+    }
+    glEnd();
+    
+    // Render sumbu x, y, z
+    glBegin(GL_LINES);
+    glColor3f(1, 0, 0);
+    glVertex3f(-50, 0.001, 0);
+    glVertex3f(50, 0.001, 0);
+    
+    glColor3f(0, 1, 0);
+    glVertex3f(0, -50, 0);
+    glVertex3f(0, 50, 0);
+    
+    glColor3f(0, 0, 1);
+    glVertex3f(0, 0.001, -50);
+    glVertex3f(0, 0.001, 50);
+    glEnd();
+}
+
+void glShadowProjection(float * l, float * e, float * n){
+	 float d, c;
+	 float mat[16];
+	 d = n[0]*l[0] + n[1]*l[1] + n[2]*l[2];
+	 c = e[0]*n[0] + e[1]*n[1] + e[2]*n[2] - d;
+	 mat[0] = l[0]*n[0]+c; // membuat matrik. OpenGL menggunakan kolom matrik
+	 mat[4] = n[1]*l[0];
+	 mat[8] = n[2]*l[0];
+	 mat[12] = -l[0]*c-l[0]*d;
+	 mat[1] = n[0]*l[1];
+	 mat[5] = l[1]*n[1]+c;
+	 mat[9] = n[2]*l[1];
+	 mat[13] = -l[1]*c-l[1]*d;
+	 mat[2] = n[0]*l[2];
+	 mat[6] = n[1]*l[2];
+	 mat[10] = l[2]*n[2]+c;
+	 mat[14] = -l[2]*c-l[2]*d;
+	 mat[3] = n[0];
+	 mat[7] = n[1];
+	 mat[11] = n[2];
+	 mat[15] = -d;
+	 glMultMatrixf(mat); // kalikan matrik
+}
+
+void drawShadowBlock(float x, float z) {
+    glPushMatrix();
+    glTranslatef(x, 0.01f, z-1.0f); // Menyesuaikan posisi bayangan sedikit di atas lantai untuk menghindari z-fighting
+    glScalef(1.0f, 0.0f, 2.5f); 
+    glColor4f(0.0f, 0.0f, 0.0f, 0.5f); // Mengatur warna bayangan menjadi hitam dengan sedikit transparansi
+    glutSolidCube(0.8); // Menggambar bayangan menggunakan kubus padat
+    glPopMatrix();
+}
+
+void player(bool colour){
+//	glTranslatef(0.0f, 0.15f, 0.0f);
+	glPushMatrix();
+//    	glTranslatef(0, BearHeight, 0); 
+	 	
+	 	glTranslatef(playerX , playerY, playerZ);
+	 	glRotatef(horizontalAngle, 0.0f, 1.0f, 0.0f);
+		if (colour) glColor3f(0.5, 0, 0);
+		
+    // Snout
+    	glTranslatef(0.0f, 1.0f, 0.0f);
+    	glPushMatrix();
+	    	if (colour) glColor3f(0.7f, 0.5f, 0.3f); // Light brown
+	    	glutSolidSphere(0.38, 20, 5);
+	
+		    glTranslatef(-0.1f, 0.15f, 0.2f);
+		    glTranslatef(0.2f, 0.0f, 0.0f);
+			//ears
+			if (colour) glColor3f(0.4f, 0.2f, 0.1f); //brown
+			glTranslatef(-0.1f, 0.0f, -0.3f);
+			glTranslatef(0.1f, -0.1f, -0.2f);
+		    glTranslatef(-0.35f, 0.15f, 0.2f);
+		    glutSolidSphere(0.17, 20, 10);
+		    
+		    glTranslatef(0.2f, 0.0f, 0.0f);
+			glTranslatef(0.3f, -0.05f, -0.2f);
+		    glTranslatef(-0.009f, 0.05f, 0.2f);
+		    glutSolidSphere(0.17, 20, 10);
+		
+		
+			if (colour) glColor3f(0.7f, 0.5f, 0.3f); // Light brown
+			glTranslatef(-0.25f, -0.1f, -0.1f);
+			glTranslatef(0.1f, -0.1f, -0.2f);
+		    glTranslatef(-0.35f, 0.15f, 0.2f);
+		    glutSolidSphere(0.25, 20, 10);
+		    
+		    glTranslatef(0.2f, 0.0f, 0.0f);
+			glTranslatef(0.3f, -0.05f, -0.2f);
+		    glTranslatef(-0.009f, 0.05f, 0.2f);
+		    glutSolidSphere(0.25, 20, 10);
+	    glPopMatrix();
+
+//void drawBearEyes() {
+		glPushMatrix();
+		    if (colour) glColor3f(0.0f, 0.0f, 0.0f); // Black color
+		    glTranslatef(-0.1f, 0.22f, 0.29f);
+		    glutSolidSphere(0.061, 10, 10);
+		    glTranslatef(0.2f, 0.0f, 0.0f);
+		    glutSolidSphere(0.06, 20, 10);
+		glPopMatrix();
+
+//void drawBearMouth() {
+	    glPushMatrix(); 
+		    if (colour) glColor3f(1.0f, 1.0f, 1.0f); 
+		    glTranslatef(0.002f, 0.08f, 0.32f);
+		    glScalef(1.2f, 1.0f, 1.0f);
+		    glutSolidSphere(0.1, 20, 10);
+	    glPopMatrix(); 
+    
+	    glPushMatrix();
+		    if (colour) glColor3f(0.0f, 0.0f, 0.0f); 
+		    glTranslatef(-0.001f, 0.12f, 0.35f);
+		    glScalef(0.8f, 0.24f, 1.0f);
+		    glutSolidSphere(0.1, 20, 10);
+	    glPopMatrix();
+	
+	    glPushMatrix();
+		    if (colour) glColor3f(0.0f, 0.0f, 0.0f); 
+		    glTranslatef(-0.001f, 0.09f, 0.35f);
+		    glScalef(0.3f, 0.5f, 1.0f);
+		    glutSolidSphere(0.1, 20, 10);
+	    glPopMatrix();
+	
+	//void drawBearBlush(){
+		glPushMatrix();
+			if (colour) glColor3f(1.0f, 0.75f, 0.8f); // Soft pink
+			glTranslatef(-0.18f, 0.1f, 0.29f);
+			glutSolidSphere(0.06, 20, 10);
+		glPopMatrix();
+		
+		glPushMatrix();
+			if (colour) glColor3f(1.0f, 0.75f, 0.8f); // Soft pink
+			glTranslatef(0.18f, 0.1f, 0.29f);
+			glutSolidSphere(0.06, 20, 10);
+		glPopMatrix();
+	
+	//void drawBearBody(){
+		glPushMatrix();
+			if (colour) glColor3f(0.7f, 0.5f, 0.3f); // Light brown
+		    glTranslatef(-0.001f, -0.6f, 0.03f);
+		    glScalef(4.3f, 5.5f, 4.5f);
+		    glutSolidSphere(0.1, 20, 10);
+		glPopMatrix();
+		
+		glPushMatrix();
+			if (colour) glColor3f(0.7f, 0.6f, 0.4f);
+		    glTranslatef(-0.001f, -0.6f, 0.107f);
+		    glScalef(3.3f, 4.5f, 4.5f);
+		    glutSolidSphere(0.1, 20, 10);
+		glPopMatrix();
+
+//void drawBearHand() {
+
+    // Arms
+    	glPushMatrix();
+    		if (colour) glColor3f(0.7f, 0.5f, 0.3f); // Light brown
+
+    // Left Arm
+    		glPushMatrix(); 
+        		glTranslatef(-0.37f, -0.4f, 0.01f);
+        		glRotatef(armAngle, 1.0f, 0.0f, 0.0f);
+        		glRotatef(-grab, 1.0f, 0.0f, 0.0f);
+		        glTranslatef(0.0f, -0.2f, 0.0f); // Move pivot to shoulder
+		        glScalef(1.0f, 2.5f, 1.0f);
+		        glutSolidSphere(0.15, 20, 10); 
+    		glPopMatrix(); 
+    
+    // Right Arm
+    		glPushMatrix();
+		        glTranslatef(0.37f, -0.4f, 0.01f); 
+		        glRotatef(-armAngle, 1.0f, 0.0f, 0.0f); // Opposite direction for symmetry
+		        glRotatef(-grab, 1.0f, 0.0f, 0.0f);
+		        glTranslatef(0.0f, -0.2f, 0.0f); // Move pivot to shoulder
+		        glScalef(1.0f, 2.5f, 1.0f); 
+		        glutSolidSphere(0.15, 20, 10); 
+		    glPopMatrix(); 
+
+			glPushMatrix();
+				if (colour) glColor3f(0.7f, 0.5f, 0.3f); // Warna coklat terang
+
+	// Kaki kiri
+				glPushMatrix();
+					glTranslatef(-0.16f, -1.0f, 0.2f);
+					glRotatef(armAngle, 1.0f, 0.0f, 0.0f); // Rotasi kaki kiri
+					glScalef(2.0f, 3.0f, 3.0f);
+					glutSolidSphere(0.06f, 20, 10);
+				glPopMatrix();
+	
+	// Kaki kanan
+				glPushMatrix();
+					glTranslatef(0.22f, -1.0f, 0.2f);
+					glRotatef(-armAngle, 1.0f, 0.0f, 0.0f); // Rotasi kaki kanan (berlawanan arah dengan kaki kiri)
+					glScalef(2.0f, 3.0f, 3.0f);
+					glutSolidSphere(0.06f, 20, 10);
+				glPopMatrix();
+			glPopMatrix();
+    	glPopMatrix(); 
+    glPopMatrix(); 
+}
+
+void drawShadowPlayer(float x, float z) {
+    glPushMatrix();
+    glTranslatef(x, 0.01f, z - 0.7f); // Menyesuaikan posisi bayangan sedikit di atas lantai untuk menghindari z-fighting
+    
+    // Menggambar bayangan player
+    glColor4f(0.0f, 0.0f, 0.0f, 1.0f); // Mengatur warna bayangan menjadi hitam dengan sedikit transparansi
+    
+    // Menyimpan matriks transformasi untuk player
+    glPushMatrix();
+    glTranslatef(playerX, 0.0f, playerZ); // Mengikuti posisi player hanya pada sumbu X dan Z
+    // Menggambaran badan player
+    glPushMatrix();
+    glTranslatef(0.0f, 0.00001f, -0.1f); // Sesuaikan ketinggian bayangan agar berada tepat di lantai
+    glScalef(5.0f, 0.0f, 10.0f); // Sesuaikan skala badan player hanya pada sumbu X dan Z
+    glutSolidSphere(0.1, 20, 10);
+    glPopMatrix(); // Pop matriks transformasi untuk badan player
+
+    // Tambahkan telinga
+    glColor4f(0.0f, 0.0f, 0.0f, 1.0f); // Warna telinga hitam
+    glPushMatrix();
+    glTranslatef(-0.5f, 0.00001f, -1.0f); // Koordinat telinga kiri
+    glScalef(3.0f, 0.0f, 4.0f); // Sesuaikan skala telinga
+    glutSolidSphere(0.1, 20, 10);
+    glPopMatrix(); // Pop matriks transformasi untuk telinga kiri
+
+    glPushMatrix();
+    glTranslatef(0.5f, 0.00001f, -1.0f); // Koordinat telinga kanan
+    glScalef(3.0f, 0.0f, 4.0f); // Sesuaikan skala telinga
+    glutSolidSphere(0.1, 20, 10);
+    glPopMatrix(); // Pop matriks transformasi untuk telinga kanan
+    
+    glPopMatrix(); // Pop matriks transformasi untuk player
+    
+    glPopMatrix(); // Pop matriks transformasi untuk bayangan
+}
+
+void drawSun() {
+    // Simpan matriks model-view yang sekarang
+    glPushMatrix();
+    
+    // Hitung posisi matahari berdasarkan sudut sunAngle dan radius 100
+    sunY = 50.0f * cos(sunAngle * M_PI / 180.0f);
+    sunZ = 50.0f * sin(sunAngle * M_PI / 180.0f);
+    
+    // Geser matahari ke posisi yang telah dihitung
+    glTranslatef(0, sunY, sunZ);
+    
+    // Mengatur warna kuning untuk matahari
+    glColor3f(1.0f, 1.0f, 0.0f);
+    
+    // Menggambar lingkaran sebagai representasi matahari
+    glutSolidSphere(2.0, 20, 20);
+    
+    // Kembalikan matriks model-view sebelumnya
+    glPopMatrix();
+}
+
+void updateSunPosition() {
+    // Mengatur kecepatan rotasi matahari
+    float sunSpeed = 0.010f;
+    
+    // Mengupdate sudut matahari
+    sunAngle += sunSpeed;
+    
+    // Jika sudut melebihi 360 derajat, kembalikan ke 0
+    if (sunAngle >= 360.0f) {
+        sunAngle -= 360.0f;
+    }
+}
+
+void drawLensFlare(float offsetX, float offsetY, float offsetZ) {
+    // Koordinat posisi matahari
+    float sunY = 100.0f * cos(sunAngle * M_PI / 180.0f);
+    float sunZ = 100.0f * sin(sunAngle * M_PI / 180.0f);
+    
+    // Geser koordinat posisi cahaya tambahan berdasarkan offset
+    float lightX = sunY + offsetX;
+    float lightY = sunY + offsetY;
+    float lightZ = sunZ + offsetZ;
+    
+    // Atur warna dan posisi cahaya tambahan
+    GLfloat light_color[] = { 1.0f, 1.0f, 0.8f, 1.0f }; // Warna cahaya (kuning)
+    GLfloat light_position[] = { lightX, lightY, lightZ, 1.0f }; // Posisi cahaya
+    glEnable(GL_LIGHT2); // Aktifkan cahaya tambahan
+    glLightfv(GL_LIGHT2, GL_DIFFUSE, light_color); // Atur warna cahaya
+    glLightfv(GL_LIGHT2, GL_POSITION, light_position); // Atur posisi cahaya
+    glLightf(GL_LIGHT2, GL_CONSTANT_ATTENUATION, 0.5); // Atenuasi konstan agar cahaya lebih terlihat
+    glLightf(GL_LIGHT2, GL_LINEAR_ATTENUATION, 0.01); // Atenuasi linear agar cahaya mengecil seiring jarak
+    
+    // Gambar cahaya tambahan sebagai titik
+    glPushMatrix();
+    glColor3f(1.0f, 1.0f, 0.8f); // Warna kuning
+    glTranslatef(lightX, lightY, lightZ);
+    glutSolidSphere(0.2, 10, 10); // Gambar bola kecil sebagai representasi cahaya
+    glPopMatrix();
+}
+
+void drawCylinder(float radius, float height, int segments) {// Untuk menggambar batang pohon
+    glBegin(GL_QUAD_STRIP);
+    for (int i = 0; i <= segments; i++) {
+        float angle = 2.0f * M_PI * (float)i / (float)segments;
+        float x = radius * cos(angle);
+        float z = radius * sin(angle);
+        
+        glVertex3f(x, 0.0f, z);
+        glVertex3f(x, height, z);
+    }
+    glEnd();
+    
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex3f(0.0f, 0.0f, 0.0f);
+    for (int i = 0; i <= segments; i++) {
+        float angle = 2.0f * M_PI * (float)i / (float)segments;
+        float x = radius * cos(angle);
+        float z = radius * sin(angle);
+        
+        glVertex3f(x, 0.0f, z);
+    }
+    glEnd();
+    
+    glBegin(GL_TRIANGLE_FAN);
+    glVertex3f(0.0f, height, 0.0f);
+    for (int i = 0; i <= segments; i++) {
+        float angle = 2.0f * M_PI * (float)i / (float)segments;
+        float x = radius * cos(angle);
+        float z = radius * sin(angle);
+        
+        glVertex3f(x, height, z);
+    }
+    glEnd();
+}
+
+void drawTree(float x, float z) {
+    // Akar pohon
+	glPushMatrix();
+	glColor3f(0.4f, 0.2f, 0.0f); // Warna coklat untuk akar
+	glTranslatef(x, -2.0f, z); // Geser ke posisi yang diinginkan di lantai (menyusun kerucut dari bagian bawah)
+	glRotatef(-90.0f, 1.0f, 0.0f, 0.0f); // Memutar kerucut sebesar 90 derajat terhadap sumbu X
+	glScalef(1.0f, 2.0f, 1.0f); // Scaling agar kerucut lebih tinggi
+	glutWireCone(1.0, 4.0, 20, 20); // Menggambar kerucut untuk akar (menggunakan glutWireCone)
+	glPopMatrix();
+
+    
+    // Batang pohon
+    glPushMatrix();
+    glColor3f(0.5f, 0.35f, 0.05f); // Warna coklat tua untuk batang
+    glTranslatef(x, 1.0f, z); // Geser ke posisi yang diinginkan di atas akar
+    drawCylinder(0.5, 8.0, 20); // Menggambar silinder untuk batang
+    glPopMatrix();
+    
+    // Daun pohon
+    glPushMatrix();
+    glColor3f(0.0f, 0.6f, 0.0f); // Warna hijau untuk daun
+    glTranslatef(x, 11.0f, z); // Geser ke posisi yang diinginkan di atas batang
+    glutSolidSphere(4.0, 20, 20); // Menggambar bola untuk daun
+    glPopMatrix();
+}
+
+// Memanggil fungsi drawTree untuk menggambar pohon di posisi tertentu
+void drawTrees() {
+    drawTree(10.0f, 10.0f);
+    drawTree(-20.0f, 15.0f);
+    drawTree(5.0f, -30.0f);
+    // Menambahkan panggilan drawTree lainnya untuk pohon-pohon lainnya
+}
+
+void placeBlock(std::vector<float> vec, bool colour){
+	
+	glTranslatef(vec[0], vec[1], vec[2]);
+    glPushMatrix();
+    
+        // Wajah depan
+        glBegin(GL_QUADS);
+        	if (colour) glColor3f(0.15f, 0.45f, 0.15f);
+            glVertex3f(-0.5f, 0.85f, 0.5f);
+            glVertex3f(0.5f, 0.85f, 0.5f);
+            glVertex3f(0.5f, 1.0f, 0.5f);
+            glVertex3f(-0.5f, 1.0f, 0.5f);
+        
+        
+        	if (colour) glColor3f(0.5f, 0.3f, 0.1f);
+            glVertex3f(-0.5f, 0.0f, 0.5f);
+            glVertex3f(0.5f, 0.0f, 0.5f);
+            glVertex3f(0.5f, 0.85f, 0.5f);
+            glVertex3f(-0.5f, 0.85f, 0.5f);
+        glEnd();
+        
+        // Wajah belakang
+        glBegin(GL_QUADS);
+        	if (colour) glColor3f(0.15f, 0.45f, 0.15f);
+            glVertex3f(-0.5f, 0.85f, -0.5f);
+            glVertex3f(0.5f, 0.85f, -0.5f);
+            glVertex3f(0.5f, 1.0f, -0.5f);
+            glVertex3f(-0.5f, 1.0f, -0.5f);
+
+			if (colour) glColor3f(0.5f, 0.3f, 0.1f);
+            glVertex3f(-0.5f, 0.0f, -0.5f);
+            glVertex3f(0.5f, 0.0f, -0.5f);
+            glVertex3f(0.5f, 0.85f, -0.5f);
+            glVertex3f(-0.5f, 0.85f, -0.5f);
+        glEnd();
+        
+        // Wajah kiri
+        glBegin(GL_QUADS);
+        	if (colour) glColor3f(0.15f, 0.45f, 0.15f);
+            glVertex3f(-0.5f, 0.85f, 0.5f);
+            glVertex3f(-0.5f, 0.85f, -0.5f);
+            glVertex3f(-0.5f, 1.0f, -0.5f);
+            glVertex3f(-0.5f, 1.0f, 0.5f);
+
+			if (colour) glColor3f(0.5f, 0.3f, 0.1f);
+            glVertex3f(-0.5f, 0.0f, 0.5f);
+            glVertex3f(-0.5f, 0.0f, -0.5f);
+            glVertex3f(-0.5f, 0.85f, -0.5f);
+            glVertex3f(-0.5f, 0.85f, 0.5f);
+        glEnd();
+    
+        // Wajah kanan
+        glBegin(GL_QUADS);
+        	if (colour) glColor3f(0.15f, 0.45f, 0.15f);
+            glVertex3f(0.5f, 0.85f, 0.5f);
+            glVertex3f(0.5f, 0.85f, -0.5f);
+            glVertex3f(0.5f, 1.0f, -0.5f);
+            glVertex3f(0.5f, 1.0f, 0.5f);
+            
+            if (colour) glColor3f(0.5f, 0.3f, 0.1f);
+            glVertex3f(0.5f, 0.0f, 0.5f);
+            glVertex3f(0.5f, 0.0f, -0.5f);
+            glVertex3f(0.5f, 0.85f, -0.5f);
+            glVertex3f(0.5f, 0.85f, 0.5f);
+        glEnd();
+        
+        // Wajah atas
+        if (colour) glColor3f(0.1f, 0.4f, 0.1f);
+        glBegin(GL_QUADS);
+            glVertex3f(-0.5f, 1.0f, 0.5f);
+            glVertex3f(0.5f, 1.0f, 0.5f);
+            glVertex3f(0.5f, 1.0f, -0.5f);
+            glVertex3f(-0.5f, 1.0f, -0.5f);
+        glEnd();
+        
+        // Wajah bawah
+        if (colour) glColor3f(0.5f, 0.3f, 0.1f);
+        glBegin(GL_QUADS);
+            glVertex3f(-0.5f, 0.0f, 0.5f);
+            glVertex3f(0.5f, 0.0f, 0.5f);
+            glVertex3f(0.5f, 0.0f, -0.5f);
+            glVertex3f(-0.5f, 0.0f, -0.5f);
+        glEnd();
+    
+    glPopMatrix();
+}
+
+// Rendering
+void Reshape(int w1, int h1){
+	// Fungsi reshape
+ 	if(h1 == 0) 
+	 	h1 = 1;
+ 	w = w1;
+ 	h = h1;
+ 	ratio = 1.0f * w / h;
+ 	glMatrixMode(GL_PROJECTION);
+ 	glLoadIdentity();
+ 	glViewport(0, 0, w, h);
+	 gluPerspective(45,ratio,0.1,1000);
+	 glMatrixMode(GL_MODELVIEW);
+	 glLoadIdentity();
+	
+	horizontalDistance = calculateHorizontalDistance(); 
+	verticalDistance = calculateVerticalDistance();
+	calculateCameraPosition(horizontalDistance, verticalDistance);
+
+}
+
+void display() {
+	// Menambah latar belakang langit biru muda
+    glClearColor(sunY*0.02, sunY*0.02, sunY*0.02, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	 
+	 // Pergerakan kamera
+	if (deltaHorizontalAngle || deltaVerticalAngle){
+		if ((verticalAngle < 85 && deltaVerticalAngle > 0) || (verticalAngle > 1 && deltaVerticalAngle < 0))
+			verticalAngle += deltaVerticalAngle;
+		horizontalAngle += deltaHorizontalAngle;
+		horizontalDistance = calculateHorizontalDistance();
+		verticalDistance = calculateVerticalDistance();
+	}
+	calculateCameraPosition(horizontalDistance, verticalDistance);
+	
+	// Pergerakan player
+	 if (deltaMove || deltaSlide)
+	 	moveMeFlat(deltaMove, deltaSlide);
+	
+	 glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	 
+	 // Render sumbu x, y, z
+	 Grid();
+	 
+	 // Render player model
+	 glEnable(GL_LIGHTING);
+	 player(1);
+	 
+	 glPushMatrix();
+	 	l[1] = sunY; l[2] = sunZ;
+			 glShadowProjection(l,e,n);
+			 glDisable(GL_LIGHTING);
+			 if (l[1] >= 0){
+			 	glColor3f(0,0,0);
+			 	player(0);
+			 }
+	glPopMatrix();
+ 
+	 // Panggil fungsi untuk menggambar objek player
+//     drawShadowPlayer(0.0f, 0.0f);
+	 // Render block yang ditaruh
+	 if (place == 1){
+	 	std::vector<float> coord;
+	 	float placeX = roundOff(playerX+forwardX),
+	 		placeY = int(playerY+0.5),
+	 		placeZ = roundOff(playerZ+forwardZ);
+	 	if (verticalAngle > 70 && int(playerY) > 0){
+	 		placeX = roundOff(playerX); placeY -= 1; placeZ = roundOff(playerZ);
+	 	}
+	 	coord.push_back(placeX); coord.push_back(placeY); coord.push_back(placeZ);	
+	 	if (std::find(vecOfBlocks.begin(), vecOfBlocks.end(), coord) == vecOfBlocks.end())
+ 			vecOfBlocks.push_back(coord);
+ 		place = 0;
+ 	}
+ 	
+ 	if (displace){
+ 		float placeX = roundOff(playerX+forwardX),
+	 		placeY = int(playerY+0.5),
+	 		placeZ = roundOff(playerZ+forwardZ);
+	 	if (verticalAngle > 70){
+	 		placeX = roundOff(playerX); placeY -= 1; placeZ = roundOff(playerZ);
+	 	}
+	 	std::vector<float> coord; coord.push_back(placeX); coord.push_back(placeY); coord.push_back(placeZ);
+	 	std::vector<std::vector<float> >::iterator newEnd = std::remove(vecOfBlocks.begin(), vecOfBlocks.end(), coord);
+	 	vecOfBlocks.erase(newEnd, vecOfBlocks.end());
+	 	displace = 0;
+ 	}
+ 	
+ 	if (clear){
+ 		vecOfBlocks.clear();
+ 		clear = 0;
+ 	}
+ 	
+ 	for (int i = 0; i<vecOfBlocks.size(); i++){
+ 		glPushMatrix();
+ 			placeBlock(vecOfBlocks[i], 1);  
+		glPopMatrix();
+		
+		glPushMatrix();
+			glShadowProjection(l,e,n);
+				 glDisable(GL_LIGHTING);
+				 if (l[1] >= 0){
+				 	glColor3f(0,0,0);
+				 	placeBlock(vecOfBlocks[i], 0);  
+				 }
+		glPopMatrix();
+ 	}
+ 	
+ 	// Render matahari
+    drawSun();
+    
+    // Update posisi matahari
+    updateSunPosition();
+    
+    // Gambar pohon
+    drawTrees();
+    
+    // Gambar efek cahaya tambahan di sekitar matahari
+    drawLensFlare(5.0f, 5.0f, 0.0f); // Contoh koordinat offset untuk cahaya tambahan
+    drawLensFlare(-5.0f, -5.0f, 0.0f);
+ 	
+	 glutSwapBuffers();
+	 glFlush();
+}
+
+// Kontrol
+void pressKey(unsigned char key, int x, int y) {
+ 	switch (key) {
+ 		case 'd' : deltaSlide = 1;break;
+		 case 'a' : deltaSlide = -1;break;
+		 case 'w' : deltaMove = 1;break;
+		 case 's' : deltaMove = -1;break;
+		 case 'q' : place = 1; break;
+		 case ' ': // Spacebar to jump
+            if (!isJumping) { // If bear is not already jumping
+                isJumping = true;
+                JumpVelocity = 0.2f; // Initial jump velocity (tweak for height)
+            }
+            break;
+        case 'e' : displace = 1; break;
+        case 'c' : clear = 1; break;
+ 	}
+}
+
+void releaseKey(unsigned char key, int x, int y) {
+ 	switch (key) {
+ 		case 'd' :
+ 			if (deltaSlide > 0.0f)
+ 			deltaSlide = 0.0f;
+ 		break;
+ 		case 'a' : 
+			 if (deltaSlide < 0.0f)
+			 deltaSlide = 0.0f;
+ 		break;
+ 		case 'w' : 
+			 if (deltaMove > 0)
+			 deltaMove = 0;
+ 		break;
+ 		case 's' : 
+ 			if (deltaMove < 0)
+ 			deltaMove = 0;
+ 		break;
+ 		case 'e':
+ 			if (displace)
+ 				displace = 0;
+ 		break;
+ 		case 'q':
+ 			if (place)
+ 				place = 0;
+ 		break;
+ 	}
+}
+
+void update(int value) {
+	
+	std::vector<float> landVec;
+	landVec.push_back(roundOff(playerX)); landVec.push_back(int(playerY-1)); landVec.push_back(roundOff(playerZ));
+	
+	if (playerY > 0 && !isCollided(landVec))
+		isJumping = 1;
+	
+    if (isJumping) {
+		
+		playerY += JumpVelocity; // Update height based on jump velocity
+    	JumpVelocity += Gravity; // Apply gravity
+    	
+    	landVec[1] = int(playerY);
+    	
+        if (isCollided(landVec) || playerY <= 0) { // Bear reaches or goes below ground level
+            playerY = int(playerY+1);
+			isJumping = false; // Reset jump flag
+            JumpVelocity = 0.0f; // Reset velocity
+        }
+        
+        
+    }
+
+    // Update arm movement
+    if (armForward) {
+        armAngle += armSpeed;
+        if (armAngle >= 30.0f) { // Maximum forward angle
+            armForward = false;
+        }
+    } else {
+        armAngle -= armSpeed;
+        if (armAngle <= -30.0f) { // Maximum backward angle
+            armForward = true;
+        }
+    }
+    if(!(deltaMove || deltaSlide)){
+    	armAngle = 0.0f;
+		armSpeed = 2.0f;
+		armForward = true;
+	}
+	//Grab Balok
+//    if (gerakTangan == 1) {
+//        if (rotTangan1 >= 90.0f) { // Maximum forward angle
+//            rotTangan1 -= 0.1;
+//        }
+//    } else {
+//        grab -= armSpeed;
+//        if (grab <= 0.0f) { // Maximum backward angle
+//            grabTidak = true;
+//        }
+//    }
+    glutPostRedisplay(); // Request redraw to reflect changes
+    glutTimerFunc(16, update, 0); // Call update every 16 ms (~60 FPS)
+}
+
+void pressArrow(int key, int x, int y){
+	switch (key){
+		case GLUT_KEY_RIGHT : deltaHorizontalAngle = -cameraSpeed;break;
+ 		case GLUT_KEY_LEFT : deltaHorizontalAngle = cameraSpeed;break;
+ 		case GLUT_KEY_UP : deltaVerticalAngle = -cameraSpeed;break;
+ 		case GLUT_KEY_DOWN : deltaVerticalAngle = cameraSpeed;break;
+	}
+}
+
+void releaseArrow(int key, int x, int y){
+	switch (key){
+		case GLUT_KEY_RIGHT: 
+			if (deltaHorizontalAngle < 0)
+				deltaHorizontalAngle = 0;
+			break;
+ 		case GLUT_KEY_LEFT : 
+			if (deltaHorizontalAngle > 0)
+				deltaHorizontalAngle = 0;
+			break;
+ 		case GLUT_KEY_UP : 
+ 			if (deltaVerticalAngle < 0)
+ 				deltaVerticalAngle = 0;
+				break;
+ 		case GLUT_KEY_DOWN : 
+ 			if (deltaVerticalAngle > 0)
+ 				deltaVerticalAngle = 0;
+				break;
+	}
+}
+
+// Variable untuk pencahayaan
+const GLfloat light_ambient[] = { 0.5f, 0.5f, 0.5f, 0.0f };
+const GLfloat light_diffuse[] = { 1.0f, 1.0f, 1.0f, 1.0f };
+const GLfloat light_specular[] = { 1.0f, 1.0f, 1.0f, 1.0f };
+const GLfloat light_position[] = { 0.0f, 20.0f, 10.0f, 1.0f };
+const GLfloat mat_ambient[] = { 0.7f, 0.7f, 0.7f, 1.0f };
+const GLfloat mat_diffuse[] = { 0.8f, 0.8f, 0.8f, 1.0f };
+const GLfloat mat_specular[] = { 1.0f, 1.0f, 1.0f, 1.0f };
+const GLfloat high_shininess[] = { 100.0f };
+
+void lighting(){
+	 // Fungsi mengaktifkan pencahayaan
+	 glEnable(GL_DEPTH_TEST);
+	 glDepthFunc(GL_LESS);
+	 glEnable(GL_LIGHT0);
+	 glEnable(GL_NORMALIZE);
+	 glEnable(GL_COLOR_MATERIAL);
+	 glEnable(GL_LIGHTING);	
+	 glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
+	 glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
+	 glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
+	 glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+	 glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient);
+	 glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse);
+	 glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+	 glMaterialfv(GL_FRONT, GL_SHININESS, high_shininess);
+}
+
+void init(void){
+	 glEnable (GL_DEPTH_TEST);
+	 glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+}
+
+int main(int argc, char **argv){
+	 glutInit(&argc, argv);
+	 glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
+	 glutInitWindowPosition(100,100);
+	 glutInitWindowSize(640,480);
+	 glutCreateWindow("MINECRAFT");
+	 glutIgnoreKeyRepeat(1); // Mengabaikan key repeat (saat tombol keyboard dipencet terus)
+	 glutKeyboardFunc(pressKey);
+	 glutKeyboardUpFunc(releaseKey);
+	 glutSpecialFunc(pressArrow);
+	 glutSpecialUpFunc(releaseArrow);
+	 glutDisplayFunc(display);
+	 glutIdleFunc(display); // Fungsi display-nya dipanggil terusmenerus
+	 glutReshapeFunc(Reshape);
+	 glutTimerFunc(16, update, 0);
+	 lighting();
+	 init();
+	 glutMainLoop();
+	 return(0);
+}
