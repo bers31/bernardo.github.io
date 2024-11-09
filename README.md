@@ -24,19 +24,19 @@ I’m a **Data Analyst** and **Frontend Developer** with a unique blend of skill
 I enjoy working on projects that combine data analysis and web development to solve real-world problems and improve user experience. Check out my GitHub portfolio to explore my latest work!
 
 - **YC Electric - Custom E-Commerce Website on Blogger Platform**  
-  Membangun website e-commerce dengan fitur login, pencarian produk, dan keranjang belanja menggunakan HTML, CSS, dan JavaScript untuk 500+ pengguna. Memanfaatkan MySQL untuk mengelola 100+ produk dan menangani 50+ transaksi harian. Hasilnya, website ini memberikan pengalaman pengguna yang lebih baik melalui UI/UX yang interaktif dan optimasi SEO yang efektif.
+  Developed a custom e-commerce website with features such as user login, product search, and shopping cart functionality using HTML, CSS, and JavaScript for over 500 users. Managed 100+ products and 50+ daily transactions using MySQL for real-time data processing. Enhanced user experience with interactive UI/UX elements and SEO optimization, which significantly increased organic traffic.
 
-- **Sistem Informasi Akademik Mahasiswa (SI-MAS) untuk Perkuliahan**  
-  Mengembangkan sistem informasi berbasis web untuk mengelola IRS bagi lebih dari 1.000 mahasiswa. Sistem ini menggunakan Laravel dan MySQL untuk manajemen data akademik dan validasi. Hasilnya, proses pengisian IRS menjadi 30% lebih cepat dengan peningkatan akurasi data, membantu dosen dan mahasiswa mengelola administrasi perkuliahan secara lebih efisien.
+- **Student Academic Information System (SI-MAS) for University Courses**  
+  Created a web-based information system for managing academic course enrollment for 1,000+ students each semester. This system uses Laravel and MySQL for data CRUD operations and academic validation. Achieved a 30% reduction in average enrollment time, improving data accuracy and streamlining the administrative process for both students and faculty.
 
 - **Simple 3D Minecraft Development Using C++ and OpenGL**  
-  Membangun game 3D sederhana dengan karakter utama yang dapat berjalan, melompat, dan berinteraksi di lingkungan 3D. Lingkungan permainan mencakup objek interaktif seperti pepohonan, komet, dan balok yang dapat disusun, memberikan pengalaman permainan yang stabil dan realistis.
+  Built a 3D game inspired by Minecraft, featuring a bear character that can walk, jump, and interact with the 3D environment. The game includes interactive objects like trees, comets, sun, stackable blocks, and rocks, providing a stable gameplay experience and realistic interactions through optimized matrix manipulation and efficient vector handling.
 
-- **Prediksi dan Analisis Emisi Gas Rumah Kaca 10 Tahun ke Depan**  
-  Melakukan analisis data dan pengembangan model prediktif menggunakan Python, Excel, dan R untuk memperkirakan tingkat emisi gas rumah kaca. Proyek ini mendukung pembuatan kebijakan terkait pengurangan emisi dengan memberikan prediksi yang akurat, berkontribusi pada upaya pencapaian Net Zero Emission.
+- **Greenhouse Gas Emissions Prediction and Analysis for the Next 10 Years**  
+  Conducted data analysis and developed a predictive model to project greenhouse gas emissions over the next decade using Python, Excel, and R. This project supports emission reduction policy-making by providing accurate emissions forecasts, contributing to Net Zero Emission goals.
 
-- **Prediksi dan Analisis Kasus COVID-19 1 Tahun ke Depan**  
-  Mengembangkan model prediktif berbasis machine learning (ARIMA dan regresi) menggunakan Python dan R untuk memperkirakan jumlah kasus COVID-19 dalam setahun. Proyek ini membantu lembaga kesehatan merencanakan langkah mitigasi dengan menganalisis tren penyebaran virus serta faktor-faktor yang memengaruhi perubahan kasus.
+- **COVID-19 Case Prediction and Analysis for 1-Year Forecast**  
+  Built a predictive model using machine learning algorithms (ARIMA and regression models) in Python and R to analyze and predict COVID-19 cases for the following year. The project helps health organizations plan effective mitigation strategies by identifying trends in virus spread and factors influencing case fluctuations.
 
 ---
 
