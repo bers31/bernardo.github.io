@@ -21,8 +21,24 @@ I’m a **Data Analyst** and **Frontend Developer** with a unique blend of skill
 ---
 
 ### 🌟 Projects
-I enjoy working on projects that combine data analysis and web development to solve real-world problems and improve user experience. Check out my GitHub portfolio to explore my latest work!
+I enjoy working on projects that combine data analysis and web development to solve real-world problems and improve user experience.
 
+- **YC Electric - Custom E-Commerce Website on Blogger Platform**  
+  Membangun website e-commerce dengan fitur login, pencarian produk, dan keranjang belanja menggunakan HTML, CSS, dan JavaScript untuk 500+ pengguna. Memanfaatkan MySQL untuk mengelola 100+ produk dan menangani 50+ transaksi harian. Hasilnya, website ini memberikan pengalaman pengguna yang lebih baik melalui UI/UX yang interaktif dan optimasi SEO yang efektif.
+
+- **Sistem Informasi Akademik Mahasiswa (SI-MAS) untuk Perkuliahan**  
+  Mengembangkan sistem informasi berbasis web untuk mengelola IRS bagi lebih dari 1.000 mahasiswa. Sistem ini menggunakan Laravel dan MySQL untuk manajemen data akademik dan validasi. Hasilnya, proses pengisian IRS menjadi 30% lebih cepat dengan peningkatan akurasi data, membantu dosen dan mahasiswa mengelola administrasi perkuliahan secara lebih efisien.
+
+- **Simple 3D Minecraft Development Using C++ and OpenGL**  
+  Membangun game 3D sederhana dengan karakter utama yang dapat berjalan, melompat, dan berinteraksi di lingkungan 3D. Lingkungan permainan mencakup objek interaktif seperti pepohonan, komet, dan balok yang dapat disusun, memberikan pengalaman permainan yang stabil dan realistis.
+
+- **Prediksi dan Analisis Emisi Gas Rumah Kaca 10 Tahun ke Depan**  
+  Melakukan analisis data dan pengembangan model prediktif menggunakan Python, Excel, dan R untuk memperkirakan tingkat emisi gas rumah kaca. Proyek ini mendukung pembuatan kebijakan terkait pengurangan emisi dengan memberikan prediksi yang akurat, berkontribusi pada upaya pencapaian Net Zero Emission.
+
+- **Prediksi dan Analisis Kasus COVID-19 1 Tahun ke Depan**  
+  Mengembangkan model prediktif berbasis machine learning (ARIMA dan regresi) menggunakan Python dan R untuk memperkirakan jumlah kasus COVID-19 dalam setahun. Proyek ini membantu lembaga kesehatan merencanakan langkah mitigasi dengan menganalisis tren penyebaran virus serta faktor-faktor yang memengaruhi perubahan kasus.
+
+Check out my GitHub portfolio to explore my latest work!
 ---
 
 ### 📫 Let's Connect
