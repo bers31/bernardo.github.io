@@ -21,7 +21,7 @@ I’m a **Data Analyst** and **Frontend Developer** with a unique blend of skill
 ---
 
 ### 🌟 Projects
-I enjoy working on projects that combine data analysis and web development to solve real-world problems and improve user experience.
+I enjoy working on projects that combine data analysis and web development to solve real-world problems and improve user experience. Check out my GitHub portfolio to explore my latest work!
 
 - **YC Electric - Custom E-Commerce Website on Blogger Platform**  
   Membangun website e-commerce dengan fitur login, pencarian produk, dan keranjang belanja menggunakan HTML, CSS, dan JavaScript untuk 500+ pengguna. Memanfaatkan MySQL untuk mengelola 100+ produk dan menangani 50+ transaksi harian. Hasilnya, website ini memberikan pengalaman pengguna yang lebih baik melalui UI/UX yang interaktif dan optimasi SEO yang efektif.
@@ -38,7 +38,6 @@ I enjoy working on projects that combine data analysis and web development to so
 - **Prediksi dan Analisis Kasus COVID-19 1 Tahun ke Depan**  
   Mengembangkan model prediktif berbasis machine learning (ARIMA dan regresi) menggunakan Python dan R untuk memperkirakan jumlah kasus COVID-19 dalam setahun. Proyek ini membantu lembaga kesehatan merencanakan langkah mitigasi dengan menganalisis tren penyebaran virus serta faktor-faktor yang memengaruhi perubahan kasus.
 
-Check out my GitHub portfolio to explore my latest work!
 ---
 
 ### 📫 Let's Connect
