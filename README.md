@@ -1,4 +1,4 @@
-# Hi there! 👋 I'm Bers31
+# Hi there! 👋 I'm Bernardo
 
 I’m a **Data Analyst** and **Frontend Developer** with a unique blend of skills in data analytics and web development. I love transforming data into actionable insights and creating user-friendly, intuitive web interfaces that make information accessible and engaging.
 
