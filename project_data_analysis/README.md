@@ -34,7 +34,12 @@ Dataset yang digunakan dalam dashboard ini berisi informasi seperti:
 Dataset ini memungkinkan analisis menyeluruh terhadap tren, perbandingan kinerja, dan insight yang berguna untuk pengambilan keputusan.
 
 ### Tangkapan Layar
-![Screenshot of Dashboard](path/to/image.png)
+### Tangkapan Layar
+![Screenshot 1](images/Picture7.png)
+![Screenshot 2](images/Picture8.png)
+![Screenshot 3](images/Picture9.png)
+![Screenshot 4](images/Picture10.png)
+
 
 ### Dampak dan Hasil
 - **Penyederhanaan Data Kompleks**: Dengan menggunakan visualisasi yang efektif, dashboard ini menyederhanakan data yang kompleks menjadi informasi yang mudah dimengerti.
