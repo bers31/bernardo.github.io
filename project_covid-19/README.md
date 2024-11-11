@@ -26,3 +26,11 @@ Tujuan dari proyek ini adalah mengembangkan model prediktif untuk memproyeksikan
 - **Memprediksi Tren Kasus COVID-19**: Membantu mengidentifikasi pola penyebaran virus untuk langkah mitigasi.
 - **Menyediakan Insight bagi Pembuat Kebijakan**: Mendukung keputusan berbasis data untuk mengontrol penyebaran COVID-19.
 
+### Tangkapan Layar
+![Screenshot 1](images/Picture1.png)
+![Screenshot 2](images/Picture2.png)
+![Screenshot 3](images/Picture3.png)
+![Screenshot 4](images/Picture4.png)
+![Screenshot 5](images/Picture5.png)
+![Screenshot 6](images/Picture6.png)
+
