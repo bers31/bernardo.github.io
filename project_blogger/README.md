@@ -22,7 +22,12 @@ YC Electric dirancang untuk memberikan solusi e-commerce sederhana bagi pemilik 
 3. **Hubungkan MySQL** untuk menyimpan data produk dan transaksi.
 
 ### Tangkapan Layar
-![Screenshot](path/to/image.png)
+![Screenshot 1](images/Picture7.png)
+![Screenshot 2](images/Picture8.png)
+![Screenshot 3](images/Picture9.png)
+![Screenshot 4](images/Picture10.png)
+![Screenshot 5](images/Picture11.png)
+![Screenshot 6](images/Picture12.png)
 
 ### Link Website
 Kunjungi [YC Electric](https://ycelectric.blogspot.com/) untuk melihat versi live dari proyek ini.
