@@ -22,4 +22,9 @@ Proyek ini memudahkan pengelolaan data akademik bagi lebih dari 1.000 mahasiswa 
 4. **Jalankan Server Lokal**: `php artisan serve`
 
 ### Tangkapan Layar
-![Screenshot](path/to/image.png)
+![Screenshot 1](images/Picture13.png)
+![Screenshot 2](images/Picture14.png)
+![Screenshot 3](images/Picture15.png)
+![Screenshot 4](images/Picture16.png)
+![Screenshot 5](images/Picture17.png)
+![Screenshot 6](images/Picture18.png)
