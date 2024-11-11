@@ -20,10 +20,9 @@ Game ini dibangun dengan OpenGL dan C++, memberikan pengalaman bermain interakti
 3. **Jalankan Game**: Run executable file.
 
 ### Tangkapan Layar
-![Screenshot]
-("C:\Users\ACER\OneDrive\Gambar\Screenshots\Picture1.png")
-("C:\Users\ACER\OneDrive\Gambar\Screenshots\Picture2.png")
-("C:\Users\ACER\OneDrive\Gambar\Screenshots\Picture3.png")
-("C:\Users\ACER\OneDrive\Gambar\Screenshots\Picture4.png")
-("C:\Users\ACER\OneDrive\Gambar\Screenshots\Picture5.png")
-("C:\Users\ACER\OneDrive\Gambar\Screenshots\Picture6.png")
+![Screenshot 1](images/Picture1.png)
+![Screenshot 2](images/Picture2.png)
+![Screenshot 3](images/Picture3.png)
+![Screenshot 4](images/Picture4.png)
+![Screenshot 5](images/Picture5.png)
+![Screenshot 6](images/Picture6.png)
