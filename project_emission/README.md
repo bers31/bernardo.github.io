@@ -19,4 +19,9 @@ Dengan menggunakan data historis, proyek ini melakukan analisis dan prediksi emi
 3. **Run Analysis**: Eksekusi notebook Python atau R script.
 
 ### Tangkapan Layar
-![Screenshot](path/to/image.png)
+![Screenshot 1](images/Picture1.png)
+![Screenshot 2](images/Picture2.png)
+![Screenshot 3](images/Picture3.png)
+![Screenshot 4](images/Picture4.png)
+![Screenshot 5](images/Picture5.png)
+![Screenshot 6](images/Picture6.png)
