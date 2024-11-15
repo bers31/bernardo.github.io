@@ -32,13 +32,13 @@ I thrive on building projects that combine data analysis and frontend developmen
 - **Student Academic Information System (SI-MAS) for University Courses**  
   Created a robust, web-based academic information system to streamline course enrollment for 1,000+ students. Built using Laravel and MySQL, the system automates data validation and CRUD operations, reducing average enrollment time by 30% and enhancing administrative efficiency for faculty and students alike.
 
-- **Simple 3D Minecraft Development Using C++ and OpenGL**  
+- **3D Minecraft Development Using C++ and OpenGL**  
   Designed a 3D game inspired by Minecraft, where players control a bear character to interact with the environment. Implemented efficient matrix manipulations and vector handling in OpenGL to create realistic gameplay with interactive objects, such as trees, rocks, and stackable blocks. This project showcases my foundational skills in game development, graphics rendering, and performance optimization.
 
 - **Greenhouse Gas Emissions Prediction and Analysis for the Next 10 Years**  
   Conducted an in-depth data analysis and built a predictive model using Python, Excel, and R to forecast greenhouse gas emissions over the next decade. This project aims to support Net Zero Emission goals by providing accurate forecasts that inform emissions reduction policies and promote sustainable practices.
 
-- **COVID-19 Case Prediction and Analysis for 1-Year Forecast**  
+- **COVID-19 Cases Prediction and Analysis for 1-Year Forecast**  
   Utilized ARIMA and regression models in Python and R to develop a predictive model that forecasts COVID-19 cases for the following year. Through careful data preprocessing and model tuning, this project provides actionable insights for health organizations to plan mitigation strategies, identifying trends in virus transmission and factors influencing case surges.
   
 - **Custom Search Engine Using Vector Space Model (VSM) and Latent Semantic Indexing (LSI)**
@@ -67,7 +67,7 @@ With over 2 years of experience in the company and university, I have honed my s
 
   - Supported inventory management, sales tracking, and financial reporting, providing data-driven insights that helped optimize profitability.
   - Collaborated on marketing strategies to expand the customer base, which contributed to a notable increase in monthly sales.
-  - Enhanced customer service by addressing inquiries and resolving issues, fostering stronger client relationships and higher satisfaction.
+  - Enhanced client partner by addressing inquiries and resolving issues, fostering stronger relationships and higher satisfaction.
 ---
 
 ### 🛠️ What I’m Working On
