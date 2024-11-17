@@ -8,6 +8,7 @@ I’m a passionate **Data Analyst** and **Frontend Developer** with a unique ski
 - 📊 **Data Analyst**: Skilled in dissecting complex datasets, uncovering hidden trends, and generating data-driven insights that inform strategic decisions and enhance operational efficiency.
 - 💻 **Frontend Developer**: Experienced in crafting responsive, high-performance web applications that prioritize user experience, accessibility, and clean, maintainable code.
 - 🚀 **Continuous Learner**: I’m passionate about staying at the forefront of the latest technologies in data science and web development, constantly expanding my knowledge and skills in machine learning, visualization tools, and modern web frameworks.
+
 ---
 
 ### 🛠️ Technical Skills
