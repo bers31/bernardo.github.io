@@ -17,7 +17,7 @@ My technical toolkit spans across data analytics, web development, and design, e
 - **Frontend Frameworks**: React, Vue.js, Bootstrap
 - **Data Visualization**: Tableau, Power BI, D3.js
 - **Data Wrangling**: Pandas, NumPy, Excel
-- **Design Tools**: Figma, Adobe XD
+- **Design Tools**: Figma, Adobe Photoshop
 - **Machine Learning (Basics)**: Scikit-Learn, TensorFlow
 - **Databases**: MySQL, PostgreSQL
 - **Version Control**: Git, GitHub
