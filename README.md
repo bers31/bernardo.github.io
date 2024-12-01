@@ -69,6 +69,7 @@ With over 2 years of experience in the company and university, I have honed my s
   - Supported inventory management, sales tracking, and financial reporting, providing data-driven insights that helped optimize profitability.
   - Collaborated on marketing strategies to expand the customer base, which contributed to a notable increase in monthly sales.
   - Enhanced client partner by addressing inquiries and resolving issues, fostering stronger relationships and higher satisfaction.
+
 ---
 
 ### 🛠️ What I’m Working On
@@ -76,6 +77,7 @@ I’m always exploring new projects and improving my skill set. Currently, I am:
 
 - Building a personal project that combines data analytics and interactive visualization.
 - Learning advanced machine learning techniques and deepening my knowledge of frontend development frameworks.
+
 ---
   
 ### 📫 Let's Connect
@@ -83,6 +85,7 @@ I’m open to collaboration, new projects, or just connecting with like-minded p
 - **Email**: suniabernardo@gmail.com
 - **LinkedIn**: https://www.linkedin.com/in/bernardo-sunia-034403282/
 - **GitHub**: github.com/bers31
+
 ---
 
 Thank you for stopping by my profile! I look forward to connecting and creating meaningful work together.
