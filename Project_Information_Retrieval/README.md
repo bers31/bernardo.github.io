@@ -28,10 +28,13 @@ The IR system is designed to find relevant documents based on user queries by ut
 2. **Install Dependencies**: `pip install -r requirements.txt`
 3. **Run Application**: `streamlit run app.py`
 
-### Tangkapan Layar
+### Screenshots
 ![Screenshot 1](images/image.png)
 ![Screenshot 2](images/image1.png)
 ![Screenshot 3](images/image2.png)
 ![Screenshot 4](images/image3.png)
 ![Screenshot 5](images/image4.png)
 ![Screenshot 6](images/image5.png)
+
+### Conclusion
+This project demonstrates the implementation of a modern Information Retrieval system that combines deep learning and machine learning techniques to deliver more accurate and relevant search results compared to traditional keyword-based approaches.
