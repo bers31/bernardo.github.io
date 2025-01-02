@@ -1,4 +1,4 @@
-# YC Electric – E-Commerce Website
+# YC Electric – Custom E-Commerce Website
 
 YC Electric is an e-commerce website developed using the Blogger platform, featuring essential e-commerce functionalities such as user login, product search, and shopping cart. The site supports over 100 products and handles an average of 50 transactions per day.
 
