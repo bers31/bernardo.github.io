@@ -1,27 +1,27 @@
 # YC Electric – E-Commerce Website
 
-YC Electric adalah website e-commerce yang dikembangkan menggunakan platform Blogger, dilengkapi dengan fitur-fitur dasar e-commerce seperti login, pencarian produk, dan keranjang belanja. Situs ini dapat menangani lebih dari 100 produk dan mendukung rata-rata 50 transaksi per hari.
+YC Electric is an e-commerce website developed using the Blogger platform, featuring essential e-commerce functionalities such as user login, product search, and shopping cart. The site supports over 100 products and handles an average of 50 transactions per day.
 
-## Deskripsi Proyek
-YC Electric dirancang untuk memberikan solusi e-commerce sederhana bagi pemilik bisnis kecil dengan menggunakan Blogger sebagai platform, serta menambahkan fitur-fitur kustom HTML, CSS, dan JavaScript.
+## Project Description
+YC Electric is designed to provide a simple e-commerce solution for small business owners by leveraging Blogger as the platform, with custom HTML, CSS, and JavaScript features added.
 
-### Fitur Utama
-- **Login Pengguna**: Fitur login untuk autentikasi pengguna.
-- **Pencarian Produk**: Fitur pencarian untuk memudahkan navigasi lebih dari 100 produk.
-- **Keranjang Belanja**: Pengguna dapat menambah dan mengelola produk yang ingin dibeli.
-- **Optimasi SEO**: Meningkatkan trafik organik hingga 30% melalui optimasi kata kunci dan struktur website.
+### Key Features
+- **User Login**: Authentication feature for secure user access.
+- **Product Search**: Allows easy navigation through over 100 products.
+- **Shopping Cart**: Users can add and manage products they wish to purchase.
+- **SEO Optimization**: Boosts organic traffic by 30% through keyword optimization and website structure improvements.
 
-### Teknologi yang Digunakan
-- **HTML, CSS, JavaScript**: Untuk pengembangan antarmuka dan interaksi pengguna.
-- **MySQL**: Basis data eksternal untuk menyimpan informasi produk dan transaksi pengguna.
-- **Platform**: Blogger sebagai CMS untuk memfasilitasi pengelolaan konten.
+### Technologies Used
+- **HTML, CSS, JavaScript**: For developing the user interface and interactions.
+- **MySQL**: External database for storing product information and user transactions.
+- **Platform**: Blogger as the CMS to facilitate content management.
 
-### Cara Menjalankan Proyek
-1. **Buat Akun Blogger** dan siapkan template HTML.
-2. **Upload Kode HTML, CSS, dan JavaScript** dari file di repositori ini ke Blogger.
-3. **Hubungkan MySQL** untuk menyimpan data produk dan transaksi.
+### How to Run the Project
+1. **Create a Blogger Account** and set up the HTML template.
+2. **Upload HTML, CSS, and JavaScript Code** from this repository to Blogger.
+3. **Connect MySQL** to store product and transaction data.
 
-### Tangkapan Layar
+### Screenshots
 ![Screenshot 1](images/Picture7.png)
 ![Screenshot 2](images/Picture8.png)
 ![Screenshot 3](images/Picture9.png)
@@ -29,5 +29,8 @@ YC Electric dirancang untuk memberikan solusi e-commerce sederhana bagi pemilik 
 ![Screenshot 5](images/Picture11.png)
 ![Screenshot 6](images/Picture12.png)
 
-### Link Website
-Kunjungi [YC Electric](https://ycelectric.blogspot.com/) untuk melihat versi live dari proyek ini.
+### Website Link
+Visit [YC Electric](https://ycelectric.blogspot.com/) to see the live version of this project.
+
+## Conclusion
+This project demonstrates the development of a functional e-commerce website using Blogger, HTML, CSS, JavaScript, and MySQL, providing a practical solution for small businesses to manage their online sales efficiently.
