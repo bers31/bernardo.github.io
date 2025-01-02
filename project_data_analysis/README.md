@@ -27,12 +27,6 @@ The goal of this project is to leverage existing data and present it in an **inf
    - Click on pivot tables or charts to view more specific data.
    - Check the key metrics at the top of the dashboard for summary information.
 
-### Dataset Used
-The dataset used in this dashboard includes information such as:
-- [List the types of data in the dataset, e.g., monthly sales, customer data, product categories, etc.]
-
-This dataset enables comprehensive analysis of trends, performance comparisons, and useful insights for decision-making.
-
 ### Screenshots
 ![Screenshot 1](images/Picture7.png)
 ![Screenshot 2](images/Picture8.png)
