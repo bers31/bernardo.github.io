@@ -1,4 +1,4 @@
-# Simple 3D Game Development Using C++ and OpenGL
+# 3D Game Development Using C++ and OpenGL
 
 Game 3D ini menampilkan karakter beruang yang dapat berinteraksi dengan objek di lingkungan permainan 3D.
 
