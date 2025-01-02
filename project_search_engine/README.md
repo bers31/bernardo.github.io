@@ -1,33 +1,38 @@
-# Search Engine dengan Vector Space Model (VSM) dan Latent Semantic Indexing (LSI)
+# Custom Search Engine with Vector Space Model (VSM) and Latent Semantic Indexing (LSI)
 
-Proyek ini merupakan search engine berbasis VSM dan LSI yang dirancang untuk menemukan dan mengurutkan dokumen berdasarkan relevansi. Engine ini mampu mengurutkan dokumen dari yang paling relevan hingga paling rendah relevansinya dengan mempertimbangkan semantik antar kata.
+This project is a search engine based on VSM and LSI designed to find and rank documents based on relevance. The engine can rank documents from most to least relevant by considering the semantics between words.
 
-## Deskripsi Proyek
-Search engine ini dikembangkan untuk memberikan hasil pencarian yang akurat dengan mempertimbangkan relevansi semantik. Dengan menggunakan VSM dan LSI, proyek ini bertujuan untuk meningkatkan pengalaman pengguna dalam mencari informasi.
+## Project Description
+This search engine is developed to provide accurate search results by considering semantic relevance. By using VSM and LSI, this project aims to enhance the user experience in searching for information.
 
-### Fitur Utama
-- **Pencarian Berbasis Relevansi**: Menyediakan hasil pencarian yang diurutkan dari yang paling relevan hingga paling rendah.
-- **Antarmuka Pengguna yang Intuitif**: Menggunakan Streamlit untuk menampilkan hasil pencarian yang mudah digunakan.
-- **Peningkatan Akurasi Pencarian**: LSI meningkatkan akurasi pencarian hingga 35% dengan mempertimbangkan konteks dan makna antar kata.
+### Key Features
+- **Relevance-Based Search**: Provides search results ranked from most to least relevant.
+- **Intuitive User Interface**: Uses Streamlit to display search results in an easy-to-use manner.
+- **Improved Search Accuracy**: LSI improves search accuracy by up to 35% by considering the context and meaning between words.
 
-### Teknologi dan Algoritma
-- **Python**: Untuk implementasi VSM dan LSI.
-- **Streamlit**: Untuk antarmuka pengguna yang interaktif.
-- **Algoritma**:
-  - **Vector Space Model (VSM)**: Untuk mengukur relevansi berdasarkan frekuensi kata.
-  - **Latent Semantic Indexing (LSI)**: Untuk mempertimbangkan hubungan semantik antar kata dan meningkatkan relevansi pencarian.
+### Technologies and Algorithms
+- **Python**: For implementing VSM and LSI.
+- **Streamlit**: For an interactive user interface.
+- **Algorithms**:
+  - **Vector Space Model (VSM)**: To measure relevance based on word frequency.
+  - **Latent Semantic Indexing (LSI)**: To consider semantic relationships between words and improve search relevance.
 
-### Cara Menjalankan Proyek
-1. **Clone Repository**: `git clone <repo-url>`
-2. **Instalasi Library**: Instal library yang diperlukan dengan `pip install -r requirements.txt`.
-3. **Jalankan Aplikasi Streamlit**:
+### How to Run the Project
+1. **Clone the Repository**: `git clone <repo-url>`
+2. **Install Libraries**: Install the required libraries with `pip install -r requirements.txt`.
+3. **Run the Streamlit Application**:
    ```bash
-   streamlit run app.py
+   streamlit run app_vsm.py
+   ```bash
+   streamlit run app_lsi.py
 
-### Tangkapan Layar
+### Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
 ![Screenshot 3](images/Picture3.png)
 ![Screenshot 4](images/Picture4.png)
 ![Screenshot 5](images/Picture5.png)
 ![Screenshot 6](images/Picture6.png)
+
+### Conclusion
+This project demonstrates the effectiveness of combining VSM and LSI to create a powerful search engine that delivers highly relevant search results. By leveraging Python and Streamlit, the project provides an intuitive and interactive user experience. The use of LSI significantly enhances search accuracy, making this search engine a valuable tool for finding information efficiently.
