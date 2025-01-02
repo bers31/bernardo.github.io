@@ -28,7 +28,10 @@ The IR system is designed to find relevant documents based on user queries by ut
 2. **Install Dependencies**: `pip install -r requirements.txt`
 3. **Run Application**: `streamlit run app.py`
 
-### Screenshots
-!Screenshot 1
-!Screenshot 2
-!Screenshot 3
+### Tangkapan Layar
+![Screenshot 1](images/image.png)
+![Screenshot 2](images/image1.png)
+![Screenshot 3](images/image2.png)
+![Screenshot 4](images/image3.png)
+![Screenshot 5](images/image4.png)
+![Screenshot 6](images/image5.png)
