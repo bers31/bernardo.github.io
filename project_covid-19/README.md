@@ -1,32 +1,32 @@
-# Prediksi dan Analisis Kasus COVID-19 1 Tahun ke Depan
+# COVID-19 Case Prediction and Analysis for the Next Year
 
-Proyek ini menggunakan algoritma machine learning untuk memprediksi kasus COVID-19 selama satu tahun ke depan. Analisis ini memberikan wawasan tentang pola penyebaran dan faktor-faktor yang mempengaruhi perubahan jumlah kasus COVID-19.
+This project utilizes machine learning algorithms to predict COVID-19 cases for the upcoming year. The analysis provides insights into the spread patterns and factors influencing changes in COVID-19 case numbers.
 
-## Deskripsi Proyek
-Tujuan dari proyek ini adalah mengembangkan model prediktif untuk memproyeksikan jumlah kasus COVID-19 di masa mendatang. Proyek ini dirancang untuk membantu pembuat kebijakan dan lembaga kesehatan merencanakan langkah mitigasi yang efektif.
+## Project Description
+The goal of this project is to develop a predictive model to forecast future COVID-19 case numbers. This project is designed to assist policymakers and health organizations in planning effective mitigation strategies.
 
-### Fitur Utama
-- **Pembersihan dan Pengelolaan Data**: Menggunakan Python untuk pembersihan data dan memastikan kualitas data yang digunakan dalam model prediktif.
-- **Analisis Tren dan Visualisasi**: Menggunakan Python dan R untuk analisis data dan visualisasi tren, termasuk grafik tren penyebaran virus.
-- **Model Prediktif**: Menggunakan model ARIMA dan model regresi untuk menghasilkan prediksi kasus COVID-19 yang akurat selama 1 tahun ke depan.
+### Key Features
+- **Data Cleaning and Management**: Utilized Python for data cleaning to ensure the quality of data used in the predictive model.
+- **Trend Analysis and Visualization**: Employed Python and R for data analysis and visualization of trends, including graphs of virus spread patterns.
+- **Predictive Modeling**: Implemented ARIMA and regression models to generate accurate COVID-19 case predictions for the next year.
 
-### Teknologi yang Digunakan
-- **Python**: Untuk pengelolaan data, pembersihan, dan analisis dasar.
-- **R**: Untuk pemodelan ARIMA dan visualisasi data.
-- **Libraries**: Pandas, Scikit-Learn, Statsmodels (Python), dan ggplot2 (R) untuk pemrosesan dan visualisasi.
+### Technologies Used
+- **Python**: For data management, cleaning, and basic analysis.
+- **R**: For ARIMA modeling and data visualization.
+- **Libraries**: Pandas, Scikit-Learn, Statsmodels (Python), and ggplot2 (R) for processing and visualization.
 
-### Cara Menjalankan Proyek
+### How to Run the Project
 1. **Clone Repository**: `git clone <repo-url>`
-2. **Instal Library Python dan R**: Pastikan library yang dibutuhkan terinstal dengan menjalankan `pip install -r requirements.txt` (untuk Python).
-3. **Jalankan Notebook atau Script**:
-   - Buka dan jalankan notebook Python untuk pembersihan data.
-   - Jalankan script R untuk prediksi menggunakan model ARIMA.
+2. **Install Python and R Libraries**: Ensure required libraries are installed by running `pip install -r requirements.txt` (for Python).
+3. **Run Notebooks or Scripts**:
+   - Open and run the Python notebook for data cleaning.
+   - Execute the R script for predictions using the ARIMA model.
 
-### Dampak
-- **Memprediksi Tren Kasus COVID-19**: Membantu mengidentifikasi pola penyebaran virus untuk langkah mitigasi.
-- **Menyediakan Insight bagi Pembuat Kebijakan**: Mendukung keputusan berbasis data untuk mengontrol penyebaran COVID-19.
+### Impact
+- **Predicting COVID-19 Case Trends**: Helps identify virus spread patterns for effective mitigation measures.
+- **Providing Insights for Policymakers**: Supports data-driven decisions to control the spread of COVID-19.
 
-### Tangkapan Layar
+### Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
 ![Screenshot 3](images/Picture3.png)
@@ -34,3 +34,5 @@ Tujuan dari proyek ini adalah mengembangkan model prediktif untuk memproyeksikan
 ![Screenshot 5](images/Picture5.png)
 ![Screenshot 6](images/Picture6.png)
 
+## Conclusion
+This project demonstrates the development of a predictive model for COVID-19 case numbers using Python and R, providing valuable insights for health organizations and policymakers.
