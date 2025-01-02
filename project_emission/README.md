@@ -1,38 +1,41 @@
-# Prediksi dan Analisis Gas Emisi 10 Tahun ke Depan
+# Greenhouse Gas Emissions Prediction and Analysis for the Next 10 Years
 
-Proyek ini bertujuan untuk memproyeksikan tingkat emisi gas rumah kaca selama 10 tahun ke depan menggunakan metode prediktif dan analisis tren. Dengan menggabungkan Python, Excel, dan R, proyek ini memberikan pandangan yang berbasis data untuk mendukung kebijakan lingkungan dalam upaya pengurangan emisi dan pencapaian target **Net Zero Emission**.
+This project aims to project greenhouse gas emission levels over the next 10 years using predictive methods and trend analysis. By combining Python, Excel, and R, this project provides data-driven insights to support environmental policies in efforts to reduce emissions and achieve **Net Zero Emission** targets.
 
-## Deskripsi Proyek
-Proyek ini berfokus pada:
-1. **Analisis Tren Emisi**: Memahami pola emisi gas rumah kaca selama beberapa tahun terakhir.
-2. **Prediksi Jangka Panjang**: Menggunakan model statistik untuk memproyeksikan emisi dalam dekade mendatang.
-3. **Dampak Kebijakan**: Menyediakan data yang relevan bagi pembuat kebijakan dan industri dalam merencanakan strategi pengurangan emisi.
+## Project Description
+This project focuses on:
+1. **Emission Trend Analysis**: Understanding the patterns of greenhouse gas emissions over the past few years.
+2. **Long-Term Prediction**: Using statistical models to project emissions over the next decade.
+3. **Policy Impact**: Providing relevant data for policymakers and industries to plan emission reduction strategies.
 
-Dashboard dan visualisasi interaktif dalam proyek ini memberikan ringkasan mengenai tren emisi dan faktor utama yang mempengaruhi jumlah emisi.
+The interactive dashboard and visualizations in this project offer a summary of emission trends and key factors influencing emission levels.
 
-## Fitur Utama
-- **Pembersihan dan Pengelolaan Data**: Menggunakan Excel untuk pengelolaan dan pembersihan data sebelum dilakukan analisis.
-- **Analisis dan Visualisasi Data**: Python dan R digunakan untuk visualisasi pola data historis dalam bentuk grafik dan heatmap.
-- **Model Prediksi ARIMA**: Menerapkan model Autoregressive Integrated Moving Average (ARIMA) di R untuk membuat proyeksi emisi jangka panjang.
-- **Ringkasan Data**: Laporan insight dan grafik tren emisi yang dapat diakses oleh pembuat kebijakan dan industri.
+### Key Features
+- **Data Cleaning and Management**: Using Excel for data management and cleaning before analysis.
+- **Data Analysis and Visualization**: Python and R are used to visualize historical data patterns in the form of charts and heatmaps.
+- **ARIMA Prediction Model**: Implementing the Autoregressive Integrated Moving Average (ARIMA) model in R to make long-term emission projections.
+- **Data Summary**: Insight reports and emission trend charts accessible to policymakers and industries.
 
-## Teknologi yang Digunakan
-- **Python**: Untuk analisis data dasar dan visualisasi, termasuk pengolahan data dan pembuatan grafik.
-- **Excel**: Untuk manajemen data awal, termasuk pembersihan, penyusunan, dan normalisasi data.
-- **R**: Untuk pemodelan prediktif dengan metode ARIMA dan visualisasi hasil prediksi.
+### Technologies Used
+- **Python**: For basic data analysis and visualization, including data processing and chart creation.
+- **Excel**: For initial data management, including cleaning, structuring, and normalizing data.
+- **R**: For predictive modeling using the ARIMA method and visualizing prediction results.
 - **Libraries**:
-  - *Python*: Pandas, Matplotlib, Seaborn untuk pengolahan dan visualisasi data.
-  - *R*: forecast, ggplot2 untuk pemodelan ARIMA dan visualisasi.
+  - *Python*: Pandas, Matplotlib, Seaborn for data processing and visualization.
+  - *R*: forecast, ggplot2 for ARIMA modeling and visualization.
 
-### Cara Menjalankan Proyek
-1. **Clone Repository**: `git clone <repo-url>`
-2. **Instal Library**: Instal library yang dibutuhkan di Python dan R.
-3. **Run Analysis**: Eksekusi notebook Python atau R script.
+### How to Run the Project
+1. **Clone the Repository**: `git clone <repo-url>`
+2. **Install Libraries**: Install the required libraries in Python and R.
+3. **Run the Analysis**: Execute the Python notebook or R script.
 
-### Tangkapan Layar
+### Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
 ![Screenshot 3](images/Picture3.png)
 ![Screenshot 4](images/Picture4.png)
 ![Screenshot 5](images/Picture5.png)
 ![Screenshot 6](images/Picture6.png)
+
+### Conclusion
+This project provides a comprehensive approach to understanding and predicting greenhouse gas emissions over the next decade. By leveraging advanced statistical models and interactive visualizations, it offers valuable insights for policymakers and industries aiming to reduce emissions and achieve sustainability goals. The integration of Python, Excel, and R ensures robust data analysis and accurate predictions, making this project a crucial tool in the fight against climate change.
