@@ -23,7 +23,7 @@ This project facilitates the management of academic data for over 1,000 students
 
 ### Screenshots
 ![Screenshot 1](images/Picture.png)
-![Screenshot 2](images/picture14.png)
+![Screenshot 2](images/Picture14.png)
 ![Screenshot 3](images/Picture1.png)
 ![Screenshot 4](images/Picture2.png)
 ![Screenshot 5](images/Picture3.png)
