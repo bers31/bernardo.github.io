@@ -22,8 +22,8 @@ This project facilitates the management of academic data for over 1,000 students
 4. **Run Local Server**: `php artisan serve`
 
 ### Screenshots
-![Screenshot 1](images/Picture.png)
-![Screenshot 2](images/Picture14.png)
+![Screenshot 1](images/Picture14.png)
+![Screenshot 2](images/Picture.png)
 ![Screenshot 3](images/Picture1.png)
 ![Screenshot 4](images/Picture2.png)
 ![Screenshot 5](images/Picture3.png)
