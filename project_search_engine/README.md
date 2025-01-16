@@ -1,4 +1,4 @@
-# Custom Search Engine with Vector Space Model (VSM) and Latent Semantic Indexing (LSI)
+# Custom Search Engine Using Vector Space Model (VSM) and Latent Semantic Indexing (LSI)
 
 This project is a search engine based on VSM and LSI designed to find and rank documents based on relevance. The engine can rank documents from most to least relevant by considering the semantics between words.
 
