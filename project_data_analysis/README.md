@@ -36,6 +36,3 @@ The goal of this project is to leverage existing data and present it in an **inf
 ### Impact and Results
 - **Simplification of Complex Data**: By using effective visualizations, this dashboard simplifies complex data into easily understandable information.
 - **Faster Decision-Making**: The dashboard helps users quickly identify relevant patterns and trends, supporting more informed decision-making.
-
-### Additional Notes
-This dashboard is designed for use by [specify who will use the dashboard, e.g., sales teams or financial managers]. Ensure the latest data is updated to keep the dashboard relevant.
