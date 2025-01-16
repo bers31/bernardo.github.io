@@ -1,4 +1,4 @@
-# Advanced Information Retrieval System Using Machine Learning Techniques
+# Advanced Information Retrieval System Using Machine Learning and Deep Learning Techniques
 
 This project showcases the development of an advanced Information Retrieval (IR) system that leverages cutting-edge machine learning algorithms to enhance document search quality based on user queries.
 
