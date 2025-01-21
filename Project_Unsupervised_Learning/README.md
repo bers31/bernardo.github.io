@@ -1,4 +1,4 @@
-# Student Performance Clustering Using Unsupervised Learning
+# Advance Student Performance Clustering Using Unsupervised Learning
 
 This project showcases the development of a student performance clustering system using the K-Means algorithm, an unsupervised learning approach, to identify patterns and group students based on their performance. The system includes an interactive user interface built with Streamlit to provide a seamless and engaging experience for exploring the clustering results.
 
