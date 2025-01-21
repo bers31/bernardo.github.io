@@ -57,3 +57,14 @@ Understanding student performance is critical for educational institutions aimin
 3. **Run the Streamlit App**:
    ```bash
    streamlit run app.py
+
+### Screenshots
+![Screenshot 1](images/image.png)
+![Screenshot 2](images/image1.png)
+![Screenshot 3](images/image2.png)
+![Screenshot 4](images/image3.png)
+![Screenshot 5](images/image4.png)
+![Screenshot 6](images/image5.png)
+
+### Conclusion
+This project demonstrates the application of K-Means clustering to uncover actionable insights from student performance data. By providing an interactive interface through Streamlit, the system enables educators and stakeholders to explore and interpret clustering results effectively. The findings can guide tailored educational strategies, foster student success, and support data-driven decision-making. Future enhancements could include integrating advanced clustering algorithms, adding real-time data processing capabilities, and expanding the visualization suite for deeper analysis. Contributions and feedback are warmly welcomed to elevate this project further
