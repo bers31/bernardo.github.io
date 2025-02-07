@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Financial Reporting Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This cutting-edge Financial Reporting Application is designed to provide seamless and efficient financial data management, offering powerful insights and robust reporting capabilities.
 
-## Available Scripts
+## Project Overview
+Built with **React.js** and **Prisma with MySQL**, this application ensures a highly responsive, user-friendly, and dynamic interface for financial reporting and data visualization. It empowers users with real-time data processing, customizable reports, and a scalable architecture.
 
-In the project directory, you can run:
+### Key Features
+- **Intuitive Dashboard**: A sleek and interactive UI designed for optimal user experience.
+- **Real-Time Data Processing**: Efficient handling of financial data using MySQL with Prisma ORM.
+- **Customizable Reports**: Generate tailored financial reports based on user preferences.
+- **Secure Authentication**: Implements authentication and role-based access control.
+- **Data Visualization**: Utilizes charts and graphs for insightful financial analysis.
+- **Scalable Architecture**: Designed for extensibility and seamless integration with other financial tools.
 
-### `npm start`
+### Technologies Used
+- **React.js**: For an interactive and responsive front-end experience.
+- **Prisma ORM**: For efficient and type-safe database access.
+- **MySQL**: For structured and efficient financial data management.
+- **Express.js & Node.js**: For robust backend operations.
+- **Chart.js & D3.js**: For advanced data visualization.
+- **JWT Authentication**: For secure access control.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### How to Run the Project
+1. **Clone the Repository**:  
+   ```sh
+   git clone <repo-url>
+2. **Install Dependencies**:  
+   ```sh
+   npm install
+3. **Set Up Database**:
+   - Configure MySQL.
+   - Set up Prisma:  
+     ```sh
+     npx prisma migrate dev --name init
+   - Generate Prisma Client:
+     ```sh
+     npx prisma generate
+4. **Start the Server**:  
+   ```sh
+   npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Screenshots
+![Screenshot 1](images/Picture1.png)
+![Screenshot 2](images/Picture2.png)
+![Screenshot 3](images/Picture3.png)
+![Screenshot 4](images/Picture4.png)
+![Screenshot 5](images/Picture5.png)
+![Screenshot 6](images/Picture6.png)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Conclusion
+This project demonstrates the creation of an engaging 3D game using C++ and OpenGL, showcasing advanced graphics techniques and interactive gameplay elements.
