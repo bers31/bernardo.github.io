@@ -1,6 +1,6 @@
 # Financial Reporting Application
 
-This cutting-edge Financial Reporting Application is designed to provide seamless and efficient financial data management, offering powerful insights and robust reporting capabilities.
+Financial Reporting Application is designed to provide seamless and efficient financial data management, offering powerful insights and robust reporting capabilities.
 
 ## Project Overview
 Built with **React.js** and **Prisma with MySQL**, this application ensures a highly responsive, user-friendly, and dynamic interface for financial reporting and data visualization. It empowers users with real-time data processing, customizable reports, and a scalable architecture.
