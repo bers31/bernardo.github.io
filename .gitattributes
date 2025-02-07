@@ -2,3 +2,5 @@ project-aplikasi-laporan-keuangan/finance-upload-win32-x64.zip filter=lfs diff=l
 project-aplikasi-laporan-keuangan/finance-upload-win32-x64/finance-upload-win32-x64/finance-upload.exe filter=lfs diff=lfs merge=lfs -text
 finance-upload-win32-x64.zip filter=lfs diff=lfs merge=lfs -text
 finance-upload-win32-x64/finance-upload-win32-x64/finance-upload.exe filter=lfs diff=lfs merge=lfs -text
+project_aplikasi_laporan_keuangan/finance-upload-win32-x64/finance-upload-win32-x64/finance-upload.exe filter=lfs diff=lfs merge=lfs -text
+project_aplikasi_laporan_keuangan/finance-upload-win32-x64.zip filter=lfs diff=lfs merge=lfs -text

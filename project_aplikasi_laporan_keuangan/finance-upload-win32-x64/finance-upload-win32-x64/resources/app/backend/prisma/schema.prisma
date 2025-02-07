@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model users {
+  id                  Int          @id @default(autoincrement())
+  username            String       @unique(map: "username") @db.VarChar(50)
+  email               String       @unique(map: "email") @db.VarChar(255)
+  roles               users_roles?
+  password            String       @db.VarChar(255)
+  failed_attempts     Int?         @default(0)
+  locked_until        DateTime?    @db.DateTime(0)
+  require_reset       Boolean?     @default(false)
+  reset_token         String?      @db.VarChar(255)
+  reset_token_expires DateTime?    @db.DateTime(0)
+  created_at          DateTime?    @default(now()) @db.Timestamp(0)
+  updated_at          DateTime?    @default(now()) @updatedAt @db.Timestamp(0)
+
+  @@index([email], map: "idx_email")
+  @@index([username], map: "idx_username")
+}
+
+enum users_roles {
+  camat
+  sekcam
+  admin
+  keuangan
+  kepegawaian
+  pemerintahan
+  pembangunan
+  perekonomian
+  pelayanan
+  tantrib
+}
+
+model TableMetadata {
+  id          Int      @id @default(autoincrement())
+  tableName   String
+  title       String
+  columns     Json     // Menyimpan informasi kolom sebagai JSON
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("tablemetadata")
+}
+
+model BudgetSectionMetadata {
+  id          Int      @id @default(autoincrement())
+  tableName   String
+  title       String
+  totalAmount Decimal  @db.Decimal(10, 2)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("budgetsectionmetadata")
+}
+
+// Metadata table untuk menyimpan informasi tabel yang dibuat
+model MonthMetadata {
+  id        Int      @id @default(autoincrement())
+  tableName String   @unique // Nama tabel yang aman untuk SQL
+  title     String   // Judul asli tabel
+  headers   Json     // Definisi kolom (termasuk bulan dan header yang dipilih)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("monthmetadata")
+}

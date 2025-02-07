@@ -1,0 +1,119 @@
+{
+  "name": "finance-upload",
+  "version": "0.1.0",
+  "description": "membuat aplikasi laporan keuangan otomatis",
+  "author": "Bernardo Nandaniar Sunia",
+  "private": true,
+  "main": "build/electron.js",
+  "homepage": "./",
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "@radix-ui/react-alert-dialog": "^1.1.4",
+    "@radix-ui/react-select": "^2.1.4",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@sendgrid/mail": "^8.1.4",
+    "bcrypt": "^5.1.1",
+    "call-bind-apply-helpers": "^1.0.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.5",
+    "cra-template": "1.2.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "electron-is-dev": "^3.0.1",
+    "electron-serve": "^2.1.1",
+    "express": "^4.21.2",
+    "file-loader": "^6.2.0",
+    "file-saver": "^2.0.5",
+    "html2pdf": "^0.0.11",
+    "html2pdf.js": "^0.10.2",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
+    "lucide-react": "^0.469.0",
+    "mysql2": "^3.12.0",
+    "nodemailer": "^6.9.16",
+    "npm-run-all": "^4.1.5",
+    "papaparse": "^5.4.1",
+    "pdfjs-dist": "^4.9.155",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "^5.0.1",
+    "recharts": "^2.15.0",
+    "shadcn-ui": "^0.9.4",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
+    "uuid": "^11.0.4",
+    "web-vitals": "^4.2.4",
+    "webpack-dev-server": "^5.2.0",
+    "xlsx": "^0.18.5",
+    "zustand": "^5.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "electron-builder build --win --publish never",
+    "setup-db": "node setup-database.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "build": {
+    "appId": "com.perusahaan.kecamatan",
+    "productName": "Sistem Manajemen Kecamatan",
+    "protocols": {
+      "name": "finance-app",
+      "schemes": ["app"]
+    },
+    "files": [
+      "node_modules/**/*",
+      "build/**/*",
+      "backend/**/*",
+      "public/electron.js"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "extraMetadata": {
+      "main": "build/electron.js"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "public/logo512.png"
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^34.0.1",
+    "electron-builder": "^25.1.8",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "wait-on": "^7.2.0"
+  }
+}
