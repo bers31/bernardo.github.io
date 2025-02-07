@@ -47,6 +47,7 @@ Built with **React.js** and **Prisma with MySQL**, this application ensures a hi
 ![Screenshot 4](images/Picture4.png)
 ![Screenshot 5](images/Picture5.png)
 ![Screenshot 6](images/Picture6.png)
+![Screenshot 7](images/Picture7.png)
 
 ## Conclusion
 This project demonstrates the creation of an engaging 3D game using C++ and OpenGL, showcasing advanced graphics techniques and interactive gameplay elements.
