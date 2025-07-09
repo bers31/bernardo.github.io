@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal Lapas 2 Ambarawa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3D51B4;
+            --secondary-color: #5C6BC0;
+            --accent-color: #7986CB;
+            --text-color: #212121;
+            --light-color: #FFFFFF;
+            --danger-color: #F44336;
+            --success-color: #4CAF50;
+            --warning-color: #FFC107;
+            --info-color: #2196F3;
+            --dark-color: #1A237E;
+            --light-grey: #F5F5F5;
+            --medium-grey: #E0E0E0;
+            --dark-grey: #757575;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            background: linear-gradient(135deg, #E8EAF6, #C5CAE9);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .welcome-card {
+            background-color: var(--light-color);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 1100px;
+            min-height: 500px;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .left-panel {
+            background: linear-gradient(150deg, var(--primary-color), var(--dark-color));
+            color: var(--light-color);
+            padding: 50px 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .right-panel {
+            background-color: var(--light-color);
+            padding: 50px 40px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 15px;
+            font-size: 34px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: var(--light-color);
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: var(--text-color);
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .features {
+            margin-top: 30px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .feature i {
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+
+        .feature-text {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .login-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .login-option {
+            background-color: var(--light-grey);
+            border: none;
+            border-radius: 10px;
+            padding: 15px 25px;
+            width: 48%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-option.active {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+
+        .login-option i {
+            margin-right: 10px;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: var(--dark-grey);
+            font-weight: 600;
+        }
+
+        .input-field {
+            position: relative;
+        }
+
+        .input-field i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--dark-grey);
+        }
+
+        .input-field input {
+            width: 100%;
+            padding: 15px 15px 15px 45px;
+            border: 2px solid var(--medium-grey);
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .input-field input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .input-field input:focus + i {
+            color: var(--primary-color);
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 25px;
+        }
+
+        .forgot-password a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn {
+            display: block;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: var(--light-color);
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-btn:hover {
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .login-help {
+            margin-top: 20px;
+            text-align: center;
+            color: var(--dark-grey);
+            font-size: 14px;
+        }
+
+        .login-help a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .login-help a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--dark-grey);
+            font-size: 14px;
+        }
+
+        #login-form {
+            width: 100%;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: var(--dark-grey);
+        }
+
+        .toggle-password:hover {
+            color: var(--primary-color);
+        }
+
+        .error-message {
+            background-color: #FFEBEE;
+            color: var(--danger-color);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .error-message i {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .success-message {
+            background-color: #E8F5E9;
+            color: var(--success-color);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .success-message i {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .welcome-card {
+                flex-direction: column;
+                max-width: 600px;
+            }
+
+            .left-panel {
+                padding: 40px 30px;
+            }
+
+            .right-panel {
+                padding: 40px 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .left-panel {
+                padding: 30px 20px;
+            }
+
+            .right-panel {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .feature i {
+                width: 34px;
+                height: 34px;
+                font-size: 16px;
+            }
+
+            .login-option {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+
+            .input-field input {
+                padding: 12px 12px 12px 40px;
+                font-size: 14px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .delay-1 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-card">
+            <div class="left-panel">
+                <div>
+                    <div class="logo animate-fadeIn">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Lapas 2 Ambarawa</span>
+                    </div>
+                    <h1 class="animate-fadeIn delay-1">Admin Portal</h1>
+                    <p class="animate-fadeIn delay-2">
+                        Selamat datang di portal admin untuk chatbot pengunjung Lapas 2 Ambarawa. 
+                        Masuk untuk mengelola basis pengetahuan, jadwal kunjungan, persyaratan, 
+                        dan pelayanan kesehatan.
+                    </p>
+                </div>
+
+                <div class="features animate-fadeIn delay-3">
+                    <div class="feature">
+                        <i class="fas fa-database"></i>
+                        <span class="feature-text">Kelola Database FAQ</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="feature-text">Atur Jadwal Kunjungan</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="feature-text">Analisis Percakapan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <h2 class="animate-fadeIn">Masuk sebagai Admin</h2>
+
+                <div id="error-container"></div>
+
+                <form id="login-form" method="POST" action="/admin/login" class="animate-fadeIn delay-1">
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <div class="input-field">
+                            <input type="text" id="username" name="username" placeholder="Masukkan username Anda" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <div class="input-field">
+                            <input type="password" id="password" name="password" placeholder="Masukkan password Anda" required>
+                            <i class="fas fa-lock"></i>
+                            <i class="fas fa-eye toggle-password" id="toggle-password"></i>
+                        </div>
+                    </div>
+
+                    <div class="forgot-password">
+                        <a href="{{ url_for('admin_reset_password') }}">Lupa password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">
+                        <i class="fas fa-sign-in-alt"></i> Masuk
+                    </button>
+                    
+                    <a href="{{ url_for('home') }}" class="login-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        Kembali Ke Halaman Utama
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Lapas 2 Ambarawa - Sistem Chatbot Pengunjung
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle password visibility
+            const togglePassword = document.getElementById('toggle-password');
+            const passwordInput = document.getElementById('password');
+
+            togglePassword.addEventListener('click', function() {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+            });
+
+            // AJAX login
+            const loginForm = document.getElementById('login-form');
+            const errorContainer = document.getElementById('error-container');
+
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const formData = new FormData(loginForm);
+                
+                fetch('/admin/login', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Show success message
+                        errorContainer.innerHTML = `
+                            <div class="success-message">
+                                <i class="fas fa-check-circle"></i>
+                                Login berhasil! Mengalihkan ke dashboard...
+                            </div>
+                        `;
+                        
+                        // Store token if available
+                        if (data.token) {
+                            localStorage.setItem('admin_token', data.token);
+                        }
+                        
+                        // Redirect to dashboard
+                        setTimeout(() => {
+                            window.location.href = '/admin/dashboard';
+                        }, 1000);
+                    } else {
+                        // Show error message
+                        errorContainer.innerHTML = `
+                            <div class="error-message">
+                                <i class="fas fa-exclamation-circle"></i>
+                                ${data.error || 'Terjadi kesalahan saat login. Mohon coba lagi.'}
+                            </div>
+                        `;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    errorContainer.innerHTML = `
+                        <div class="error-message">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Terjadi kesalahan pada server. Mohon coba lagi nanti.
+                        </div>
+                    `;
+                });
+            });
+
+            // Check if there's an error parameter in the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const errorMsg = urlParams.get('error');
+            
+            if (errorMsg) {
+                errorContainer.innerHTML = `
+                    <div class="error-message">
+                        <i class="fas fa-exclamation-circle"></i>
+                        ${decodeURIComponent(errorMsg)}
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

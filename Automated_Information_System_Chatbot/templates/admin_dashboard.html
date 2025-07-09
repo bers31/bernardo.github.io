@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Lapas 2 Ambarawa Chatbot</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/datatables.net-bs5/1.13.7/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #1abc9c;
+            --accent: #3498db;
+            --danger: #e74c3c;
+            --warning: #f39c12;
+            --info: #3498db;
+            --success: #2ecc71;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --sidebar-width: 250px;
+            --header-height: 60px;
+        }
+        * {
+            box-sizing: border-box;
+            transition: all 0.2s;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            overflow-x: hidden;
+            color: #333;
+        }
+        #sidebar {
+            position: fixed;
+            width: var(--sidebar-width);
+            height: 100vh;
+            background: var(--primary);
+            color: white;
+            transition: all 0.3s;
+            z-index: 999;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #sidebar .sidebar-header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        #sidebar .sidebar-header h3 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }     #sidebar .profile-area {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        #sidebar .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            overflow: hidden;
+            border: 3px solid var(--secondary);
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #sidebar .profile-img i {
+            font-size: 40px;
+            color: var(--primary);
+        }
+        #sidebar ul.components {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        #sidebar ul li {
+            padding: 0;
+            list-style-type: none;
+        }
+        #sidebar ul li a {
+            padding: 12px 20px;
+            display: block;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            border-left: 3px solid transparent;
+        }
+        #sidebar ul li a:hover,
+        #sidebar ul li a.active {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 3px solid var(--secondary);
+        }
+        #sidebar ul li a i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        #content {
+            margin-left: var(--sidebar-width);
+            padding: 0;
+            min-height: 100vh;
+            transition: all 0.3s;
+        }
+        #header {
+            height: var(--header-height);
+            background: #fff;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+        #header .btn-toggle-sidebar {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+            position: relative;
+        }
+        .search-bar input {
+            width: 100%;
+            max-width: 400px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            padding-left: 35px;
+        }
+        .search-bar i {
+            position: absolute;
+            left: 12px;
+            top: 10px;
+            color: #999;
+        }
+        .user-menu {
+            display: flex;
+            align-items: center;
+        }
+        .user-menu .dropdown-toggle {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            color: var(--primary);
+            font-weight: 500;
+        }
+        .user-menu .dropdown-toggle::after {
+            display: none;
+        }
+        .user-menu .dropdown-toggle img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid var(--secondary);
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .content-header {
+            margin-bottom: 20px;
+        }
+        .content-header h1 {
+            font-size: 1.8rem;
+            margin: 0 0 5px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .content-header .breadcrumb {
+            background: none;
+            padding: 0;
+            margin: 0;
+        }
+        .stat-widget {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        .stat-widget .icon {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 60px;
+            height: 60px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .stat-widget h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        .stat-widget p {
+            font-size: 0.9rem;
+            color: #777;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .stat-widget.primary .icon {
+            background: rgba(52, 152, 219, 0.1);
+            color: var(--accent);
+        }
+        .stat-widget.success .icon {
+            background: rgba(46, 204, 113, 0.1);
+            color: var(--success);
+        }
+        .stat-widget.warning .icon {
+            background: rgba(243, 156, 18, 0.1);
+            color: var(--warning);
+        }
+        .stat-widget.danger .icon {
+            background: rgba(231, 76, 60, 0.1);
+            color: var(--danger);
+        }
+        .analytics-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+        .analytics-card h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        .data-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+        .data-card h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .data-card h2 .btn {
+            padding: 5px 10px;
+            font-size: 0.8rem;
+        }
+        table.dataTable {
+            width: 100% !important;
+            margin-bottom: 20px !important;
+        }
+        table.dataTable thead th {
+            position: relative;
+            background-image: none !important;
+            padding-right: 30px;
+        }
+        table.dataTable thead th.sorting:after,
+        table.dataTable thead th.sorting_asc:after,
+        table.dataTable thead th.sorting_desc:after {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: "Font Awesome 5 Free";
+            opacity: 0.5;
+        }
+        table.dataTable thead th.sorting:after {
+            content: "\f0dc";
+            opacity: 0.2;
+        }
+        table.dataTable thead th.sorting_asc:after {
+            content: "\f0de";
+        }
+        table.dataTable thead th.sorting_desc:after {
+            content: "\f0dd";
+        }
+        .dataTables_paginate {
+            margin-top: 15px !important;
+        }
+        .dataTables_paginate .pagination {
+            justify-content: flex-end;
+        }
+        .dataTables_paginate .pagination .page-item.active .page-link {
+            background-color: var(--secondary);
+            border-color: var(--secondary);
+        }
+        .dataTables_paginate .pagination .page-link {
+            color: var(--primary);
+        }
+        .form-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        }
+        .form-card h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        .form-floating {
+            margin-bottom: 15px;
+        }
+        .btn-primary {
+            background-color: var(--accent);
+            border-color: var(--accent);
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+        .btn-success {
+            background-color: var(--success);
+            border-color: var(--success);
+        }
+        .btn-success:hover, .btn-success:focus {
+            background-color: #27ae60;
+            border-color: #27ae60;
+        }
+        .btn-danger {
+            background-color: var(--danger);
+            border-color: var(--danger);
+        }
+        .btn-danger:hover, .btn-danger:focus {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+        .btn-warning {
+            background-color: var(--warning);
+            border-color: var(--warning);
+            color: white;
+        }
+        .btn-warning:hover, .btn-warning:focus {
+            background-color: #d35400;
+            border-color: #d35400;
+            color: white;
+        }
+        
+        /* FIXED MODAL STYLES */
+        .modal {
+            z-index: 1055 !important;
+        }
+        .modal-backdrop {
+            z-index: 1050 !important;
+        }
+        .modal-dialog {
+            z-index: 1060 !important;
+            position: relative;
+        }
+        .modal-content {
+            border-radius: 8px;
+            border: none;
+            position: relative;
+            z-index: 1061;
+        }
+        .modal-header {
+            background-color: var(--primary);
+            color: white;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .modal-footer {
+            background-color: #f8f9fa;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        
+        .form-switch .form-check-input {
+            width: 3em;
+            height: 1.5em;
+        }
+        .form-switch .form-check-input:checked {
+            background-color: var(--success);
+            border-color: var(--success);
+        }
+        #toast-container .toast-success {
+            background-color: var(--success);
+        }
+        #toast-container .toast-error {
+            background-color: var(--danger);
+        }
+        #toast-container .toast-warning {
+            background-color: var(--warning);
+        }     
+        #toast-container .toast-info {
+            background-color: var(--info);
+        }
+        @media (max-width: 768px) {
+            #sidebar {
+                margin-left: calc(-1 * var(--sidebar-width));
+            }
+            #sidebar.active {
+                margin-left: 0;
+            }
+            #content {
+                margin-left: 0;
+            }
+            #content.active {
+                margin-left: var(--sidebar-width);
+            }
+        }
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            display: none;
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top-color: var(--secondary);
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .text-primary {
+            color: var(--primary) !important;
+        }
+        .text-secondary {
+            color: var(--secondary) !important;
+        }
+        .text-accent {
+            color: var(--accent) !important;
+        }
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        .bg-secondary {
+            background-color: var(--secondary) !important;
+        }
+        .bg-accent {
+            background-color: var(--accent) !important;
+        }
+        .animate__animated {
+            animation-duration: 0.5s;
+        }
+        .custom-tab {
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 5px;
+            font-weight: 500;
+            color: var(--primary);
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+        }
+        .custom-tab.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        .badge-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        .badge-secondary {
+            background-color: var(--secondary);
+            color: white;
+        }
+        .badge-success {
+            background-color: var(--success);
+            color: white;
+        }
+        .badge-danger {
+            background-color: var(--danger);
+            color: white;
+        }
+        .badge-warning {
+            background-color: var(--warning);
+            color: white;
+        }
+        .badge-info {
+            background-color: var(--info);
+            color: white;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .ql-toolbar {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .ql-container {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            min-height: 150px;
+        }
+        
+        /* Ensure content sections are hidden by default */
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="loading-overlay">
+    <div class="spinner"></div>
+</div>
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <h3>Lapas 2 Ambarawa</h3>
+        <p class="mb-0">Chatbot Admin Panel</p>
+    </div>
+    
+    <div class="profile-area">
+        <div class="profile-img">
+            <i class="fas fa-user"></i>
+        </div>
+        <h5 id="admin-name" class="mb-1">Admin</h5>
+        <span class="badge bg-secondary">Administrator</span>
+    </div>
+    
+    <ul class="components">
+        <li>
+            <a href="#" class="nav-link active" data-section="dashboard">
+                <i class="fas fa-tachometer-alt"></i> Dashboard
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link" data-section="faq">
+                <i class="fas fa-question-circle"></i> FAQ Management
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link" data-section="schedules">
+                <i class="fas fa-calendar-alt"></i> Visit Schedules
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link" data-section="requirements">
+                <i class="fas fa-clipboard-list"></i> Requirements
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link" data-section="health">
+                <i class="fas fa-heartbeat"></i> Health Services
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link" data-section="contacts">
+                <i class="fas fa-address-book"></i> Contact Info
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link" data-section="rehab">
+                <i class="fas fa-hand-holding-heart"></i> Rehab Programs
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link" data-section="chathistory">
+                <i class="fas fa-history"></i> Chat History
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link" data-section="analytics">
+                <i class="fas fa-chart-line"></i> Analytics
+            </a>
+        </li>
+    </ul>
+    
+    <div class="px-4 py-3 mt-5">
+        <button id="btn-logout" class="btn btn-danger w-100">
+            <i class="fas fa-sign-out-alt me-2"></i> Logout
+        </button>
+    </div>
+</nav>
+<div id="content">
+    <div id="header">
+        <button class="btn-toggle-sidebar">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search..." class="form-control">
+        </div>
+        <div class="user-menu dropdown">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="d-flex align-items: center;">
+                    <div class="profile-img me-2" style="width: 40px; height: 40px; border-radius: 50%; background: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-user" style="font-size: 20px; color: #6c757d;"></i>
+                    </div>
+                    <div>
+                        <div id="header-admin-name" style="font-weight: 600; line-height: 1.2;">Admin</div>
+                        <div style="font-size: 0.8rem; color: #6c757d;">Administrator</div>
+                    </div>
+                </div>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="/admin/profile"><i class="fas fa-user-circle me-2"></i> My Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/admin/logout" id="dropdown-logout"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <section id="dashboard-section" class="content-section active animate__animated animate__fadeIn">
+            <div class="content-header">
+                <h1>Dashboard</h1>
+                <button id="btnSendNotif" class="btn btn-warning mb-4">
+                    <i class="fas fa-bell"></i> Send Notification
+                </button>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="stat-widget primary">
+                        <div class="icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <p>Total Chats</p>
+                        <h3 id="total-chats">0</h3>
+                        <small class="text-muted">All time</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-widget success">
+                        <div class="icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <p>Successful Responses</p>
+                        <h3 id="successful-responses">0</h3>
+                        <small class="text-muted">From Database</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-widget warning">
+                        <div class="icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <p>AI Responses</p>
+                        <h3 id="ai-responses">0</h3>
+                        <small class="text-muted">From OpenAI</small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-widget danger">
+                        <div class="icon">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                        <p>Failed Responses</p>
+                        <h3 id="failed-responses">0</h3>
+                        <small class="text-muted">Default fallbacks</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-8">
+                    <div class="analytics-card">
+                        <h2>Chat Activity (Last 7 Days)</h2>
+                        <canvas id="chatActivityChart" height="300"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="analytics-card">
+                        <h2>Response Sources</h2>
+                        <canvas id="responsePieChart" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="data-card">
+                        <h2>5 Recent Chat History</h2>
+                        <div class="table-responsive">
+                            <table id="recent-chats-table" class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>User Message</th>
+                                        <th>Bot Response</th>
+                                        <th>Time</th>
+                                        <th>Response Quality</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="data-card">
+                        <h2>Most Common Questions</h2>
+                        <div class="table-responsive">
+                            <table id="common-questions-table" class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Question</th>
+                                        <th>Count</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq-section" class="content-section animate__animated animate__fadeIn">
+            <div class="content-header">
+                <h1>FAQ Management</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">FAQ Management</li>
+                    </ol>
+                </nav>
+            </div>
+            
+            <div class="data-card">
+                <h2>
+                    Frequently Asked Questions
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#faqModal" id="addFaqBtn">
+                        <i class="fas fa-plus-circle me-2"></i> Add New FAQ
+                    </button>
+                </h2>
+                
+                <div class="table-responsive">
+                    <table id="faq-table" class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Question</th>
+                                <th>Answer</th>
+                                <th>Category</th>
+                                <th>Keywords</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="schedules-section" class="content-section animate__animated animate__fadeIn">
+            <div class="content-header">
+                <h1>Visit Schedules</h1>
+            </div>
+            <div class="data-card">
+                <h2>
+                    Jadwal Kunjungan
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scheduleModal" id="addScheduleBtn">
+                        <i class="fas fa-plus-circle me-2"></i> Add Schedule
+                    </button>
+                </h2>
+                <div class="table-responsive">
+                    <table id="schedules-table" class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th><th>Day</th><th>Time</th><th>Visitor Type</th><th>Notes</th><th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="requirements-section" class="content-section animate__animated animate__fadeIn">
+            <div class="content-header">
+                <h1>Requirements</h1>
+            </div>
+            <div class="data-card">
+                <h2>
+                    Persyaratan Kunjungan
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requirementModal" id="addRequirementBtn">
+                        <i class="fas fa-plus-circle me-2"></i> Add Requirement
+                    </button>
+                </h2>
+                <div class="table-responsive">
+                    <table id="requirements-table" class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th><th>Title</th><th>Description</th><th>Category</th><th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="health-section" class="content-section animate__animated animate__fadeIn">
+            <div class="content-header">
+                <h1>Health Services</h1>
+            </div>
+            <div class="data-card">
+                <h2>
+                    Layanan Kesehatan
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#healthModal" id="addHealthBtn">
+                        <i class="fas fa-plus-circle me-2"></i> Add Service
+                    </button>
+                </h2>
+                <div class="table-responsive">
+                    <table id="health-table" class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th><th>Service Name</th><th>Schedule</th><th>Description</th><th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="contacts-section" class="content-section animate__animated animate__fadeIn">
+            <div class="content-header">
+                <h1>Contact Info</h1>
+            </div>
+            <div class="data-card">
+                <h2>
+                    Kontak
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal" id="addContactBtn">
+                        <i class="fas fa-plus-circle me-2"></i> Add Contact
+                    </button>
+                </h2>
+                <div class="table-responsive">
+                    <table id="contacts-table" class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th><th>Name</th><th>Value</th><th>Category</th><th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="rehab-section" class="content-section animate__animated animate__fadeIn">
+            <div class="content-header">
+                <h1>Rehab Programs</h1>
+            </div>
+            <div class="data-card">
+                <h2>
+                    Program Rehabilitasi
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rehabModal" id="addRehabBtn">
+                        <i class="fas fa-plus-circle me-2"></i> Add Program
+                    </button>
+                </h2>
+                <div class="table-responsive">
+                    <table id="rehab-table" class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th><th>Program Name</th><th>Description</th><th>Schedule</th><th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="chathistory-section" class="content-section animate__animated animate__fadeIn">
+            <div class="content-header">
+                <h1>Chat History</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Chat History</li>
+                    </ol>
+                </nav>
+            </div>
+            
+            <div class="data-card">
+                <h2>Riwayat Percakapan</h2>
+                <div class="table-responsive">
+                    <table id="chathistory-table" class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Pesan Pengguna</th>
+                                <th>Respons Bot</th>
+                                <th>Waktu</th>
+                                <th>Response Quality</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="analytics-section" class="content-section animate__animated animate__fadeIn">
+            <div class="content-header">
+                <h1>Analytics</h1>
+            </div>
+            <div class="data-card">
+                <h2>Chat Metrics</h2>
+                <div class="table-responsive">
+                <table id="metrics-table" class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Total Chats</th>
+                        <th>AI Responses</th>
+                        <th>Successful Responses</th>
+                        <th>Failed Responses</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- MODALS -->
+    <div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="faqModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form id="faqForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="faqModalLabel">Add / Edit FAQ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="faq-id" name="id">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="faq-question" name="question" placeholder="Question" required>
+                            <label for="faq-question">Question</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="faq-answer" name="answer" placeholder="Answer" style="height: 120px;" required></textarea>
+                            <label for="faq-answer">Answer</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="faq-category" name="category" placeholder="Category" required>
+                            <label for="faq-category">Category</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="faq-keywords" name="keywords" placeholder="Keywords (comma-separated)">
+                            <label for="faq-keywords">Keywords</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save FAQ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="notifModal" tabindex="-1" aria-labelledby="notifModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form id="notifForm" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="notifModalLabel">Kirim Notifikasi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="notif-title" placeholder="Judul" required>
+                <label for="notif-title">Title</label>
+                </div>
+                <div class="form-floating mb-3">
+                <textarea class="form-control" id="notif-body" placeholder="Pesan" style="height:100px" required></textarea>
+                <label for="notif-body">Body</label>
+                </div>
+                <div class="form-floating">
+                <input type="text" class="form-control" id="notif-url" placeholder="URL (opsional)">
+                <label for="notif-url">URL</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" class="btn btn-warning">Kirim</button>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal fade" id="scheduleModal" tabindex="-1" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="scheduleForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="scheduleModalLabel">Add / Edit Schedule</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="schedule-id" name="id">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="schedule-day" name="day" placeholder="Day" required>
+                            <label for="schedule-day">Day</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="schedule-time" name="time" placeholder="Time" required>
+                            <label for="schedule-time">Time</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="schedule-visitor" name="visitor_type" placeholder="Visitor Type" required>
+                            <label for="schedule-visitor">Visitor Type</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="schedule-notes" name="notes" placeholder="Notes" style="height: 80px;"></textarea>
+                            <label for="schedule-notes">Notes</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="requirementModal" tabindex="-1" aria-labelledby="requirementModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="requirementForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="requirementModalLabel">Add / Edit Requirement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="requirement-id" name="id">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="requirement-title" name="title" placeholder="Title" required>
+                            <label for="requirement-title">Title</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="requirement-desc" name="description" placeholder="Description" style="height: 100px;" required></textarea>
+                            <label for="requirement-desc">Description</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="requirement-category" name="category" placeholder="Category" required>
+                            <label for="requirement-category">Category</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="healthModal" tabindex="-1" aria-labelledby="healthModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="healthForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="healthModalLabel">Add / Edit Service</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="health-id" name="id">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="health-name" name="service_name" placeholder="Service Name" required>
+                            <label for="health-name">Service Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="health-schedule" name="schedule" placeholder="Schedule" required>
+                            <label for="health-schedule">Schedule</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="health-desc" name="description" placeholder="Description" style="height: 100px;"></textarea>
+                            <label for="health-desc">Description</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="contactForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Add / Edit Contact</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="contact-id" name="id">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="contact-name" name="name" placeholder="Name" required>
+                            <label for="contact-name">Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="contact-value" name="value" placeholder="Value" required>
+                            <label for="contact-value">Value</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="contact-category" name="category" placeholder="Category" required>
+                            <label for="contact-category">Category</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="rehabModal" tabindex="-1" aria-labelledby="rehabModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="rehabForm">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rehabModalLabel">Add / Edit Program</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="rehab-id" name="id">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="rehab-name" name="program_name" placeholder="Program Name" required>
+                            <label for="rehab-name">Program Name</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="rehab-desc" name="description" placeholder="Description" style="height: 100px;" required></textarea>
+                            <label for="rehab-desc">Description</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="rehab-schedule" name="schedule" placeholder="Schedule">
+                            <label for="rehab-schedule">Schedule</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables.net-bs5/1.13.4/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#btn-logout').on('click', function() {
+        // Tampilkan dialog konfirmasi sebelum logout
+        const confirmed = confirm('Apakah Anda yakin ingin keluar?');
+        if (confirmed) {
+            // Jika dipastikan, arahkan ke halaman login
+            window.location.href = '/admin/logout';
+        }
+        // Jika dibatalkan, tidak melakukan apa-apa
+        });
+        const ctxActivity = document
+            .getElementById('chatActivityChart')
+            .getContext('2d');
+        window.chatActivityChart = new Chart(ctxActivity, {
+            type: 'line',
+            data: {
+            labels: [],           // kosong dulu, akan diisi loadAnalytics
+            datasets: [{
+                label: 'Jumlah Chat',
+                data: [],           // kosong dulu
+                fill: false,
+                borderWidth: 2
+            }]
+            },
+            options: {
+            responsive: true,
+            scales: {
+                x: { display: true },
+                y: { beginAtZero: true }
+            }
+            }
+        });
+
+        // 2. Inisialisasi pie chart untuk Response Sources
+        const ctxPie = document
+        .getElementById('responsePieChart')
+        .getContext('2d');
+        window.responsePieChart = new Chart(ctxPie, {
+        type: 'pie',
+        data: {
+            labels: [],    // akan diisi oleh loadAnalytics()
+            datasets: [{
+            data: [],    // akan diisi oleh loadAnalytics()
+            backgroundColor: [
+                '#4CAF50', // hijau
+                '#2196F3', // biru
+                '#FFC107', // kuning
+                '#E91E63', // merah muda
+                '#9C27B0'  // ungu
+                // Tambahkan warna lagi jika kategori >5
+            ],
+            borderColor: '#ffffff',
+            borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+            legend: {
+                display: true,
+                position: 'bottom'  // bisa juga 'top', 'left', 'right'
+            },
+            tooltip: {
+                enabled: true
+            }
+            }
+        }
+        });
+        // Initialize DataTables
+        var faqTable          = $('#faq-table').DataTable();
+        var schedulesTable    = $('#schedules-table').DataTable();
+        var requirementsTable = $('#requirements-table').DataTable();
+        var healthTable       = $('#health-table').DataTable();
+        var contactsTable     = $('#contacts-table').DataTable();
+        var rehabTable        = $('#rehab-table').DataTable();
+        var chathistoryTable  = $('#chathistory-table').DataTable({
+            order: [[2, 'desc']]  // Tambahkan ini
+        });
+
+        
+        // Navigation functionality
+        $('.nav-link').on('click', function(e) {
+            e.preventDefault();
+            var section = $(this).data('section');
+            
+            // Update active nav link
+            $('.nav-link').removeClass('active');
+            $(this).addClass('active');
+            
+            // Show corresponding section
+            $('.content-section').removeClass('active');
+            $('#' + section + '-section').addClass('active');
+        });
+        
+        // Sidebar toggle
+        $('.btn-toggle-sidebar').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#content').toggleClass('active');
+        });
+
+        $('#btnSendNotif').on('click', () => {
+            $('#notifModal').modal('show');
+        });
+        $('#notifForm').on('submit', function(e) {
+            e.preventDefault();
+            const title = $('#notif-title').val().trim();
+            const body  = $('#notif-body').val().trim();
+            const url   = $('#notif-url').val().trim() || '/';
+
+            $.ajax({
+                url: '/admin/send_notification',      // ganti sesuai route Anda
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ title, body, url }),
+            })
+            .done(res => {
+                toastr.success(`Notifikasi terkirim ke ${res.sent_to} device`); 
+                $('#notifModal').modal('hide');
+                // reset form
+                $('#notif-title, #notif-body, #notif-url').val('');
+            })
+            .fail(err => {
+                console.error(err);
+                toastr.error('Gagal mengirim notifikasi');
+            });
+        });
+        
+        // Loading functions
+        function loadFaq() {
+            $.get('/api/admin/faq', function(res) {
+                faqTable.clear();
+                if (res.data && res.data.length > 0) {
+                    res.data.forEach(function(item) {
+                        faqTable.row.add([
+                            item.id,
+                            item.question,
+                            item.answer,
+                            item.category,
+                            item.keywords,
+                            `<button class="btn btn-sm btn-warning faq-edit" data-id="${item.id}">Edit</button>
+                            <button class="btn btn-sm btn-danger faq-delete" data-id="${item.id}">Delete</button>`
+                        ]);
+                    });
+                }
+                faqTable.draw();
+            }).fail(function() {
+                console.log('Failed to load FAQ data');
+            });
+        }
+        
+        function loadSchedules() {
+            $.get('/api/admin/schedules', function(res) {
+                schedulesTable.clear();
+                if (res.data && res.data.length > 0) {
+                    res.data.forEach(item => {
+                        schedulesTable.row.add([
+                            item.id,
+                            item.day,
+                            item.time,
+                            item.visitor_type,
+                            item.notes,
+                            `<button class="btn btn-sm btn-warning schedule-edit" data-id="${item.id}">Edit</button>
+                            <button class="btn btn-sm btn-danger schedule-delete" data-id="${item.id}">Delete</button>`
+                        ]);
+                    });
+                }
+                schedulesTable.draw();
+            }).fail(function() {
+                console.log('Failed to load schedules data');
+            });
+        }
+        
+        function loadRequirements() {
+            $.get('/api/admin/requirements', function(res) {
+                requirementsTable.clear();
+                if (res.data && res.data.length > 0) {
+                    res.data.forEach(item => {
+                        requirementsTable.row.add([
+                            item.id,
+                            item.title,
+                            item.description,
+                            item.category,
+                            `<button class="btn btn-sm btn-warning requirement-edit" data-id="${item.id}">Edit</button>
+                            <button class="btn btn-sm btn-danger requirement-delete" data-id="${item.id}">Delete</button>`
+                        ]);
+                    });
+                }
+                requirementsTable.draw();
+            }).fail(function() {
+                console.log('Failed to load requirements data');
+            });
+        }
+        
+        function loadHealth() {
+            $.get('/api/admin/health-services', function(res) {
+                healthTable.clear();
+                if (res.data && res.data.length > 0) {
+                    res.data.forEach(item => {
+                        healthTable.row.add([
+                            item.id,
+                            item.service_name,
+                            item.schedule,
+                            item.description,
+                            `<button class="btn btn-sm btn-warning health-edit" data-id="${item.id}">Edit</button>
+                            <button class="btn btn-sm btn-danger health-delete" data-id="${item.id}">Delete</button>`
+                        ]);
+                    });
+                }
+                healthTable.draw();
+            }).fail(function() {
+                console.log('Failed to load health services data');
+            });
+        }
+        
+        function loadRehab() {
+            $.get('/api/admin/rehab-programs', function(res) {
+                rehabTable.clear();
+                if (res.data && res.data.length > 0) {
+                    res.data.forEach(item => {
+                        rehabTable.row.add([
+                            item.id,
+                            item.program_name,
+                            item.description,
+                            item.schedule,
+                            `<button class="btn btn-sm btn-warning rehab-edit" data-id="${item.id}">Edit</button>
+                            <button class="btn btn-sm btn-danger rehab-delete" data-id="${item.id}">Delete</button>`
+                        ]);
+                    });
+                }
+                rehabTable.draw();
+            }).fail(function() {
+                console.log('Failed to load rehab programs data');
+            });
+        }
+        
+        function loadContacts() {
+            $.get('/api/admin/contacts', function(res) {
+                contactsTable.clear();
+                if (res.data && res.data.length > 0) {
+                    res.data.forEach(item => {
+                        contactsTable.row.add([
+                            item.id,
+                            item.name,
+                            item.value,
+                            item.category,
+                            `<button class="btn btn-sm btn-warning contact-edit" data-id="${item.id}">Edit</button>
+                            <button class="btn btn-sm btn-danger contact-delete" data-id="${item.id}">Delete</button>`
+                        ]);
+                    });
+                }
+                contactsTable.draw();
+            }).fail(function() {
+                console.log('Failed to load contacts data');
+            });
+        }
+        function loadChatHistory() {
+            $.get('/api/admin/chat_history', function(res) {
+                chathistoryTable.clear();
+                if (res.data && res.data.length > 0) {
+                    res.data.forEach(item => {
+                        chathistoryTable.row.add([
+                            item.user_message,
+                            item.bot_response,
+                            item.timestamp,
+                            item.response_quality
+                        ]);
+                    });
+                }
+                chathistoryTable.draw();
+            }).fail(() => {
+                console.log('Gagal memuat riwayat chat');
+            });
+        }
+        function generateColors(n) {
+        // contoh: buat palet HSL yang merata
+        const colors = [];
+        for (let i = 0; i < n; i++) {
+            const hue = Math.round((360 / n) * i);
+            colors.push(`hsl(${hue}, 70%, 50%)`);
+        }
+        return colors;
+        }
+        function loadAnalytics() {
+            // Panggil endpoint yang benar
+            $.get('/api/admin/chat_analytics', function(res) {
+                // Recent Chat History (ambil 5 chat terakhir)
+                $.get('/api/admin/chat_history?limit=5', function(hist) {
+                    let recent = $('#recent-chats-table').DataTable();
+                    recent.clear();
+                    hist.data.forEach(item => {
+                        recent.row.add([
+                            item.user_message,
+                            item.bot_response,
+                            item.timestamp,
+                            item.response_quality
+                        ]);
+                    });
+                    recent.order([2, 'desc']).draw();
+                });
+
+                // Most Common Questions
+                let common = $('#common-questions-table').DataTable();
+                common.clear();
+                res.common_questions.forEach(q => {
+                    common.row.add([ q.message, q.count ]);
+                });
+                common.order([1, 'desc']);
+                common.draw();
+
+                // Chart.js: Chat Activity (Last 7 Days)
+                const last7 = res.chats_by_date.slice(-7);
+
+                // 2) extract counts dan hitung n = 7 (atau kurang kalau data kurang dari 7)
+                const counts = last7.map(d => d.count);
+                const n      = counts.length;
+
+                // 3) generate labels Day 1–Day n  (n ≤ 7)
+                const dayLabels = Array.from({ length: n }, (_, i) => `Day ${i + 1}`);
+
+                // 4) update chart
+                chatActivityChart.data.labels           = dayLabels;
+                chatActivityChart.data.datasets[0].data = counts;
+                chatActivityChart.update();
+
+                //Chart Responses
+                const labels = res.source_distribution.map(s => s.response);
+                const vals   = res.source_distribution.map(s => s.count);
+
+                // 1) generate palette sebanyak kategori
+                const palette = generateColors(labels.length);
+
+                // 2) update chart
+                responsePieChart.data.labels = labels;
+                responsePieChart.data.datasets[0].data = vals;
+                responsePieChart.data.datasets[0].backgroundColor = palette;
+
+                // 3) redraw
+                responsePieChart.update();
+            })
+            .fail(() => console.log('Gagal memuat analytics'));
+        }
+        function loadMetrics() {
+            $.get('/api/admin/chat_metrics', function(res) {
+                let tbl = $('#metrics-table').DataTable();
+                tbl.clear();
+                res.data.forEach(row => {
+                tbl.row.add([
+                    row.date,
+                    row.total_chats,
+                    row.ai_responses,
+                    row.successful_responses,
+                    row.failed_responses
+                ]);
+                });
+                tbl.draw();
+            });
+        }
+        function loadMetricsSummary() {
+        $.get('/api/admin/chat_metrics_summary', function(sum) {
+            $('#total-chats').text(sum.total_chats);
+            $('#successful-responses').text(sum.successful_responses);
+            $('#ai-responses').text(sum.ai_responses);
+            $('#failed-responses').text(sum.failed_responses);
+        });
+        }
+        
+        // Load all data on page load
+        loadFaq(); 
+        loadSchedules(); 
+        loadRequirements();
+        loadHealth(); 
+        loadContacts(); 
+        loadRehab();
+        loadChatHistory();
+        loadAnalytics();
+        loadMetrics();
+        loadMetricsSummary();
+
+        // Form submission helper
+        function formToJson(formSelector) {
+            var formData = {};
+            var $form = $(formSelector);
+            $form.find('input, textarea, select').each(function() {
+                var $el = $(this);
+                var name = $el.attr('name');
+                if (name) {
+                    formData[name] = $el.val();
+                }
+            });
+            return formData;
+        }
+        
+        // Generic form submission
+        function submitForm(formSelector, apiUrl, tableLoader, modalSelector) {
+            $(document).off('submit', formSelector).on('submit', formSelector, function(e) {
+                e.preventDefault();
+                var $form = $(this);
+                var id = $form.find('input[name="id"]').val();
+                var method = id ? 'PUT' : 'POST';
+                var url = id ? apiUrl + '/' + id : apiUrl;
+                var formData = formToJson(formSelector);
+                
+                $.ajax({
+                    url: url,
+                    method: method,
+                    contentType: 'application/json',
+                    data: JSON.stringify(formData),
+                    success: function() {
+                        toastr.success('Data saved successfully');
+                        var modalInstance = bootstrap.Modal.getInstance($(modalSelector)[0]);
+                        if (modalInstance) {
+                            modalInstance.hide();
+                        }
+                        tableLoader();
+                        $form[0].reset();
+                        $form.find('input[name="id"]').val('');
+                    },
+                    error: function(xhr) {
+                        var errorMsg = 'Error saving data';
+                        if (xhr.responseJSON && xhr.responseJSON.message) {
+                            errorMsg += ': ' + xhr.responseJSON.message;
+                        }
+                        toastr.error(errorMsg);
+                    }
+                });
+            });
+        }
+        
+        // Setup form submissions
+        submitForm('#faqForm',          '/api/admin/faq',          loadFaq,       '#faqModal');
+        submitForm('#scheduleForm',     '/api/admin/schedules',    loadSchedules, '#scheduleModal');
+        submitForm('#requirementForm',  '/api/admin/requirements', loadRequirements, '#requirementModal');
+        submitForm('#healthForm',       '/api/admin/health-services', loadHealth, '#healthModal');
+        submitForm('#contactForm',      '/api/admin/contacts',     loadContacts,  '#contactModal');
+        submitForm('#rehabForm',        '/api/admin/rehab-programs', loadRehab,   '#rehabModal');
+        
+        // Generic delete function
+        function setupDelete(tableSelector, deleteButtonClass, apiUrl, tableLoader) {
+            $(document).off('click', deleteButtonClass).on('click', deleteButtonClass, function(e) {
+                e.preventDefault();
+                var id = $(this).data('id') || $(this).closest('tr').find('td:first').text();
+                if (!confirm('Are you sure you want to delete this item?')) return;
+                
+                $.ajax({
+                    url: apiUrl + '/' + id, 
+                    method: 'DELETE',
+                    success: function() {
+                        toastr.success('Item deleted successfully');
+                        tableLoader();
+                    },
+                    error: function(xhr) {
+                        var errorMsg = 'Error deleting data';
+                        if (xhr.responseJSON && xhr.responseJSON.message) {
+                            errorMsg += ': ' + xhr.responseJSON.message;
+                        }
+                        toastr.error(errorMsg);
+                    }
+                });
+            });
+        }
+        
+        // Setup delete handlers
+        setupDelete('#faq-table',       '.faq-delete',       '/api/admin/faq',          loadFaq);
+        setupDelete('#schedules-table', '.schedule-delete',  '/api/admin/schedules',    loadSchedules);
+        setupDelete('#requirements-table', '.requirement-delete', '/api/admin/requirements', loadRequirements);
+        setupDelete('#health-table',    '.health-delete',    '/api/admin/health-services', loadHealth);
+        setupDelete('#contacts-table',  '.contact-delete',   '/api/admin/contacts',     loadContacts);
+        setupDelete('#rehab-table',     '.rehab-delete',     '/api/admin/rehab-programs', loadRehab);
+        
+        // Generic edit function
+        function setupEdit(tableSelector, editButtonClass, modalSelector, formSelector, fieldMapping) {
+            $(document).off('click', editButtonClass).on('click', editButtonClass, function(e) {
+                e.preventDefault();
+                var $tr = $(this).closest('tr');
+                var data = $(tableSelector).DataTable().row($tr).data();
+                var $form = $(formSelector);
+                
+                // Reset form
+                $form[0].reset();
+                $form.find('input[name="id"]').val(data[0]);
+                
+                // Fill form fields based on mapping
+                Object.keys(fieldMapping).forEach(function(fieldName) {
+                    var dataIndex = fieldMapping[fieldName];
+                    var $field = $form.find('[name="' + fieldName + '"]');
+                    if ($field.length && data[dataIndex] !== undefined) {
+                        $field.val(data[dataIndex]);
+                    }
+                });
+                
+                // Show modal
+                var modal = new bootstrap.Modal($(modalSelector)[0]);
+                modal.show();
+            });
+        }
+        
+        // Setup edit handlers with field mappings
+        setupEdit('#faq-table', '.faq-edit', '#faqModal', '#faqForm', {
+            'question': 1, 'answer': 2, 'category': 3, 'keywords': 4
+        });
+        
+        setupEdit('#schedules-table', '.schedule-edit', '#scheduleModal', '#scheduleForm', {
+            'day': 1, 'time': 2, 'visitor_type': 3, 'notes': 4
+        });
+        
+        setupEdit('#requirements-table', '.requirement-edit', '#requirementModal', '#requirementForm', {
+            'title': 1, 'description': 2, 'category': 3
+        });
+        
+        setupEdit('#health-table', '.health-edit', '#healthModal', '#healthForm', {
+            'service_name': 1, 'schedule': 2, 'description': 3
+        });
+        
+        setupEdit('#contacts-table', '.contact-edit', '#contactModal', '#contactForm', {
+            'name': 1, 'value': 2, 'category': 3
+        });
+        
+        setupEdit('#rehab-table', '.rehab-edit', '#rehabModal', '#rehabForm', {
+            'program_name': 1, 'description': 2, 'schedule': 3
+        });
+        
+        // Add button handlers - reset form when opening for new entry
+        $(document).on('click', '[data-bs-toggle="modal"]', function() {
+            var targetModal = $(this).data('bs-target');
+            var $form = $(targetModal).find('form');
+            if ($form.length) {
+                $form[0].reset();
+                $form.find('input[name="id"]').val('');
+            }
+        });
+        
+        // Clean up on modal close
+        $('.modal').on('hidden.bs.modal', function() {
+            var $form = $(this).find('form');
+            if ($form.length) {
+                $form[0].reset();
+                $form.find('input[name="id"]').val('');
+            }
+        });
+        
+        // Ensure modals are properly initialized
+        $('.modal').each(function() {
+            if (!bootstrap.Modal.getInstance(this)) {
+                new bootstrap.Modal(this);
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapas 2 Ambarawa - ChatBot Asisten</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('favicon') }}">
+
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e67e22;
+            --light-color: #ecf0f1;
+            --dark-color: #34495e;
+            --success-color: #2ecc71;
+            --danger-color: #e74c3c;
+            --border-radius: 10px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: linear-gradient(to right, var(--primary-color), var(--dark-color));
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo i {
+            font-size: 26px;
+            color: var(--dark-color);
+        }
+
+        .header-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: var(--transition);
+        }
+
+        .header-nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* ––––– Aturan global untuk semua viewport ––––– */
+        .sidebar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 100%;
+            background: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-100%);  /* tersembunyi di luar layar */
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        .sidebar.open {
+            transform: translateX(0);
+        }
+
+        .toggle-sidebar {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 40px;
+            background-color: white;
+            border-radius: 0 5px 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            transition: left 0.3s ease; 
+        }
+
+        /* Geser tombol saat sidebar terbuka */
+            .sidebar.open ~ .toggle-sidebar {
+            left: 300px;                     /* geser sejauh lebar sidebar */
+        }
+
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-title {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+        }
+
+        .sidebar-content {
+            flex: 1;
+            padding: 10px 0;
+            overflow-y: auto;
+        }
+
+        #btnEnableNotif {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background-color: transparent; /* atau pilih warna lain */
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        #btnEnableNotif:hover:not(:disabled) {
+            background-color: darken(var(--secondary-color), 10%); /* atau gunakan warna manual, e.g. #2980b9 */
+        }
+        #btnEnableNotif:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        #btnEnableNotif svg {
+            width: 24px;
+            height: 24px;
+            fill: white; /* agar ikon berwarna putih */
+        }
+        #btnEnableNotif.subscribed {
+            background-color: var(--danger-color);
+        }
+
+        #btnEnableNotif.subscribed:hover:not(:disabled) {
+            background-color: #c0392b;
+        }
+        .info-item {
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .info-item:hover {
+            background-color: rgba(52, 152, 219, 0.1);
+        }
+
+        .info-item i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        .sidebar-footer {
+            padding: 15px 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            margin-top: auto;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-indicator {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: var(--success-color);
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            padding: 15px 20px;
+            background-color: white;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chat-title {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chat-title i {
+            color: var(--secondary-color);
+        }
+
+        .chat-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .action-button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--dark-color);
+            transition: var(--transition);
+        }
+
+        .action-button:hover {
+            color: var(--secondary-color);
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: rgba(236, 240, 241, 0.5);
+        }
+
+        .message {
+            margin-bottom: 20px;
+            max-width: 80%;
+        }
+
+        .user-message {
+            margin-left: auto;
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: var(--border-radius) 0 var(--border-radius) var(--border-radius);
+            padding: 12px 15px;
+            box-shadow: var(--shadow);
+            position: relative;
+            animation: slideInRight 0.3s ease forwards;
+        }
+
+        .bot-message {
+            background-color: white;
+            color: #333;
+            border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
+            padding: 12px 15px;
+            box-shadow: var(--shadow);
+            position: relative;
+            animation: slideInLeft 0.3s ease forwards;
+        }
+
+        .message-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--light-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+
+        .avatar i {
+            font-size: 18px;
+            color: var(--primary-color);
+        }
+
+        .message-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message-sender {
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .message-time {
+            font-size: 0.7rem;
+            color: #888;
+        }
+
+        .message-content {
+            line-height: 1.5;
+        }
+
+        .bot-message .message-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .bot-message .message-content table th,
+        .bot-message .message-content table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .bot-message .message-content table th {
+            background-color: rgba(52, 152, 219, 0.1);
+            font-weight: bold;
+        }
+
+        .bot-message .message-content h3,
+        .bot-message .message-content h4 {
+            margin: 10px 0;
+            color: var(--dark-color);
+        }
+
+        .bot-message .message-content ul {
+            padding-left: 20px;
+        }
+
+        .bot-message .message-content a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .bot-message .message-content a:hover {
+            text-decoration: underline;
+        }
+
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 15px;
+            background-color: white;
+            border-radius: var(--border-radius);
+            width: fit-content;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .typing-indicator span {
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+            display: block;
+            opacity: 0.6;
+        }
+
+        .typing-indicator span:nth-child(1) {
+            animation: typing 1s infinite 0s;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation: typing 1s infinite 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation: typing 1s infinite 0.4s;
+        }
+
+        .chat-input-container {
+            padding: 15px 20px;
+            background-color: white;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chat-input {
+            flex: 1;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            padding: 12px 15px;
+            outline: none;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .chat-input:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+
+        .chat-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.2rem;
+        }
+
+        .chat-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .chat-btn:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .welcome-message {
+            text-align: center;
+            padding: 30px;
+            color: var(--dark-color);
+            opacity: 0.8;
+        }
+
+        .welcome-message h2 {
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+
+        .welcome-message p {
+            margin-bottom: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .welcome-message .cta {
+            margin-top: 30px;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .welcome-examples {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .example-question {
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .example-question:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: var(--border-radius);
+            background-color: white;
+            color: var(--dark-color);
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            transform: translateX(120%);
+            transition: transform 0.3s ease;
+        }
+
+        .notification.visible {
+            transform: translateX(0);
+        }
+
+        .notification.success i {
+            color: var(--success-color);
+        }
+
+        .notification.error i {
+            color: var(--danger-color);
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes typing {
+            0% {
+                transform: scale(0.8);
+                opacity: 0.6;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.8);
+                opacity: 0.6;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .chat-messages {
+                padding: 15px;
+            }
+
+            .message {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <div class="logo">
+                <i class="fas fa-building"></i>
+            </div>
+            <div>
+                <span class="header-title">Lapas 2 Ambarawa</span>
+                <span class="badge">Asisten Virtual</span>
+            </div>
+        </div>
+        <nav class="header-nav">
+            <button id="btnEnableNotif" aria-label="Aktifkan Notifikasi">
+                <svg id="notifIcon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6V11c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5S10.5 3.17 10.5 4v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+                </svg>
+            </button>
+            <a href="{{ url_for('about') }}"><i class="fas fa-info-circle"></i> Tentang</a>
+            <a href="{{ url_for('contact_it') }}"><i class="fas fa-phone"></i> Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3 class="sidebar-title">Informasi Lapas</h3>
+            </div>
+            <div class="sidebar-content">
+                <div class="info-item" data-question="Apa jadwal kunjungan Lapas?">
+                    <i class="fas fa-calendar-alt"></i> Jadwal Kunjungan
+                </div>
+                <div class="info-item" data-question="Apa saja persyaratan kunjungan?">
+                    <i class="fas fa-clipboard-list"></i> Persyaratan Kunjungan
+                </div>
+                <div class="info-item" data-question="Layanan kesehatan apa saja yang tersedia di Lapas?">
+                    <i class="fas fa-heartbeat"></i> Layanan Kesehatan
+                </div>
+                <div class="info-item" data-question="Bagaimana cara menghubungi pihak Lapas?">
+                    <i class="fas fa-phone-alt"></i> Informasi Kontak
+                </div>
+                <div class="info-item" data-question="Program rehabilitasi apa saja yang tersedia?">
+                    <i class="fas fa-hand-holding-heart"></i> Program Rehabilitasi
+                </div>
+                <div class="info-item" data-question="Apa saja persyaratan untuk mengunjungi tahanan?">
+                    <i class="fas fa-suitcase"></i> Persiapan Kunjungan
+                </div>
+                <div class="info-item" data-question="Bagaimana prosedur pengiriman paket untuk narapidana?">
+                    <i class="fas fa-box"></i> Pengiriman Paket
+                </div>
+                <div class="info-item" data-question="Larangan apa saja saat berkunjung ke Lapas?">
+                    <i class="fas fa-ban"></i> Larangan Berkunjung
+                </div>
+            </div>
+            <div class="sidebar-footer">
+
+                <div class="status-indicator"></div>
+                <span>Sistem Aktif</span>
+            </div>
+        </div>
+
+        <!-- Toggle Sidebar Button -->
+        <div class="toggle-sidebar" id="toggleSidebar">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-title">
+                        <i class="fas fa-robot"></i>
+                        <span>Asisten Lapas 2 Ambarawa</span>
+                    </div>
+                    <div class="chat-actions">
+                        <button class="action-button" id="clearChat" title="Bersihkan Chat">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                        <button class="action-button" id="refreshChat" title="Segarkan">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="chatInput" placeholder="Ketik pertanyaan Anda di sini..." autofocus>
+                    <button type="button" class="chat-btn" id="sendBtn" aria-label="Kirim Pesan">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <i class="fas fa-info-circle"></i>
+        <span id="notificationText">Pesan notifikasi</span>
+    </div>
+
+    <script>
+        // Definisikan PUBLIC_VAPID_KEY via Jinja, sebelum kode lain
+        const PUBLIC_VAPID_KEY = "{{ vapid_public_key }}";
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        // DOM Elements
+        const sidebar = document.getElementById('sidebar');
+        const toggleSidebar = document.getElementById('toggleSidebar');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const clearChat = document.getElementById('clearChat');
+        const refreshChat = document.getElementById('refreshChat');
+        const infoItems = document.querySelectorAll('.info-item');
+        const exampleQuestions = document.querySelectorAll('.example-question');
+        const notification = document.getElementById('notification');
+        const notificationText = document.getElementById('notificationText');
+
+        
+        // Session ID for chat history
+        const sessionId = generateSessionId();
+        const btn = document.getElementById('btnEnableNotif');
+        if (btn) {
+            btn.addEventListener('click', () => {
+            console.log('Tombol Aktifkan Notifikasi diklik');
+            registerDeviceForNotifications();
+            });
+        }
+        
+        // Toggle sidebar
+        toggleSidebar.addEventListener('click', function() {
+            const isOpen = sidebar.classList.contains('open');
+            if (isOpen) {
+                // Tutup sidebar
+                sidebar.classList.remove('open');
+                toggleSidebar.querySelector('i').classList.remove('fa-chevron-left');
+                toggleSidebar.querySelector('i').classList.add('fa-chevron-right');
+            } else {
+                // Buka sidebar
+                sidebar.classList.add('open');
+                toggleSidebar.querySelector('i').classList.remove('fa-chevron-right');
+                toggleSidebar.querySelector('i').classList.add('fa-chevron-left');
+            }
+        });
+        
+        // Send message on button click
+        sendBtn.addEventListener('click', sendMessage);
+        
+        // Send message on Enter key
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        // Input validation and button state
+        chatInput.addEventListener('input', function() {
+            if (chatInput.value.trim() !== '') {
+                sendBtn.disabled = false;
+            } else {
+                sendBtn.disabled = true;
+            }
+        });
+        
+        // Clear chat messages
+        clearChat.addEventListener('click', function() {
+            if (confirm('Anda yakin ingin menghapus semua percakapan?')) {
+                chatMessages.innerHTML = '';
+                // Add welcome message back
+                addWelcomeMessage();
+                showNotification('Chat berhasil dibersihkan', 'success');
+                
+                // Clear local storage for this session
+                localStorage.removeItem(`chat_${sessionId}`);
+            }
+        });
+        
+        // Refresh chat
+        refreshChat.addEventListener('click', function() {
+            showNotification('Menyegarkan percakapan...', 'success');
+            setTimeout(() => {
+                location.reload();
+            }, 1000);
+        });
+        
+        // Sidebar info items click
+        infoItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const question = this.getAttribute('data-question');
+                if (question) {
+                    chatInput.value = question;
+                    sendMessage();
+                    
+                    // Close sidebar on mobile after selection
+                    if (window.innerWidth <= 768) {
+                        sidebar.classList.remove('open');
+                        toggleSidebar.querySelector('i').classList.remove('fa-chevron-left');
+                        toggleSidebar.querySelector('i').classList.add('fa-chevron-right');
+                    }
+                }
+            });
+        });
+        
+        // Example questions click
+        exampleQuestions.forEach(item => {
+            item.addEventListener('click', function() {
+                const question = this.getAttribute('data-question');
+                if (question) {
+                    chatInput.value = question;
+                    sendMessage();
+                }
+            });
+        });
+        
+        // Send message function
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            
+            if (message === '') return;
+            
+            // Add user message to chat
+            addMessageToChat('user', message);
+            
+            // Clear input
+            chatInput.value = '';
+            sendBtn.disabled = true;
+            chatInput.focus();
+            
+            // Show typing indicator
+            const typingIndicator = document.createElement('div');
+            typingIndicator.className = 'typing-indicator';
+            typingIndicator.innerHTML = '<span></span><span></span><span></span>';
+            chatMessages.appendChild(typingIndicator);
+            scrollToBottom();
+            
+            // Send to API
+            fetchBotResponse(message, typingIndicator);
+        }
+        
+        // Fetch bot response from API
+        async function fetchBotResponse(message, typingIndicator) {
+            try {
+                const response = await fetch('/api/v1/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        session_id: sessionId
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Network error');
+                }
+                
+                const data = await response.json();
+                
+                // Remove typing indicator
+                if (typingIndicator) {
+                    typingIndicator.remove();
+                }
+                
+                // Add bot message to chat
+                if (data.success && data.response) {
+                    addMessageToChat('bot', data.response.message);
+                    
+                    // Tambahkan kode untuk menangani metadata respon
+                    if (data.response.metadata) {
+                        handleResponseMetadata(data.response.metadata);
+                    }
+                } else {
+                    addMessageToChat('bot', 'Maaf, saya tidak dapat memproses permintaan Anda saat ini. Silakan coba lagi nanti.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                
+                // Remove typing indicator
+                if (typingIndicator) {
+                    typingIndicator.remove();
+                }
+                
+                // Add error message
+                addMessageToChat('bot', 'Maaf, terjadi kesalahan dalam berkomunikasi dengan server. Mohon periksa koneksi Anda dan coba lagi.');
+                showNotification('Gagal terhubung ke server', 'error');
+            }
+        }
+        
+        // Handle response metadata (untuk fitur tambahan sesuai backend)
+        function handleResponseMetadata(metadata) {
+            // Tambahkan efek atau styling berdasarkan metadata
+            const lastMessage = chatMessages.lastElementChild;
+            
+            if (metadata.intent && metadata.intent !== 'general') {
+                // Anda bisa menambahkan class khusus untuk intent tertentu
+                lastMessage.setAttribute('data-intent', metadata.intent);
+            }
+            
+            if (metadata.has_table) {
+                // Memperbaiki tampilan tabel pada mobile jika diperlukan
+                const tables = lastMessage.querySelectorAll('table');
+                tables.forEach(table => {
+                    table.classList.add('responsive-table');
+                });
+            }
+        }
+        
+        // Add message to chat
+        function addMessageToChat(type, content) {
+            // Remove welcome message if exists
+            const welcomeMessage = document.querySelector('.welcome-message');
+            if (welcomeMessage) {
+                welcomeMessage.remove();
+            }
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}-message`;
+            
+            const currentTime = new Date();
+            const hours = currentTime.getHours().toString().padStart(2, '0');
+            const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}`;
+            
+            if (type === 'user') {
+                messageDiv.innerHTML = `
+                    <div class="message-content">${content}</div>
+                    <div class="message-time">${timeString}</div>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <div class="message-header">
+                        <div class="avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-info">
+                            <div class="message-sender">Asisten Lapas</div>
+                            <div class="message-time">${timeString}</div>
+                        </div>
+                    </div>
+                    <div class="message-content">${content}</div>
+                `;
+            }
+            
+            chatMessages.appendChild(messageDiv);
+            scrollToBottom();
+        }
+        
+        // Add welcome message
+        function addWelcomeMessage() {
+            const welcomeDiv = document.createElement('div');
+            welcomeDiv.className = 'welcome-message';
+            welcomeDiv.innerHTML = `
+                <h2>Selamat Datang di Asisten Virtual Lapas 2 Ambarawa</h2>
+                <p>Saya siap membantu Anda dengan informasi seputar Lapas 2 Ambarawa, seperti jadwal kunjungan, persyaratan, layanan kesehatan, dan informasi umum lainnya.</p>
+                <p>Silakan ajukan pertanyaan atau pilih salah satu topik di bawah ini:</p>
+                <div class="welcome-examples">
+                    <div class="example-question" data-question="Kapan jadwal kunjungan untuk keluarga?">Kapan jadwal kunjungan untuk keluarga?</div>
+                    <div class="example-question" data-question="Apa saja syarat yang diperlukan untuk mengunjungi narapidana?">Syarat mengunjungi narapidana?</div>
+                    <div class="example-question" data-question="Bagaimana prosedur kunjungan pertama kali?">Prosedur kunjungan pertama kali?</div>
+                    <div class="example-question" data-question="Informasi tentang layanan kesehatan">Informasi layanan kesehatan</div>
+                    <div class="example-question" data-question="Program rehabilitasi apa saja yang tersedia?">Program rehabilitasi</div>
+                </div>
+                <p class="cta">Ketik pertanyaan Anda sekarang!</p>
+            `;
+            chatMessages.appendChild(welcomeDiv);
+            
+            // Reattach event listeners to example questions
+            welcomeDiv.querySelectorAll('.example-question').forEach(item => {
+                item.addEventListener('click', function() {
+                    const question = this.getAttribute('data-question');
+                    if (question) {
+                        chatInput.value = question;
+                        sendMessage();
+                    }
+                });
+            });
+        }
+        
+        // Scroll to bottom of chat
+        function scrollToBottom() {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Show notification
+        function showNotification(message, type = 'success') {
+            notification.className = `notification ${type}`;
+            notificationText.textContent = message;
+            
+            // Set icon based on type
+            const icon = notification.querySelector('i');
+            if (type === 'success') {
+                icon.className = 'fas fa-check-circle';
+            } else if (type === 'error') {
+                icon.className = 'fas fa-exclamation-circle';
+            } else {
+                icon.className = 'fas fa-info-circle';
+            }
+            
+            notification.classList.add('visible');
+            
+            // Hide notification after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove('visible');
+            }, 3000);
+        }
+        
+        // Generate unique session ID
+        function generateSessionId() {
+            return 'xxxx-xxxx-xxxx-xxxx'.replace(/x/g, function() {
+                return Math.floor(Math.random() * 16).toString(16);
+            });
+        }
+
+        function urlBase64ToUint8Array(base64String) {
+            // Tambah padding jika perlu
+            const padding = '='.repeat((4 - base64String.length % 4) % 4);
+            // Ubah URL-safe base64 ke base64 standar
+            const base64 = (base64String + padding)
+                .replace(/-/g, '+')
+                .replace(/_/g, '/');
+            // Decode base64 menjadi string biner
+            try {
+                const rawData = window.atob(base64);
+                const outputArray = new Uint8Array(rawData.length);
+                for (let i = 0; i < rawData.length; ++i) {
+                outputArray[i] = rawData.charCodeAt(i);
+                }
+                return outputArray;
+            } catch (err) {
+                console.error("atob gagal:", err.message);
+                throw err;
+            }
+        }
+        
+        // Fungsi untuk mendeteksi intent dari pertanyaan (digunakan untuk UI enhancements)
+        function detectClientIntent(text) {
+            text = text.toLowerCase();
+            
+            const intents = {
+                jadwal_kunjungan: ['jadwal', 'kunjungan', 'besuk', 'jam', 'hari', 'waktu', 'kapan'],
+                persyaratan_kunjungan: ['syarat', 'dokumen', 'persyaratan', 'perlu', 'membawa', 'ktp'],
+                layanan_kesehatan: ['kesehatan', 'sakit', 'dokter', 'obat', 'medis', 'klinik'],
+                kontak_info: ['kontak', 'telepon', 'hubungi', 'nomor', 'alamat', 'email'],
+                program_rehabilitasi: ['rehabilitasi', 'program', 'kegiatan', 'pelatihan', 'pembinaan']
+            };
+            
+            let maxScore = 0;
+            let detectedIntent = 'general';
+            
+            for (const [intent, keywords] of Object.entries(intents)) {
+                let score = 0;
+                for (const keyword of keywords) {
+                    if (text.includes(keyword)) {
+                        score += 1;
+                    }
+                }
+                
+                if (score > maxScore) {
+                    maxScore = score;
+                    detectedIntent = intent;
+                }
+            }
+            
+            return maxScore > 0 ? detectedIntent : 'general';
+        }
+        
+        function registerDeviceForNotifications() {
+            console.log('Memanggil registerDeviceForNotifications');
+            
+            if (!('Notification' in window && 'PushManager' in window)) {
+                console.log('Browser tidak mendukung Push Notifications');
+                showNotification('Browser tidak mendukung notifikasi push', 'error');
+                return;
+            }
+
+            // Cek apakah sudah berlangganan terlebih dahulu
+            navigator.serviceWorker.ready.then(registration => {
+                registration.pushManager.getSubscription().then(subscription => {
+                    if (subscription) {
+                        // Sudah berlangganan, lakukan unsubscribe
+                        btn.disabled = true;
+                        subscription.unsubscribe().then(successful => {
+                            if (successful) {
+                                // Kirim permintaan unsubscribe ke backend
+                                fetch('/api/v1/unregister_device', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json'
+                                    },
+                                    body: JSON.stringify({
+                                        device_token: JSON.stringify(subscription),
+                                        platform: 'web'
+                                    })
+                                }).then(res => {
+                                    if (res.ok) {
+                                        updateButtonState(false);
+                                        showNotification('Notifikasi berhasil dinonaktifkan!', 'success');
+                                    } else {
+                                        showNotification('Gagal menonaktifkan notifikasi', 'error');
+                                    }
+                                }).catch(err => {
+                                    console.error('Error saat unregister:', err);
+                                    showNotification('Gagal menonaktifkan notifikasi', 'error');
+                                });
+                            } else {
+                                showNotification('Gagal membatalkan langganan', 'error');
+                            }
+                        }).catch(err => {
+                            console.error('Unsubscribe gagal:', err);
+                            showNotification('Gagal membatalkan langganan', 'error');
+                        }).finally(() => {
+                            btn.disabled = false;
+                        });
+                    } else {
+                        // Belum berlangganan, lakukan proses subscription seperti sebelumnya
+                        btn.disabled = true;
+                        
+                        // Minta izin notifikasi kepada user
+                        Notification.requestPermission().then(permission => {
+                            if (permission !== 'granted') {
+                                console.log('User menolak notifikasi');
+                                showNotification('Izin notifikasi ditolak', 'error');
+                                btn.disabled = false;
+                                return;
+                            }
+                            // Proses subscription
+                            registration.pushManager.subscribe({
+                                userVisibleOnly: true,
+                                applicationServerKey: urlBase64ToUint8Array(PUBLIC_VAPID_KEY)
+                            }).then(subscription => {
+                                console.log("=== New subscription object ===", subscription);
+                                // Kirim subscription ke backend
+                                fetch('/api/v1/register_device', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json'
+                                    },
+                                    body: JSON.stringify({
+                                        device_token: JSON.stringify(subscription),
+                                        platform: 'web'
+                                    })
+                                }).then(res => {
+                                    if (!res.ok) {
+                                        console.error('Gagal mengirim subscription ke server');
+                                        showNotification('Gagal mengaktifkan notifikasi', 'error');
+                                    } else {
+                                        console.log('Subscription berhasil dikirim ke server');
+                                        updateButtonState(true);
+                                        showNotification('Notifikasi berhasil diaktifkan!', 'success');
+                                    }
+                                }).catch(err => {
+                                    console.error('Error saat fetch register_device:', err);
+                                    showNotification('Gagal mengaktifkan notifikasi', 'error');
+                                });
+                            }).catch(err => {
+                                console.error('Push subscribe gagal:', err);
+                                showNotification('Gagal berlangganan notifikasi', 'error');
+                            }).finally(() => {
+                                btn.disabled = false;
+                            });
+                        });
+                    }
+                });
+            });
+        }
+        function updateButtonState(isSubscribed) {
+            const btn = document.getElementById('btnEnableNotif');
+            const icon = document.getElementById('notifIcon');
+            
+            if (isSubscribed) {
+                btn.classList.add('subscribed');
+                btn.setAttribute('aria-label', 'Nonaktifkan Notifikasi');
+                // Ubah icon menjadi bell-slash untuk unsubscribe
+                icon.innerHTML = '<path d="M20 18.69L7.84 6.14L5.27 3.49L4 4.76l2.8 2.8v.01c-.52.99-.8 2.16-.8 3.42v6l-2 2v1h13.73l2 2L21 19.73l-1-1.04zM12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-7.32V11c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68c-.15.03-.29.08-.42.12-.1.03-.2.07-.28.12L18 11.11V14.68z"/>';
+            } else {
+                btn.classList.remove('subscribed');
+                btn.setAttribute('aria-label', 'Aktifkan Notifikasi');
+                // Kembalikan icon bell normal
+                icon.innerHTML = '<path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6V11c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5S10.5 3.17 10.5 4v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>';
+            }
+        }
+
+        
+        // Initialize
+        sendBtn.disabled = true; // Disable send button initially
+        
+        // Check for mobile
+        if (window.innerWidth <= 768) {
+            sidebar.classList.remove('open');
+        } else {
+            sidebar.classList.add('open');
+        }
+        
+        // Load chat history from local storage if exists
+        const savedChat = localStorage.getItem(`chat_${sessionId}`);
+        if (savedChat) {
+            chatMessages.innerHTML = savedChat;
+        } else {
+            // Show welcome message if no saved chat
+            addWelcomeMessage();
+        }
+        
+        // Save chat to local storage when updated
+        const observer = new MutationObserver(function() {
+            localStorage.setItem(`chat_${sessionId}`, chatMessages.innerHTML);
+        });
+        
+        observer.observe(chatMessages, { childList: true, subtree: true });
+        
+        // Handle visibility change for session management
+        document.addEventListener('visibilitychange', function() {
+            if (!document.hidden) {
+                // Tambahkan kode untuk memperbarui UI jika diperlukan saat tab menjadi aktif
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768) {
+                const isClickInsideSidebar = sidebar.contains(e.target);
+                const isClickOnToggle = toggleSidebar.contains(e.target);
+                
+                if (!isClickInsideSidebar && !isClickOnToggle && sidebar.classList.contains('open')) {
+                    // Tutup sidebar
+                    sidebar.classList.remove('open');
+                    toggleSidebar.querySelector('i').classList.remove('fa-chevron-left');
+                    toggleSidebar.querySelector('i').classList.add('fa-chevron-right');
+                }
+            }
+        });
+        
+        // Register service worker for PWA support if needed
+        if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(console.error);
+        }
+
+
+    });
+    </script>
+</body>
+</html>

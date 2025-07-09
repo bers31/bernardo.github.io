@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Tim IT - Lapas 2 Ambarawa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3D51B4;
+            --secondary-color: #5C6BC0;
+            --accent-color: #7986CB;
+            --text-color: #212121;
+            --light-color: #FFFFFF;
+            --danger-color: #F44336;
+            --success-color: #4CAF50;
+            --warning-color: #FFC107;
+            --info-color: #2196F3;
+            --dark-color: #1A237E;
+            --light-grey: #F5F5F5;
+            --medium-grey: #E0E0E0;
+            --dark-grey: #757575;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --gradient-5: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            --shadow-light: 0 8px 32px rgba(31, 38, 135, 0.37);
+            --shadow-medium: 0 12px 40px rgba(0, 0, 0, 0.15);
+            --shadow-heavy: 0 20px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated background particles */
+        .bg-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+
+        .particle:nth-child(1) { width: 80px; height: 80px; left: 10%; animation-delay: 0s; }
+        .particle:nth-child(2) { width: 60px; height: 60px; left: 20%; animation-delay: 2s; }
+        .particle:nth-child(3) { width: 40px; height: 40px; left: 30%; animation-delay: 4s; }
+        .particle:nth-child(4) { width: 100px; height: 100px; left: 40%; animation-delay: 6s; }
+        .particle:nth-child(5) { width: 50px; height: 50px; left: 50%; animation-delay: 8s; }
+        .particle:nth-child(6) { width: 70px; height: 70px; left: 60%; animation-delay: 10s; }
+        .particle:nth-child(7) { width: 30px; height: 30px; left: 70%; animation-delay: 12s; }
+        .particle:nth-child(8) { width: 90px; height: 90px; left: 80%; animation-delay: 14s; }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: slideDown 1s ease-out;
+        }
+
+        .back-btn {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            margin-bottom: 20px;
+            display: inline-block;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-light);
+            animation: slideRight 1s ease-out;
+        }
+
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .back-btn i {
+            margin-right: 8px;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo i {
+            margin-right: 15px;
+            background: var(--gradient-3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: var(--shadow-light);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .contact-card:nth-child(1)::before { background: var(--gradient-1); }
+        .contact-card:nth-child(2)::before { background: var(--gradient-2); }
+        .contact-card:nth-child(3)::before { background: var(--gradient-3); }
+
+        .contact-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .contact-card:hover::before {
+            opacity: 0.3;
+        }
+
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover .contact-icon {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .contact-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-info {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            word-break: break-all;
+        }
+
+        .contact-description {
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .action-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .action-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .action-btn.primary {
+            background: var(--gradient-4);
+            border-color: transparent;
+        }
+
+        .action-btn.primary:hover {
+            background: var(--gradient-5);
+            transform: translateY(-2px) scale(1.05);
+        }
+
+        .support-hours {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .support-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .hour-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hour-day {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .hour-time {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .emergency-note {
+            background: rgba(255, 107, 107, 0.2);
+            border: 2px solid rgba(255, 107, 107, 0.3);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+
+        .emergency-note i {
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Animations */
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideRight {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        /* Copy notification */
+        .copy-notification {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: var(--gradient-4);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: var(--shadow-heavy);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .copy-notification.show {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .logo {
+                font-size: 36px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .contact-card {
+                padding: 30px 20px;
+            }
+
+            .contact-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .action-btn {
+                width: 100%;
+                max-width: 200px;
+                justify-content: center;
+            }
+
+            .hours-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .logo {
+                font-size: 28px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .contact-card {
+                padding: 25px 15px;
+            }
+
+            .contact-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+
+            .contact-title {
+                font-size: 20px;
+            }
+
+            .contact-info {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <a href="javascript:history.back()" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Kembali
+    </a>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-headset"></i>
+                Tim IT Support
+            </div>
+            <div class="subtitle">Lapas 2 Ambarawa</div>
+            <div class="description">
+                Kami siap membantu Anda 24/7 untuk semua kebutuhan teknis dan sistem informasi. 
+                Hubungi kami melalui berbagai cara di bawah ini.
+            </div>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-title">Telepon / WhatsApp</div>
+                <div class="contact-info">081226743646</div>
+                <div class="contact-description">
+                    Hubungi langsung via telepon atau kirim pesan WhatsApp untuk bantuan cepat
+                </div>
+                <div class="contact-actions">
+                    <a href="tel:081226743646" class="action-btn primary">
+                        <i class="fas fa-phone"></i>
+                        Telepon
+                    </a>
+                    <a href="https://wa.me/6281226743646?text=Halo%20Tim%20IT%20Lapas%202%20Ambarawa,%20saya%20membutuhkan%20bantuan%20terkait%20sistem%20admin." class="action-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    <button onclick="copyToClipboard('081226743646')" class="action-btn">
+                        <i class="fas fa-copy"></i>
+                        Salin Nomor
+                    </button>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-title">Email Support</div>
+                <div class="contact-info">ambarawa.lapas@gmail.com</div>
+                <div class="contact-description">
+                    Kirim email untuk pertanyaan detail atau lampiran file pendukung
+                </div>
+                <div class="contact-actions">
+                    <a href="mailto:ambarawa.lapas@gmail.com?subject=Bantuan%20Sistem%20Admin&body=Halo%20Tim%20IT,%0A%0ASaya%20membutuhkan%20bantuan%20terkait%20sistem%20admin%20chatbot.%0A%0ADetail%20masalah:%0A%0A%0ATerima%20kasih." class="action-btn primary">
+                        <i class="fas fa-envelope"></i>
+                        Kirim Email
+                    </a>
+                    <button onclick="copyToClipboard('ambarawa.lapas@gmail.com')" class="action-btn">
+                        <i class="fas fa-copy"></i>
+                        Salin Email
+                    </button>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-title">Kunjungi Langsung</div>
+                <div class="contact-info">Pintu Utama (P2U)</div>
+                <div class="contact-description">
+                    Datang langsung ke ruang IT untuk bantuan teknis yang memerlukan akses fisik
+                </div>
+                <div class="contact-actions">
+                    <a href="#" onclick="showDirections()" class="action-btn primary">
+                        <i class="fas fa-route"></i>
+                        Petunjuk Arah
+                    </a>
+                    <a href="#" onclick="showMap()" class="action-btn">
+                        <i class="fas fa-map"></i>
+                        Lihat Peta
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="support-hours">
+            <div class="support-title">
+                <i class="fas fa-clock"></i>
+                Jam Operasional Support
+            </div>
+            <div class="hours-grid">
+                <div class="hour-item">
+                    <div class="hour-day">Senin - sabtu</div>
+                    <div class="hour-time">08:00 - 14:30 WIB</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hour-day">Tanggal Merah</div>
+                    <div class="hour-time">Libur</div>
+                </div>
+                <div class="hour-item">
+                    <div class="hour-day">Minggu</div>
+                    <div class="hour-time">Libur</div>
+                </div>
+            </div>
+
+            <div class="emergency-note">
+                <i class="fas fa-exclamation-triangle"></i>
+                <strong>Untuk Darurat di Luar Jam Kerja:</strong><br>
+                Tetap bisa menghubungi via WhatsApp. Tim kami akan merespon sesegera mungkin.
+            </div>
+        </div>
+    </div>
+
+    <div id="copyNotification" class="copy-notification">
+        <i class="fas fa-check"></i> Berhasil disalin!
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                showCopyNotification();
+            }).catch(function(err) {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                showCopyNotification();
+            });
+        }
+
+        function showCopyNotification() {
+            const notification = document.getElementById('copyNotification');
+            notification.classList.add('show');
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 2000);
+        }
+
+        function showDirections() {
+            alert('Petunjuk Arah:\n\n1. Masuk melalui gerbang utama Lapas 2 Ambarawa\n2. Menuju ke pintu utama (P2U)');
+        }
+
+        function showMap() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    const mapsUrl = `https://www.google.com/maps/dir/${lat},${lng}/Lapas+Kelas+IIA+Ambarawa,+Jawa+Tengah`;
+                    window.open(mapsUrl, '_blank');
+                }, function() {
+                    const mapsUrl = 'https://www.google.com/maps/search/Lapas+Kelas+IIA+Ambarawa,+Jawa+Tengah';
+                    window.open(mapsUrl, '_blank');
+                });
+            } else {
+                const mapsUrl = 'https://www.google.com/maps/search/Lapas+Kelas+IIA+Ambarawa,+Jawa+Tengah';
+                window.open(mapsUrl, '_blank');
+            }
+        }
+
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Stagger animation for contact cards
+            const cards = document.querySelectorAll('.contact-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.2}s`;
+            });
+
+            // Add hover sound effect (optional)
+            const buttons = document.querySelectorAll('.action-btn, .back-btn');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    // Could add sound effect here if needed
+                    this.style.transform = 'translateY(-2px) scale(1.05)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = '';
+                });
+            });
+
+            // Parallax effect for background particles
+            document.addEventListener('mousemove', function(e) {
+                const particles = document.querySelectorAll('.particle');
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+                
+                particles.forEach((particle, index) => {
+                    const speed = (index + 1) * 0.5;
+                    const xMove = (x - 0.5) * speed;
+                    const yMove = (y - 0.5) * speed;
+                    particle.style.transform += ` translate(${xMove}px, ${yMove}px)`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

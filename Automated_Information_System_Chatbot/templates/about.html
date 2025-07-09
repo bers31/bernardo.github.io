@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Lapas Kelas 2 Ambarawa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .logo-text h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .logo-text p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.1)"><polygon points="0,0 1000,100 1000,0"/></svg>');
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-card i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .stat-card h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .stat-card p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* About Section */
+        .about-section {
+            background: white;
+            padding: 100px 0;
+            margin-top: -50px;
+            border-radius: 50px 50px 0 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        .back-btn {
+            position: relative;
+            top: 20px;
+            left: 40px;
+            display: inline-block;
+            align-items: center;
+            gap: 16px;                           /* jarak antara ikon dan teks */
+            background-color: #667eea;         /* warna background tombol */
+            color: #ffffff;                    /* warna teks */
+            padding: 8px 12px;                 /* vertical/horizontal padding */
+            border-radius: 4px;                /* sudut membulat */
+            text-decoration: none;             /* hilangkan garis bawah default */
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Hover effect (opsional) */
+        .back-btn:hover {
+            background-color: #5566d1;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-title h2 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+            font-family: 'Font Awesome 6 Free';
+            content: '\f19c';
+            font-weight: 900;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #f8f9ff, #e8f0ff);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid #e3e8ff;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover::before {
+            left: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Schedule Section */
+        .schedule-section {
+            background: linear-gradient(135deg, #f8f9ff, #e8f0ff);
+            padding: 100px 0;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .schedule-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .schedule-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .schedule-card .day {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .schedule-card .time {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .schedule-card .type {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            background: #f8f9fa;
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        /*Health Section*/
+        .health-section {
+        background: #f0f8ff;
+        padding: 80px 0;
+        }
+        .health-section .section-title h2 {
+        color: #3a6ea5;
+        }
+        .health-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+        }
+        .health-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(8px);
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        transition: transform .3s ease, box-shadow .3s ease;
+        }
+        .health-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .health-card h3 {
+        margin-bottom: 10px;
+        color: #2c3e50;
+        }
+        .health-card p {
+        font-size: .95rem;
+        color: #444;
+        line-height: 1.5;
+        }
+
+        /* Rehab Section*/
+        .rehab-section {
+        background: #fffaf0;
+        padding: 80px 0;
+        }
+        .rehab-section .section-title h2 {
+        color: #a55e3a;
+        }
+        .rehab-section table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 15px;
+        margin-top: 40px;
+        }
+        .rehab-section thead th {
+        text-align: left;
+        padding: 12px 15px;
+        color: #8b5e3c;
+        }
+        .rehab-section tbody tr {
+        background: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+        .rehab-section td {
+        padding: 15px;
+        color: #555;
+        vertical-align: top;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-card i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-card p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+
+        .footer-section p, .footer-section li {
+            color: #bdc3c7;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #667eea;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 30px;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+            .health-cards { grid-template-columns: 1fr; }
+            .rehab-section table { display: block; overflow-x: auto; }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="javascript:history.back()" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            Kembali
+        </a>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Lapas Kelas 2 Ambarawa</h1>
+                        <p>Lembaga Pemasyarakatan</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#tentang">Tentang</a></li>
+                        <li><a href="#jadwal">Jadwal</a></li>
+                        <li><a href="#kontak">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <div class="container">
+            <h1>Lapas Kelas 2 Ambarawa</h1>
+            <p>Lembaga Pemasyarakatan yang berkomitmen untuk melaksanakan rehabilitasi dan reintegrasi sosial bagi Warga Binaan Pemasyarakatan dengan mengedepankan nilai-nilai kemanusiaan dan keadilan.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Profesional</h3>
+                    <p>Tim Terpercaya</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Humanis</h3>
+                    <p>Pendekatan Manusiawi</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Aman</h3>
+                    <p>Lingkungan Terkendali</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Edukatif</h3>
+                    <p>Program Pembinaan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="tentang">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Kami</h2>
+                <p>Mengenal lebih dekat Lapas Kelas 2 Ambarawa dan komitmen kami dalam pembinaan pemasyarakatan</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Visi & Misi</h3>
+                    <p><strong>Visi:</strong> MASYARAKAT MEMPEROLEH KEPASTIAN HUKUM </p>
+                    <p><strong>Misi:</strong> Mewujudkan peraturan Perundang-Undangan yang berkualitas, Mewujudkan pelayanan hukum yang berkualitas, Mewujudkan penegakan hukum yang berkualitas, Mewujudkan penghormatan, pemenuhan, dan perlindungan HAM, Mewujudkan layanan manajemen administrasi Kementerian Hukum dan HAM, Mewujudkan aparatur Kementerian Hukum dan HAM yang profesional dan berintegritas
+</p>
+                    <p>Lapas Kelas 2 Ambarawa berkomitmen penuh dalam menjalankan tugas pembinaan dengan standar pelayanan terbaik dan mengutamakan aspek rehabilitasi serta reintegrasi sosial.</p>
+                </div>
+                <div class="about-image">
+                    <!-- Placeholder for image -->
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Jadwal Kunjungan</h3>
+                    <p>Jadwal kunjungan yang teratur dan terorganisir untuk memfasilitasi komunikasi antara Warga Binaan dengan keluarga dan kerabat.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-medkit"></i>
+                    <h3>Layanan Kesehatan</h3>
+                    <p>Pelayanan kesehatan komprehensif untuk menjaga kesehatan fisik dan mental Warga Binaan Pemasyarakatan.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Program Rehabilitasi</h3>
+                    <p>Program pembinaan dan rehabilitasi yang dirancang untuk mempersiapkan reintegrasi sosial yang sukses.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Informasi & Konsultasi</h3>
+                    <p>Layanan informasi dan konsultasi untuk keluarga mengenai prosedur, persyaratan, dan hal-hal terkait kunjungan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section" id="jadwal">
+        <div class="container">
+            <div class="section-title">
+                <h2>Jadwal Kunjungan</h2>
+                <p>Jadwal kunjungan yang dapat Anda gunakan sebagai referensi untuk merencanakan kunjungan</p>
+            </div>
+
+            <div class="schedule-grid">
+                <div class="schedule-card">
+                    <div class="day">Senin</div>
+                    <div class="time">08:00 - 11:30</div>
+                    <div class="type">Narapidana Narkoba, Tahanan Narkoba</div>
+                </div>
+                <div class="schedule-card">
+                    <div class="day">Selasa</div>
+                    <div class="time">08:00 - 11:30</div>
+                    <div class="type">arapidana Kriminal, Tahanan Kriminal</div>
+                </div>
+                <div class="schedule-card">
+                    <div class="day">Rabu</div>
+                    <div class="time">08:00 - 11:30</div>
+                    <div class="type">Tahanan Narkoba, Tahanan Kriminal</div>
+                </div>
+                <div class="schedule-card">
+                    <div class="day">Kamis</div>
+                    <div class="time">08:00 - 11:30</div>
+                    <div class="type">Narapidana Narkoba</div>
+                </div>
+                <div class="schedule-card">
+                    <div class="day">Jumat</div>
+                    <div class="time">Libur</div>
+                    <div class="type">Tidak Ada Kunjungan</div>
+                </div>
+                <div class="schedule-card">
+                    <div class="day">Sabtu</div>
+                    <div class="time">08:00 - 11:30</div>
+                    <div class="type">	Narapidana Kriminal</div>
+                </div>
+                <div class="schedule-card">
+                    <div class="day">Minggu</div>
+                    <div class="time">Libur</div>
+                    <div class="type">Tidak Ada Kunjungan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Section -->
+    <section class="health-section" id="kesehatan">
+        <div class="container">
+            <div class="section-title">
+                <h2>Layanan Kesehatan</h2>
+                <p>Pelayanan kesehatan komprehensif bagi WBP</p>
+            </div>
+            <div class="health-cards">
+                <div class="health-card">
+                    <h3>Klinik Umum</h3>
+                    <p><strong>Jadwal:</strong> Senin–Sabtu 08.30–12.00 WIB (kecuali hari libur nasional)</p>
+                    <p>Layanan pemeriksaan kesehatan umum oleh dokter dan paramedis.</p>
+                </div>
+                <div class="health-card">
+                    <h3>Layanan Darurat</h3>
+                    <p><strong>Jadwal:</strong> 24 jam</p>
+                    <p>Penanganan kasus darurat dengan koordinasi rumah sakit terdekat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rehabilitation Section -->
+    <section class="rehab-section" id="layanan">
+        <div class="container">
+            <div class="section-title">
+                <h2>Program Rehabilitasi</h2>
+                <p>Program pembinaan untuk reintegrasi sosial</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Deskripsi</th>
+                        <th>Jadwal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pembinaan Keagamaan</td>
+                        <td>Program pembinaan mental spiritual untuk berbagai agama.</td>
+                        <td>Setiap hari (sesuai jadwal ibadah)</td>
+                    </tr>
+                    <tr>
+                        <td>Pelatihan Menjahit</td>
+                        <td>Pelatihan keterampilan menjahit sebagai bekal pasca-bebas.</td>
+                        <td>Senin–Sabtu 08.30–12.00 WIB (kecuali Jumat & libur nasional)</td>
+                    </tr>
+                    <tr>
+                        <td>Pelatihan Komputer</td>
+                        <td>Dasar penggunaan komputer dan internet.</td>
+                        <td>Senin–Sabtu 08.30–12.00 WIB (kecuali Jumat & libur nasional)</td>
+                    </tr>
+                    <tr>
+                        <td>Program Pertanian</td>
+                        <td>Bertani di lahan Lapas untuk keterampilan agrikultur.</td>
+                        <td>Senin–Sabtu 08.30–12.00 WIB (kecuali Jumat & libur nasional)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="kontak">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hubungi Kami</h2>
+                <p>Untuk informasi lebih lanjut, jangan ragu untuk menghubungi kami melalui berbagai saluran komunikasi berikut</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Alamat</h3>
+                    <p>Jl. Benteng No. 1, Kelurahan Lodoyong, Kecamatan Ambarawa, Kabupaten Semarang, Jawa Tengah</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telepon</h3>
+                    <p>081226743646<br>Senin - Jumat<br>24 Jam</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>ambarawa.lapas@gmail.com<br>Respon dalam 1x24 jam<br>pada hari kerja</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Sabtu: 08:00 - 14:30<br>Minggu: Libur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lapas Kelas 2 Ambarawa</h3>
+                    <p>Lembaga Pemasyarakatan yang berkomitmen untuk melaksanakan pembinaan Warga Binaan Pemasyarakatan dengan mengedepankan nilai-nilai kemanusiaan dan keadilan.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#jadwal">Jadwal Kunjungan</a></li>
+                        <li><a href="#kesehatan">Layanan Kesehatan</a></li>
+                        <li><a href="#layanan">Program Rehabilitasi</a></li>
+                        <li><a href="#kontak">Informasi & Konsultasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Benteng No. 1, Kelurahan Lodoyong, Kecamatan Ambarawa, Kabupaten Semarang, Jawa Tengah</li>
+                        <li><i class="fas fa-phone"></i>081226743646</li>
+                        <li><i class="fas fa-envelope"></i> ambarawa.lapas@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Jam Operasional</h3>
+                    <ul>
+                        <li>Senin - Jumat: 08:00 - 16:00</li>
+                        <li>Sabtu: 08:00 - 12:00</li>
+                        <li>Minggu: Libur</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lapas Kelas 2 Ambarawa. Semua hak dilindungi. | Direktorat Jenderal Pemasyarakatan, Kementerian Hukum dan HAM RI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-on-scroll');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.service-card, .schedule-card, .contact-card, .stat-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
