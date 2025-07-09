@@ -1,62 +1,80 @@
-# Twitter Information Diffusion & Sentiment Analysis Pipeline
+# Automated Information System Chatbot (Backend)
 
-This project delivers a state‑of‑the‑art pipeline for harvesting, processing, and interpreting Twitter data to reveal how information spreads and what the public really thinks.
+This repository encapsulates a production‑ready backend for an AI‑powered chatbot, designed to deliver accurate, context‑aware information through secure, scalable APIs.
 
 ## Project Description  
-The pipeline ingests live Twitter streams, performs rigorous NLP preprocessing, implements advanced sentiment classification, and constructs network graphs to map information diffusion. Designed for researchers and strategists, it uncovers influential users, community clusters, and sentiment trends across millions of tweets.
+The backend orchestrates data ingestion, dialogue management, and notification workflows to serve as the “brain” of an intelligent information system. It harmonizes custom intent detection, OpenAI’s GPT‑3.5 engine, and structured FAQs into a seamless conversational experience.
 
 ### Key Features  
-- **Scalable Streaming Ingestion**  
-  Utilizes Tweepy with custom retry logic and multi‑threading to collect 500K+ tweets per day with automatic fail‑over and logging.
+- **RESTful API Core**  
+  - High‑throughput Flask endpoints for chat sessions, admin actions, and health checks  
+  - Built‑in rate‑limiting (200/day, 50/hour) and CORS protection  
 
-- **Robust NLP Preprocessing**  
-  Cleans, tokenizes, and normalizes raw text via NLTK and spaCy pipelines; extracts hashtags, mentions, emojis, and key phrases for enriched analysis.
+- **Unified Data Layer**  
+  - Modular SQLite schema covering FAQs, schedules, services, users, and chat logs  
+  - Automated migrations and seed data scripts for rapid environment setup  
 
-- **Ensemble Sentiment Modeling**  
-  Leverages Scikit‑learn’s Random Forest and XGBoost classifiers to achieve >92% accuracy on positive/negative/neutral labels, with built‑in evaluation dashboards.
+- **AI‑Driven Dialogue Engine**  
+  - Custom intent classifier with regex patterns and confidence thresholds  
+  - Contextual prompt assembly for GPT‑3.5-turbo, with fallback flows for fallback FAQs  
 
-- **Information Diffusion Graphs**  
-  Constructs NetworkX graphs to identify top 1% influencers, compute centrality metrics, and detect community clusters driving topic virality.
+- **Security & Governance**  
+  - SHA-256 token generation/validation for admin and API access  
+  - Role‑based access controls and activity logging for audit readiness  
 
-- **Interactive Visualization Dashboards**  
-  Embeds dynamic Matplotlib charts and Jupyter Notebook widgets for real‑time exploration and shareable PNG/PDF exports.
+- **Notification Subsystem**  
+  - Email workflows via Flask‑Mail (password resets, alerts)  
+  - Push notifications with pywebpush/VAPID and robust subscription management  
 
-- **Modular & Extensible Architecture**  
-  Designed with clear module boundaries (ingestion, preprocessing, modeling, visualization) for easy extension to other social platforms (e.g., Mastodon, Reddit).
+- **Analytics‑Ready Logging**  
+  - Detailed chat history capture (timestamps, IPs, session IDs, quality scores)  
+  - Hooks for real‑time monitoring and batch analytics  
 
-### Technologies Used  
-- **Python**  
-- **Tweepy & Requests** for Twitter API streaming  
-- **Pandas, NumPy, regex** for data manipulation  
-- **NLTK, spaCy** for NLP tasks  
-- **Scikit‑learn, XGBoost** for sentiment modeling  
-- **NetworkX** for graph analytics  
-- **Matplotlib, Jupyter Notebook widgets** for visualization  
+---
 
-### Project Steps  
-1. **Clone & Setup**  
+## 🛠 Technologies Used  
+| Layer               | Tools & Libraries                        |
+|---------------------|------------------------------------------|
+| Backend Framework   | Python, Flask, flask_limiter, Flask-Mail |
+| Database            | SQLite, SQLAlchemy (or raw SQL)         |
+| AI & NLP            | OpenAI GPT‑3.5‑turbo, regex, custom intent logic |
+| Authentication      | SHA‑256 tokens, role‑based access control |
+| Notifications       | pywebpush/VAPID, Flask‑Mail             |
+| Logging & Monitoring| Python logging, structured JSON outputs  |
+
+---
+
+## 🔧 Installation & Setup  
+1. **Clone the repository**  
    ```bash
-   git clone https://github.com/yourusername/twitter-diffusion-sentiment.git
-   cd twitter-diffusion-sentiment
-   python3 -m venv venv && source venv/bin/activate
+   git clone https://github.com/yourusername/automated-chatbot-backend.git
+   cd automated-chatbot-backend
+2. **Create & activate virtual environment**:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+3. **Install dependencies**:
+   ```bash
    pip install -r requirements.txt
-   cp .env.example .env  # add your Twitter API credentials
-2. **Run Ingestion**:
+4. **Configure environmentl**:
    ```bash
-   python src/ingest.py
-3. **Preprocess Data**:
+   cp .env.example .env
+5. **Initialize database**:
    ```bash
-   python src/preprocess.py
-4. **Train Sentiment Model**:
-   ```bash
-   python src/models/train_sentiment.py
-5. **Generate Diffusion Graphs**:
-   ```bash
-   python src/analysis/network_analysis.py
-6. **Launch Visualization Dashboard**:
-   ```bash
-   jupyter notebook
+   python src/db_setup.py
 
+## ▶️ Usage 
+1. **Start the API server**  
+   ```bash
+   flask run --host=0.0.0.0 --port=5000
+2. **Interact with chatbot**:
+   ```bash
+   POST /api/v1/chat/session with JSON payload { "message": "Your question here" }
+   Use admin endpoints under /api/v1/admin/ to manage FAQs, schedules, and users
+3. **Send notifications**:
+   ```bash
+   python src/notifications/send_push.py
+   
 ### Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
@@ -66,4 +84,4 @@ The pipeline ingests live Twitter streams, performs rigorous NLP preprocessing, 
 ![Screenshot 6](images/Picture6.png)
 
 ### Conclusion
-This pipeline offers a comprehensive toolkit for social‑media insights—seamlessly blending data engineering, NLP, machine learning, and graph analytics to turn raw tweets into strategic intelligence.
+This project delivers a full-spectrum AI‑driven chatbot solution, seamlessly blending intuitive front‑end interactions with a robust, scalable backend. From advanced NLP‑powered dialogue management and secure data handling to dynamic notification workflows and analytics‑ready logging, it empowers organizations to automate information delivery, elevate user engagement, and extract actionable insights. Ready for production deployment, this end‑to‑end chatbot architecture transforms how users access and interact with essential services and knowledge.
