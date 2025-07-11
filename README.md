@@ -1,91 +1,216 @@
-# Hi there! 👋 I'm Bernardo
+# 💼 Bernardo Nandaniar Sunia
 
-I’m a passionate **Data Analyst** and **Frontend Developer** with a unique skill set at the intersection of data analytics and web development. My goal is to bridge the gap between data and users by transforming raw information into meaningful insights and creating visually engaging, user-centric web interfaces. I am driven by curiosity, continuous learning, and a commitment to delivering high-quality solutions that drive impact.
-
----
-
-### 💼 About Me
-- 📊 **Data Analyst**: Skilled in dissecting complex datasets, uncovering hidden trends, and generating data-driven insights that inform strategic decisions and enhance operational efficiency.
-- 💻 **Frontend Developer**: Experienced in crafting responsive, high-performance web applications that prioritize user experience, accessibility, and clean, maintainable code.
-- 🚀 **Continuous Learner**: I’m passionate about staying at the forefront of the latest technologies in data science and web development, constantly expanding my knowledge and skills in machine learning, visualization tools, and modern web frameworks.
-
----
-
-### 🛠️ Technical Skills
-My technical toolkit spans across data analytics, web development, and design, enabling me to approach challenges from multiple perspectives and deliver robust, user-centered solutions.
-- **Programming Languages**: Python, SQL, JavaScript, HTML, CSS
-- **Frontend Frameworks**: React, Vue.js, Bootstrap
-- **Data Visualization**: Tableau, Power BI, D3.js
-- **Data Wrangling**: Pandas, NumPy, Excel
-- **Design Tools**: Figma, Adobe Photoshop
-- **Machine Learning (Basics)**: Scikit-Learn, TensorFlow
-- **Databases**: MySQL, PostgreSQL
-- **Version Control**: Git, GitHub
-
----
-
-### 🌟 Projects
-I thrive on building projects that combine data analysis and frontend development to solve real-world problems, enhance user experience, and provide practical insights. Here are some of the highlights from my portfolio:
-
-- **YC Electric - Custom E-Commerce Website on Blogger Platform**  
-  Developed a custom e-commerce platform serving over 500 users, complete with login, product search, and shopping cart functionality using HTML, CSS, and JavaScript. Leveraged MySQL to manage data for over 100 products and handle 50+ daily transactions in real-time. Enhanced user experience with interactive UI/UX elements and SEO optimization, resulting in a significant boost in organic traffic and user engagement.
-
-- **Student Academic Information System (SI-MAS) for University Courses**  
-  Created a robust, web-based academic information system to streamline course enrollment for 1,000+ students. Built using Laravel and MySQL, the system automates data validation and CRUD operations, reducing average enrollment time by 30% and enhancing administrative efficiency for faculty and students alike.
-
-- **3D Minecraft Development Using C++ and OpenGL**  
-  Designed a 3D game inspired by Minecraft, where players control a bear character to interact with the environment. Implemented efficient matrix manipulations and vector handling in OpenGL to create realistic gameplay with interactive objects, such as trees, rocks, and stackable blocks. This project showcases my foundational skills in game development, graphics rendering, and performance optimization.
-
-- **Greenhouse Gas Emissions Prediction and Analysis for the Next 10 Years**  
-  Conducted an in-depth data analysis and built a predictive model using Python, Excel, and R to forecast greenhouse gas emissions over the next decade. This project aims to support Net Zero Emission goals by providing accurate forecasts that inform emissions reduction policies and promote sustainable practices.
-
-- **COVID-19 Cases Prediction and Analysis for 1-Year Forecast**  
-  Utilized ARIMA and regression models in Python and R to develop a predictive model that forecasts COVID-19 cases for the following year. Through careful data preprocessing and model tuning, this project provides actionable insights for health organizations to plan mitigation strategies, identifying trends in virus transmission and factors influencing case surges.
+<div align="center">
   
-- **Custom Search Engine Using Vector Space Model (VSM) and Latent Semantic Indexing (LSI)**
-  Developed a specialized search engine that ranks documents based on relevance by implementing Vector Space Model (VSM) and Latent Semantic Indexing (LSI) techniques in Python. This project improves search accuracy by 35% through semantic understanding and contextual matching between search terms and document content.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bernardo-sunia/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suniabernardo@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://bit.ly/bernardo-portfolio)
+[![Phone](https://img.shields.io/badge/Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+6289520501678)
+
+</div>
+
 ---
 
-### 💼 Professional Experience
-With over 2 years of experience in the company and university, I have honed my skills in Data Analyst and Frotend Developer. My career journey has equipped me with a strong foundation in Semarang, allowing me to contribute effectively to project. Below are some highlights of my professional experience:
+## 🎯 **Professional Summary**
 
-- **Teaching Assistant – Programming Algorithms Course**
-  Diponegoro University | Feb 2024 – Jul 2024
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Data+Scientist+%7C+Software+Engineer;AI+%26+Machine+Learning+Enthusiast;Full-Stack+Developer;Problem+Solver+%26+Innovation+Driver" alt="Typing SVG" />
+</div>
+
+**Highly analytical Informatics undergraduate** with a proven track record of transforming complex data into actionable insights. Skilled in **Python**, **SQL**, and **advanced data visualization**, with expertise in **machine learning**, **deep learning**, and **full-stack development**. Demonstrated ability to optimize IT systems, gather requirements, and deliver innovative solutions that drive organizational success.
+
+---
+
+## 🎓 **Education**
+
+**Diponegoro University** | *Informatics Engineering* | **Aug 2022 - Present**  
+- **Current GPA:** 3.76/4.00  
+- **6th Semester** - Focused on Data Science, Machine Learning, and Software Engineering
+
+---
+
+## 💼 **Professional Experience**
+
+### 🏢 **Class II Ambarawa Correctional Facility** | *Intern - AI Chatbot Developer*
+**May 2025 - Jul 2025** | Ambarawa, Indonesia
+
+- 🤖 **Architected full-stack AI chatbot** using Flask, HTML5, CSS3, JavaScript, and OpenAI GPT API
+- 🔒 **Developed secure role-based admin dashboard** with authentication and brute-force protection
+- 📊 **Implemented data-driven analytics** to monitor chatbot performance and user engagement
+- 🌐 **Enhanced user experience** with Web Push notifications and responsive UI design
+
+### 🏛️ **East Semarang District** | *Intern - Financial Reporting Developer*
+**Dec 2024 - Feb 2025** | Semarang, Indonesia
+
+- 💰 **Engineered financial reporting application** using ReactJS, MySQL, and Prisma ORM
+- 📈 **Improved data accuracy and processing efficiency** for district financial operations
+- 🎨 **Designed interactive dashboard** with real-time data visualization using Chart.js and D3.js
+- 🔐 **Implemented secure authentication** and role-based access control
+
+### 🏫 **Diponegoro University** | *Laboratory Teaching Assistant*
+**Jun 2023 - Jun 2025** | Semarang, Indonesia
+
+- 👨‍🏫 **Mentored 20+ students** in Python programming and algorithmic problem-solving
+- 📚 **Designed structured assignments** and evaluation frameworks for IT competencies
+- 📊 **Achieved 15% improvement** in average lab grades through effective teaching methods
+
+### ⚡ **YC Electric** | *Assistant Manager & Supply Chain Assistant*
+**Jan 2022 - Dec 2024** | Semarang, Indonesia
+
+- 📦 **Optimized inventory management** through efficient tracking systems and data analysis
+- 💼 **Streamlined supply chain operations** resulting in cost reduction and improved efficiency
+- 📈 **Compiled comprehensive financial reports** contributing to significant profitability improvements
+
+---
+
+## 🚀 **Featured Projects**
+
+### 🤖 **AI-Driven Information Center Chatbot**
+**Technologies:** `Python` `Flask` `OpenAI GPT API` `SQLite` `JavaScript` `HTML5/CSS3`
+
+- Built comprehensive chatbot system for correctional facility information management
+- Integrated advanced NLP capabilities with custom prompt engineering
+- Implemented real-time analytics and performance monitoring dashboard
+
+### 📊 **Twitter Information Diffusion & Sentiment Analysis**
+**Technologies:** `Python` `Tweepy` `NetworkX` `Scikit-learn` `Pandas` `Matplotlib`
+
+- Processed 500K+ tweets daily with fault-tolerant data ingestion pipeline
+- Achieved 92% accuracy in sentiment classification using ensemble methods
+- Identified top 1% influential users through network analysis algorithms
+
+### 🔍 **Advanced Information Retrieval System**
+**Technologies:** `Python` `mBERT` `PyTorch` `FAISS` `Hugging Face Transformers`
+
+- Developed multilingual neural IR system with sub-second query response times
+- Fine-tuned mBERT for Indonesian-English semantic search capabilities
+- Achieved significant performance improvements over traditional BM25 baselines
+
+### 💰 **Financial Reporting Application**
+**Technologies:** `ReactJS` `MySQL` `Prisma ORM` `Node.js` `Express.js`
+
+- Built comprehensive financial data processing and visualization platform
+- Integrated real-time reporting capabilities with interactive dashboards
+- Implemented secure authentication and role-based access control
+
+### 🏫 **Student Academic Information System (SI-MAS)**
+**Technologies:** `Laravel` `MySQL` `PHP` `JavaScript` `HTML/CSS`
+
+- Developed web-based system serving 1,000+ students and 100+ faculty members
+- Reduced course registration time by 30% through process optimization
+- Implemented automated validation reducing human error and faculty workload
+
+---
+
+## 🛠️ **Technical Skills**
+
+<div align="center">
+
+### **Programming Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+
+### **Frameworks & Libraries**
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+
+### **Databases & Cloud**
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![Alibaba Cloud](https://img.shields.io/badge/Alibaba%20Cloud-FF6A00?style=for-the-badge&logo=alibabacloud&logoColor=white)
+
+### **Tools & Technologies**
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=for-the-badge&logo=opengl&logoColor=white)
+
+</div>
+
+---
+
+## 📜 **Certifications**
+
+- 🎓 **Bootcamp in Data Analysis** - *Alex the Data Analyst* (2024)
+- 🤖 **PyTorch and Generative AI** - *Avalon AI* (2024)
+- 🗄️ **Database Programming with SQL** - *Oracle Academy* (2024)
+- ☕ **Java Programming** - *Oracle Academy* (2024)
+- ☁️ **Cloud Computing** - *Alibaba Cloud* (2024)
+- 📊 **Bootcamp Data Analysis** - *Diponegoro University* (2023)
+
+---
+
+## 🎯 **Core Competencies**
+
+<div align="center">
+
+| **Technical Skills** | **Soft Skills** |
+|:---:|:---:|
+| 🧠 Machine Learning & Deep Learning | 🗣️ Public Speaking & Leadership |
+| 📊 Data Analysis & Visualization | 🧩 Creative Problem Solving |
+| 🔍 Information Retrieval Systems | 📈 Strategic Planning & Management |
+| 🌐 Full-Stack Web Development | 🤝 Team Collaboration & Communication |
+| 🤖 AI & Natural Language Processing | 📋 Project Management |
+| 🔒 Cybersecurity & Authentication | 🔬 Research & Analysis |
+
+</div>
+
+---
+
+## 📈 **GitHub Statistics**
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=bers31&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bers31&theme=tokyonight" alt="GitHub Streak" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bers31&layout=compact&theme=tokyonight" alt="Top Languages" />
+</div>
+
+---
+
+## 🌟 **What Sets Me Apart**
+
+- 🎯 **Results-Driven:** Consistently delivered measurable improvements (15% grade improvement, 30% time reduction, 92% accuracy)
+- 🚀 **Innovation Focus:** Pioneered AI-driven solutions in government and educational sectors
+- 🌐 **Full-Stack Expertise:** Seamlessly bridge frontend, backend, and data science domains
+- 🤝 **Collaborative Leader:** Mentored 20+ students and collaborated across multidisciplinary teams
+- 📊 **Data-Driven Decision Making:** Transform complex datasets into actionable business insights
+
+---
+
+## 📞 **Let's Connect!**
+
+<div align="center">
+
+I'm always open to discussing innovative projects, collaboration opportunities, or simply connecting with fellow tech enthusiasts. Feel free to reach out!
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's%20Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bernardo-sunia/)
+[![Email](https://img.shields.io/badge/Email-Drop%20a%20Line-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suniabernardo@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View%20My%20Work-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://bit.ly/bernardo-portfolio)
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=bers31&color=blueviolet&style=for-the-badge" alt="Profile Views" />
+</div>
+
+<div align="center">
   
-  - Guided 20+ students through programming fundamentals, focusing on algorithmic logic, debugging techniques, and problem-solving skills.
-  - Developed comprehensive course materials and administered evaluations, contributing to a 15% increase in student performance.
-  - Conducted interactive lab sessions, offering personalized feedback to reinforce understanding and foster individual improvement.
+*"Transforming complex data into simple solutions, one algorithm at a time."*
 
-- **Freelance Designer – Posters, Ads, and Promotional Videos**
-  Jan 2022 - Present
-
-  - Designed and produced 30+ posters and videos for various clients, including small businesses and non-profit organizations, achieving high satisfaction rates.
-  - Used Adobe Photoshop, Illustrator, and Premiere Pro to create compelling visual content tailored to each client’s audience and brand identity.
-  - Maintained a 100% on-time delivery rate and consistently exceeded client expectations by ensuring impactful designs and attention to detail.
-    
-- **Assistant Manager – YC Electric**
-  Jan 2022 - Present
-
-  - Supported inventory management, sales tracking, and financial reporting, providing data-driven insights that helped optimize profitability.
-  - Collaborated on marketing strategies to expand the customer base, which contributed to a notable increase in monthly sales.
-  - Enhanced client partner by addressing inquiries and resolving issues, fostering stronger relationships and higher satisfaction.
-
----
-
-### 🛠️ What I’m Working On
-I’m always exploring new projects and improving my skill set. Currently, I am:
-
-- Building a personal project that combines data analytics and interactive visualization.
-- Learning advanced machine learning techniques and deepening my knowledge of frontend development frameworks.
-
----
-  
-### 📫 Let's Connect
-I’m open to collaboration, new projects, or just connecting with like-minded professionals. Feel free to reach out!
-- **Email**: suniabernardo@gmail.com
-- **LinkedIn**: https://www.linkedin.com/in/bernardo-sunia-034403282/
-- **GitHub**: github.com/bers31
-
----
-
-Thank you for stopping by my profile! I look forward to connecting and creating meaningful work together.
+</div>
