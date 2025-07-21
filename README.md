@@ -224,7 +224,7 @@
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=bers31&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bers31&theme=tokyonight" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=bers31&theme=tokyonight" alt="GitHub Streak" />
 </div>
 
 <div align="center">
@@ -250,7 +250,7 @@
   <a href="https://linkedin.com/in/bernardo-sunia/" target="_blank" rel="noopener">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="mailto:suniabernardo@gmail.com">
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Email-Drop%20a%20Line-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
   <a href="https://bit.ly/bernardo-portfolio" target="_blank" rel="noopener">
