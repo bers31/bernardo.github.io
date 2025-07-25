@@ -5,6 +5,9 @@ YC Electric is an e-commerce website developed using the Blogger platform, featu
 ## Project Description
 YC Electric is designed to provide a simple e-commerce solution for small business owners by leveraging Blogger as the platform, with custom HTML, CSS, and JavaScript features added.
 
+### Website Link
+Visit [YC Electric](https://ycelectric.blogspot.com/) to see the live version of this project.
+
 ### Key Features
 - **User Login**: Authentication feature for secure user access.
 - **Product Search**: Allows easy navigation through over 100 products.
@@ -28,9 +31,6 @@ YC Electric is designed to provide a simple e-commerce solution for small busine
 ![Screenshot 4](images/Picture10.png)
 ![Screenshot 5](images/Picture11.png)
 ![Screenshot 6](images/Picture12.png)
-
-### Website Link
-Visit [YC Electric](https://ycelectric.blogspot.com/) to see the live version of this project.
 
 ## Conclusion
 This project demonstrates the development of a functional e-commerce website using Blogger, HTML, CSS, JavaScript, and MySQL, providing a practical solution for small businesses to manage their online sales efficiently.
