@@ -263,16 +263,40 @@
 ## 🎯 **Core Competencies**
 
 <div align="center">
-
-| **Technical Skills** | **Soft Skills** |
-|:---:|:---:|
-| 🧠 Machine Learning & Deep Learning | 🗣️ Public Speaking & Leadership |
-| 📊 Data Analysis & Visualization | 🧩 Creative Problem Solving |
-| 🔍 Information Retrieval Systems | 📈 Strategic Planning & Management |
-| 🌐 Full-Stack Web Development | 🤝 Team Collaboration & Communication |
-| 🤖 AI & Natural Language Processing | 📋 Project Management |
-| 🔒 Cybersecurity & Authentication | 🔬 Research & Analysis |
-
+  <table>
+    <thead>
+      <tr>
+        <th>Technical Skills</th>
+        <th>Soft Skills</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🧠 Machine Learning & Deep Learning</td>
+        <td>🗣️ Public Speaking & Leadership</td>
+      </tr>
+      <tr>
+        <td>📊 Data Analysis & Visualization</td>
+        <td>🧩 Creative Problem Solving</td>
+      </tr>
+      <tr>
+        <td>🔍 Information Retrieval Systems</td>
+        <td>📈 Strategic Planning & Management</td>
+      </tr>
+      <tr>
+        <td>🌐 Full-Stack Web Development</td>
+        <td>🤝 Team Collaboration & Communication</td>
+      </tr>
+      <tr>
+        <td>🤖 AI & Natural Language Processing</td>
+        <td>📋 Project Management</td>
+      </tr>
+      <tr>
+        <td>🔒 Cybersecurity & Authentication</td>
+        <td>🔬 Research & Analysis</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ---
