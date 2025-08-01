@@ -307,7 +307,7 @@
   <img src="https://github-readme-stats.vercel.app/api?username=bers31&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" />
 </div>
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=bers31&theme=tokyonight" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bers31&theme=tokyonight" alt="GitHub Streak" />
 </div>
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bers31&layout=compact&theme=tokyonight" alt="Top Languages" />
