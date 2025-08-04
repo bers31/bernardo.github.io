@@ -1,79 +1,346 @@
-# Automated Information System Chatbot (Backend)
+# 🏛️ Prison Chatbot System for Class II Ambarawa Correctional Facility
+### *Intelligent Communication Platform for Modern Correctional Management*
 
-This repository encapsulates a production‑ready backend for an AI‑powered chatbot, designed to deliver accurate, context‑aware information through secure, scalable APIs.
+<div align="center">
 
-## Project Description  
-The backend orchestrates data ingestion, dialogue management, and notification workflows to serve as the “brain” of an intelligent information system. It harmonizes custom intent detection, OpenAI’s GPT‑3.5 engine, and structured FAQs into a seamless conversational experience.
+![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
+![Flask](https://img.shields.io/badge/flask-v2.3.0-green.svg)
+![OpenAI](https://img.shields.io/badge/OpenAI-API-orange.svg)
+![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
+![Build Status](https://img.shields.io/badge/build-passing-success.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![PWA Ready](https://img.shields.io/badge/PWA-Ready-purple.svg)
 
-### Key Features  
-- **RESTful API Core**  
-  - High‑throughput Flask endpoints for chat sessions, admin actions, and health checks  
-  - Built‑in rate‑limiting (200/day, 50/hour) and CORS protection  
-
-- **Unified Data Layer**  
-  - Modular SQLite schema covering FAQs, schedules, services, users, and chat logs  
-  - Automated migrations and seed data scripts for rapid environment setup  
-
-- **AI‑Driven Dialogue Engine**  
-  - Custom intent classifier with regex patterns and confidence thresholds  
-  - Contextual prompt assembly for GPT‑3.5-turbo, with fallback flows for fallback FAQs  
-
-- **Security & Governance**  
-  - SHA-256 token generation/validation for admin and API access  
-  - Role‑based access controls and activity logging for audit readiness  
-
-- **Notification Subsystem**  
-  - Email workflows via Flask‑Mail (password resets, alerts)  
-  - Push notifications with pywebpush/VAPID and robust subscription management  
-
-- **Analytics‑Ready Logging**  
-  - Detailed chat history capture (timestamps, IPs, session IDs, quality scores)  
-  - Hooks for real‑time monitoring and batch analytics  
+</div>
 
 ---
 
-## 🛠 Technologies Used  
-| Layer               | Tools & Libraries                        |
-|---------------------|------------------------------------------|
-| Backend Framework   | Python, Flask, flask_limiter, Flask-Mail |
-| Database            | SQLite, SQLAlchemy (or raw SQL)         |
-| AI & NLP            | OpenAI GPT‑3.5‑turbo, regex, custom intent logic |
-| Authentication      | SHA‑256 tokens, role‑based access control |
-| Notifications       | pywebpush/VAPID, Flask‑Mail             |
-| Logging & Monitoring| Python logging, structured JSON outputs  |
+## 📖 **Project Overview**
+
+The **Prison Chatbot System** is a cutting-edge Progressive Web Application designed specifically for **Lapas Kelas II A Ambarawa Correctional Facility**. This intelligent platform revolutionizes communication between inmates and staff by providing a secure, AI-powered chatbot interface alongside a comprehensive administrative dashboard.
+
+Built with modern web technologies and powered by OpenAI's advanced natural language processing, this system addresses the critical need for efficient, scalable communication management in correctional facilities while maintaining the highest security standards.
+
+**Why This Matters:**
+- Streamlines administrative communication processes
+- Reduces staff workload through intelligent automation
+- Provides 24/7 support for inmate inquiries
+- Enhances operational transparency and efficiency
+- Implements modern digital solutions in correctional management
 
 ---
 
-## 🔧 Installation & Setup  
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/yourusername/automated-chatbot-backend.git
-   cd automated-chatbot-backend
-2. **Create & activate virtual environment**:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-3. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-4. **Configure environmentl**:
-   ```bash
-   cp .env.example .env
-5. **Initialize database**:
-   ```bash
-   python src/db_setup.py
+## ✨ **Key Features**
 
-## ▶️ Usage 
-1. **Start the API server**  
-   ```bash
-   flask run --host=0.0.0.0 --port=5000
-2. **Interact with chatbot**:
-   ```bash
-   POST /api/v1/chat/session with JSON payload { "message": "Your question here" }
-   Use admin endpoints under /api/v1/admin/ to manage FAQs, schedules, and users
-3. **Send notifications**:
-   ```bash
-   python src/notifications/send_push.py
+<table>
+<tr>
+<td width="50%">
+
+### 🤖 **Intelligent Chat System**
+- OpenAI-powered natural language understanding
+- Context-aware conversation management
+- Multi-language support capabilities
+- Intent detection and response generation
+
+### 🔒 **Enterprise Security**
+- Advanced authentication & session management
+- Password hashing with Werkzeug Security
+- CSRF protection and rate limiting
+- Secure admin access controls
+
+### 📱 **Progressive Web App**
+- Offline functionality with service workers
+- Cross-platform compatibility
+- App-like user experience
+- Asset caching for optimal performance
+
+</td>
+<td width="50%">
+
+### 📊 **Admin Dashboard**
+- Real-time chat monitoring
+- User management system
+- System health analytics
+- Conversation logs visualization
+
+### 📧 **Communication Suite**
+- Email notification system
+- Web push notifications
+- Password reset workflows
+- Real-time alerts
+
+### 🗄️ **Data Management**
+- SQLite database integration
+- Automated data migration
+- CRUD operations for all entities
+- Secure data persistence
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🛠️ **Technology Stack & Tools**
+
+<div align="center">
+
+| **Category** | **Technologies** |
+|:------------:|:-----------------|
+| **Backend Framework** | ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue) |
+| **Database** | ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) |
+| **AI/ML** | ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white) |
+| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) |
+| **Security** | ![Werkzeug](https://img.shields.io/badge/Werkzeug-FF6B6B?style=for-the-badge) ![CORS](https://img.shields.io/badge/CORS-4CAF50?style=for-the-badge) |
+| **Deployment** | ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white) |
+
+</div>
+
+**Core Dependencies:**
+```
+Flask==2.3.0
+Flask-Mail==0.9.1
+Flask-Limiter==3.5.0
+Flask-CORS==4.0.0
+openai==0.28.0
+pywebpush==1.14.0
+Werkzeug==2.3.0
+```
+
+---
+
+## 🚀 **Installation & Setup**
+
+### **Prerequisites**
+- Python 3.8+ installed
+- Git for version control
+- OpenAI API key
+- SMTP email credentials (for notifications)
+
+### **Quick Start**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/bers31/bernardo.github.io.git
+cd bernardo.github.io
+
+# 2. Create virtual environment
+python -m venv prison_chatbot_env
+source prison_chatbot_env/bin/activate  # On Windows: prison_chatbot_env\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration:
+# OPENAI_API_KEY=your_openai_api_key
+# SMTP_SERVER=your_smtp_server
+# SMTP_USERNAME=your_email
+# SMTP_PASSWORD=your_password
+
+# 5. Initialize database
+python -c "from backend import init_db; init_db()"
+
+# 6. Run the application
+python backend.py
+```
+
+### **Docker Deployment** (Optional)
+```bash
+# Build and run with Docker
+docker build -t prison-chatbot .
+docker run -p 5000:5000 --env-file .env prison-chatbot
+```
+
+**🌐 Access Points:**
+- **Main Application:** `http://localhost:5000`
+- **Admin Dashboard:** `http://localhost:5000/admin_login.html`
+- **API Endpoints:** `http://localhost:5000/api/`
+
+---
+
+## 🎥 **Demo & Screenshots**
+
+<div align="center">
+
+### **🖥️ Live Demo**
+**[🔗 Visit Live Application](https://bers31.github.io/bernardo.github.io/)**
+
+</div>
+
+<table>
+<tr>
+<td width="33%">
+<img src="https://via.placeholder.com/300x200/4CAF50/white?text=Chat+Interface" alt="Chat Interface" width="100%"/>
+<p align="center"><strong>User Chat Interface</strong><br/>Clean, intuitive design for easy communication</p>
+</td>
+<td width="33%">
+<img src="https://via.placeholder.com/300x200/2196F3/white?text=Admin+Dashboard" alt="Admin Dashboard" width="100%"/>
+<p align="center"><strong>Admin Dashboard</strong><br/>Comprehensive management and monitoring</p>
+</td>
+<td width="33%">
+<img src="https://via.placeholder.com/300x200/FF9800/white?text=Mobile+PWA" alt="Mobile PWA" width="100%"/>
+<p align="center"><strong>Mobile PWA</strong><br/>Responsive design across all devices</p>
+</td>
+</tr>
+</table>
+
+### **📱 Progressive Web App Features**
+- ✅ **Offline Functionality** - Works without internet connection
+- ✅ **App Installation** - Can be installed on any device
+- ✅ **Push Notifications** - Real-time updates and alerts
+- ✅ **Responsive Design** - Optimized for all screen sizes
+
+---
+
+## 🗺️ **Project Roadmap**
+
+<div align="center">
+
+| **Milestone** | **Features** | **Target Date** | **Status** |
+|:-------------:|:-------------|:---------------:|:----------:|
+| **Phase 1** | Core chatbot functionality, basic admin panel | Q1 2024 | ✅ **Complete** |
+| **Phase 2** | PWA implementation, offline support | Q2 2024 | ✅ **Complete** |
+| **Phase 3** | Advanced analytics, reporting dashboard | Q3 2024 | 🚧 **In Progress** |
+| **Phase 4** | Multi-language support, voice integration | Q4 2024 | 📋 **Planned** |
+| **Phase 5** | Mobile app deployment, advanced AI features | Q1 2025 | 📋 **Planned** |
+
+</div>
+
+---
+
+## 🏗️ **System Architecture**
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Frontend      │    │   Flask Backend │    │   External APIs │
+│   (PWA)         │◄──►│   (backend.py)  │◄──►│   (OpenAI)      │
+├─────────────────┤    ├─────────────────┤    ├─────────────────┤
+│ • Chat UI       │    │ • Route Handler │    │ • NLP Processing│
+│ • Admin Panel   │    │ • Session Mgmt  │    │ • Email Service │
+│ • Service Worker│    │ • Database ORM  │    │ • Push Notifications│
+│ • PWA Manifest  │    │ • Security Layer│    │                 │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                              │
+                              ▼
+                    ┌─────────────────┐
+                    │   SQLite DB     │
+                    │                 │
+                    │ • Users         │
+                    │ • Messages      │
+                    │ • Chat Logs     │
+                    │ • Admin Settings│
+                    └─────────────────┘
+```
+
+---
+
+## 🤝 **Contributing**
+
+We welcome contributions from the developer community! Here's how you can help:
+
+### **Getting Started**
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. **Open** a Pull Request
+
+### **Contribution Guidelines**
+- Follow PEP 8 style guide for Python code
+- Add unit tests for new features
+- Update documentation for any API changes
+- Ensure all tests pass before submitting PR
+
+### **Code of Conduct**
+This project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you're expected to uphold this code.
+
+---
+
+## 🧪 **Testing**
+
+```bash
+# Run unit tests
+python -m pytest tests/
+
+# Run with coverage report
+python -m pytest --cov=backend tests/
+
+# Run integration tests
+python -m pytest tests/integration/
+
+# Performance testing
+python -m pytest tests/performance/
+```
+
+---
+
+## 📄 **License**
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+```
+MIT License
+
+Copyright (c) 2024 Bernardo - Universitas Diponegoro
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
+
+---
+
+## 📫 **Contact & Support**
+
+<div align="center">
+
+### **👨‍💻 Developer Information**
+
+**Bernardo**  
+*Computer Science Student*  
+**Universitas Diponegoro**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bers31)
+[![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)](https://bers31.github.io/bernardo.github.io/)
+
+</div>
+
+### **🏢 Project Collaboration**
+- **Institution:** Universitas Diponegoro, Faculty of Computer Science
+- **Partner Facility:** Lapas Kelas II A Ambarawa
+- **Project Type:** Final Year Capstone Project
+- **Academic Supervisor:** [Supervisor Name] - [supervisor@undip.ac.id]
+
+### **📞 Support Channels**
+- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/bers31/bernardo.github.io/issues)
+- 💡 **Feature Requests:** [GitHub Discussions](https://github.com/bers31/bernardo.github.io/discussions)
+- 📚 **Documentation:** [Project Wiki](https://github.com/bers31/bernardo.github.io/wiki)
+- 💬 **General Inquiries:** [Email Support](mailto:your.email@example.com)
+
+---
+
+<div align="center">
+
+### **⭐ If you found this project helpful, please give it a star!**
+
+**Made with ❤️ by [Bernardo](https://github.com/bers31) at Universitas Diponegoro**
+
+*Transforming correctional facility communication through intelligent technology*
+
+</div>
+
+---
+
+**🔐 Security Notice:** This system handles sensitive correctional facility data. Please ensure proper security configurations and compliance with relevant regulations before deployment in production environments.
    
 ### Screenshots
 ![Screenshot 1](images/Picture1.png)
