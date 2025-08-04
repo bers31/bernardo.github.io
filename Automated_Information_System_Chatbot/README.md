@@ -187,25 +187,25 @@ docker run -p 5000:5000 --env-file .env prison-chatbot
 
 ---
 
-<h2>🎥 Demo &amp; Screenshots</h2>
+<h2>🎥 Demo </h2>
 <div align="center">
   <p><strong>🖥️ Live Demo</strong></p>
-  <p><a href="https://bers31.github.io/bernardo.github.io/">🔗 Visit Live Application</a></p>
+  <p><a href="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/">🔗 Visit Live Application</a></p>
 </div>
 
 <table>
   <tr>
     <td width="33%">
-      <img src="https://via.placeholder.com/300x200/4CAF50/white?text=Chat+Interface" alt="Chat Interface" width="100%"/>
+      <img src=images/Picture6.png alt="Chat Interface" width="100%"/>
       <p align="center"><strong>User Chat Interface</strong><br/>Clean, intuitive design for easy communication</p>
     </td>
     <td width="33%">
-      <img src="https://via.placeholder.com/300x200/2196F3/white?text=Admin+Dashboard" alt="Admin Dashboard" width="100%"/>
-      <p align="center"><strong>Admin Dashboard</strong><br/>Comprehensive management and monitoring</p>
+      <img src=images/Picture1.png alt="Admin Login" width="100%"/>
+      <p align="center"><strong>Admin Login</strong><br/>Secure access gateway for system administrators</p>
     </td>
     <td width="33%">
-      <img src="https://via.placeholder.com/300x200/FF9800/white?text=Mobile+PWA" alt="Mobile PWA" width="100%"/>
-      <p align="center"><strong>Mobile PWA</strong><br/>Responsive design across all devices</p>
+      <img src=images/Picture3.png alt="Admin Dashboard" width="100%"/>
+      <p align="center"><strong>Admin Dashboard</strong><br/>Comprehensive management and monitoring</p>
     </td>
   </tr>
 </table>
@@ -222,11 +222,11 @@ docker run -p 5000:5000 --env-file .env prison-chatbot
 <div align="center">
   <table>
     <tr><th>Milestone</th><th>Features</th><th>Target Date</th><th>Status</th></tr>
-    <tr><td>Phase 1</td><td>Core chatbot functionality, basic admin panel</td><td>Q1 2024</td><td>✅ Complete</td></tr>
-    <tr><td>Phase 2</td><td>PWA implementation, offline support</td><td>Q2 2024</td><td>✅ Complete</td></tr>
-    <tr><td>Phase 3</td><td>Advanced analytics, reporting dashboard</td><td>Q3 2024</td><td>🚧 In Progress</td></tr>
-    <tr><td>Phase 4</td><td>Multi-language support, voice integration</td><td>Q4 2024</td><td>📋 Planned</td></tr>
-    <tr><td>Phase 5</td><td>Mobile app deployment, advanced AI features</td><td>Q1 2025</td><td>📋 Planned</td></tr>
+    <tr><td>Phase 1</td><td>Core chatbot functionality, basic admin panel</td><td>Q1 2025</td><td>✅ Complete</td></tr>
+    <tr><td>Phase 2</td><td>PWA implementation, offline support</td><td>Q2 2025</td><td>✅ Complete</td></tr>
+    <tr><td>Phase 3</td><td>Advanced analytics, reporting dashboard</td><td>Q3 2025</td><td>🚧 In Progress</td></tr>
+    <tr><td>Phase 4</td><td>Multi-language support, voice integration</td><td>Q4 2026</td><td>📋 Planned</td></tr>
+    <tr><td>Phase 5</td><td>Mobile app deployment, advanced AI features</td><td>Q1 2027</td><td>📋 Planned</td></tr>
   </table>
 </div>
 
@@ -338,7 +338,7 @@ copies or substantial portions of the Software.
 
 **🔐 Security Notice:** This system handles sensitive correctional facility data. Please ensure proper security configurations and compliance with relevant regulations before deployment in production environments.
    
-### Screenshots
+### Full Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
 ![Screenshot 3](images/Picture3.png)
