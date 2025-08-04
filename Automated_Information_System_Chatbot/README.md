@@ -196,15 +196,15 @@ docker run -p 5000:5000 --env-file .env prison-chatbot
 <table>
   <tr>
     <td width="33%">
-      <img src=images/Picture6.png alt="Chat Interface" width="100%"/>
+      <img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture6.png" alt="Chat Interface" width="100%"/>
       <p align="center"><strong>User Chat Interface</strong><br/>Clean, intuitive design for easy communication</p>
     </td>
     <td width="33%">
-      <img src=images/Picture1.png alt="Admin Login" width="100%"/>
+      <img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture1.png" alt="Admin Login" width="100%"/>
       <p align="center"><strong>Admin Login</strong><br/>Secure access gateway for system administrators</p>
     </td>
     <td width="33%">
-      <img src=images/Picture3.png alt="Admin Dashboard" width="100%"/>
+      <img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture3.png" alt="Admin Dashboard" width="100%"/>
       <p align="center"><strong>Admin Dashboard</strong><br/>Comprehensive management and monitoring</p>
     </td>
   </tr>
