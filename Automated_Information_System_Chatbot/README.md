@@ -226,7 +226,7 @@ docker run -p 5000:5000 --env-file .env prison-chatbot
     <tr><td>Phase 2</td><td>PWA implementation, offline support</td><td>Q2 2025</td><td>✅ Complete</td></tr>
     <tr><td>Phase 3</td><td>Advanced analytics, reporting dashboard</td><td>Q3 2025</td><td>🚧 In Progress</td></tr>
     <tr><td>Phase 4</td><td>Multi-language support, voice integration</td><td>Q4 2026</td><td>📋 Planned</td></tr>
-    <tr><td>Phase 5</td><td>Mobile app deployment, advanced AI features</td><td>Q1 2027</td><td>📋 Planned</td></tr>
+    <tr><td>Phase 5</td><td>Mobile app deployment, advanced AI features</td><td>Q5 2027</td><td>📋 Planned</td></tr>
   </table>
 </div>
 
