@@ -150,17 +150,17 @@ g++ -o minecraft_clone main.cpp -lopengl32 -lglu32 -lfreeglut
 <div align="center">
 
 <h3>🎮 Gameplay Preview</h3>
-<img src="https://via.placeholder.com/800x450/1a1a1a/ffffff?text=3D+Bear+Character+in+Action" alt="Gameplay Screenshot" width="100%"/>
+<img src="https://github.com/bers31/bernardo.github.io/blob/main/3D_Minecraft_Development/images/Picture2.png" alt="Gameplay Screenshot" width="100%"/>
 
 <p><em>Interactive 3D bear character navigating the sandbox world</em></p>
 
 <h3>🌅 Dynamic Lighting System</h3>
-<img src="https://via.placeholder.com/800x450/87CEEB/ffffff?text=Dynamic+Sun+%26+Shadows" alt="Lighting Demo" width="100%"/>
+<img src="https://github.com/bers31/bernardo.github.io/blob/main/3D_Minecraft_Development/images/Picture4.png" alt="Lighting Demo" width="100%"/>
 
 <p><em>Real-time sun movement with dynamic shadows and lens flare effects</em></p>
 
 <h3>🏗️ Block Building Mechanics</h3>
-<img src="https://via.placeholder.com/800x450/228B22/ffffff?text=Block+Placement+%26+Destruction" alt="Building System" width="100%"/>
+<img src="https://github.com/bers31/bernardo.github.io/blob/main/3D_Minecraft_Development/images/Picture5.png" alt="Building System" width="100%"/>
 
 <p><em>Intuitive block placement and destruction system</em></p>
 
