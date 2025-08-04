@@ -321,10 +321,10 @@ copies or substantial portions of the Software.
      Universitas Diponegoro
   </p>
   <p>
-    <a href="https://linkedin.com/in/your-linkedin"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-    <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+    <a href="https://linkedin.com/in/bernardo-sunia/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
     <a href="https://github.com/bers31"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
-    <a href="https://bers31.github.io/bernardo.github.io/"><img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white"/></a>
+    <a href="https://bit.ly/bernardo-my_portfolio"><img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white"/></a>
   </p>
   <p>⭐ If you found this project helpful, please give it a star!</p>
   <p>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro<br/>
