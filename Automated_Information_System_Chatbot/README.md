@@ -273,9 +273,6 @@ We welcome contributions from the developer community! Here's how you can help:
 - Update documentation for any API changes
 - Ensure all tests pass before submitting PR
 
-### **Code of Conduct**
-This project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you're expected to uphold this code.
-
 ---
 
 ## 🧪 **Testing**
