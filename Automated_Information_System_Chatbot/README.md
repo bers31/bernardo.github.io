@@ -1,16 +1,16 @@
-# 🏛️ Prison Chatbot System for Class II Ambarawa Correctional Facility
-### *Intelligent Communication Platform for Modern Correctional Management*
+<div align="center">
+  <h1>🏛️ Prison Chatbot System for Class II Ambarawa Correctional Facility</h1>
+  <em>Intelligent Communication Platform for Modern Correctional Management</em>
+</div>
 
 <div align="center">
-
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
-![Flask](https://img.shields.io/badge/flask-v2.3.0-green.svg)
-![OpenAI](https://img.shields.io/badge/OpenAI-API-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)
-![Build Status](https://img.shields.io/badge/build-passing-success.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![PWA Ready](https://img.shields.io/badge/PWA-Ready-purple.svg)
-
+  <img src="https://img.shields.io/badge/python-v3.8+-blue.svg" alt="Python"/>
+  <img src="https://img.shields.io/badge/flask-v2.3.0-green.svg" alt="Flask"/>
+  <img src="https://img.shields.io/badge/OpenAI-API-orange.svg" alt="OpenAI API"/>
+  <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="License"/>
+  <img src="https://img.shields.io/badge/build-passing-success.svg" alt="Build Status"/>
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/PWA-Ready-purple.svg" alt="PWA Ready"/>
 </div>
 
 ---
@@ -30,82 +30,109 @@ Built with modern web technologies and powered by OpenAI's advanced natural lang
 
 ---
 
-## ✨ **Key Features**
-
 <table>
-<tr>
-<td width="50%">
-
-### 🤖 **Intelligent Chat System**
-- OpenAI-powered natural language understanding
-- Context-aware conversation management
-- Multi-language support capabilities
-- Intent detection and response generation
-
-### 🔒 **Enterprise Security**
-- Advanced authentication & session management
-- Password hashing with Werkzeug Security
-- CSRF protection and rate limiting
-- Secure admin access controls
-
-### 📱 **Progressive Web App**
-- Offline functionality with service workers
-- Cross-platform compatibility
-- App-like user experience
-- Asset caching for optimal performance
-
-</td>
-<td width="50%">
-
-### 📊 **Admin Dashboard**
-- Real-time chat monitoring
-- User management system
-- System health analytics
-- Conversation logs visualization
-
-### 📧 **Communication Suite**
-- Email notification system
-- Web push notifications
-- Password reset workflows
-- Real-time alerts
-
-### 🗄️ **Data Management**
-- SQLite database integration
-- Automated data migration
-- CRUD operations for all entities
-- Secure data persistence
-
-</td>
-</tr>
+  <tr>
+    <td width="50%">
+      <h3>🤖 Intelligent Chat System</h3>
+      <ul>
+        <li>OpenAI-powered natural language understanding</li>
+        <li>Context-aware conversation management</li>
+        <li>Multi-language support capabilities</li>
+        <li>Intent detection and response generation</li>
+      </ul>
+      <h3>🔒 Enterprise Security</h3>
+      <ul>
+        <li>Advanced authentication &amp; session management</li>
+        <li>Password hashing with Werkzeug Security</li>
+        <li>CSRF protection and rate limiting</li>
+        <li>Secure admin access controls</li>
+      </ul>
+      <h3>📱 Progressive Web App</h3>
+      <ul>
+        <li>Offline functionality with service workers</li>
+        <li>Cross-platform compatibility</li>
+        <li>App-like user experience</li>
+        <li>Asset caching for optimal performance</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>📊 Admin Dashboard</h3>
+      <ul>
+        <li>Real-time chat monitoring</li>
+        <li>User management system</li>
+        <li>System health analytics</li>
+        <li>Conversation logs visualization</li>
+      </ul>
+      <h3>📧 Communication Suite</h3>
+      <ul>
+        <li>Email notification system</li>
+        <li>Web push notifications</li>
+        <li>Password reset workflows</li>
+        <li>Real-time alerts</li>
+      </ul>
+      <h3>🗄️ Data Management</h3>
+      <ul>
+        <li>SQLite database integration</li>
+        <li>Automated data migration</li>
+        <li>CRUD operations for all entities</li>
+        <li>Secure data persistence</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
 ---
 
-## 🛠️ **Technology Stack & Tools**
-
+<h2>🛠️ Technology Stack &amp; Tools</h2>
 <div align="center">
-
-| **Category** | **Technologies** |
-|:------------:|:-----------------|
-| **Backend Framework** | ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue) |
-| **Database** | ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) |
-| **AI/ML** | ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white) |
-| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) |
-| **Security** | ![Werkzeug](https://img.shields.io/badge/Werkzeug-FF6B6B?style=for-the-badge) ![CORS](https://img.shields.io/badge/CORS-4CAF50?style=for-the-badge) |
-| **Deployment** | ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white) |
-
+  <table>
+    <tr><th>Category</th><th>Technologies</th></tr>
+    <tr>
+      <td>Backend Framework</td>
+      <td>
+        <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Database</td>
+      <td><img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white"/></td>
+    </tr>
+    <tr>
+      <td>AI/ML</td>
+      <td><img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"/></td>
+    </tr>
+    <tr>
+      <td>Frontend</td>
+      <td>
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+        <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Security</td>
+      <td>
+        <img src="https://img.shields.io/badge/Werkzeug-FF6B6B?style=for-the-badge"/>
+        <img src="https://img.shields.io/badge/CORS-4CAF50?style=for-the-badge"/>
+      </td>
+    </tr>
+    <tr>
+      <td>Deployment</td>
+      <td><img src="https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white"/></td>
+    </tr>
+  </table>
 </div>
 
-**Core Dependencies:**
-```
-Flask==2.3.0
+<h3>Core Dependencies:</h3>
+<pre><code>Flask==2.3.0
 Flask-Mail==0.9.1
 Flask-Limiter==3.5.0
 Flask-CORS==4.0.0
 openai==0.28.0
 pywebpush==1.14.0
 Werkzeug==2.3.0
-```
+</code></pre>
 
 ---
 
@@ -160,30 +187,27 @@ docker run -p 5000:5000 --env-file .env prison-chatbot
 
 ---
 
-## 🎥 **Demo & Screenshots**
-
+<h2>🎥 Demo &amp; Screenshots</h2>
 <div align="center">
-
-### **🖥️ Live Demo**
-**[🔗 Visit Live Application](https://bers31.github.io/bernardo.github.io/)**
-
+  <p><strong>🖥️ Live Demo</strong></p>
+  <p><a href="https://bers31.github.io/bernardo.github.io/">🔗 Visit Live Application</a></p>
 </div>
 
 <table>
-<tr>
-<td width="33%">
-<img src="https://via.placeholder.com/300x200/4CAF50/white?text=Chat+Interface" alt="Chat Interface" width="100%"/>
-<p align="center"><strong>User Chat Interface</strong><br/>Clean, intuitive design for easy communication</p>
-</td>
-<td width="33%">
-<img src="https://via.placeholder.com/300x200/2196F3/white?text=Admin+Dashboard" alt="Admin Dashboard" width="100%"/>
-<p align="center"><strong>Admin Dashboard</strong><br/>Comprehensive management and monitoring</p>
-</td>
-<td width="33%">
-<img src="https://via.placeholder.com/300x200/FF9800/white?text=Mobile+PWA" alt="Mobile PWA" width="100%"/>
-<p align="center"><strong>Mobile PWA</strong><br/>Responsive design across all devices</p>
-</td>
-</tr>
+  <tr>
+    <td width="33%">
+      <img src="https://via.placeholder.com/300x200/4CAF50/white?text=Chat+Interface" alt="Chat Interface" width="100%"/>
+      <p align="center"><strong>User Chat Interface</strong><br/>Clean, intuitive design for easy communication</p>
+    </td>
+    <td width="33%">
+      <img src="https://via.placeholder.com/300x200/2196F3/white?text=Admin+Dashboard" alt="Admin Dashboard" width="100%"/>
+      <p align="center"><strong>Admin Dashboard</strong><br/>Comprehensive management and monitoring</p>
+    </td>
+    <td width="33%">
+      <img src="https://via.placeholder.com/300x200/FF9800/white?text=Mobile+PWA" alt="Mobile PWA" width="100%"/>
+      <p align="center"><strong>Mobile PWA</strong><br/>Responsive design across all devices</p>
+    </td>
+  </tr>
 </table>
 
 ### **📱 Progressive Web App Features**
@@ -194,26 +218,22 @@ docker run -p 5000:5000 --env-file .env prison-chatbot
 
 ---
 
-## 🗺️ **Project Roadmap**
-
+<h2>🗺️ Project Roadmap</h2>
 <div align="center">
-
-| **Milestone** | **Features** | **Target Date** | **Status** |
-|:-------------:|:-------------|:---------------:|:----------:|
-| **Phase 1** | Core chatbot functionality, basic admin panel | Q1 2024 | ✅ **Complete** |
-| **Phase 2** | PWA implementation, offline support | Q2 2024 | ✅ **Complete** |
-| **Phase 3** | Advanced analytics, reporting dashboard | Q3 2024 | 🚧 **In Progress** |
-| **Phase 4** | Multi-language support, voice integration | Q4 2024 | 📋 **Planned** |
-| **Phase 5** | Mobile app deployment, advanced AI features | Q1 2025 | 📋 **Planned** |
-
+  <table>
+    <tr><th>Milestone</th><th>Features</th><th>Target Date</th><th>Status</th></tr>
+    <tr><td>Phase 1</td><td>Core chatbot functionality, basic admin panel</td><td>Q1 2024</td><td>✅ Complete</td></tr>
+    <tr><td>Phase 2</td><td>PWA implementation, offline support</td><td>Q2 2024</td><td>✅ Complete</td></tr>
+    <tr><td>Phase 3</td><td>Advanced analytics, reporting dashboard</td><td>Q3 2024</td><td>🚧 In Progress</td></tr>
+    <tr><td>Phase 4</td><td>Multi-language support, voice integration</td><td>Q4 2024</td><td>📋 Planned</td></tr>
+    <tr><td>Phase 5</td><td>Mobile app deployment, advanced AI features</td><td>Q1 2025</td><td>📋 Planned</td></tr>
+  </table>
 </div>
 
 ---
 
-## 🏗️ **System Architecture**
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+<h2>🏗️ System Architecture</h2>
+<pre><code>┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Frontend      │    │   Flask Backend │    │   External APIs │
 │   (PWA)         │◄──►│   (backend.py)  │◄──►│   (OpenAI)      │
 ├─────────────────┤    ├─────────────────┤    ├─────────────────┤
@@ -232,7 +252,7 @@ docker run -p 5000:5000 --env-file .env prison-chatbot
                     │ • Chat Logs     │
                     │ • Admin Settings│
                     └─────────────────┘
-```
+</code></pre>
 
 ---
 
@@ -297,45 +317,21 @@ copies or substantial portions of the Software.
 
 ---
 
-## 📫 **Contact & Support**
-
 <div align="center">
-
-### **👨‍💻 Developer Information**
-
-**Bernardo**  
-*Computer Science Student*  
-**Universitas Diponegoro**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bers31)
-[![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)](https://bers31.github.io/bernardo.github.io/)
-
-</div>
-
-### **🏢 Project Collaboration**
-- **Institution:** Universitas Diponegoro, Faculty of Computer Science
-- **Partner Facility:** Lapas Kelas II A Ambarawa
-- **Project Type:** Final Year Capstone Project
-- **Academic Supervisor:** [Supervisor Name] - [supervisor@undip.ac.id]
-
-### **📞 Support Channels**
-- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/bers31/bernardo.github.io/issues)
-- 💡 **Feature Requests:** [GitHub Discussions](https://github.com/bers31/bernardo.github.io/discussions)
-- 📚 **Documentation:** [Project Wiki](https://github.com/bers31/bernardo.github.io/wiki)
-- 💬 **General Inquiries:** [Email Support](mailto:your.email@example.com)
-
----
-
-<div align="center">
-
-### **⭐ If you found this project helpful, please give it a star!**
-
-**Made with ❤️ by [Bernardo](https://github.com/bers31) at Universitas Diponegoro**
-
-*Transforming correctional facility communication through intelligent technology*
-
+  <h2>📫 Contact &amp; Support</h2>
+  <p><strong>👨‍💻 Developer Information</strong><br/>
+     Bernardo — Computer Science Student<br/>
+     Universitas Diponegoro
+  </p>
+  <p>
+    <a href="https://linkedin.com/in/your-linkedin"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+    <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+    <a href="https://github.com/bers31"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+    <a href="https://bers31.github.io/bernardo.github.io/"><img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white"/></a>
+  </p>
+  <p>⭐ If you found this project helpful, please give it a star!</p>
+  <p>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro<br/>
+  <em>Transforming correctional facility communication through intelligent technology</em></p>
 </div>
 
 ---
