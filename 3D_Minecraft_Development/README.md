@@ -145,7 +145,7 @@ g++ -o minecraft_clone main.cpp -lopengl32 -lglu32 -lfreeglut
 
 ---
 
-## 🎥 Demo & Screenshots
+## 🎥 Demo
 
 <div align="center">
 
@@ -393,7 +393,7 @@ void glShadowProjection(float* groundPlane, float* lightPos) {
 
 </details>
 
-### Screenshots
+### Full Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
 ![Screenshot 3](images/Picture3.png)
