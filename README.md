@@ -251,7 +251,7 @@
 
 ## 📜 **Certifications**
 
-- 🎓 **Intellectual Property Certificate – Chatbot** - *Republic of Indonesia Ministry of Law* (2024)
+- 🎓 **Intellectual Property Certificate – Chatbot** - *Republic of Indonesia Ministry of Law* (2025)
 - 🤖 **PyTorch and Generative AI** - *Avalon AI* (2024)
 - 🗄️ **Database Programming with SQL** - *Oracle Academy* (2024)
 - ☕ **Java Programming** - *Oracle Academy* (2024)
