@@ -1,7 +1,9 @@
 <div align="center">
 
-# 🔍 Information Retrieval Benchmark System
-*Comprehensive comparison of VSM, LSI, and Neural IR approaches using mBERT*
+<h1>🔍 Information Retrieval Benchmark System</h1>
+<em>Comprehensive comparison of VSM, LSI, and Neural IR approaches using mBERT</em>
+
+<br>
 
 <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
 <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
@@ -370,6 +372,7 @@ copies or substantial portions of the Software.
   <p>⭐ If you found this project helpful, please give it a star!</p>
   <p>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro<br/>
 </div>
+---
 
 ### Full Screenshots
 ![Screenshot 1](images/Picture1.png)
