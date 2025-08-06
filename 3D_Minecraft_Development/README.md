@@ -286,13 +286,13 @@ g++ -o minecraft_clone main.cpp -lopengl32 -lglu32 -lfreeglut
 <td><strong>Phase 4: Advanced Features</strong></td>
 <td>Texture mapping, particle effects</td>
 <td>🔄 <strong>In Progress</strong></td>
-<td>Q4 2024</td>
+<td>Q4 2025</td>
 </tr>
 <tr>
 <td><strong>Phase 5: Optimization</strong></td>
 <td>Performance improvements, cross-platform</td>
 <td>📋 <strong>Planned</strong></td>
-<td>Q1 2025</td>
+<td>Q1 2026</td>
 </tr>
 </table>
 
