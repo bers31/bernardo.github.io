@@ -129,30 +129,27 @@ jupyter notebook 03_Information_Diffusion.ipynb     # Network analysis
 
 ## 🎥 Demo & Screenshots
 
-<div align="center">
-
 ### 🔍 **Data Extraction Dashboard**
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Data+Scraping">
-  <img src="https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/images/Picture.png" alt="Data Scrapping Result" width="800">
-</picture>
+<p align="center">
+<img src="https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/images/Picture.png" alt="Data Scraping Result" width="800">
+</p>
 
 ### 📊 **Exploratory Data Analysis**
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=EDA+Visualizations+%26+Insights">
-  <img src="https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/images/Picture1.png" alt="EDA Dashboard" width="800">
-</picture>
+<p align="center">
+<img src="https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/images/Picture1.png" alt="EDA Dashboard" width="800">
+</p>
 
-### 🌐 **Network Diffusion Map**  
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Interactive+Information+Diffusion+Network">
-  <img src="https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/images/Picture5.png" alt="Network Analysis" width="800">
-</picture>
+### 🌐 **Network Diffusion Map**
+<p align="center">
+<img src="https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/images/Picture5.png" alt="Network Analysis" width="800">
+</p>
 
 ### 🎯 **Live Demo**
-[![Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_GitHub_Pages-blue?style=for-the-badge)]https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/)
-
-</div>
+<p align="center">
+<a href="https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/">
+<img src="https://img.shields.io/badge/🚀_Live_Demo-Visit_GitHub_Pages-blue?style=for-the-badge" alt="Demo">
+</a>
+</p>
 
 ---
 
@@ -286,21 +283,36 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 ```
 
-<div align="center">
-  <h2>📫 Contact &amp; Support</h2>
-  <p><strong>👨‍💻 Developer Information</strong><br/>
-     Bernardo — Computer Science Student<br/>
-     Universitas Diponegoro
-  </p>
-  <p>
-    <a href="https://linkedin.com/in/bernardo-sunia/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-    <a href="https://github.com/bers31"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
-    <a href="https://bit.ly/bernardo-my_portfolio"><img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white"/></a>
-  </p>
-  <p>⭐ If you found this project helpful, please give it a star!</p>
-  <p>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro<br/>
-</div>
+## 📫 Contact & Connect
+
+<p align="center">
+<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
+Universitas Diponegoro 🎓
+</p>
+
+<p align="center">
+<a href="https://linkedin.com/in/bernardo-sunia/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+<a href="https://github.com/bers31">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://bit.ly/bernardo-my_portfolio">
+<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
+</a>
+</p>
+
+<p align="center">
+⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+</p>
+
+<p align="center">
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
+</p>
 
 ---
 
