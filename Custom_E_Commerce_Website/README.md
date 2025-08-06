@@ -27,66 +27,50 @@
 
 ---
 
-## ✨ **Key Features**
+## 🚀 Key Features
 
-<!-- Features with icons -->
-<table>
-<tr>
-<td width="50%">
-
-### 🎨 **Design & UI/UX**
+### 🎨 Design & UI/UX
 - Modern, clean interface optimized for electronics retail
-- Fully responsive design (Mobile-first approach)
+- Fully responsive design (Mobile-first approach) 
 - Customizable color schemes and branding
 - Professional product showcase layouts
 - Interactive mega menu navigation
 
-### 🛒 **E-commerce Capabilities**
+### 🛒 E-commerce Capabilities  
 - Integrated SimpleCart.js shopping cart system
 - PayPal payment integration
 - Product categorization and filtering
 - Promotional banner spaces
 - Call-to-action optimization
 
-</td>
-<td width="50%">
-
-### ⚡ **Performance & SEO**
+### ⚡ Performance & SEO
 - Lightning-fast loading times
-- JSON-LD Schema.org implementation
+- JSON-LD Schema.org implementation  
 - Open Graph meta tags for social sharing
 - Google Fonts integration (Open Sans)
 - Font Awesome 4.7.0 icon library
 
-### 🔧 **Customization & Features**
+### 🔧 Customization & Features
 - Blogger variable-based theming system
 - Widget-ready sidebar and footer areas
 - Image slider with navigation controls
 - Popular posts and label cloud widgets
 - Multi-language support ready
 
-</td>
-</tr>
-</table>
-
 ---
 
-## 🛠️ **Technology Stack**
+## 🛠️ Technology Stack
 
-<div align="center">
-
-| **Category** | **Technology** | **Version** | **Purpose** |
-|:------------:|:--------------:|:-----------:|:-----------:|
-| **Platform** | <img src="https://img.shields.io/badge/Blogger-FF5722?style=flat&logo=blogger&logoColor=white" alt="Blogger"> | Latest | Content Management |
-| **Markup** | <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5"> | 5.0 | Structure & Semantics |
-| **Styling** | <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3"> | 3.0 | Responsive Design |
-| **Scripting** | <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript"> | ES5+ | Interactivity |
-| **Library** | <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white" alt="jQuery"> | 1.8.2 | DOM Manipulation |
-| **Icons** | <img src="https://img.shields.io/badge/FontAwesome-528DD7?style=flat&logo=fontawesome&logoColor=white" alt="Font Awesome"> | 4.7.0 | UI Icons |
-| **Fonts** | <img src="https://img.shields.io/badge/Google%20Fonts-4285F4?style=flat&logo=google&logoColor=white" alt="Google Fonts"> | Open Sans | Typography |
-| **Cart** | <img src="https://img.shields.io/badge/SimpleCart-00D4FF?style=flat&logo=shopping-cart&logoColor=white" alt="SimpleCart"> | MIT License | Shopping Cart |
-
-</div>
+| Category | Technology | Version | Purpose |
+|----------|------------|---------|---------|
+| **Platform** | ![Blogger](https://img.shields.io/badge/Blogger-FF5722?style=flat&logo=blogger&logoColor=white) | Latest | Content Management |
+| **Markup** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | 5.0 | Structure & Semantics |
+| **Styling** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) | 3.0 | Responsive Design |
+| **Scripting** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) | ES5+ | Interactivity |
+| **Library** | ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white) | 1.8.2 | DOM Manipulation |
+| **Icons** | ![FontAwesome](https://img.shields.io/badge/FontAwesome-528DD7?style=flat&logo=fontawesome&logoColor=white) | 4.7.0 | UI Icons |
+| **Fonts** | ![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=flat&logo=google&logoColor=white) | Open Sans | Typography |
+| **Cart** | ![SimpleCart](https://img.shields.io/badge/SimpleCart-00D4FF?style=flat&logo=shopping-cart&logoColor=white) | MIT License | Shopping Cart |
 
 ---
 
@@ -132,19 +116,13 @@ cd bernardo.github.io
 
 ---
 
-## 🎥 **Demo & Screenshots**
+## 🎥 Demo & Screenshots
 
-<div align="center">
+### 🌐 Live Demo
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-success?style=for-the-badge&logo=github-pages)](https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/)
 
-### **Live Demo**
-<a href="https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/" target="_blank">
-  <img src="https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-success?style=for-the-badge&logo=github-pages" alt="Live Demo">
-</a>
-
-### **Preview**
-<img src="https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/images/Picture7.png" alt="Desktop Preview" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-
-</div>
+### 📸 Preview
+![Desktop Preview](https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/images/Picture7.png)
 
 ---
 
@@ -180,20 +158,30 @@ YC Electric Theme Structure
 
 ---
 
-## 📋 **Project Roadmap**
+## 📋 Project Roadmap
 
-<div align="center">
+| Phase | Milestone | Features | Target Date | Status |
+|-------|-----------|----------|-------------|---------|
+| **1** | **Foundation** | Core Theme Structure, Basic Styling | Q1 2024 | ✅ Completed |
+| **2** | **E-Commerce** | Shopping Cart Integration, PayPal Support | Q2 2024 | ✅ Completed |
+| **3** | **SEO & Performance** | SEO Optimization, Schema Markup | Q3 2024 | ✅ Completed |
+| **4** | **Customization** | Advanced Customization Options | Q4 2024 | 🚧 In Progress |
+| **5** | **Analytics** | Premium Features, Analytics Dashboard | Q1 2025 | 📋 Planned |
+| **6** | **Internationalization** | Multi-language Support, RTL Layout | Q2 2025 | 📋 Planned |
 
-| **Milestone** | **Features** | **Target Date** | **Status** |
-|:-------------:|:------------:|:--------------:|:----------:|
-| **Phase 1** | Core Theme Structure, Basic Styling | Q1 2024 | ✅ **Completed** |
-| **Phase 2** | Shopping Cart Integration, PayPal Support | Q2 2024 | ✅ **Completed** |
-| **Phase 3** | SEO Optimization, Schema Markup | Q3 2024 | ✅ **Completed** |
-| **Phase 4** | Advanced Customization Options | Q4 2024 | 🚧 **In Progress** |
-| **Phase 5** | Premium Features, Analytics Dashboard | Q1 2025 | 📋 **Planned** |
-| **Phase 6** | Multi-language Support, RTL Layout | Q2 2025 | 📋 **Planned** |
+### 🎯 Current Focus (Phase 4)
+- [ ] Theme customizer panel
+- [ ] Advanced color scheme options
+- [ ] Custom widget configurations
+- [ ] Enhanced mobile responsiveness
+- [ ] Performance optimization
 
-</div>
+### 🔮 Upcoming Features (Phase 5)
+- [ ] Google Analytics integration
+- [ ] Sales dashboard
+- [ ] Inventory management
+- [ ] Customer reviews system
+- [ ] Advanced search functionality
 
 ---
 
