@@ -365,7 +365,6 @@ copies or substantial portions of the Software.
   </p>
   <p>⭐ If you found this project helpful, please give it a star!</p>
   <p>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro<br/>
-  <em>Transforming correctional facility communication through intelligent technology</em></p>
 </div>
 
 ---
