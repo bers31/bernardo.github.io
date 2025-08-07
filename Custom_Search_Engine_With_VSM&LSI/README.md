@@ -1,6 +1,6 @@
-<div align="center">
-
 <h1>🔍 Information Retrieval Benchmark System</h1>
+
+<div align="center">
 <em>Comprehensive comparison of VSM, LSI, and Neural IR approaches using mBERT</em>
 
 <br>
@@ -165,11 +165,14 @@ streamlitt run app_vsm.py
 
 ## 🎥 Demo & Screenshots
 
-<div align="center">
+<p align="center">
+  <a href="https://share.streamlit.io/">
+    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit"/>
+  </a>
+</p>
 
-<img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit"/>
+## 📊 Performance Comparison
 
-### 📊 Performance Comparison
 <img src="https://bers31.github.io/bernardo.github.io/Custom_Search_Engine_With_VSM%26LSI/images/Picture2.png" alt="Performance with VSM" width="800">
 <img src="https://bers31.github.io/bernardo.github.io/Custom_Search_Engine_With_VSM%26LSI/images/Picture5.png" alt="Performance with LSI" width="800">
 
