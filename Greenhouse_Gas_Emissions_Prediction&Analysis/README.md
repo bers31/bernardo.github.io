@@ -218,7 +218,7 @@ jupyter notebook
 <div align="center">
 
 <h3><strong>🌍 Live Demo</strong></h3>
-<a href="https://bers31.github.io/bernardo.github.io/" target="_blank">
+<a href="https://bers31.github.io/bernardo.github.io/Greenhouse_Gas_Emissions_Prediction%26Analysis/" target="_blank">
 <img src="https://img.shields.io/badge/🌐_Live_Demo-View_Project-success?style=for-the-badge" alt="View Demo">
 </a>
 
@@ -469,21 +469,12 @@ git push origin feature/amazing-feature
 
 <hr>
 
-<h2>📄 License</h2>
+## 📄 **License**
 
-<div align="center">
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-<p>This project is licensed under the <strong>MIT License</strong> - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-
-<a href="https://opensource.org/licenses/MIT" target="_blank">
-<img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT">
-</a>
-
-<p><strong>Free Software, Open Source</strong> 🌟</p>
-
-</div>
-
-<pre><code>MIT License
+```
+MIT License
 
 Copyright (c) 2024 Bernardo - Universitas Diponegoro
 
@@ -491,97 +482,46 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+copies of the Software, subject to the following conditions:
 
-[Full license text available in LICENSE file]
-</code></pre>
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
 
-<hr>
+## 📫 Contact & Connect
 
-<h2>📫 Contact & Connect</h2>
+<p align="center">
+<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
+Universitas Diponegoro 🎓
+</p>
 
-<div align="center">
+<p align="center">
+<a href="https://linkedin.com/in/bernardo-sunia/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+<a href="https://github.com/bers31">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://bit.ly/bernardo-my_portfolio">
+<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
+</a>
+</p>
 
-<h3><strong>🎓 About the Developer</strong></h3>
+<p align="center">
+⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+</p>
 
-<p><strong>Bernardo</strong> | <em>Information Technology Student</em><br>
-<strong>🏫 Universitas Diponegoro</strong></p>
+<p align="center">
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
+</p>
 
-<table>
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/🎓_Student-Universitas_Diponegoro-blue?style=for-the-badge" alt="Student">
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/💻_Major-Information_Technology-green?style=for-the-badge" alt="Major">
-</td>
-</tr>
-</table>
+---
 
-<h3><strong>🌐 Get in Touch</strong></h3>
-
-<a href="https://linkedin.com/in/your-profile" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-<a href="https://github.com/bers31" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-<a href="https://bers31.github.io/bernardo.github.io/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=web&logoColor=white" alt="Portfolio"></a>
-
-</div>
-
-<h3><strong>💬 Let's Collaborate!</strong></h3>
-
-<table>
-<tr>
-<td width="33%">
-
-<p><strong>🤝 Professional Opportunities</strong></p>
-<ul>
-<li>Data Science Projects</li>
-<li>Environmental Research</li>
-<li>Academic Collaborations</li>
-</ul>
-
-</td>
-<td width="33%">
-
-<p><strong>📧 Quick Contact</strong></p>
-<ul>
-<li>Project inquiries</li>
-<li>Technical discussions</li>
-<li>Mentorship opportunities</li>
-</ul>
-
-</td>
-<td width="33%">
-
-<p><strong>🌟 Follow My Journey</strong></p>
-<ul>
-<li>Latest projects</li>
-<li>Learning progress</li>
-<li>Industry insights</li>
-</ul>
-
-</td>
-</tr>
-</table>
-
-<hr>
-
-<div align="center">
-
-<h3><strong>🌟 Star this Repository</strong></h3>
-
-<p>If you found this project helpful, please consider giving it a ⭐!</p>
-
-<p><strong>Made with ❤️ for environmental sustainability and data science excellence</strong></p>
-
-<hr>
-
-<sub>🔬 <strong>Research Focus</strong>: Climate Data Analysis | 🎯 <strong>Specialization</strong>: Machine Learning & Statistics | 🌍 <strong>Mission</strong>: Data-Driven Environmental Solutions</sub>
-
-</div>
-
-### Screenshots
+### Full Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
 ![Screenshot 3](images/Picture3.png)
