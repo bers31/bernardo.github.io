@@ -1,4 +1,4 @@
-# 💼 Financial Report Management System - East Semarang District
+# 💼 Financial Report Management System
 > *Streamlining financial reporting workflows with modern web technology and role-based access control*
 
 <div align="center">
