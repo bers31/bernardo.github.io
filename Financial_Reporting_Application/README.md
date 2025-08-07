@@ -304,19 +304,19 @@ REACT_APP_ENV=development
 <tr>
 <td><strong>Phase 4</strong></td>
 <td>Advanced Analytics</td>
-<td>Q2 2024</td>
+<td>Q2 2025</td>
 <td>🔄 In Progress</td>
 </tr>
 <tr>
 <td><strong>Phase 5</strong></td>
 <td>Mobile App Integration</td>
-<td>Q3 2024</td>
+<td>Q3 2025</td>
 <td>📋 Planned</td>
 </tr>
 <tr>
 <td><strong>Phase 6</strong></td>
 <td>API Documentation</td>
-<td>Q3 2024</td>
+<td>Q3 2026</td>
 <td>📋 Planned</td>
 </tr>
 </table>
