@@ -17,7 +17,7 @@
 ## 📖 Project Overview
 
 <div align="center">
-<img src="https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=Financial+Management+Dashboard" alt="Dashboard Preview" width="100%">
+<img src="https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/images/Picture5.png" alt="Dashboard Preview" width="100%">
 </div>
 
 The **Financial Report Management System** is a comprehensive web application designed to revolutionize financial reporting processes at the district level. Built specifically for East Semarang District, this system addresses the critical need for standardized, efficient, and secure financial document management across multiple departments.
@@ -39,32 +39,40 @@ Traditional financial reporting in government institutions often suffers from in
 <tr>
 <td width="50%">
 
-### 🔐 Authentication & Security
-- Multi-role user management (Admin, Camat, Sekcam, Finance)
-- Token-based authentication with email verification
-- Protected routes based on user permissions
-- Password reset functionality via SendGrid
+<h3>🔐 Authentication & Security</h3>
+<ul>
+<li>Multi-role user management (Admin, Camat, Sekcam, Finance)</li>
+<li>Token-based authentication with email verification</li>
+<li>Protected routes based on user permissions</li>
+<li>Password reset functionality via SendGrid</li>
+</ul>
 
-### 📊 Dynamic Form Generation
-- Customizable financial report templates
-- Real-time budget validation and calculations
-- Dynamic table creation and management
-- Performance indicator tracking
+<h3>📊 Dynamic Form Generation</h3>
+<ul>
+<li>Customizable financial report templates</li>
+<li>Real-time budget validation and calculations</li>
+<li>Dynamic table creation and management</li>
+<li>Performance indicator tracking</li>
+</ul>
 
 </td>
 <td width="50%">
 
-### 📈 Data Visualization
-- Interactive charts and graphs using Recharts
-- Monthly financial reports with visual analytics
-- Export capabilities (PDF generation via jsPDF)
-- Responsive dashboard for all device types
+<h3>📈 Data Visualization</h3>
+<ul>
+<li>Interactive charts and graphs using Recharts</li>
+<li>Monthly financial reports with visual analytics</li>
+<li>Export capabilities (PDF generation via jsPDF)</li>
+<li>Responsive dashboard for all device types</li>
+</ul>
 
-### 🏛️ Department Management
-- Support for multiple departments (PEK, UMPEG, TRANTIB, etc.)
-- Centralized document storage and retrieval
-- Audit trail for all financial transactions
-- Bulk data import/export functionality
+<h3>🏛️ Department Management</h3>
+<ul>
+<li>Support for multiple departments (PEK, UMPEG, TRANTIB, etc.)</li>
+<li>Centralized document storage and retrieval</li>
+<li>Audit trail for all financial transactions</li>
+<li>Bulk data import/export functionality</li>
+</ul>
 
 </td>
 </tr>
@@ -76,7 +84,7 @@ Traditional financial reporting in government institutions often suffers from in
 
 <div align="center">
 
-### Frontend Technologies
+<h3>Frontend Technologies</h3>
 <table>
 <tr>
 <th>Technology</th>
@@ -110,7 +118,7 @@ Traditional financial reporting in government institutions often suffers from in
 </tr>
 </table>
 
-### Backend Technologies
+<h3>Backend Technologies</h3>
 <table>
 <tr>
 <th>Technology</th>
@@ -145,8 +153,7 @@ Traditional financial reporting in government institutions often suffers from in
 
 ## 🏗️ System Architecture
 
-<div align="center">
-
+<pre>
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                          CLIENT LAYER                          │
@@ -191,8 +198,7 @@ Traditional financial reporting in government institutions often suffers from in
 │ • Sessions      │ • Documents     │ • Backups                   │
 └─────────────────┴─────────────────┴─────────────────────────────┘
 ```
-
-</div>
+</pre>
 
 ---
 
@@ -248,22 +254,21 @@ REACT_APP_ENV=development
 
 <div align="center">
 
-### 🔐 Login Interface
-<img src="https://via.placeholder.com/600x400/6366F1/FFFFFF?text=Secure+Login+Portal" alt="Login Interface" width="48%">
+<h3>🔐 Login Interface</h3>
+<img src="https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/images/Picture1.png" alt="Login Interface" width="48%">
 
-### 📊 Financial Dashboard
-<img src="https://via.placeholder.com/600x400/10B981/FFFFFF?text=Interactive+Dashboard" alt="Dashboard" width="48%">
+<h3>📊 Financial Dashboard</h3>
+<img src="https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/images/Picture5.png" alt="Dashboard" width="48%">
 
-### 📋 Report Generation
-<img src="https://via.placeholder.com/600x400/F59E0B/FFFFFF?text=Dynamic+Form+Builder" alt="Report Generation" width="48%">
+<h3>📋 Report Generation</h3>
+<img src="https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/images/Picture6.png" alt="Report Generation" width="48%">
 
-### 👥 User Management
-<img src="https://via.placeholder.com/600x400/EF4444/FFFFFF?text=Admin+Panel" alt="User Management" width="48%">
+<h3>👥 User Management</h3>
+<img src="https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/images/Picture2.png" alt="User Management" width="48%">
 
 </div>
 
-### 🌐 Live Demo
-> **GitHub Pages:** [https://bers31.github.io/bernardo.github.io/](https://bers31.github.io/bernardo.github.io/)
+<h3>🌐 <a href="https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/">Live Demo</a></h3>
 
 ---
 
@@ -347,64 +352,41 @@ We welcome contributions from the community! Here's how you can help:
 
 ---
 
-## 📄 License
+## 📄 **License**
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ```
 MIT License
 
-Copyright (c) 2024 Bernardo Portfolio
+Copyright (c) 2024 Bernardo - Universitas Diponegoro
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software...
+copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 ```
 
+<div align="center">
+  <h2>📫 Contact &amp; Support</h2>
+  <p><strong>👨‍💻 Developer Information</strong><br/>
+     Bernardo — Computer Science Student<br/>
+     Universitas Diponegoro
+  </p>
+  <p>
+    <a href="https://linkedin.com/in/bernardo-sunia/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+    <a href="https://github.com/bers31"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+    <a href="https://bit.ly/bernardo-my_portfolio"><img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white"/></a>
+  </p>
+  <p>⭐ If you found this project helpful, please give it a star!</p>
+  <p>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro<br/>
+</div>
 ---
-
-## 📫 Get in Touch
-
-<div align="center">
-
-### 👨‍💻 About the Developer
-
-<img src="https://via.placeholder.com/150x150/4F46E5/FFFFFF?text=B" alt="Developer" width="150" style="border-radius: 50%;">
-
-**Bernardo**  
-*Information Technology Student*  
-*Diponegoro University*
-
-</div>
-
-### 📱 Contact Information
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bernardo)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bernardo@example.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bers31)
-[![Portfolio](https://img.shields.io/badge/Portfolio-4F46E5?style=for-the-badge&logo=google-chrome&logoColor=white)](https://bers31.github.io/bernardo.github.io/)
-
-</div>
-
----
-
-<div align="center">
-
-### 🌟 Star this repository if you find it helpful!
-
-**Made with ❤️ for government financial transparency and efficiency**
-
-</div>
-
----
-
-<div align="center">
-<sub>Built with modern web technologies • Designed for scalability • Optimized for performance</sub>
-</div>
 
 ### Full Screenshots
 ![Screenshot 1](images/Picture1.png)
