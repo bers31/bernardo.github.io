@@ -156,18 +156,18 @@ Traditional financial reporting in government institutions often suffers from in
 <pre>
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                          CLIENT LAYER                          │
+│                          CLIENT LAYER                           │
 ├─────────────────┬─────────────────┬─────────────────────────────┤
 │   Login Page    │  Dashboard      │     Admin Panel             │
 │                 │                 │                             │
 │ • Authentication│ • Role-based    │ • User Management           │
 │ • Password Reset│   Navigation    │ • System Configuration      │
-│                 │ • Quick Actions │ • Audit Logs               │
+│                 │ • Quick Actions │ • Audit Logs                │
 └─────────────────┴─────────────────┴─────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                      APPLICATION LAYER                         │
+│                      APPLICATION LAYER                          │
 ├─────────────────┬─────────────────┬─────────────────────────────┤
 │ Financial Forms │  Table Manager  │    Document Generator       │
 │                 │                 │                             │
@@ -178,7 +178,7 @@ Traditional financial reporting in government institutions often suffers from in
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                       SERVICE LAYER                            │
+│                       SERVICE LAYER                             │
 ├─────────────────┬─────────────────┬─────────────────────────────┤
 │ Auth Service    │  Email Service  │    Data Service             │
 │                 │                 │                             │
@@ -189,7 +189,7 @@ Traditional financial reporting in government institutions often suffers from in
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                        DATA LAYER                              │
+│                        DATA LAYER                               │
 ├─────────────────┬─────────────────┬─────────────────────────────┤
 │   User Data     │ Financial Data  │     System Data             │
 │                 │                 │                             │
