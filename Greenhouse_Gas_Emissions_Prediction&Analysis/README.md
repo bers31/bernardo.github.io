@@ -18,11 +18,11 @@
 
 <h2>📖 Project Overview</h2>
 
+<p>This comprehensive data science project conducts <strong>in-depth analysis</strong> and <strong>advanced forecasting</strong> of global CO₂ emissions using historical data from multiple countries spanning 1990-2021. The project leverages cutting-edge machine learning algorithms and statistical models to predict future emission trends, providing valuable insights for environmental policy makers and climate researchers.</p>
+
 <table width="100%">
 <tr>
 <td width="70%">
-
-<p>This comprehensive data science project conducts <strong>in-depth analysis</strong> and <strong>advanced forecasting</strong> of global CO₂ emissions using historical data from multiple countries spanning 1990-2021. The project leverages cutting-edge machine learning algorithms and statistical models to predict future emission trends, providing valuable insights for environmental policy makers and climate researchers.</p>
 
 <p><strong>Key Benefits:</strong></p>
 <ul>
