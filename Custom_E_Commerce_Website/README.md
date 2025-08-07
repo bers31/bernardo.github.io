@@ -271,7 +271,7 @@ Universitas Diponegoro 🎓
 
 ---
 
-### Screenshots
+### Full Screenshots
 ![Screenshot 1](images/Picture7.png)
 ![Screenshot 2](images/Picture8.png)
 ![Screenshot 3](images/Picture9.png)
