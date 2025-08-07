@@ -1,106 +1,160 @@
-# 🌍 Global CO₂ Emissions Analysis & Forecasting
+<h1 align="center">🌍 Global CO₂ Emissions Analysis & Forecasting</h1>
 <p align="center"><em>Advanced statistical modeling and machine learning pipeline for predicting global carbon dioxide emissions trends</em></p>
 
 <div align="center">
-
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logo=xgboost&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
-![Version](https://img.shields.io/badge/version-1.0.0-orange?style=flat-square)
-![Last Commit](https://img.shields.io/badge/last%20commit-2024-green?style=flat-square)
-
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Jupyter-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white" alt="Jupyter">
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
+  <img src="https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <br><br>
+  <img src="https://img.shields.io/badge/build-passing-brightgreen?style=flat-square" alt="Build Status">
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/version-1.0.0-orange?style=flat-square" alt="Version">
+  <img src="https://img.shields.io/badge/last%20commit-2024-green?style=flat-square" alt="Last Commit">
 </div>
 
----
+<hr>
 
-## 📖 Project Overview
+<h2>📖 Project Overview</h2>
 
-<table>
+<table width="100%">
 <tr>
 <td width="70%">
 
-This comprehensive data science project conducts **in-depth analysis** and **advanced forecasting** of global CO₂ emissions using historical data from multiple countries spanning 1990-2021. The project leverages cutting-edge machine learning algorithms and statistical models to predict future emission trends, providing valuable insights for environmental policy makers and climate researchers.
+<p>This comprehensive data science project conducts <strong>in-depth analysis</strong> and <strong>advanced forecasting</strong> of global CO₂ emissions using historical data from multiple countries spanning 1990-2021. The project leverages cutting-edge machine learning algorithms and statistical models to predict future emission trends, providing valuable insights for environmental policy makers and climate researchers.</p>
 
-**Key Benefits:**
-- 🎯 **Policy Support**: Enables data-driven environmental policy decisions
-- 🔬 **Research Foundation**: Provides reproducible pipeline for academic studies
-- 🌐 **Public Awareness**: Delivers interactive visualizations for broader understanding
-- 📊 **Business Intelligence**: Supports sustainability planning for organizations
+<p><strong>Key Benefits:</strong></p>
+<ul>
+<li>🎯 <strong>Policy Support</strong>: Enables data-driven environmental policy decisions</li>
+<li>🔬 <strong>Research Foundation</strong>: Provides reproducible pipeline for academic studies</li>
+<li>🌐 <strong>Public Awareness</strong>: Delivers interactive visualizations for broader understanding</li>
+<li>📊 <strong>Business Intelligence</strong>: Supports sustainability planning for organizations</li>
+</ul>
 
 </td>
 <td width="30%">
 
-```
+<pre>
 🌱 Environmental Impact
 ├── 🏭 Industrial Emissions
 ├── 🚗 Transportation Sector  
 ├── ⚡ Energy Production
 └── 🌍 Global Trends Analysis
-```
+</pre>
 
 </td>
 </tr>
 </table>
 
----
+<hr>
 
-## ✨ Key Features
+<h2>✨ Key Features</h2>
+
+<div align="center">
+<table>
+<tr>
+<th align="center">🔍 <strong>Exploratory Analysis</strong></th>
+<th align="center">🤖 <strong>Predictive Modeling</strong></th>
+<th align="center">📊 <strong>Advanced Evaluation</strong></th>
+</tr>
+<tr>
+<td align="center">Historical trend analysis</td>
+<td align="center">Multiple ML algorithms</td>
+<td align="center">Comprehensive metrics</td>
+</tr>
+<tr>
+<td align="center">Country-wise comparisons</td>
+<td align="center">Hyperparameter optimization</td>
+<td align="center">Statistical validation</td>
+</tr>
+<tr>
+<td align="center">Global aggregation</td>
+<td align="center">Time-series forecasting</td>
+<td align="center">Residual analysis</td>
+</tr>
+<tr>
+<td align="center">Interactive visualizations</td>
+<td align="center">5-10 year predictions</td>
+<td align="center">Model comparison</td>
+</tr>
+</table>
+</div>
+
+<h3>🎯 Core Capabilities</h3>
+
+<ul>
+<li><strong>📈 Comprehensive Data Exploration</strong>
+  <ul>
+  <li>Statistical descriptive analysis (mean, median, mode) for 1990-2021</li>
+  <li>Advanced data cleaning and preprocessing pipelines</li>
+  <li>Multi-dimensional trend visualization and pattern recognition</li>
+  </ul>
+</li>
+
+<li><strong>🧠 Machine Learning Pipeline</strong>
+  <ul>
+  <li>Multiple algorithm comparison: Linear/Lasso Regression, XGBoost, SARIMAX</li>
+  <li>Automated hyperparameter tuning and cross-validation</li>
+  <li>Train-test split optimization with temporal considerations</li>
+  </ul>
+</li>
+
+<li><strong>📊 Advanced Statistical Evaluation</strong>
+  <ul>
+  <li>Comprehensive metrics: MSE, RMSE, MAE, R²</li>
+  <li>Residual analysis: Durbin-Watson test, VIF analysis</li>
+  <li>Time-series diagnostics: ACF/PACF plots</li>
+  </ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>🛠️ Technology Stack & Tools</h2>
 
 <div align="center">
 
-| 🔍 **Exploratory Analysis** | 🤖 **Predictive Modeling** | 📊 **Advanced Evaluation** |
-|:---:|:---:|:---:|
-| Historical trend analysis | Multiple ML algorithms | Comprehensive metrics |
-| Country-wise comparisons | Hyperparameter optimization | Statistical validation |
-| Global aggregation | Time-series forecasting | Residual analysis |
-| Interactive visualizations | 5-10 year predictions | Model comparison |
+<h3><strong>Core Technologies</strong></h3>
+
+<table>
+<tr>
+<th>Category</th>
+<th>Technologies</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td><strong>🐍 Language</strong></td>
+<td><img src="https://img.shields.io/badge/Python-3.8+-3776ab?style=flat&logo=python&logoColor=white" alt="Python"></td>
+<td>Primary development language</td>
+</tr>
+<tr>
+<td><strong>📊 Data Processing</strong></td>
+<td><img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" alt="Pandas"> <img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white" alt="NumPy"></td>
+<td>Data manipulation & numerical computing</td>
+</tr>
+<tr>
+<td><strong>📈 Visualization</strong></td>
+<td><img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat" alt="Matplotlib"> <img src="https://img.shields.io/badge/Seaborn-3776ab?style=flat" alt="Seaborn"></td>
+<td>Statistical plots & visualizations</td>
+</tr>
+<tr>
+<td><strong>🤖 Machine Learning</strong></td>
+<td><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white" alt="scikit-learn"> <img src="https://img.shields.io/badge/XGBoost-FF6600?style=flat" alt="XGBoost"></td>
+<td>ML algorithms & model training</td>
+</tr>
+<tr>
+<td><strong>📊 Statistics</strong></td>
+<td><img src="https://img.shields.io/badge/Statsmodels-4051B5?style=flat" alt="Statsmodels"> <img src="https://img.shields.io/badge/SciPy-654FF0?style=flat&logo=scipy&logoColor=white" alt="SciPy"></td>
+<td>Statistical modeling & time-series</td>
+</tr>
+</table>
 
 </div>
 
-### 🎯 Core Capabilities
+<h3><strong>Development Environment</strong></h3>
 
-- **📈 Comprehensive Data Exploration**
-  - Statistical descriptive analysis (mean, median, mode) for 1990-2021
-  - Advanced data cleaning and preprocessing pipelines
-  - Multi-dimensional trend visualization and pattern recognition
-
-- **🧠 Machine Learning Pipeline**
-  - Multiple algorithm comparison: Linear/Lasso Regression, XGBoost, SARIMAX
-  - Automated hyperparameter tuning and cross-validation
-  - Train-test split optimization with temporal considerations
-
-- **📊 Advanced Statistical Evaluation**
-  - Comprehensive metrics: MSE, RMSE, MAE, R²
-  - Residual analysis: Durbin-Watson test, VIF analysis
-  - Time-series diagnostics: ACF/PACF plots
-
----
-
-## 🛠️ Technology Stack & Tools
-
-<div align="center">
-
-### **Core Technologies**
-
-| Category | Technologies | Purpose |
-|----------|-------------|---------|
-| **🐍 Language** | <img src="https://img.shields.io/badge/Python-3.8+-3776ab?style=flat&logo=python&logoColor=white"> | Primary development language |
-| **📊 Data Processing** | <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white"> | Data manipulation & numerical computing |
-| **📈 Visualization** | <img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat"> <img src="https://img.shields.io/badge/Seaborn-3776ab?style=flat"> | Statistical plots & visualizations |
-| **🤖 Machine Learning** | <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white"> <img src="https://img.shields.io/badge/XGBoost-FF6600?style=flat"> | ML algorithms & model training |
-| **📊 Statistics** | <img src="https://img.shields.io/badge/Statsmodels-4051B5?style=flat"> <img src="https://img.shields.io/badge/SciPy-654FF0?style=flat&logo=scipy&logoColor=white"> | Statistical modeling & time-series |
-
-</div>
-
-### **Development Environment**
-
-```python
-# Core Dependencies
+<pre><code># Core Dependencies
 pandas>=1.3.0          # Data manipulation
 numpy>=1.21.0          # Numerical computing
 matplotlib>=3.4.0      # Base plotting
@@ -110,21 +164,22 @@ xgboost>=1.5.0         # Gradient boosting
 statsmodels>=0.13.0    # Statistical modeling
 scipy>=1.7.0           # Scientific computing
 tqdm>=4.62.0           # Progress bars
-```
+</code></pre>
 
----
+<hr>
 
-## 🚀 Installation & Quick Start
+<h2>🚀 Installation & Quick Start</h2>
 
-### **Prerequisites**
-- Python 3.8+ installed
-- Git for version control
-- Jupyter Notebook/Lab
+<h3><strong>Prerequisites</strong></h3>
+<ul>
+<li>Python 3.8+ installed</li>
+<li>Git for version control</li>
+<li>Jupyter Notebook/Lab</li>
+</ul>
 
-### **Step-by-Step Setup**
+<h3><strong>Step-by-Step Setup</strong></h3>
 
-```bash
-# 1. Clone the repository
+<pre><code># 1. Clone the repository
 git clone https://github.com/bers31/bernardo.github.io.git
 cd bernardo.github.io
 
@@ -146,65 +201,66 @@ jupyter notebook
 # 5. Open and run notebooks in sequence:
 # - notebooks/exploratory_analysis.ipynb
 # - notebooks/predictive_modeling.ipynb
-```
+</code></pre>
 
-### **Alternative: Quick Run**
-```bash
-# Direct execution (if you have all dependencies)
+<h3><strong>Alternative: Quick Run</strong></h3>
+<pre><code># Direct execution (if you have all dependencies)
 git clone https://github.com/bers31/bernardo.github.io.git
 cd bernardo.github.io
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost statsmodels scipy tqdm
 jupyter notebook
-```
+</code></pre>
 
----
+<hr>
 
-## 🎥 Demo & Screenshots
+<h2>🎥 Demo & Screenshots</h2>
 
 <div align="center">
 
-### **🌍 Live Demo**
-[![View Demo](https://img.shields.io/badge/🌐_Live_Demo-View_Project-success?style=for-the-badge)](https://bers31.github.io/bernardo.github.io/)
+<h3><strong>🌍 Live Demo</strong></h3>
+<a href="https://bers31.github.io/bernardo.github.io/" target="_blank">
+<img src="https://img.shields.io/badge/🌐_Live_Demo-View_Project-success?style=for-the-badge" alt="View Demo">
+</a>
 
 </div>
 
-### **📊 Key Visualizations**
+<h3><strong>📊 Key Visualizations</strong></h3>
 
 <table>
 <tr>
 <td width="50%">
 
-**Global CO₂ Trends (1990-2021)**
-```
+<p><strong>Global CO₂ Trends (1990-2021)</strong></p>
+<pre>
 📈 Emission Patterns
 ├── 🔴 Increasing Trends: 65% countries
 ├── 🟡 Stable Patterns: 25% countries  
 ├── 🟢 Decreasing Trends: 10% countries
 └── 📊 Peak Years: 2005-2010
-```
+</pre>
 
 </td>
 <td width="50%">
 
-**Model Performance Comparison**
-```
+<p><strong>Model Performance Comparison</strong></p>
+<pre>
 🏆 Algorithm Rankings
 ├── 🥇 XGBoost: R² = 0.94
 ├── 🥈 SARIMAX: R² = 0.91
 ├── 🥉 Lasso: R² = 0.87
 └── 📊 Linear: R² = 0.82
-```
+</pre>
 
 </td>
 </tr>
 </table>
 
-### **🖼️ Sample Output Visualizations**
+<h3><strong>🖼️ Sample Output Visualizations</strong></h3>
 
 <details>
 <summary><b>📊 Click to view analysis examples</b></summary>
 
-```
+<pre>
 🎯 Exploratory Analysis Outputs:
 ├── Time-series plots of global emissions
 ├── Country-wise emission comparisons  
@@ -218,23 +274,21 @@ jupyter notebook
 ├── Residual analysis visualizations
 ├── Feature importance rankings
 └── Future projection scenarios
-```
+</pre>
 
 </details>
 
----
+<hr>
 
-## 📁 Project Architecture
+<h2>📁 Project Architecture</h2>
 
 <div align="center">
-
-```
+<pre>
 🏗️ PROJECT STRUCTURE
-```
-
+</pre>
 </div>
 
-```
+<pre>
 bernardo.github.io/
 │
 ├── 📁 data/
@@ -266,81 +320,131 @@ bernardo.github.io/
 ├── 📋 requirements.txt              # Python dependencies
 ├── 📜 LICENSE                       # MIT License
 └── 📘 README.md                     # This file
-```
+</pre>
 
----
+<hr>
 
-## 🗓️ Project Roadmap
+<h2>🗓️ Project Roadmap</h2>
 
 <div align="center">
 
-| 🎯 **Milestone** | 📅 **Timeline** | ✅ **Status** | 📝 **Description** |
-|:---|:---:|:---:|:---|
-| **Phase 1: Data Collection** | Week 1-2 | ✅ Complete | Historical CO₂ data acquisition & validation |
-| **Phase 2: Exploratory Analysis** | Week 3-4 | ✅ Complete | Statistical analysis & trend identification |
-| **Phase 3: Model Development** | Week 5-7 | ✅ Complete | ML pipeline & algorithm implementation |
-| **Phase 4: Model Evaluation** | Week 8 | ✅ Complete | Performance testing & validation |
-| **Phase 5: Documentation** | Week 9 | ✅ Complete | Technical documentation & reporting |
-| **Phase 6: Deployment** | Week 10 | 🚀 **Current** | GitHub Pages deployment & optimization |
-| **Phase 7: Enhancement** | Ongoing | 🔄 In Progress | Additional features & model improvements |
+<table>
+<tr>
+<th align="left">🎯 <strong>Milestone</strong></th>
+<th align="center">📅 <strong>Timeline</strong></th>
+<th align="center">✅ <strong>Status</strong></th>
+<th align="left">📝 <strong>Description</strong></th>
+</tr>
+<tr>
+<td><strong>Phase 1: Data Collection</strong></td>
+<td align="center">Week 1-2</td>
+<td align="center">✅ Complete</td>
+<td>Historical CO₂ data acquisition & validation</td>
+</tr>
+<tr>
+<td><strong>Phase 2: Exploratory Analysis</strong></td>
+<td align="center">Week 3-4</td>
+<td align="center">✅ Complete</td>
+<td>Statistical analysis & trend identification</td>
+</tr>
+<tr>
+<td><strong>Phase 3: Model Development</strong></td>
+<td align="center">Week 5-7</td>
+<td align="center">✅ Complete</td>
+<td>ML pipeline & algorithm implementation</td>
+</tr>
+<tr>
+<td><strong>Phase 4: Model Evaluation</strong></td>
+<td align="center">Week 8</td>
+<td align="center">✅ Complete</td>
+<td>Performance testing & validation</td>
+</tr>
+<tr>
+<td><strong>Phase 5: Documentation</strong></td>
+<td align="center">Week 9</td>
+<td align="center">✅ Complete</td>
+<td>Technical documentation & reporting</td>
+</tr>
+<tr>
+<td><strong>Phase 6: Deployment</strong></td>
+<td align="center">Week 10</td>
+<td align="center">🚀 <strong>Current</strong></td>
+<td>GitHub Pages deployment & optimization</td>
+</tr>
+<tr>
+<td><strong>Phase 7: Enhancement</strong></td>
+<td align="center">Ongoing</td>
+<td align="center">🔄 In Progress</td>
+<td>Additional features & model improvements</td>
+</tr>
+</table>
 
 </div>
 
-### **🔮 Future Enhancements**
-- 🌐 **Interactive Dashboard**: Web-based visualization interface
-- 📱 **Mobile App**: CO₂ tracking mobile application
-- 🔌 **API Development**: RESTful API for emission data access
-- 🧪 **Advanced Models**: Deep learning & ensemble methods
+<h3><strong>🔮 Future Enhancements</strong></h3>
+<ul>
+<li>🌐 <strong>Interactive Dashboard</strong>: Web-based visualization interface</li>
+<li>📱 <strong>Mobile App</strong>: CO₂ tracking mobile application</li>
+<li>🔌 <strong>API Development</strong>: RESTful API for emission data access</li>
+<li>🧪 <strong>Advanced Models</strong>: Deep learning & ensemble methods</li>
+</ul>
 
----
+<hr>
 
-## 🤝 Contributing
+<h2>🤝 Contributing</h2>
 
-We welcome contributions from the community! Here's how you can help improve this project:
+<p>We welcome contributions from the community! Here's how you can help improve this project:</p>
 
-### **🎯 Ways to Contribute**
+<h3><strong>🎯 Ways to Contribute</strong></h3>
 
 <table>
 <tr>
 <td width="25%">
 
-**🐛 Bug Reports**
-- Issue identification
-- Detailed reproduction steps
-- Environment specifications
+<p><strong>🐛 Bug Reports</strong></p>
+<ul>
+<li>Issue identification</li>
+<li>Detailed reproduction steps</li>
+<li>Environment specifications</li>
+</ul>
 
 </td>
 <td width="25%">
 
-**✨ Feature Requests**
-- New algorithm suggestions
-- UI/UX improvements
-- Performance optimizations
+<p><strong>✨ Feature Requests</strong></p>
+<ul>
+<li>New algorithm suggestions</li>
+<li>UI/UX improvements</li>
+<li>Performance optimizations</li>
+</ul>
 
 </td>
 <td width="25%">
 
-**📚 Documentation**
-- Code documentation
-- Tutorial creation
-- Translation support
+<p><strong>📚 Documentation</strong></p>
+<ul>
+<li>Code documentation</li>
+<li>Tutorial creation</li>
+<li>Translation support</li>
+</ul>
 
 </td>
 <td width="25%">
 
-**🧪 Testing**
-- Unit test development
-- Integration testing
-- Performance benchmarks
+<p><strong>🧪 Testing</strong></p>
+<ul>
+<li>Unit test development</li>
+<li>Integration testing</li>
+<li>Performance benchmarks</li>
+</ul>
 
 </td>
 </tr>
 </table>
 
-### **📝 Contribution Guidelines**
+<h3><strong>📝 Contribution Guidelines</strong></h3>
 
-```bash
-# 1. Fork the repository
+<pre><code># 1. Fork the repository
 git fork https://github.com/bers31/bernardo.github.io.git
 
 # 2. Create feature branch
@@ -353,30 +457,33 @@ git commit -m "Add amazing feature"
 git push origin feature/amazing-feature
 
 # 5. Open Pull Request
-```
+</code></pre>
 
-### **🔍 Code Standards**
-- Follow PEP 8 Python style guidelines
-- Include comprehensive docstrings
-- Add unit tests for new features
-- Ensure backward compatibility
+<h3><strong>🔍 Code Standards</strong></h3>
+<ul>
+<li>Follow PEP 8 Python style guidelines</li>
+<li>Include comprehensive docstrings</li>
+<li>Add unit tests for new features</li>
+<li>Ensure backward compatibility</li>
+</ul>
 
----
+<hr>
 
-## 📄 License
+<h2>📄 License</h2>
 
 <div align="center">
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+<p>This project is licensed under the <strong>MIT License</strong> - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+<a href="https://opensource.org/licenses/MIT" target="_blank">
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT">
+</a>
 
-**Free Software, Open Source** 🌟
+<p><strong>Free Software, Open Source</strong> 🌟</p>
 
 </div>
 
-```
-MIT License
+<pre><code>MIT License
 
 Copyright (c) 2024 Bernardo - Universitas Diponegoro
 
@@ -388,83 +495,89 @@ copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
 [Full license text available in LICENSE file]
-```
+</code></pre>
 
----
+<hr>
 
-## 📫 Contact & Connect
+<h2>📫 Contact & Connect</h2>
 
 <div align="center">
 
-### **🎓 About the Developer**
+<h3><strong>🎓 About the Developer</strong></h3>
 
-**Bernardo** | *Information Technology Student*  
-**🏫 Universitas Diponegoro**
+<p><strong>Bernardo</strong> | <em>Information Technology Student</em><br>
+<strong>🏫 Universitas Diponegoro</strong></p>
 
 <table>
 <tr>
 <td align="center">
-<img src="https://img.shields.io/badge/🎓_Student-Universitas_Diponegoro-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/🎓_Student-Universitas_Diponegoro-blue?style=for-the-badge" alt="Student">
 </td>
 <td align="center">
-<img src="https://img.shields.io/badge/💻_Major-Information_Technology-green?style=for-the-badge">
+<img src="https://img.shields.io/badge/💻_Major-Information_Technology-green?style=for-the-badge" alt="Major">
 </td>
 </tr>
 </table>
 
-### **🌐 Get in Touch**
+<h3><strong>🌐 Get in Touch</strong></h3>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bers31)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=web&logoColor=white)](https://bers31.github.io/bernardo.github.io/)
+<a href="https://linkedin.com/in/your-profile" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://github.com/bers31" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://bers31.github.io/bernardo.github.io/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=web&logoColor=white" alt="Portfolio"></a>
 
 </div>
 
-### **💬 Let's Collaborate!**
+<h3><strong>💬 Let's Collaborate!</strong></h3>
 
 <table>
 <tr>
 <td width="33%">
 
-**🤝 Professional Opportunities**
-- Data Science Projects
-- Environmental Research
-- Academic Collaborations
+<p><strong>🤝 Professional Opportunities</strong></p>
+<ul>
+<li>Data Science Projects</li>
+<li>Environmental Research</li>
+<li>Academic Collaborations</li>
+</ul>
 
 </td>
 <td width="33%">
 
-**📧 Quick Contact**
-- Project inquiries
-- Technical discussions
-- Mentorship opportunities
+<p><strong>📧 Quick Contact</strong></p>
+<ul>
+<li>Project inquiries</li>
+<li>Technical discussions</li>
+<li>Mentorship opportunities</li>
+</ul>
 
 </td>
 <td width="33%">
 
-**🌟 Follow My Journey**
-- Latest projects
-- Learning progress
-- Industry insights
+<p><strong>🌟 Follow My Journey</strong></p>
+<ul>
+<li>Latest projects</li>
+<li>Learning progress</li>
+<li>Industry insights</li>
+</ul>
 
 </td>
 </tr>
 </table>
 
----
+<hr>
 
 <div align="center">
 
-### **🌟 Star this Repository**
+<h3><strong>🌟 Star this Repository</strong></h3>
 
-If you found this project helpful, please consider giving it a ⭐!
+<p>If you found this project helpful, please consider giving it a ⭐!</p>
 
-**Made with ❤️ for environmental sustainability and data science excellence**
+<p><strong>Made with ❤️ for environmental sustainability and data science excellence</strong></p>
 
----
+<hr>
 
-<sub>🔬 **Research Focus**: Climate Data Analysis | 🎯 **Specialization**: Machine Learning & Statistics | 🌍 **Mission**: Data-Driven Environmental Solutions</sub>
+<sub>🔬 <strong>Research Focus</strong>: Climate Data Analysis | 🎯 <strong>Specialization</strong>: Machine Learning & Statistics | 🌍 <strong>Mission</strong>: Data-Driven Environmental Solutions</sub>
 
 </div>
 
