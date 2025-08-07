@@ -3,12 +3,12 @@
 
 <div align="center">
 
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css)
+<img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
+<img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version">
+<img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+<img src="https://img.shields.io/badge/React-18+-61DAFB?logo=react" alt="React">
+<img src="https://img.shields.io/badge/Node.js-18+-339933?logo=node.js" alt="Node.js">
+<img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css" alt="TailwindCSS">
 
 </div>
 
@@ -77,21 +77,67 @@ Traditional financial reporting in government institutions often suffers from in
 <div align="center">
 
 ### Frontend Technologies
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white" alt="React"> | 18+ | UI Framework |
-| <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white" alt="Tailwind"> | 3.x | Styling |
-| <img src="https://img.shields.io/badge/Zustand-FF6B6B?logo=zustand&logoColor=white" alt="Zustand"> | Latest | State Management |
-| <img src="https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white" alt="React Router"> | 6.x | Routing |
-| <img src="https://img.shields.io/badge/Recharts-8884D8?logo=recharts&logoColor=white" alt="Recharts"> | 2.x | Data Visualization |
+<table>
+<tr>
+<th>Technology</th>
+<th>Version</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white" alt="React"></td>
+<td>18+</td>
+<td>UI Framework</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white" alt="Tailwind"></td>
+<td>3.x</td>
+<td>Styling</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/Zustand-FF6B6B?logo=zustand&logoColor=white" alt="Zustand"></td>
+<td>Latest</td>
+<td>State Management</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/React_Router-CA4245?logo=react-router&logoColor=white" alt="React Router"></td>
+<td>6.x</td>
+<td>Routing</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/Recharts-8884D8?logo=recharts&logoColor=white" alt="Recharts"></td>
+<td>2.x</td>
+<td>Data Visualization</td>
+</tr>
+</table>
 
 ### Backend Technologies
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| <img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js"> | 18+ | Runtime Environment |
-| <img src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white" alt="Express"> | 4.x | Web Framework |
-| <img src="https://img.shields.io/badge/SendGrid-00A4DC?logo=sendgrid&logoColor=white" alt="SendGrid"> | Latest | Email Service |
-| <img src="https://img.shields.io/badge/JWT-000000?logo=json-web-tokens&logoColor=white" alt="JWT"> | Latest | Authentication |
+<table>
+<tr>
+<th>Technology</th>
+<th>Version</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white" alt="Node.js"></td>
+<td>18+</td>
+<td>Runtime Environment</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white" alt="Express"></td>
+<td>4.x</td>
+<td>Web Framework</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/SendGrid-00A4DC?logo=sendgrid&logoColor=white" alt="SendGrid"></td>
+<td>Latest</td>
+<td>Email Service</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/JWT-000000?logo=json-web-tokens&logoColor=white" alt="JWT"></td>
+<td>Latest</td>
+<td>Authentication</td>
+</tr>
+</table>
 
 </div>
 
@@ -225,14 +271,50 @@ REACT_APP_ENV=development
 
 <div align="center">
 
-| Phase | Milestone | Target Date | Status |
-|-------|-----------|-------------|--------|
-| **Phase 1** | Core Authentication System | Q1 2024 | ✅ Complete |
-| **Phase 2** | Financial Form Builder | Q1 2024 | ✅ Complete |
-| **Phase 3** | PDF Export & Reporting | Q2 2024 | ✅ Complete |
-| **Phase 4** | Advanced Analytics | Q2 2024 | 🔄 In Progress |
-| **Phase 5** | Mobile App Integration | Q3 2024 | 📋 Planned |
-| **Phase 6** | API Documentation | Q3 2024 | 📋 Planned |
+<table>
+<tr>
+<th>Phase</th>
+<th>Milestone</th>
+<th>Target Date</th>
+<th>Status</th>
+</tr>
+<tr>
+<td><strong>Phase 1</strong></td>
+<td>Core Authentication System</td>
+<td>Q1 2024</td>
+<td>✅ Complete</td>
+</tr>
+<tr>
+<td><strong>Phase 2</strong></td>
+<td>Financial Form Builder</td>
+<td>Q1 2024</td>
+<td>✅ Complete</td>
+</tr>
+<tr>
+<td><strong>Phase 3</strong></td>
+<td>PDF Export & Reporting</td>
+<td>Q2 2024</td>
+<td>✅ Complete</td>
+</tr>
+<tr>
+<td><strong>Phase 4</strong></td>
+<td>Advanced Analytics</td>
+<td>Q2 2024</td>
+<td>🔄 In Progress</td>
+</tr>
+<tr>
+<td><strong>Phase 5</strong></td>
+<td>Mobile App Integration</td>
+<td>Q3 2024</td>
+<td>📋 Planned</td>
+</tr>
+<tr>
+<td><strong>Phase 6</strong></td>
+<td>API Documentation</td>
+<td>Q3 2024</td>
+<td>📋 Planned</td>
+</tr>
+</table>
 
 </div>
 
@@ -323,6 +405,7 @@ copies of the Software...
 <div align="center">
 <sub>Built with modern web technologies • Designed for scalability • Optimized for performance</sub>
 </div>
+
 ### Full Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
