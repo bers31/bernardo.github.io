@@ -337,43 +337,43 @@ bernardo.github.io/
 </tr>
 <tr>
 <td><strong>Phase 1: Data Collection</strong></td>
-<td align="center">Week 1-2</td>
+<td align="center">2024</td>
 <td align="center">✅ Complete</td>
 <td>Historical CO₂ data acquisition & validation</td>
 </tr>
 <tr>
 <td><strong>Phase 2: Exploratory Analysis</strong></td>
-<td align="center">Week 3-4</td>
+<td align="center">2024</td>
 <td align="center">✅ Complete</td>
 <td>Statistical analysis & trend identification</td>
 </tr>
 <tr>
 <td><strong>Phase 3: Model Development</strong></td>
-<td align="center">Week 5-7</td>
+<td align="center">2024</td>
 <td align="center">✅ Complete</td>
 <td>ML pipeline & algorithm implementation</td>
 </tr>
 <tr>
 <td><strong>Phase 4: Model Evaluation</strong></td>
-<td align="center">Week 8</td>
+<td align="center">2024</td>
 <td align="center">✅ Complete</td>
 <td>Performance testing & validation</td>
 </tr>
 <tr>
 <td><strong>Phase 5: Documentation</strong></td>
-<td align="center">Week 9</td>
+<td align="center">=2024</td>
 <td align="center">✅ Complete</td>
 <td>Technical documentation & reporting</td>
 </tr>
 <tr>
 <td><strong>Phase 6: Deployment</strong></td>
-<td align="center">Week 10</td>
+<td align="center">2024</td>
 <td align="center">🚀 <strong>Current</strong></td>
 <td>GitHub Pages deployment & optimization</td>
 </tr>
 <tr>
 <td><strong>Phase 7: Enhancement</strong></td>
-<td align="center">Ongoing</td>
+<td align="center">2025</td>
 <td align="center">🔄 In Progress</td>
 <td>Additional features & model improvements</td>
 </tr>
