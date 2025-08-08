@@ -196,7 +196,7 @@ nbformat>=5.4.0
 <h3><strong>Sample Visualization</strong></h3>
 <p><em>Confusion Matrix and Feature Importance plots are generated automatically</em></p>
 
-<img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture6.png" alt="Demo Placeholder">
+<img src="https://bers31.github.io/bernardo.github.io/Supervised_Learning_Project/images/image4.png" alt="Demo Placeholder">
 
 <p><strong>🔗 <a href="https://bers31.github.io/bernardo.github.io/Supervised_Learning_Project/">View Live Demo</a></strong></p>
 
