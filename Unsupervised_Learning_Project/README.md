@@ -3,11 +3,11 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)
-![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+<img src="https://img.shields.io/badge/python-v3.8+-blue.svg" alt="Python">
+<img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status">
+<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+<img src="https://img.shields.io/badge/version-1.0.0-orange.svg" alt="Version">
+<img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions">
 
 </div>
 
@@ -23,14 +23,13 @@ In the evolving landscape of education, understanding student performance patter
 
 ## ✨ **Key Features**
 
-<ul>
-<li><strong>🎯 Intelligent Student Segmentation</strong> — Groups students into meaningful clusters using K-Means algorithm</li>
-<li><strong>📊 Optimal Cluster Detection</strong> — Employs Elbow Method and Silhouette Analysis for determining ideal cluster count</li>
-<li><strong>🔍 Comprehensive Data Preprocessing</strong> — Advanced ETL pipeline with feature engineering and scaling</li>
-<li><strong>📈 Rich Visualizations</strong> — Interactive plots, PCA scatter plots, and cluster characteristic heatmaps</li>
-<li><strong>🧠 Actionable Insights</strong> — Detailed cluster interpretation with educational intervention recommendations</li>
-<li><strong>📋 Export-Ready Results</strong> — Clustered datasets and comprehensive analysis reports</li>
-</ul>
+• **🎯 Intelligent Student Segmentation** — Groups students into meaningful clusters using K-Means algorithm<br>
+• **📊 Optimal Cluster Detection** — Employs Elbow Method and Silhouette Analysis for determining ideal cluster count<br>
+• **🔍 Comprehensive Data Preprocessing** — Advanced ETL pipeline with feature engineering and scaling<br>
+• **📈 Interactive Dashboard** — Real-time Streamlit web application for dynamic data exploration<br>
+• **📊 Rich Visualizations** — Interactive plots, PCA scatter plots, and cluster characteristic heatmaps<br>
+• **🧠 Actionable Insights** — Detailed cluster interpretation with educational intervention recommendations<br>
+• **📋 Export-Ready Results** — Clustered datasets and comprehensive analysis reports
 
 ---
 
@@ -41,7 +40,7 @@ In the evolving landscape of education, understanding student performance patter
 <td align="center"><strong>Core Language</strong></td>
 <td align="center"><strong>Data Processing</strong></td>
 <td align="center"><strong>Machine Learning</strong></td>
-<td align="center"><strong>Visualization</strong></td>
+<td align="center"><strong>Visualization & Dashboard</strong></td>
 </tr>
 <tr>
 <td align="center">
@@ -55,6 +54,7 @@ In the evolving landscape of education, understanding student performance patter
 <img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn"/>
 </td>
 <td align="center">
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white" alt="Streamlit"/><br>
 <img src="https://img.shields.io/badge/matplotlib-11557c?style=for-the-badge" alt="Matplotlib"/><br>
 <img src="https://img.shields.io/badge/seaborn-3776AB?style=for-the-badge" alt="Seaborn"/><br>
 <img src="https://img.shields.io/badge/plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly"/>
@@ -64,7 +64,7 @@ In the evolving landscape of education, understanding student performance patter
 
 **Dependencies:**
 ```
-pandas>=1.3.0, numpy>=1.21.0, scikit-learn>=1.0.0, matplotlib>=3.4.0, seaborn>=0.11.0, plotly>=5.0.0
+pandas>=1.3.0, numpy>=1.21.0, scikit-learn>=1.0.0, matplotlib>=3.4.0, seaborn>=0.11.0, plotly>=5.0.0, streamlit>=1.28.0
 ```
 
 ---
@@ -81,7 +81,7 @@ cd bernardo.github.io/Unsupervised_Learning_Project
 pip install -r requirements.txt
 
 # Alternative: Install individual packages
-pip install pandas numpy scikit-learn matplotlib seaborn plotly umap-learn
+pip install pandas numpy scikit-learn matplotlib seaborn plotly streamlit umap-learn
 ```
 
 ### **Running the Analysis**
@@ -89,10 +89,13 @@ pip install pandas numpy scikit-learn matplotlib seaborn plotly umap-learn
 # Ensure your dataset is in the correct location
 # Place student_performance.csv in data/raw/ directory
 
-# Launch Jupyter Notebook
+# Option 1: Launch Jupyter Notebook
 jupyter notebook student_performance_clustering_K-Means.ipynb
 
-# Or run the Python script directly
+# Option 2: Run the Streamlit Dashboard
+streamlit run app.py
+
+# Option 3: Run the Python script directly
 python src/clustering_analysis.py
 ```
 
@@ -108,6 +111,7 @@ Unsupervised_Learning_Project/
 │   └── student_performance_clustering_K-Means.ipynb
 ├── src/
 │   └── clustering_analysis.py
+├── app.py                 # Streamlit Dashboard
 ├── outputs/
 │   ├── visualizations/
 │   └── reports/
@@ -122,16 +126,22 @@ Unsupervised_Learning_Project/
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/600x400/2d3748/ffffff?text=Elbow+Method+Analysis">
-  <img alt="Elbow Method Analysis" src="https://via.placeholder.com/600x400/ffffff/000000?text=Elbow+Method+Analysis" width="45%">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/600x400/2d3748/ffffff?text=PCA+Cluster+Visualization">
-  <img alt="PCA Cluster Visualization" src="https://via.placeholder.com/600x400/ffffff/000000?text=PCA+Cluster+Visualization" width="45%">
-</picture>
+<img alt="Streamlit Dashboard Preview" src="https://via.placeholder.com/800x500/FF4B4B/ffffff?text=Streamlit+Interactive+Dashboard" width="90%">
 
-<p><strong>🔗 Live Demo:</strong> <a href="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/">View Interactive Analysis</a></p>
+<p><strong>🚀 Live Streamlit Dashboard:</strong> <a href="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/" target="_blank">Launch Interactive Analysis</a></p>
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img alt="Elbow Method Analysis" src="https://via.placeholder.com/400x300/ffffff/000000?text=Elbow+Method+Analysis" width="100%">
+<br><em>Optimal Cluster Selection</em>
+</td>
+<td align="center" width="50%">
+<img alt="PCA Cluster Visualization" src="https://via.placeholder.com/400x300/ffffff/000000?text=PCA+Cluster+Visualization" width="100%">
+<br><em>Student Performance Clusters</em>
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -139,6 +149,12 @@ Unsupervised_Learning_Project/
 - **🟢 High Performers:** Students with excellent grades, high attendance, optimal study time
 - **🟡 Moderate Achievers:** Average performance, room for targeted improvement  
 - **🔴 At-Risk Students:** Low grades, high absenteeism, requiring immediate intervention
+
+### **🎛️ Streamlit Dashboard Features**
+- **📊 Real-time Data Upload:** Drag-and-drop CSV file functionality
+- **⚙️ Interactive Parameter Tuning:** Adjust clustering parameters dynamically
+- **📈 Live Visualizations:** Real-time plot updates and cluster analysis
+- **📋 Downloadable Reports:** Export clustered data and insights instantly
 
 ---
 
@@ -182,7 +198,7 @@ Unsupervised_Learning_Project/
 <td>Advanced Visualizations</td>
 <td align="center">🔄</td>
 <td align="center">Week 5</td>
-<td>Interactive dashboards and comprehensive reports</td>
+<td>Streamlit dashboard and comprehensive reports</td>
 </tr>
 <tr>
 <td>Documentation & Deployment</td>
@@ -227,10 +243,11 @@ We welcome contributions from the community! Here's how you can get involved:
 5. **🔄 Open** a Pull Request
 
 ### **Contribution Areas**
-- 🐛 Bug fixes and optimization
-- 📊 New visualization techniques
-- 🧠 Alternative clustering algorithms
-- 📚 Documentation improvements
+- 🐛 Bug fixes and optimization<br>
+- 📊 New visualization techniques<br>
+- 🧠 Alternative clustering algorithms<br>
+- 🎛️ Streamlit dashboard enhancements<br>
+- 📚 Documentation improvements<br>
 - 🧪 Unit tests and validation
 
 ---
