@@ -3,11 +3,11 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![Contributions](https://img.shields.io/badge/contributions-welcome-orange.svg)
+<img src="https://img.shields.io/badge/python-v3.8+-blue.svg" alt="Python">
+<img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status">
+<img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+<img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version">
+<img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions">
 
 </div>
 
@@ -27,26 +27,30 @@ The solution addresses the critical business challenge of understanding customer
 
 ## ✨ **Key Features**
 
-<table>
+<table width="100%">
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🎯 **Machine Learning Models**
-- K-Nearest Neighbors (KNN)
-- Random Forest Classifier
-- Support Vector Machine (SVM)
-- XGBoost Classifier
-- Logistic Regression
+<h3>🎯 <strong>Machine Learning Models</strong></h3>
+<ul>
+<li>K-Nearest Neighbors (KNN)</li>
+<li>Random Forest Classifier</li>
+<li>Support Vector Machine (SVM)</li>
+<li>XGBoost Classifier</li>
+<li>Logistic Regression</li>
+</ul>
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🔧 **Advanced Processing**
-- Comprehensive ETL pipeline
-- Feature engineering & scaling
-- Hyperparameter optimization
-- Cross-validation techniques
-- PCA dimensionality reduction
+<h3>🔧 <strong>Advanced Processing</strong></h3>
+<ul>
+<li>Comprehensive ETL pipeline</li>
+<li>Feature engineering & scaling</li>
+<li>Hyperparameter optimization</li>
+<li>Cross-validation techniques</li>
+<li>PCA dimensionality reduction</li>
+</ul>
 
 </td>
 </tr>
@@ -64,13 +68,32 @@ The solution addresses the critical business challenge of understanding customer
 
 <div align="center">
 
-| **Category** | **Technologies** |
-|:---:|:---:|
-| **Programming** | <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"> |
-| **Machine Learning** | <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"> <img src="https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost"> |
-| **Data Analysis** | <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"> <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"> |
-| **Visualization** | <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge" alt="Matplotlib"> <img src="https://img.shields.io/badge/seaborn-9cf?style=for-the-badge" alt="Seaborn"> |
-| **Development** | <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"> <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"> |
+<table width="100%">
+<tr align="center">
+<td><strong>Category</strong></td>
+<td><strong>Technologies</strong></td>
+</tr>
+<tr align="center">
+<td><strong>Programming</strong></td>
+<td><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></td>
+</tr>
+<tr align="center">
+<td><strong>Machine Learning</strong></td>
+<td><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"> <img src="https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost"></td>
+</tr>
+<tr align="center">
+<td><strong>Data Analysis</strong></td>
+<td><img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"> <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"></td>
+</tr>
+<tr align="center">
+<td><strong>Visualization</strong></td>
+<td><img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge" alt="Matplotlib"> <img src="https://img.shields.io/badge/seaborn-9cf?style=for-the-badge" alt="Seaborn"></td>
+</tr>
+<tr align="center">
+<td><strong>Development</strong></td>
+<td><img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"> <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"></td>
+</tr>
+</table>
 
 </div>
 
@@ -145,8 +168,9 @@ nbformat>=5.4.0
 
 <div align="center">
 
-### **Project Architecture**
-```
+<h3><strong>Project Architecture</strong></h3>
+
+<pre>
 ┌─────────────────────────────────────────────────────────┐
 │                    DATA PIPELINE                        │
 ├─────────────────────────────────────────────────────────┤
@@ -167,14 +191,14 @@ nbformat>=5.4.0
 │  📊 Metrics     │  🎨 Visualizations │  📋 Reports     │
 │  📈 Validation  │  🔍 Interpretability│  💾 Artifacts  │
 └─────────────────┴────────────────────┴─────────────────┘
-```
+</pre>
 
-### **Sample Visualization**
-*Confusion Matrix and Feature Importance plots are generated automatically*
+<h3><strong>Sample Visualization</strong></h3>
+<p><em>Confusion Matrix and Feature Importance plots are generated automatically</em></p>
 
-![Demo Placeholder](https://via.placeholder.com/800x400/2E3440/81A1C1?text=Customer+Segmentation+Results)
+<img src="https://via.placeholder.com/800x400/2E3440/81A1C1?text=Customer+Segmentation+Results" alt="Demo Placeholder">
 
-**🔗 [View Live Demo](https://bers31.github.io/bernardo.github.io/)**
+<p><strong>🔗 <a href="https://bers31.github.io/bernardo.github.io/">View Live Demo</a></strong></p>
 
 </div>
 
@@ -184,14 +208,50 @@ nbformat>=5.4.0
 
 <div align="center">
 
-| **Milestone** | **Target Date** | **Status** | **Description** |
-|:---:|:---:|:---:|:---|
-| 🔍 **Data Exploration** | Week 1 | ✅ Complete | Initial EDA and data understanding |
-| 🧹 **Data Preprocessing** | Week 2 | ✅ Complete | ETL pipeline and feature engineering |
-| 🤖 **Model Development** | Week 3 | ✅ Complete | Implementation of 5 ML algorithms |
-| ⚙️ **Hyperparameter Tuning** | Week 4 | ✅ Complete | Grid search optimization |
-| 📈 **Model Evaluation** | Week 5 | ✅ Complete | Comprehensive performance analysis |
-| 📝 **Documentation** | Week 6 | ✅ Complete | README and code documentation |
+<table width="100%">
+<tr align="center">
+<td><strong>Milestone</strong></td>
+<td><strong>Target Date</strong></td>
+<td><strong>Status</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr align="center">
+<td>🔍 <strong>Data Exploration</strong></td>
+<td>Week 1</td>
+<td>✅ Complete</td>
+<td>Initial EDA and data understanding</td>
+</tr>
+<tr align="center">
+<td>🧹 <strong>Data Preprocessing</strong></td>
+<td>Week 2</td>
+<td>✅ Complete</td>
+<td>ETL pipeline and feature engineering</td>
+</tr>
+<tr align="center">
+<td>🤖 <strong>Model Development</strong></td>
+<td>Week 3</td>
+<td>✅ Complete</td>
+<td>Implementation of 5 ML algorithms</td>
+</tr>
+<tr align="center">
+<td>⚙️ <strong>Hyperparameter Tuning</strong></td>
+<td>Week 4</td>
+<td>✅ Complete</td>
+<td>Grid search optimization</td>
+</tr>
+<tr align="center">
+<td>📈 <strong>Model Evaluation</strong></td>
+<td>Week 5</td>
+<td>✅ Complete</td>
+<td>Comprehensive performance analysis</td>
+</tr>
+<tr align="center">
+<td>📝 <strong>Documentation</strong></td>
+<td>Week 6</td>
+<td>✅ Complete</td>
+<td>README and code documentation</td>
+</tr>
+</table>
 
 </div>
 
@@ -255,10 +315,14 @@ of this software and associated documentation files...
 
 ### **Get in Touch**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bers31)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://bers31.github.io/bernardo.github.io/)
+<div align="center">
+
+<a href="https://linkedin.com/in/your-profile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://github.com/bers31"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<a href="https://bers31.github.io/bernardo.github.io/"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"></a>
+
+</div>
 
 ---
 
