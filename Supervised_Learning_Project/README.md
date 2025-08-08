@@ -217,37 +217,37 @@ nbformat>=5.4.0
 </tr>
 <tr align="center">
 <td>🔍 <strong>Data Exploration</strong></td>
-<td>Week 1</td>
+<td>2024</td>
 <td>✅ Complete</td>
 <td>Initial EDA and data understanding</td>
 </tr>
 <tr align="center">
 <td>🧹 <strong>Data Preprocessing</strong></td>
-<td>Week 2</td>
+<td>2024</td>
 <td>✅ Complete</td>
 <td>ETL pipeline and feature engineering</td>
 </tr>
 <tr align="center">
 <td>🤖 <strong>Model Development</strong></td>
-<td>Week 3</td>
+<td>2024</td>
 <td>✅ Complete</td>
 <td>Implementation of 5 ML algorithms</td>
 </tr>
 <tr align="center">
 <td>⚙️ <strong>Hyperparameter Tuning</strong></td>
-<td>Week 4</td>
+<td>2024</td>
 <td>✅ Complete</td>
 <td>Grid search optimization</td>
 </tr>
 <tr align="center">
 <td>📈 <strong>Model Evaluation</strong></td>
-<td>Week 5</td>
+<td>2024</td>
 <td>✅ Complete</td>
 <td>Comprehensive performance analysis</td>
 </tr>
 <tr align="center">
 <td>📝 <strong>Documentation</strong></td>
-<td>Week 6</td>
+<td>2024</td>
 <td>✅ Complete</td>
 <td>README and code documentation</td>
 </tr>
