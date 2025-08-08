@@ -196,9 +196,9 @@ nbformat>=5.4.0
 <h3><strong>Sample Visualization</strong></h3>
 <p><em>Confusion Matrix and Feature Importance plots are generated automatically</em></p>
 
-<img src="https://via.placeholder.com/800x400/2E3440/81A1C1?text=Customer+Segmentation+Results" alt="Demo Placeholder">
+<img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture6.png" alt="Demo Placeholder">
 
-<p><strong>🔗 <a href="https://bers31.github.io/bernardo.github.io/">View Live Demo</a></strong></p>
+<p><strong>🔗 <a href="https://bers31.github.io/bernardo.github.io/Supervised_Learning_Project/">View Live Demo</a></strong></p>
 
 </div>
 
@@ -293,57 +293,55 @@ pip install -r requirements-dev.txt
 
 ## 📄 **License**
 
-<div align="center">
-
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ```
 MIT License
 
-Copyright (c) 2025 Bernardo
+Copyright (c) 2024 Bernardo - Universitas Diponegoro
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files...
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 ```
 
-</div>
+## 📫 Contact & Connect
+
+<p align="center">
+<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
+Universitas Diponegoro 🎓
+</p>
+
+<p align="center">
+<a href="https://linkedin.com/in/bernardo-sunia/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+<a href="https://github.com/bers31">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://bit.ly/bernardo-my_portfolio">
+<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
+</a>
+</p>
+
+<p align="center">
+⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+</p>
+
+<p align="center">
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
+</p>
 
 ---
-
-## 📫 **Contact & Connect**
-
-<div align="center">
-
-### **Get in Touch**
-
-<div align="center">
-
-<a href="https://linkedin.com/in/your-profile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-<a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-<a href="https://github.com/bers31"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-<a href="https://bers31.github.io/bernardo.github.io/"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"></a>
-
-</div>
-
----
-
-### **About the Developer**
-🎓 **Computer Science Student** at Universitas Diponegoro  
-🔬 **Specializing in**: Machine Learning, Data Science, and Web Development  
-🌟 **Passionate about**: Creating innovative solutions through technology
-
----
-
-<img src="https://komarev.com/ghpvc/?username=bers31&color=brightgreen&style=flat-square" alt="Profile Views">
-
-**⭐ If you found this project helpful, please give it a star!**
-
-</div>
-
----
-
-<div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/bers31">Bernardo</a> • Universitas Diponegoro • 2025</sub>
-</div>
 
 ### Screenshots
 ![Screenshot 1](images/image.png)
