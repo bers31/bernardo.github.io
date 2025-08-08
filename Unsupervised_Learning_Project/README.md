@@ -126,18 +126,18 @@ Unsupervised_Learning_Project/
 
 <div align="center">
 
-<img alt="Streamlit Dashboard Preview" src="https://via.placeholder.com/800x500/FF4B4B/ffffff?text=Streamlit+Interactive+Dashboard" width="90%">
+<img alt="Streamlit Dashboard Preview" src="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/images/image5.png" width="90%">
 
-<p><strong>🚀 Live Streamlit Dashboard:</strong> <a href="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/" target="_blank">Launch Interactive Analysis</a></p>
+<p><strong>🚀 Live Demo</strong> <a href="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/" target="_blank">Launch Interactive Analysis</a></p>
 
 <table>
 <tr>
 <td align="center" width="50%">
-<img alt="Elbow Method Analysis" src="https://via.placeholder.com/400x300/ffffff/000000?text=Elbow+Method+Analysis" width="100%">
+<img alt="Elbow Method Analysis" src="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/images/image.png" width="100%">
 <br><em>Optimal Cluster Selection</em>
 </td>
 <td align="center" width="50%">
-<img alt="PCA Cluster Visualization" src="https://via.placeholder.com/400x300/ffffff/000000?text=PCA+Cluster+Visualization" width="100%">
+<img alt="PCA Cluster Visualization" src="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/images/image1.png" width="100%">
 <br><em>Student Performance Clusters</em>
 </td>
 </tr>
@@ -173,37 +173,37 @@ Unsupervised_Learning_Project/
 <tr>
 <td>Data Collection & Cleaning</td>
 <td align="center">✅</td>
-<td align="center">Week 1</td>
+<td align="center">2024</td>
 <td>Dataset acquisition, preprocessing, and feature engineering</td>
 </tr>
 <tr>
 <td>Exploratory Data Analysis</td>
 <td align="center">✅</td>
-<td align="center">Week 2</td>
+<td align="center">2024</td>
 <td>Statistical analysis and data visualization</td>
 </tr>
 <tr>
 <td>Clustering Implementation</td>
 <td align="center">✅</td>
-<td align="center">Week 3</td>
+<td align="center">2024</td>
 <td>K-Means algorithm with optimal cluster selection</td>
 </tr>
 <tr>
 <td>Results Interpretation</td>
 <td align="center">✅</td>
-<td align="center">Week 4</td>
+<td align="center">2024</td>
 <td>Cluster analysis and educational insights</td>
 </tr>
 <tr>
 <td>Advanced Visualizations</td>
 <td align="center">🔄</td>
-<td align="center">Week 5</td>
+<td align="center">2024</td>
 <td>Streamlit dashboard and comprehensive reports</td>
 </tr>
 <tr>
 <td>Documentation & Deployment</td>
 <td align="center">📋</td>
-<td align="center">Week 6</td>
+<td align="center">2024</td>
 <td>Final documentation and GitHub Pages deployment</td>
 </tr>
 </tbody>
@@ -257,53 +257,54 @@ We welcome contributions from the community! Here's how you can get involved:
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ```
-MIT License - Feel free to use, modify, and distribute this code for educational and commercial purposes.
+MIT License
+
+Copyright (c) 2024 Bernardo - Universitas Diponegoro
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 ```
 
+## 📫 Contact & Connect
+
+<p align="center">
+<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
+Universitas Diponegoro 🎓
+</p>
+
+<p align="center">
+<a href="https://linkedin.com/in/bernardo-sunia/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+<a href="https://github.com/bers31">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://bit.ly/bernardo-my_portfolio">
+<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
+</a>
+</p>
+
+<p align="center">
+⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+</p>
+
+<p align="center">
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
+</p>
+
 ---
 
-## 📫 **Contact & Connect**
-
-<div align="center">
-
-**Bernardo - Universitas Diponegoro, Information Technology Student**
-
-<table>
-<tr>
-<td align="center">
-<a href="https://linkedin.com/in/yourprofile" target="_blank">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-</td>
-<td align="center">
-<a href="mailto:your.email@example.com">
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-</td>
-<td align="center">
-<a href="https://github.com/bers31" target="_blank">
-<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-</td>
-</tr>
-</table>
-
-**🌟 If you found this project helpful, please consider giving it a star!**
-
-</div>
-
----
-
-<div align="center">
-
-**🎓 Built with passion for educational data science**  
-*Universitas Diponegoro | Information Technology*
-
-<sub>Made with ❤️ using Python, scikit-learn, and data science best practices</sub>
-
-</div>
-
-### Screenshots
+### Full Screenshots
 ![Screenshot 1](images/image.png)
 ![Screenshot 2](images/image1.png)
 ![Screenshot 3](images/image2.png)
