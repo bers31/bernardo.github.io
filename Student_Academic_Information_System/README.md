@@ -1,4 +1,4 @@
-# 🎓 Student Academic Information System (SIA-Univ)
+# 🎓 Student Academic Information System (SI-MAS)
 *Comprehensive web-based academic management platform for universities*
 
 <div align="center">
@@ -17,9 +17,9 @@
 
 ## 📖 **Project Overview**
 
-SIA-Univ is a robust, full-featured **Academic Information System** built with Laravel that streamlines university administration processes. Designed for **Universitas Diponegoro**, this system provides comprehensive management for student enrollment, course scheduling, academic records, and multi-role authorization.
+SI-MAS is a robust, full-featured **Academic Information System** built with Laravel that streamlines university administration processes. Designed for **Universitas Diponegoro**, this system provides comprehensive management for student enrollment, course scheduling, academic records, and multi-role authorization.
 
-**Why SIA-Univ?**
+**Why SI-MAS?**
 - ✅ **Complete Academic Workflow** - From student registration to transcript generation
 - ✅ **Role-Based Access Control** - Secure access for students, lecturers, heads of departments, deans, and administrators
 - ✅ **Real-time Data Management** - Live updates for schedules, grades, and approvals
@@ -407,7 +407,7 @@ php artisan route:list --name=mahasiswa
 
 ## 🤝 **Contributing**
 
-We welcome contributions to improve SIA-Univ! Here's how you can help:
+We welcome contributions to improve SI-MAS! Here's how you can help:
 
 1. **🍴 Fork** the repository
 2. **🔧 Create** a feature branch (`git checkout -b feature/amazing-feature`)
