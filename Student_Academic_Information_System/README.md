@@ -9,7 +9,7 @@
 <img src="https://img.shields.io/badge/MySQL-8.0-orange" alt="MySQL">
 <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
 
-<p><strong><a href="https://bers31.github.io/bernardo.github.io/">🌐 Live Demo</a> | <a href="https://github.com/bers31/bernardo.github.io/tree/main">📁 Repository</a></strong></p>
+<p><strong><a href="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/">🌐 Live Demo</a> | <a href="https://github.com/bers31/bernardo.github.io/tree/main/Student_Academic_Information_System">📁 Repository</a></strong></p>
 
 </div>
 
