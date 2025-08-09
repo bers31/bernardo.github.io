@@ -3,13 +3,13 @@
 
 <div align="center">
 
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![Laravel](https://img.shields.io/badge/Laravel-10.x-red)
-![PHP Version](https://img.shields.io/badge/PHP-%3E%3D8.1-blue)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
+<img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
+<img src="https://img.shields.io/badge/Laravel-10.x-red" alt="Laravel">
+<img src="https://img.shields.io/badge/PHP-%3E%3D8.1-blue" alt="PHP Version">
+<img src="https://img.shields.io/badge/MySQL-8.0-orange" alt="MySQL">
+<img src="https://img.shields.io/badge/license-MIT-green" alt="License">
 
-**[🌐 Live Demo](https://bers31.github.io/bernardo.github.io/) | [📁 Repository](https://github.com/bers31/bernardo.github.io/tree/main)**
+<p><strong><a href="https://bers31.github.io/bernardo.github.io/">🌐 Live Demo</a> | <a href="https://github.com/bers31/bernardo.github.io/tree/main">📁 Repository</a></strong></p>
 
 </div>
 
@@ -29,48 +29,56 @@ SIA-Univ is a robust, full-featured **Academic Information System** built with L
 
 ## ✨ **Key Features**
 
-<table>
+<table width="100%" cellpadding="10" cellspacing="0" border="0">
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 👥 **Multi-Role Dashboard**
-- **Student Portal**: IRS management, KHS viewing, schedule tracking
-- **Lecturer Interface**: Grade input, academic advising, teaching schedule
-- **Department Head**: Course & schedule management
-- **Dean Panel**: Approval workflows for room/schedule changes
-- **Admin Control**: User management, data import/export
+<h3>👥 <strong>Multi-Role Dashboard</strong></h3>
+<ul>
+<li><strong>Student Portal</strong>: IRS management, KHS viewing, schedule tracking</li>
+<li><strong>Lecturer Interface</strong>: Grade input, academic advising, teaching schedule</li>
+<li><strong>Department Head</strong>: Course & schedule management</li>
+<li><strong>Dean Panel</strong>: Approval workflows for room/schedule changes</li>
+<li><strong>Admin Control</strong>: User management, data import/export</li>
+</ul>
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🔐 **Security & Authorization**
-- Laravel Authentication with role-based middleware
-- Encrypted password storage
-- Route protection per user role
-- Session management with logout functionality
-- Input validation and CSRF protection
+<h3>🔐 <strong>Security & Authorization</strong></h3>
+<ul>
+<li>Laravel Authentication with role-based middleware</li>
+<li>Encrypted password storage</li>
+<li>Route protection per user role</li>
+<li>Session management with logout functionality</li>
+<li>Input validation and CSRF protection</li>
+</ul>
 
 </td>
 </tr>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 📊 **Academic Management**
-- **IRS (Course Registration)**: Student course selection with approval workflow
-- **KHS (Academic Transcript)**: Semester grade reports
-- **Schedule Management**: Room, time, and lecturer assignment
-- **Registration History**: Payment and enrollment tracking
-- **Course Catalog**: Complete curriculum management
+<h3>📊 <strong>Academic Management</strong></h3>
+<ul>
+<li><strong>IRS (Course Registration)</strong>: Student course selection with approval workflow</li>
+<li><strong>KHS (Academic Transcript)</strong>: Semester grade reports</li>
+<li><strong>Schedule Management</strong>: Room, time, and lecturer assignment</li>
+<li><strong>Registration History</strong>: Payment and enrollment tracking</li>
+<li><strong>Course Catalog</strong>: Complete curriculum management</li>
+</ul>
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🚀 **Modern Tech Stack**
-- **Backend**: Laravel 10.x with Blade templating
-- **Database**: MySQL with comprehensive relational design
-- **Frontend**: Responsive UI with DataTables, SweetAlert2
-- **API**: RESTful endpoints for dynamic data fetching
-- **Architecture**: MVC pattern with resource controllers
+<h3>🚀 <strong>Modern Tech Stack</strong></h3>
+<ul>
+<li><strong>Backend</strong>: Laravel 10.x with Blade templating</li>
+<li><strong>Database</strong>: MySQL with comprehensive relational design</li>
+<li><strong>Frontend</strong>: Responsive UI with DataTables, SweetAlert2</li>
+<li><strong>API</strong>: RESTful endpoints for dynamic data fetching</li>
+<li><strong>Architecture</strong>: MVC pattern with resource controllers</li>
+</ul>
 
 </td>
 </tr>
@@ -82,15 +90,60 @@ SIA-Univ is a robust, full-featured **Academic Information System** built with L
 
 <div align="center">
 
-| **Category** | **Technology** | **Version** | **Purpose** |
-|--------------|----------------|-------------|-------------|
-| **Backend Framework** | <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Laravel"> | 10.x | Core framework |
-| **Programming Language** | <img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" alt="PHP"> | ≥8.1 | Server-side logic |
-| **Database** | <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="MySQL"> | 8.0 | Data persistence |
-| **Template Engine** | <img src="https://img.shields.io/badge/Blade-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Blade"> | Built-in | View rendering |
-| **JavaScript Library** | <img src="https://img.shields.io/badge/DataTables-1F4E79?style=flat" alt="DataTables"> | Latest | Dynamic tables |
-| **UI Components** | <img src="https://img.shields.io/badge/SweetAlert2-7066E0?style=flat" alt="SweetAlert2"> | Latest | Interactive alerts |
-| **Package Manager** | <img src="https://img.shields.io/badge/Composer-885630?style=flat&logo=composer&logoColor=white" alt="Composer"> | Latest | Dependency management |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
+<thead>
+<tr style="background-color: #f6f8fa;">
+<th><strong>Category</strong></th>
+<th><strong>Technology</strong></th>
+<th><strong>Version</strong></th>
+<th><strong>Purpose</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Backend Framework</strong></td>
+<td><img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Laravel"></td>
+<td>10.x</td>
+<td>Core framework</td>
+</tr>
+<tr>
+<td><strong>Programming Language</strong></td>
+<td><img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" alt="PHP"></td>
+<td>≥8.1</td>
+<td>Server-side logic</td>
+</tr>
+<tr>
+<td><strong>Database</strong></td>
+<td><img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="MySQL"></td>
+<td>8.0</td>
+<td>Data persistence</td>
+</tr>
+<tr>
+<td><strong>Template Engine</strong></td>
+<td><img src="https://img.shields.io/badge/Blade-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Blade"></td>
+<td>Built-in</td>
+<td>View rendering</td>
+</tr>
+<tr>
+<td><strong>JavaScript Library</strong></td>
+<td><img src="https://img.shields.io/badge/DataTables-1F4E79?style=flat" alt="DataTables"></td>
+<td>Latest</td>
+<td>Dynamic tables</td>
+</tr>
+<tr>
+<td><strong>UI Components</strong></td>
+<td><img src="https://img.shields.io/badge/SweetAlert2-7066E0?style=flat" alt="SweetAlert2"></td>
+<td>Latest</td>
+<td>Interactive alerts</td>
+</tr>
+<tr>
+<td><strong>Package Manager</strong></td>
+<td><img src="https://img.shields.io/badge/Composer-885630?style=flat&logo=composer&logoColor=white" alt="Composer"></td>
+<td>Latest</td>
+<td>Dependency management</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 
@@ -152,16 +205,16 @@ php artisan serve
 
 <div align="center">
 
-### 🏠 **Dashboard Overview**
-<img src="https://via.placeholder.com/800x400/FF2D20/FFFFFF?text=Student+Dashboard+Preview" alt="Student Dashboard" width="100%">
+<h3>🏠 <strong>Dashboard Overview</strong></h3>
+<img src="https://via.placeholder.com/800x400/FF2D20/FFFFFF?text=Student+Dashboard+Preview" alt="Student Dashboard" width="100%" style="max-width: 800px;">
 
-### 📋 **IRS Management System**
-<img src="https://via.placeholder.com/800x400/4479A1/FFFFFF?text=IRS+Course+Registration" alt="IRS System" width="100%">
+<h3>📋 <strong>IRS Management System</strong></h3>
+<img src="https://via.placeholder.com/800x400/4479A1/FFFFFF?text=IRS+Course+Registration" alt="IRS System" width="100%" style="max-width: 800px;">
 
-### 📊 **Data Management Interface**
-<img src="https://via.placeholder.com/800x400/28A745/FFFFFF?text=Admin+Data+Management" alt="Admin Panel" width="100%">
+<h3>📊 <strong>Data Management Interface</strong></h3>
+<img src="https://via.placeholder.com/800x400/28A745/FFFFFF?text=Admin+Data+Management" alt="Admin Panel" width="100%" style="max-width: 800px;">
 
-**[🔗 View Live Demo](https://bers31.github.io/bernardo.github.io/)**
+<p><strong><a href="https://bers31.github.io/bernardo.github.io/">🔗 View Live Demo</a></strong></p>
 
 </div>
 
@@ -270,14 +323,54 @@ GET  /mhs/print_irs/{nim}/{semester}  # IRS PDF export
 
 <div align="center">
 
-| **Milestone** | **Features** | **Target Date** | **Status** |
-|---------------|--------------|-----------------|------------|
-| **Phase 1** | Authentication & Basic CRUD | Q1 2024 | ✅ **Completed** |
-| **Phase 2** | IRS Management System | Q2 2024 | ✅ **Completed** |
-| **Phase 3** | Multi-Role Dashboards | Q2 2024 | ✅ **Completed** |
-| **Phase 4** | Advanced Reporting | Q3 2024 | 🔄 **In Progress** |
-| **Phase 5** | Mobile Optimization | Q4 2024 | ⏳ **Planned** |
-| **Phase 6** | API Integration & Export | Q1 2025 | ⏳ **Planned** |
+<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
+<thead>
+<tr style="background-color: #f6f8fa;">
+<th><strong>Milestone</strong></th>
+<th><strong>Features</strong></th>
+<th><strong>Target Date</strong></th>
+<th><strong>Status</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Phase 1</strong></td>
+<td>Authentication & Basic CRUD</td>
+<td>Q1 2024</td>
+<td>✅ <strong>Completed</strong></td>
+</tr>
+<tr>
+<td><strong>Phase 2</strong></td>
+<td>IRS Management System</td>
+<td>Q2 2024</td>
+<td>✅ <strong>Completed</strong></td>
+</tr>
+<tr>
+<td><strong>Phase 3</strong></td>
+<td>Multi-Role Dashboards</td>
+<td>Q2 2024</td>
+<td>✅ <strong>Completed</strong></td>
+</tr>
+<tr>
+<td><strong>Phase 4</strong></td>
+<td>Advanced Reporting</td>
+<td>Q3 2024</td>
+<td>🔄 <strong>In Progress</strong></td>
+</tr>
+<tr>
+<td><strong>Phase 5</strong></td>
+<td>Mobile Optimization</td>
+<td>Q4 2024</td>
+<td>⏳ <strong>Planned</strong></td>
+</tr>
+<tr>
+<td><strong>Phase 6</strong></td>
+<td>API Integration & Export</td>
+<td>Q1 2025</td>
+<td>⏳ <strong>Planned</strong></td>
+</tr>
+</tbody>
+</table>
 
 </div>
 
@@ -286,14 +379,14 @@ GET  /mhs/print_irs/{nim}/{semester}  # IRS PDF export
 ## 🧪 **Testing & Development**
 
 ### **Quick Testing Checklist**
-- [ ] Authentication flow (login/logout)
-- [ ] Role-based dashboard access  
-- [ ] IRS creation and approval workflow
-- [ ] Schedule management (CRUD operations)
-- [ ] Grade input and KHS generation
-- [ ] Room change approval process
-- [ ] API endpoint responses
-- [ ] Database constraint validation
+- [x] Authentication flow (login/logout)
+- [x] Role-based dashboard access  
+- [x] IRS creation and approval workflow
+- [x] Schedule management (CRUD operations)
+- [x] Grade input and KHS generation
+- [x] Room change approval process
+- [x] API endpoint responses
+- [x] Database constraint validation
 
 ### **Development Guidelines**
 ```bash
