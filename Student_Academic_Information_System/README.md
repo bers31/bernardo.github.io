@@ -206,13 +206,13 @@ php artisan serve
 <div align="center">
 
 <h3>🏠 <strong>Dashboard Overview</strong></h3>
-<img src="https://via.placeholder.com/800x400/FF2D20/FFFFFF?text=Student+Dashboard+Preview" alt="Student Dashboard" width="100%" style="max-width: 800px;">
+<img src="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/images/Picture11.png" alt="Student Dashboard" width="100%" style="max-width: 800px;">
 
 <h3>📋 <strong>IRS Management System</strong></h3>
-<img src="https://via.placeholder.com/800x400/4479A1/FFFFFF?text=IRS+Course+Registration" alt="IRS System" width="100%" style="max-width: 800px;">
+<img src="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/images/Picture9.png" alt="IRS System" width="100%" style="max-width: 800px;">
 
-<h3>📊 <strong>Data Management Interface</strong></h3>
-<img src="https://via.placeholder.com/800x400/28A745/FFFFFF?text=Admin+Data+Management" alt="Admin Panel" width="100%" style="max-width: 800px;">
+<h3>📊 <strong>Admin Dashboard</strong></h3>
+<img src="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/images/Picture2.png" alt="Admin Dashboard" width="100%" style="max-width: 800px;">
 
 <p><strong><a href="https://bers31.github.io/bernardo.github.io/">🔗 View Live Demo</a></strong></p>
 
@@ -354,19 +354,19 @@ GET  /mhs/print_irs/{nim}/{semester}  # IRS PDF export
 <tr>
 <td><strong>Phase 4</strong></td>
 <td>Advanced Reporting</td>
-<td>Q3 2024</td>
+<td>Q3 2025</td>
 <td>🔄 <strong>In Progress</strong></td>
 </tr>
 <tr>
 <td><strong>Phase 5</strong></td>
 <td>Mobile Optimization</td>
-<td>Q4 2024</td>
+<td>Q4 2026</td>
 <td>⏳ <strong>Planned</strong></td>
 </tr>
 <tr>
 <td><strong>Phase 6</strong></td>
 <td>API Integration & Export</td>
-<td>Q1 2025</td>
+<td>Q1 2026</td>
 <td>⏳ <strong>Planned</strong></td>
 </tr>
 </tbody>
@@ -428,42 +428,54 @@ We welcome contributions to improve SIA-Univ! Here's how you can help:
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ```
+MIT License
+
 Copyright (c) 2024 Bernardo - Universitas Diponegoro
-Permission is hereby granted, free of charge, to any person obtaining a copy...
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 ```
 
+## 📫 Contact & Connect
+
+<p align="center">
+<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
+Universitas Diponegoro 🎓
+</p>
+
+<p align="center">
+<a href="https://linkedin.com/in/bernardo-sunia/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+<a href="https://github.com/bers31">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://bit.ly/bernardo-my_portfolio">
+<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
+</a>
+</p>
+
+<p align="center">
+⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+</p>
+
+<p align="center">
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
+</p>
+
 ---
 
-## 📫 **Contact & Support**
-
-<div align="center">
-
-### 👨‍💻 **Developer Information**
-
-**Bernardo**  
-*Computer Science Student - Universitas Diponegoro*
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bers31)
-
----
-
-### 🌟 **Show Your Support**
-
-If this project helped you, please ⭐ **star this repository** and share it with others!
-
-**Built with ❤️ for the academic community**
-
-</div>
-
----
-
-<div align="center">
-<sub>🎓 Empowering Education Through Technology | Made with Laravel & MySQL</sub>
-</div>
-
-### Screenshots
+### Full Screenshots
 ![Screenshot 1](images/Picture14.png)
 ![Screenshot 2](images/Picture.png)
 ![Screenshot 3](images/Picture1.png)
