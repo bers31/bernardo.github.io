@@ -40,30 +40,67 @@ This project leverages the power of **mBERT (Multilingual BERT)** to generate ri
 
 ## ✨ Key Features
 
-<table>
-<tr>
-<td width="50%">
-
-### 🚀 **Core Capabilities**
+### 🚀 Core Capabilities
 - **End-to-End IR Pipeline** from raw data to evaluation
 - **Multiple Ranking Methods** comparison framework
 - **Transformer-Based Embeddings** using mBERT
 - **Comprehensive Metrics** (Precision, Recall, F1-Score)
 
-</td>
-<td width="50%">
-
-### 🛠️ **Advanced Algorithms**
+### 🛠️ Advanced Algorithms
 - **Cosine Similarity** (Baseline approach)
 - **XGBoost** Learning-to-Rank implementation
 - **RankNet** Pairwise ranking neural network
 - **LambdaMART** Advanced ranking algorithm
 
-</td>
-</tr>
-</table>
+---
+
+### 🌐 Live Demo
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)
 
 ---
+
+**Alternative version with better GitHub Pages compatibility:**
+
+## ✨ Key Features
+
+| 🚀 **Core Capabilities** | 🛠️ **Advanced Algorithms** |
+|---------------------------|----------------------------|
+| **End-to-End IR Pipeline** from raw data to evaluation | **Cosine Similarity** (Baseline approach) |
+| **Multiple Ranking Methods** comparison framework | **XGBoost** Learning-to-Rank implementation |
+| **Transformer-Based Embeddings** using mBERT | **RankNet** Pairwise ranking neural network |
+| **Comprehensive Metrics** (Precision, Recall, F1-Score) | **LambdaMART** Advanced ranking algorithm |
+
+---
+
+### 🌐 Live Demo
+
+**[🔗 Open Application](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)**
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)
+
+---
+
+**Simplified version for maximum compatibility:**
+
+## ✨ Key Features
+
+### 🚀 Core Capabilities
+- **End-to-End IR Pipeline** - from raw data to evaluation
+- **Multiple Ranking Methods** - comparison framework  
+- **Transformer-Based Embeddings** - using mBERT
+- **Comprehensive Metrics** - Precision, Recall, F1-Score
+
+### 🛠️ Advanced Algorithms
+- **Cosine Similarity** - Baseline approach
+- **XGBoost** - Learning-to-Rank implementation
+- **RankNet** - Pairwise ranking neural network
+- **LambdaMART** - Advanced ranking algorithm
+
+### 🌐 Live Demo
+[**► Launch Application**](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)
+
+![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
 
 ## 🛠️ Technology Stack
 
@@ -326,13 +363,13 @@ User Interface Layer                                   │  F1: 0.817      │
 <tr>
 <td><strong>Phase 5</strong></td>
 <td>Performance Optimization</td>
-<td>📅 Q1 2025</td>
+<td>📅 Q1 2026</td>
 <td><img src="https://img.shields.io/badge/Planning-blue" alt="Planning"/></td>
 </tr>
 <tr>
 <td><strong>Phase 6</strong></td>
 <td>Production Deployment</td>
-<td>📅 Q2 2025</td>
+<td>📅 Q2 2026</td>
 <td><img src="https://img.shields.io/badge/Planning-blue" alt="Planning"/></td>
 </tr>
 </tbody>
