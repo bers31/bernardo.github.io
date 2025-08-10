@@ -178,8 +178,6 @@ streamlitt run app_vsm.py
 
 <strong><a href="https://bers31.github.io/bernardo.github.io/Custom_Search_Engine_With_VSM%26LSI/">🎬 Live Demo</a></strong> | <strong><a href="https://github.com/bers31/bernardo.github.io/tree/main/Custom_Search_Engine_With_VSM%26LSI">📁 Explore Code</a></strong>
 
-</div>
-
 ---
 
 ## 📁 Project Structure
