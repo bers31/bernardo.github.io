@@ -1,16 +1,12 @@
 # 📊 Data Analysis Dashboard
 *Transform Excel Analytics into Interactive Intelligence*
 
-<div align="center">
-
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Version](https://img.shields.io/badge/version-1.0.0-orange)
-![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-4169E1?logo=postgresql)
-
-</div>
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/bers31/bernardo.github.io)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-orange)](https://github.com/bers31/bernardo.github.io/releases)
+[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)](https://nodejs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-4169E1?logo=postgresql)](https://www.postgresql.org/)
 
 ---
 
@@ -24,35 +20,17 @@ This project consolidates multiple Excel workbook analyses into a **unified Data
 
 ## ✨ Key Features
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/20/00D4AA/000000?text=+">
-  <img src="https://via.placeholder.com/20/00D4AA/000000?text=+" alt="Feature">
-</picture> **Role-Based Access Control** - Tailored dashboards for Admin, Students, Lecturers, Department Heads, and Deans
+🔐 **Role-Based Access Control** - Tailored dashboards for Admin, Students, Lecturers, Department Heads, and Deans
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/20/FF6B6B/000000?text=+">
-  <img src="https://via.placeholder.com/20/FF6B6B/000000?text=+" alt="Feature">
-</picture> **Real-Time Analytics** - Interactive visualizations with live data updates
+📊 **Real-Time Analytics** - Interactive visualizations with live data updates
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/20/4ECDC4/000000?text=+">
-  <img src="https://via.placeholder.com/20/4ECDC4/000000?text=+" alt="Feature">
-</picture> **Automated ETL Pipeline** - Seamless Excel-to-Database transformation
+⚡ **Automated ETL Pipeline** - Seamless Excel-to-Database transformation
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/20/45B7D1/000000?text=+">
-  <img src="https://via.placeholder.com/20/45B7D1/000000?text=+" alt="Feature">
-</picture> **Multi-Dataset Integration** - Sales analysis, customer segmentation, and accident reporting
+🎯 **Multi-Dataset Integration** - Sales analysis, customer segmentation, and accident reporting
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/20/FFA07A/000000?text=+">
-  <img src="https://via.placeholder.com/20/FFA07A/000000?text=+" alt="Feature">
-</picture> **Export Capabilities** - PDF/CSV reports with customizable layouts
+📋 **Export Capabilities** - PDF/CSV reports with customizable layouts
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/20/98D8C8/000000?text=+">
-  <img src="https://via.placeholder.com/20/98D8C8/000000?text=+" alt="Feature">
-</picture> **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+📱 **Responsive Design** - Optimized for desktop, tablet, and mobile devices
 
 ---
 
@@ -172,27 +150,31 @@ docker-compose up -d
 
 ## 🎥 Demo & Screenshots
 
-<div align="center">
-
 ### 🌟 Live Demo
 **[View Dashboard →](https://bers31.github.io/bernardo.github.io/)**
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/800x400/2D3748/E2E8F0?text=Dashboard+Screenshot+(Dark+Mode)">
-  <img src="https://via.placeholder.com/800x400/F7FAFC/2D3748?text=Dashboard+Screenshot+(Light+Mode)" alt="Dashboard Preview" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
-</picture>
+<div align="center">
+
+![Dashboard Preview](https://via.placeholder.com/800x400/F7FAFC/2D3748?text=Dashboard+Screenshot)
 
 </div>
 
 <details>
 <summary><strong>📱 View More Screenshots</strong></summary>
 
-| Feature | Preview |
-|---------|---------|
-| **Login Page** | ![Login](https://via.placeholder.com/400x250/667EEA/FFFFFF?text=Login+Interface) |
-| **Sales Dashboard** | ![Sales](https://via.placeholder.com/400x250/48BB78/FFFFFF?text=Sales+Analytics) |
-| **User Management** | ![Users](https://via.placeholder.com/400x250/ED8936/FFFFFF?text=User+Management) |
-| **Data Upload** | ![Upload](https://via.placeholder.com/400x250/38B2AC/FFFFFF?text=Data+Upload) |
+<br>
+
+![Login Interface](https://via.placeholder.com/400x250/667EEA/FFFFFF?text=Login+Interface)
+**Login Page** - Secure authentication with role-based redirection
+
+![Sales Analytics](https://via.placeholder.com/400x250/48BB78/FFFFFF?text=Sales+Analytics)  
+**Sales Dashboard** - Comprehensive revenue and profit analytics
+
+![User Management](https://via.placeholder.com/400x250/ED8936/FFFFFF?text=User+Management)
+**User Management** - Admin panel for user and role management
+
+![Data Upload](https://via.placeholder.com/400x250/38B2AC/FFFFFF?text=Data+Upload)
+**Data Upload** - Seamless Excel file processing and validation
 
 </details>
 
@@ -437,22 +419,11 @@ of this software and associated documentation files (the "Software")...
 
 ---
 
-<sub>⭐ **Star this repository** if you find it helpful! | 🍴 **Fork it** to contribute | 📢 **Share it** with your network</sub>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/400x100/2D3748/E2E8F0?text=Thank+you+for+visiting!">
-  <img src="https://via.placeholder.com/400x100/F7FAFC/2D3748?text=Thank+you+for+visiting!" alt="Thank you" />
-</picture>
-
-</div>
-
----
-
 <div align="center">
 <sub>Built with ❤️ for the data community | Powered by modern web technologies | Designed for impact</sub>
 </div>
 
-### Screenshots
+### Full Screenshots
 ![Screenshot 1](images/Picture7.png)
 ![Screenshot 2](images/Picture8.png)
 ![Screenshot 3](images/Picture9.png)
