@@ -214,7 +214,7 @@ php artisan serve
 <h3>📊 <strong>Admin Dashboard</strong></h3>
 <img src="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/images/Picture2.png" alt="Admin Dashboard" width="100%" style="max-width: 800px;">
 
-<p><strong><a href="https://bers31.github.io/bernardo.github.io/">🔗 View Live Demo</a></strong></p>
+<p><strong><a href="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/">🔗 View Live Demo</a></strong></p>
 
 </div>
 
