@@ -258,7 +258,7 @@ jupyter notebook
 <h3><strong>🖼️ Sample Output Visualizations</strong></h3>
 
 <details>
-<summary><b>📊 Click to view analysis examples</b></summary>
+<summary><b>📊 Click to view analysis output</b></summary>
 
 <pre>
 🎯 Exploratory Analysis Outputs:
@@ -361,7 +361,7 @@ bernardo.github.io/
 </tr>
 <tr>
 <td><strong>Phase 5: Documentation</strong></td>
-<td align="center">=2024</td>
+<td align="center">2024</td>
 <td align="center">✅ Complete</td>
 <td>Technical documentation & reporting</td>
 </tr>
