@@ -68,8 +68,7 @@ This project consolidates multiple Excel workbook analyses into a **unified Data
 </tr>
 </table>
 
-<details>
-<summary><strong>📋 Complete Tech Specifications</strong></summary>
+### 📋 Complete Tech Specifications
 
 | Category | Technologies |
 |----------|-------------|
@@ -81,9 +80,8 @@ This project consolidates multiple Excel workbook analyses into a **unified Data
 | **DevOps** | Docker, Docker Compose, GitHub Actions |
 | **Testing** | Jest, React Testing Library, Supertest |
 
-</details>
-
 ---
+
 
 ## 🚀 Quick Start Guide
 
@@ -151,6 +149,7 @@ docker-compose up -d
 ## 🎥 Demo & Screenshots
 
 ### 🌟 Live Demo
+
 **[View Dashboard →](https://bers31.github.io/bernardo.github.io/)**
 
 <div align="center">
@@ -159,24 +158,35 @@ docker-compose up -d
 
 </div>
 
-<details>
-<summary><strong>📱 View More Screenshots</strong></summary>
+---
 
-<br>
+### 📱 Application Screenshots
 
+#### 🔐 Login Interface
 ![Login Interface](https://via.placeholder.com/400x250/667EEA/FFFFFF?text=Login+Interface)
+
 **Login Page** - Secure authentication with role-based redirection
 
+---
+
+#### 📈 Sales Analytics Dashboard
 ![Sales Analytics](https://via.placeholder.com/400x250/48BB78/FFFFFF?text=Sales+Analytics)  
+
 **Sales Dashboard** - Comprehensive revenue and profit analytics
 
+---
+
+#### 👥 User Management Panel
 ![User Management](https://via.placeholder.com/400x250/ED8936/FFFFFF?text=User+Management)
+
 **User Management** - Admin panel for user and role management
 
-![Data Upload](https://via.placeholder.com/400x250/38B2AC/FFFFFF?text=Data+Upload)
-**Data Upload** - Seamless Excel file processing and validation
+---
 
-</details>
+#### 📤 Data Upload System
+![Data Upload](https://via.placeholder.com/400x250/38B2AC/FFFFFF?text=Data+Upload)
+
+**Data Upload** - Seamless Excel file processing and validation
 
 ---
 
