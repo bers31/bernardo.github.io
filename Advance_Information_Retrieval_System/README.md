@@ -40,30 +40,6 @@ This project leverages the power of **mBERT (Multilingual BERT)** to generate ri
 
 ## ✨ Key Features
 
-### 🚀 Core Capabilities
-- **End-to-End IR Pipeline** from raw data to evaluation
-- **Multiple Ranking Methods** comparison framework
-- **Transformer-Based Embeddings** using mBERT
-- **Comprehensive Metrics** (Precision, Recall, F1-Score)
-
-### 🛠️ Advanced Algorithms
-- **Cosine Similarity** (Baseline approach)
-- **XGBoost** Learning-to-Rank implementation
-- **RankNet** Pairwise ranking neural network
-- **LambdaMART** Advanced ranking algorithm
-
----
-
-### 🌐 Live Demo
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)
-
----
-
-**Alternative version with better GitHub Pages compatibility:**
-
-## ✨ Key Features
-
 | 🚀 **Core Capabilities** | 🛠️ **Advanced Algorithms** |
 |---------------------------|----------------------------|
 | **End-to-End IR Pipeline** from raw data to evaluation | **Cosine Similarity** (Baseline approach) |
@@ -72,35 +48,6 @@ This project leverages the power of **mBERT (Multilingual BERT)** to generate ri
 | **Comprehensive Metrics** (Precision, Recall, F1-Score) | **LambdaMART** Advanced ranking algorithm |
 
 ---
-
-### 🌐 Live Demo
-
-**[🔗 Open Application](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)**
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)
-
----
-
-**Simplified version for maximum compatibility:**
-
-## ✨ Key Features
-
-### 🚀 Core Capabilities
-- **End-to-End IR Pipeline** - from raw data to evaluation
-- **Multiple Ranking Methods** - comparison framework  
-- **Transformer-Based Embeddings** - using mBERT
-- **Comprehensive Metrics** - Precision, Recall, F1-Score
-
-### 🛠️ Advanced Algorithms
-- **Cosine Similarity** - Baseline approach
-- **XGBoost** - Learning-to-Rank implementation
-- **RankNet** - Pairwise ranking neural network
-- **LambdaMART** - Advanced ranking algorithm
-
-### 🌐 Live Demo
-[**► Launch Application**](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)
-
-![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
 
 ## 🛠️ Technology Stack
 
@@ -218,14 +165,11 @@ streamlit run app.py
 
 ## 🎥 Demo & Screenshots
 
-<div align="center">
 
-### **🌐 Live Demo**
-<a href="https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/">
-<img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit"/>
-</a>
+### 🌐 Live Demo
+[**► Launch Application**](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)
 
-</div>
+![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
 
 <details>
 <summary><b>📸 Click to view screenshots</b></summary>
