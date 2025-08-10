@@ -1,6 +1,6 @@
 <div align="center">
   <h1>🏛️ 
-Automated “Information Center” Chatbot for Class II Ambarawa Correctional Facility </h1>
+Automated Information Center Chatbot for Class II Ambarawa Correctional Facility </h1>
   <em>Intelligent Communication Platform for Modern Correctional Management</em>
 </div>
 
