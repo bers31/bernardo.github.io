@@ -383,11 +383,11 @@ Universitas Diponegoro 🎓
 ---
 
 ### Full Screenshots
-![Screenshot 1](images/Picture1.png)
-![Screenshot 2](images/Picture2.png)
-![Screenshot 3](images/Picture3.png)
-![Screenshot 4](images/Picture4.png)
-![Screenshot 5](images/Picture5.png)
+![Screenshot 1](images/Picture1.png) <br>
+![Screenshot 2](images/Picture2.png) <br>
+![Screenshot 3](images/Picture3.png) <br>
+![Screenshot 4](images/Picture4.png) <br>
+![Screenshot 5](images/Picture5.png) <br>
 ![Screenshot 6](images/Picture6.png)
 
 ## Conclusion
