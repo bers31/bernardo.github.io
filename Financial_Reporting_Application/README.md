@@ -16,10 +16,6 @@
 
 ## 📖 Project Overview
 
-<div align="center">
-<img src="https://bers31.github.io/bernardo.github.io/Financial_Reporting_Application/images/Picture5.png" alt="Dashboard Preview" width="100%">
-</div>
-
 The **Financial Report Management System** is a comprehensive web application designed to revolutionize financial reporting processes at the district level. Built specifically for East Semarang District, this system addresses the critical need for standardized, efficient, and secure financial document management across multiple departments.
 
 ### 🎯 Background & Benefits
@@ -310,7 +306,7 @@ REACT_APP_ENV=development
 <tr>
 <td><strong>Phase 5</strong></td>
 <td>Mobile App Integration</td>
-<td>Q3 2025</td>
+<td>Q3 2026</td>
 <td>📋 Planned</td>
 </tr>
 <tr>
