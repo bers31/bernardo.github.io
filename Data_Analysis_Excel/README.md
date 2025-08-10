@@ -150,12 +150,12 @@ docker-compose up -d
 
 ### 🌟 Live Demo
 
-**[View Demo →](https://bers31.github.io/bernardo.github.io/Data_Analysis_Excel/)**
+**[👁 View Demo →](https://bers31.github.io/bernardo.github.io/Data_Analysis_Excel/)**
 
 <div align="center">
-
-![Dashboard Preview](https://bers31.github.io/Data_Analysis_Excel/images/Picture7.png)
-
+  <img src="https://bers31.github.io/bernardo.github.io/Data_Analysis_Excel/images/Picture7.png" 
+       alt="Dashboard Preview" 
+       style="max-width: 100%; height: auto; border-radius: 8px;" />
 </div>
 
 ---
