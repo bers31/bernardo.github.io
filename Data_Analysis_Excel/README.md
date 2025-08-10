@@ -160,7 +160,7 @@ docker-compose up -d
 
 ---
 
-### 📱 Application Screenshots
+### 📱 Application Plan
 
 #### 🔐 Login Interface
 
