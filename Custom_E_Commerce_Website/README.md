@@ -120,6 +120,7 @@ cd bernardo.github.io
 
 ### 🌐 Live Demo
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-success?style=for-the-badge&logo=github-pages)](https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Blog-Visit%20Now-success?style=for-the-badge&logo=github-pages)](https://ycelectric.blogspot.com/)
 
 ### 📸 Preview
 ![Desktop Preview](https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/images/Picture7.png)
@@ -165,9 +166,9 @@ YC Electric Theme Structure
 | **1** | **Foundation** | Core Theme Structure, Basic Styling | Q1 2024 | ✅ Completed |
 | **2** | **E-Commerce** | Shopping Cart Integration, PayPal Support | Q2 2024 | ✅ Completed |
 | **3** | **SEO & Performance** | SEO Optimization, Schema Markup | Q3 2024 | ✅ Completed |
-| **4** | **Customization** | Advanced Customization Options | Q4 2024 | 🚧 In Progress |
-| **5** | **Analytics** | Premium Features, Analytics Dashboard | Q1 2025 | 📋 Planned |
-| **6** | **Internationalization** | Multi-language Support, RTL Layout | Q2 2025 | 📋 Planned |
+| **4** | **Customization** | Advanced Customization Options | Q4 2025 | 🚧 In Progress |
+| **5** | **Analytics** | Premium Features, Analytics Dashboard | Q1 2026 | 📋 Planned |
+| **6** | **Internationalization** | Multi-language Support, RTL Layout | Q2 2026 | 📋 Planned |
 
 ### 🎯 Current Focus (Phase 4)
 - [ ] Theme customizer panel
