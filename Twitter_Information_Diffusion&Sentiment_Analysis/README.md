@@ -141,7 +141,7 @@ jupyter notebook 03_Information_Diffusion.ipynb     # Network analysis
 
 ### 🌐 **Network Diffusion Map**
 <p align="center">
-<img src="https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/images/Picture5.png" alt="Network Analysis" width="800">
+<img src="https://bers31.github.io/bernardo.github.io/Twitter_Information_Diffusion%26Sentiment_Analysis/images/Picture4.png" alt="Network Analysis" width="800">
 </p>
 
 ### 🎯 **Live Demo**
