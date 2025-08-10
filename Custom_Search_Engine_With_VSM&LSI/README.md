@@ -273,42 +273,42 @@ streamlitt run app_vsm.py
 </tr>
 <tr>
 <td>🏗️ Core Architecture Setup</td>
-<td>Week 1</td>
+<td>2024</td>
 <td><strong>✅ Completed</strong></td>
 </tr>
 <tr>
 <td>📊 VSM Implementation</td>
-<td>Week 2</td>
+<td>2024</td>
 <td><strong>✅ Completed</strong></td>
 </tr>
 <tr>
 <td>🎯 LSI Integration</td>
-<td>Week 3</td>
+<td>2024</td>
 <td><strong>✅ Completed</strong></td>
 </tr>
 <tr>
 <td>🧠 Neural IR with mBERT</td>
-<td>Week 4</td>
+<td>2024</td>
 <td><strong>✅ Completed</strong></td>
 </tr>
 <tr>
 <td>📈 Evaluation Framework</td>
-<td>Week 5</td>
+<td>2024</td>
 <td><strong>✅ Completed</strong></td>
 </tr>
 <tr>
 <td>📝 Documentation & Testing</td>
-<td>Week 6</td>
+<td>2024</td>
 <td><strong>✅ Completed</strong></td>
 </tr>
 <tr>
 <td>🚀 Performance Optimization</td>
-<td>Week 7</td>
+<td>2025</td>
 <td><strong>🔄 In Progress</strong></td>
 </tr>
 <tr>
 <td>🌐 Multi-dataset Support</td>
-<td>Week 8</td>
+<td>2026</td>
 <td><strong>📋 Planned</strong></td>
 </tr>
 </table>
