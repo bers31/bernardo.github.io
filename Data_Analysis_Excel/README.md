@@ -150,11 +150,11 @@ docker-compose up -d
 
 ### 🌟 Live Demo
 
-**[View Dashboard →](https://bers31.github.io/bernardo.github.io/)**
+**[View Demo →](https://bers31.github.io/bernardo.github.io/Data_Analysis_Excel/)**
 
 <div align="center">
 
-![Dashboard Preview](https://via.placeholder.com/800x400/F7FAFC/2D3748?text=Dashboard+Screenshot)
+![Dashboard Preview](https://bers31.github.io/bernardo.github.io/Data_Analysis_Excel/images/Picture7.png)
 
 </div>
 
@@ -163,28 +163,24 @@ docker-compose up -d
 ### 📱 Application Screenshots
 
 #### 🔐 Login Interface
-![Login Interface](https://via.placeholder.com/400x250/667EEA/FFFFFF?text=Login+Interface)
 
 **Login Page** - Secure authentication with role-based redirection
 
 ---
 
 #### 📈 Sales Analytics Dashboard
-![Sales Analytics](https://via.placeholder.com/400x250/48BB78/FFFFFF?text=Sales+Analytics)  
 
 **Sales Dashboard** - Comprehensive revenue and profit analytics
 
 ---
 
 #### 👥 User Management Panel
-![User Management](https://via.placeholder.com/400x250/ED8936/FFFFFF?text=User+Management)
 
 **User Management** - Admin panel for user and role management
 
 ---
 
 #### 📤 Data Upload System
-![Data Upload](https://via.placeholder.com/400x250/38B2AC/FFFFFF?text=Data+Upload)
 
 **Data Upload** - Seamless Excel file processing and validation
 
@@ -281,44 +277,44 @@ CREATE TABLE sales (
 <tr>
 <td rowspan="3"><strong>Phase 1</strong><br><em>Foundation</em></td>
 <td>Database Schema & ETL Pipeline</td>
-<td>Week 1-2</td>
+<td>2022</td>
 <td>✅ Complete</td>
 </tr>
 <tr>
 <td>Authentication & Role Management</td>
-<td>Week 2-3</td>
+<td>2025</td>
 <td>🔄 In Progress</td>
 </tr>
 <tr>
 <td>Basic Dashboard Interface</td>
-<td>Week 3-4</td>
-<td>📋 Planned</td>
+<td>2025</td>
+<td>🔄 In Progress</td></td>
 </tr>
 <tr>
 <td rowspan="3"><strong>Phase 2</strong><br><em>Core Features</em></td>
 <td>Sales Analytics Dashboard</td>
-<td>Week 5-6</td>
+<td>2026</td>
 <td>📋 Planned</td>
 </tr>
 <tr>
 <td>Customer Segmentation Module</td>
-<td>Week 7-8</td>
+<td>2026</td>
 <td>📋 Planned</td>
 </tr>
 <tr>
 <td>Export & Reporting Features</td>
-<td>Week 8-9</td>
+<td>2026</td>
 <td>📋 Planned</td>
 </tr>
 <tr>
 <td rowspan="2"><strong>Phase 3</strong><br><em>Enhancement</em></td>
 <td>Real-time Data Streaming</td>
-<td>Week 10-11</td>
+<td>2027</td>
 <td>🔮 Future</td>
 </tr>
 <tr>
 <td>Mobile Optimization & PWA</td>
-<td>Week 12</td>
+<td>2027</td>
 <td>🔮 Future</td>
 </tr>
 </table>
@@ -385,53 +381,57 @@ git push origin feature/amazing-feature
 
 ---
 
-## 📄 License
+## 📄 **License**
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ```
 MIT License
 
-Copyright (c) 2025 Bernardo - Universitas Diponegoro
+Copyright (c) 2024 Bernardo - Universitas Diponegoro
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software")...
-```
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, subject to the following conditions:
 
----
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
 
 ## 📫 Contact & Connect
 
-<div align="center">
+<p align="center">
+<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
+Universitas Diponegoro 🎓
+</p>
 
-**Bernardo** | *Information Technology Student*  
-**Universitas Diponegoro** | *Semarang, Indonesia*
-
-<table>
-<tr>
-<td align="center">
-<a href="https://linkedin.com/in/YOUR_LINKEDIN">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+<p align="center">
+<a href="https://linkedin.com/in/bernardo-sunia/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
-</td>
-<td align="center">
-<a href="mailto:your.email@domain.com">
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
 </a>
-</td>
-<td align="center">
 <a href="https://github.com/bers31">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </a>
-</td>
-</tr>
-</table>
+<a href="https://bit.ly/bernardo-my_portfolio">
+<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
+</a>
+</p>
+
+<p align="center">
+⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+</p>
+
+<p align="center">
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
+</p>
 
 ---
-
-<div align="center">
-<sub>Built with ❤️ for the data community | Powered by modern web technologies | Designed for impact</sub>
-</div>
 
 ### Full Screenshots
 ![Screenshot 1](images/Picture7.png)
