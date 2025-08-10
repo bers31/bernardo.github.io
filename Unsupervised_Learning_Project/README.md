@@ -196,13 +196,13 @@ Unsupervised_Learning_Project/
 </tr>
 <tr>
 <td>Advanced Visualizations</td>
-<td align="center">🔄</td>
+<td align="center">✅</td>
 <td align="center">2024</td>
 <td>Streamlit dashboard and comprehensive reports</td>
 </tr>
 <tr>
 <td>Documentation & Deployment</td>
-<td align="center">📋</td>
+<td align="center">✅</td>
 <td align="center">2024</td>
 <td>Final documentation and GitHub Pages deployment</td>
 </tr>
