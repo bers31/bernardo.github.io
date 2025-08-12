@@ -277,8 +277,8 @@ CREATE TABLE sales (
 <tr>
 <td rowspan="3"><strong>Phase 1</strong><br><em>Foundation</em></td>
 <td>Database Schema & ETL Pipeline</td>
-<td>2022</td>
-<td>✅ Complete</td>
+<td>2025</td>
+<td>🔄 In Progress</td>
 </tr>
 <tr>
 <td>Authentication & Role Management</td>
