@@ -1,4 +1,4 @@
-# Neural Information Retrieval (IR) Based on mBERT
+# 🤖 Neural Information Retrieval (IR) Based on mBERT
 ### 🔍 *Multilingual document retrieval powered by transformer embeddings and advanced ranking algorithms*
 
 ---
