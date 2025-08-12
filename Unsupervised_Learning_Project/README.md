@@ -1,4 +1,4 @@
-# Student Performance Clustering — K-Means Analysis
+# 🧠 Student Performance Clustering — K-Means Analysis
 ### *Unlocking Educational Insights Through Intelligent Student Segmentation*
 
 <div align="center">
