@@ -1,4 +1,4 @@
-# Customer Segmentation — Supervised Multi-Class Classification
+# 🛍️ Customer Segmentation — Supervised Multi-Class Classification
 ### *Intelligent customer profiling through advanced machine learning techniques*
 
 <div align="center">
