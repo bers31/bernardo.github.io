@@ -56,13 +56,13 @@ Both representations are paired with **Logistic Regression** as the unified clas
 │ ▸ Web Scraping  │ ▸ TF-IDF Features │ ▸ TF-IDF + Logistic Reg.      │
 │   (1,000 raw    │ ▸ Truncated SVD   │ ▸ SBERT + Logistic Reg.       │
 │   reviews)      │ ▸ PCA             │ ▸ Grid Search (CV=5)          │
-│                 │ ▸ Hierarchical    │ ▸ Per-Aspect Hyperparams       │
-│ ▸ Targeted      │   Clustering      │ ▸ Universal Hyperparams        │
+│                 │ ▸ Hierarchical    │ ▸ Per-Aspect Hyperparams      │
+│ ▸ Targeted      │   Clustering      │ ▸ Universal Hyperparams       │
 │   Scraping      │   (Ward Linkage)  │ ▸ Accuracy / Precision /      │
 │   (≥100/aspect) │ ▸ Keyword Extract │   Recall / F1 / AUC           │
-│                 │ ▸ Manual Review   │ ▸ McNemar's Test               │
+│                 │ ▸ Manual Review   │ ▸ McNemar's Test              │
 ├─────────────────┴───────────────────┴───────────────────────────────┤
-│  ANNOTATION: 3 Annotators · Fleiss' Kappa > 0.9 · Adjudication     │
+│  ANNOTATION: 3 Annotators · Fleiss' Kappa > 0.9 · Adjudication      │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
