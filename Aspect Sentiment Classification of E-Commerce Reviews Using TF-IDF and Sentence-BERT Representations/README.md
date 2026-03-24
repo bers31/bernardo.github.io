@@ -31,7 +31,7 @@ The study systematically compares two foundational yet contrasting approaches to
 
 Both representations are paired with **Logistic Regression** as the unified classifier, allowing for a clean, controlled comparison of text representation quality in isolation. The study covers the full NLP pipeline: data acquisition, aspect discovery, human annotation, model training, and rigorous statistical evaluation via **McNemar's Test**.
 
-> **Key Finding:** SBERT consistently and significantly outperforms TF-IDF across all evaluation settings, with a combined test-set accuracy of **0.9444 vs. 0.9130**, confirming that Indonesian e-commerce reviews are predominantly context-driven and benefit greatly from semantic embedding.
+> **Key Finding:** SBERT consistently and significantly outperforms TF-IDF across all evaluation settings, with a combined test-set F1-Score of **0.9444 vs. 0.9130**, confirming that Indonesian e-commerce reviews are predominantly context-driven and benefit greatly from semantic embedding.
 
 ---
 
