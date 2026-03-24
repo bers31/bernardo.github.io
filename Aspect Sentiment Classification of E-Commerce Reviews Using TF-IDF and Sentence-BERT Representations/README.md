@@ -119,24 +119,28 @@ Logistic Regression was chosen as the shared classifier to isolate the contribut
 
 ---
 
-## 📈 Results
+<h2>🎥 Demo </h2>
+<div align="center">
+  <p><strong>🖥️ Live Demo</strong></p>
+  <p><a href="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/">🔗 Visit Live Application</a></p>
+</div>
 
-### Combined Test Set Performance (McNemar's Test)
-
-| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC | PR-AUC |
-|-------|----------|-----------|--------|----------|---------|--------|
-| TF-IDF + LR | 0.9130 | — | — | — | — | — |
-| **SBERT + LR** | **0.9444** | — | — | — | — | — |
-
-> McNemar's Test confirms that the performance difference between SBERT and TF-IDF is **statistically significant** across all evaluation scenarios.
-
-### Key Takeaways
-
-- **SBERT outperforms TF-IDF** consistently across all seven aspects and both hyperparameter scenarios, with no exceptions.
-- The advantage of SBERT is most pronounced on aspects with high linguistic variability and implicit sentiment (e.g., *Layanan Pelanggan*, *Penjual*).
-- **Universal hyperparameters** yield competitive results compared to per-aspect tuning, demonstrating that SBERT embeddings are robust enough for a one-size-fits-all configuration.
-- Indonesian e-commerce reviews exhibit strong **context-dependency**, validating the use of contextual embeddings over statistical bag-of-words representations.
-
+<table>
+  <tr>
+    <td width="33%">
+      <img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture6.png" alt="Chat Interface" width="100%"/>
+      <p align="center"><strong>User Chat Interface</strong><br/>Clean, intuitive design for easy communication</p>
+    </td>
+    <td width="33%">
+      <img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture1.png" alt="Admin Login" width="100%"/>
+      <p align="center"><strong>Admin Login</strong><br/>Secure access gateway for system administrators</p>
+    </td>
+    <td width="33%">
+      <img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture3.png" alt="Admin Dashboard" width="100%"/>
+      <p align="center"><strong>Admin Dashboard</strong><br/>Comprehensive management and monitoring</p>
+    </td>
+  </tr>
+</table>
 ---
 
 ## 🛠️ Tech Stack
@@ -278,59 +282,71 @@ shopee-absa-tfidf-sbert/
 
 ---
 
-## 📚 Citation
+## 📄 **License**
 
-If you use this work or dataset in your research, please cite:
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-```bibtex
-@thesis{sunia2026absa,
-  author    = {Bernardo Nandaniar Sunia},
-  title     = {Perbandingan TF-IDF dan SBERT dengan Logistic Regression
-               untuk Aspect Sentiment Classification pada Ulasan E-Commerce
-               (Studi Kasus: Aplikasi Shopee)},
-  school    = {Universitas Diponegoro},
-  year      = {2026},
-  type      = {Undergraduate Thesis (Skripsi)},
-  address   = {Semarang, Indonesia},
-  note      = {Departemen Informatika, Fakultas Sains dan Matematika}
-}
+```
+MIT License
+
+Copyright (c) 2024 Bernardo - Universitas Diponegoro
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 ```
 
+## 📫 Contact & Connect
+
+<p align="center">
+<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
+Universitas Diponegoro 🎓
+</p>
+
+<p align="center">
+<a href="https://linkedin.com/in/bernardo-sunia/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=suniabernardo@gmail.com">
+<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
+<a href="https://github.com/bers31">
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+<a href="https://bit.ly/bernardo-my_portfolio">
+<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
+</a>
+</p>
+
+<p align="center">
+⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+</p>
+
+<p align="center">
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
+</p>
+
 ---
 
-## 🤝 Acknowledgements
+### Full Screenshots
+![Screenshot 1](images/Picture1.png)
+![Screenshot 2](images/Picture2.png)
+![Screenshot 3](images/Picture3.png)
+![Screenshot 4](images/Picture4.png)
+![Screenshot 5](images/Picture5.png)
+![Screenshot 6](images/Picture6.png)
 
-This research was completed under the supervision of:
+### Conclusion
 
-- **Khadijah, S.Kom., M.Cs.** — Supervisor I, Departemen Informatika, Universitas Diponegoro
-- **Henri Tantyoko, S.Kom., M.Kom.** — Supervisor II, Departemen Informatika, Universitas Diponegoro
-
-Special thanks to the three annotators who contributed to the manual labeling process, and to all reviewers who provided constructive feedback during the thesis defense.
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for full details.
-
----
-
-## 📫 Contact
-
-<div align="center">
-
-**Bernardo Nandaniar Sunia**
-*Computer Science Graduate · Universitas Diponegoro 🎓*
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bernardo-sunia/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suniabernardo@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bers31)
-[![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)](https://bit.ly/bernardo-my_portfolio)
-
----
-
-*If this project was useful to you, please consider giving it a ⭐ — it helps others find the work.*
-
-*Made with 💙 and a lot of cross-validation by [Bernardo](https://github.com/bers31) at Universitas Diponegoro*
-
-</div>
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC | PR-AUC |
+|-------|----------|-----------|--------|----------|---------|--------|
+| TF-IDF + LR | 0.8935 | 0.9608 | 0.8698 | 0.9130 | 0.9595 | 0.9796 |
+| SBERT + LR | 0.9316 | 0.9871 | 0.9053 | 0.9444 | 0.9787 | 0.9895 |
+ 
+McNemar's Test on the combined test set yields **p-value = 0.0550** — marginally above the conventional α = 0.05 threshold, meaning the difference is formally **not statistically significant**. However, the disagreement ratio of 16 (TF-IDF wrong, SBERT correct) vs. 6 (SBERT wrong, TF-IDF correct) represents a strong directional trend. With a larger sample size, this difference would very likely cross the significance threshold. Per-aspect McNemar results similarly show no aspect reaching significance, primarily due to small per-aspect test set sizes (as few as 11–12 samples) rather than an absence of true performance differences.
