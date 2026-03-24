@@ -122,21 +122,21 @@ Logistic Regression was chosen as the shared classifier to isolate the contribut
 <h2>🎥 Demo </h2>
 <div align="center">
   <p><strong>🖥️ Live Demo</strong></p>
-  <p><a href="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/">🔗 Visit Live Application</a></p>
+  <p><a href="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/">🔗 Visit Live Application</a></p>
 </div>
 
 <table>
   <tr>
     <td width="33%">
-      <img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture6.png" alt="Chat Interface" width="100%"/>
+      <img src="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/images/Picture6.png" alt="Chat Interface" width="100%"/>
       <p align="center"><strong>User Chat Interface</strong><br/>Clean, intuitive design for easy communication</p>
     </td>
     <td width="33%">
-      <img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture1.png" alt="Admin Login" width="100%"/>
+      <img src="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/images/Picture1.png" alt="Admin Login" width="100%"/>
       <p align="center"><strong>Admin Login</strong><br/>Secure access gateway for system administrators</p>
     </td>
     <td width="33%">
-      <img src="https://bers31.github.io/bernardo.github.io/Automated_Information_System_Chatbot/images/Picture3.png" alt="Admin Dashboard" width="100%"/>
+      <img src="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/images/Picture3.png" alt="Admin Dashboard" width="100%"/>
       <p align="center"><strong>Admin Dashboard</strong><br/>Comprehensive management and monitoring</p>
     </td>
   </tr>
@@ -275,7 +275,7 @@ shopee-absa-tfidf-sbert/
 
 ## 🔬 Research Contributions
 
-1. **Curated ABSA dataset** for Shopee reviews in Indonesian with high-quality annotations (Fleiss' Kappa > 0.9) covering 7 aspects and 700+ labeled samples.
+1. **Curated ABSA dataset** for Shopee reviews in Indonesian with high-quality annotations (Fleiss' Kappa > 0.9) covering 7 aspects.
 2. **Rigorous empirical comparison** of sparse vs. dense text representation under controlled conditions using a shared classifier.
 3. **Statistical validation** via McNemar's Test confirming that SBERT's advantage over TF-IDF is not due to random variation.
 4. **Practical recommendation** for NLP practitioners: for context-heavy, informal Indonesian e-commerce text, contextual embeddings (SBERT) are the clearly superior choice over frequency-based representations.
