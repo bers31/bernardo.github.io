@@ -314,7 +314,7 @@ copies of the Software, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 ```
-
+---
 ## 📫 Contact & Connect
 
 <p align="center">
@@ -346,10 +346,11 @@ Universitas Diponegoro 🎓
 <img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
 </p>
 
+**🔐 Security Notice:** This system handles sensitive correctional facility data. Please ensure proper security configurations and compliance with relevant regulations before deployment in production environments.
+
 ---
 
-**🔐 Security Notice:** This system handles sensitive correctional facility data. Please ensure proper security configurations and compliance with relevant regulations before deployment in production environments.
-   
+
 ### Full Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
@@ -357,6 +358,8 @@ Universitas Diponegoro 🎓
 ![Screenshot 4](images/Picture4.png)
 ![Screenshot 5](images/Picture5.png)
 ![Screenshot 6](images/Picture6.png)
+
+---
 
 ### Conclusion
 This project delivers a full-spectrum AI‑driven chatbot solution, seamlessly blending intuitive front‑end interactions with a robust, scalable backend. From advanced NLP‑powered dialogue management and secure data handling to dynamic notification workflows and analytics‑ready logging, it empowers organizations to automate information delivery, elevate user engagement, and extract actionable insights. Ready for production deployment, this end‑to‑end chatbot architecture transforms how users access and interact with essential services and knowledge.
