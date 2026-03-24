@@ -128,16 +128,16 @@ Logistic Regression was chosen as the shared classifier to isolate the contribut
 <table>
   <tr>
     <td width="33%">
-      <img src="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/images/Picture6.png" alt="Chat Interface" width="100%"/>
-      <p align="center"><strong>User Chat Interface</strong><br/>Clean, intuitive design for easy communication</p>
+      <img src="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/images/Picture2.png" alt="Chat Interface" width="100%"/>
+      <p align="center"><strong>Dataset Statistical Distribution</strong></p>
     </td>
     <td width="33%">
-      <img src="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/images/Picture1.png" alt="Admin Login" width="100%"/>
-      <p align="center"><strong>Admin Login</strong><br/>Secure access gateway for system administrators</p>
+      <img src="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/images/Picture3.png" alt="Admin Login" width="100%"/>
+      <p align="center"><strong>Model Training Results</strong></p>
     </td>
     <td width="33%">
-      <img src="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/images/Picture3.png" alt="Admin Dashboard" width="100%"/>
-      <p align="center"><strong>Admin Dashboard</strong><br/>Comprehensive management and monitoring</p>
+      <img src="https://bers31.github.io/bernardo.github.io/Aspect_Sentiment_Classification_of_E-Commerce_Reviews_Using_TF-IDF_and_SBERT_Representations/images/Picture5.png" alt="Admin Dashboard" width="100%"/>
+      <p align="center"><strong>Software Results</strong></p>
     </td>
   </tr>
 </table>
