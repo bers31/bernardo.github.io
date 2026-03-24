@@ -1,0 +1,73 @@
+MIT License
+
+Copyright (c) 2026 Bernardo Nandaniar Sunia - Universitas Diponegoro
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Additional Terms for Research and Academic Use:
+
+This software and associated research artifacts — including datasets, annotation
+guidelines, model configurations, and evaluation scripts — were developed as part
+of an undergraduate thesis at Universitas Diponegoro. Users of this software must:
+
+1. Cite the original research appropriately in any academic work, publication,
+   or derivative project that makes use of this codebase, dataset, or methodology.
+
+2. Use the annotated dataset solely for research, educational, or non-commercial
+   purposes. Commercial use of the dataset requires explicit written permission
+   from the author.
+
+3. Respect the privacy of the original review authors. The dataset must not be
+   used in any manner that could facilitate re-identification of individual users
+   or any form of targeted profiling.
+
+4. Ensure that any deployed system built upon this codebase complies with
+   applicable data protection regulations, including but not limited to
+   Indonesia's Personal Data Protection Law (UU PDP No. 27 Tahun 2022).
+
+5. Acknowledge that model performance metrics reported in this repository reflect
+   results on a specific domain and dataset. Users are responsible for validating
+   performance in their own deployment context before relying on the system
+   for any consequential decision-making.
+
+The authors and contributors of this software are not responsible for any
+misuse, inaccurate predictions, or downstream harm resulting from improper
+implementation, out-of-domain deployment, or failure to validate the system
+in a target environment.
+
+For questions regarding academic use, dataset access, or collaboration,
+please contact the author directly via the channels listed below.
+
+---
+
+Project Information:
+- Institution  : Universitas Diponegoro, Faculty of Science and Mathematics
+- Department   : Informatics
+- Research Area: Natural Language Processing · Aspect-Based Sentiment Analysis
+- Developer    : Bernardo Nandaniar Sunia
+- Year         : 2026
+
+Contact Information:
+- GitHub      : https://github.com/bers31
+- Email       : suniabernardo@gmail.com
+- LinkedIn    : https://linkedin.com/in/bernardo-sunia/
+- Portfolio   : https://bit.ly/bernardo-my_portfolio
+- Institution : Universitas Diponegoro, Semarang, Indonesia
