@@ -1,15 +1,15 @@
-# 💼 Financial Report Management System
-> *Streamlining financial reporting workflows with modern web technology and role-based access control*
-
 <div align="center">
+  <h1>💼 Financial Report Management System</h1>
+  <p><em>Streamlining financial reporting workflows with modern web technology and role-based access control</em></p>
 
-<img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
-<img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version">
-<img src="https://img.shields.io/badge/license-MIT-green" alt="License">
-<img src="https://img.shields.io/badge/React-18+-61DAFB?logo=react" alt="React">
-<img src="https://img.shields.io/badge/Node.js-18+-339933?logo=node.js" alt="Node.js">
-<img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css" alt="TailwindCSS">
-
+  <p>
+    <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
+    <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version">
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+    <img src="https://img.shields.io/badge/React-18+-61DAFB?logo=react" alt="React">
+    <img src="https://img.shields.io/badge/Node.js-18+-339933?logo=node.js" alt="Node.js">
+    <img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css" alt="TailwindCSS">
+  </p>
 </div>
 
 ---
