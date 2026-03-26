@@ -255,46 +255,20 @@ g++ -o minecraft_clone main.cpp -lopengl32 -lglu32 -lfreeglut
 
 ---
 
-## 🗓️ Development Roadmap
+## 🗺️ Project Scope
 
-<table>
-<tr>
-<th>Milestone</th>
-<th>Features</th>
-<th>Status</th>
-<th>Target Date</th>
-</tr>
-<tr>
-<td><strong>Phase 1: Core Engine</strong></td>
-<td>Basic 3D rendering, bear character model</td>
-<td>✅ <strong>Completed</strong></td>
-<td>Q1 2024</td>
-</tr>
-<tr>
-<td><strong>Phase 2: Interactivity</strong></td>
-<td>Movement controls, block manipulation</td>
-<td>✅ <strong>Completed</strong></td>
-<td>Q2 2024</td>
-</tr>
-<tr>
-<td><strong>Phase 3: Visual Polish</strong></td>
-<td>Lighting system, shadows, animations</td>
-<td>✅ <strong>Completed</strong></td>
-<td>Q3 2024</td>
-</tr>
-<tr>
-<td><strong>Phase 4: Advanced Features</strong></td>
-<td>Texture mapping, particle effects</td>
-<td>🔄 <strong>In Progress</strong></td>
-<td>Q4 2025</td>
-</tr>
-<tr>
-<td><strong>Phase 5: Optimization</strong></td>
-<td>Performance improvements, cross-platform</td>
-<td>📋 <strong>Planned</strong></td>
-<td>Q1 2026</td>
-</tr>
-</table>
+This project was developed as a **complete, self-contained academic assignment** for the Computer Graphics course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+
+| Module | Description | Status |
+|--------|-------------|--------|
+| 🐻 **Bear Character** | 3D model with body parts, walking & jump animations | ✅ Done |
+| 🌍 **World System** | Grid-based block world with terrain layout | ✅ Done |
+| 🎮 **Player Controls** | WASD movement, jump physics, camera rotation | ✅ Done |
+| 🏗️ **Block Mechanics** | Place, destroy, and clear blocks | ✅ Done |
+| 🌳 **Environment** | 3D trees with roots, trunks, and foliage | ✅ Done |
+| 🌞 **Lighting & Sun** | Day/night cycle, lens flare, multi-source lighting | ✅ Done |
+| 🌑 **Shadow System** | Real-time dynamic shadow projection | ✅ Done |
+| 💥 **Collision Detection** | Physics-based collision with world objects | ✅ Done |
 
 ---
 
