@@ -265,59 +265,20 @@ CREATE TABLE sales (
 
 ---
 
-## 🎯 Project Roadmap
+## 🗺️ Project Scope
 
-<table>
-<tr>
-<th>Phase</th>
-<th>Milestone</th>
-<th>Target Date</th>
-<th>Status</th>
-</tr>
-<tr>
-<td rowspan="3"><strong>Phase 1</strong><br><em>Foundation</em></td>
-<td>Database Schema & ETL Pipeline</td>
-<td>2025</td>
-<td>🔄 In Progress</td>
-</tr>
-<tr>
-<td>Authentication & Role Management</td>
-<td>2025</td>
-<td>🔄 In Progress</td>
-</tr>
-<tr>
-<td>Basic Dashboard Interface</td>
-<td>2025</td>
-<td>🔄 In Progress</td></td>
-</tr>
-<tr>
-<td rowspan="3"><strong>Phase 2</strong><br><em>Core Features</em></td>
-<td>Sales Analytics Dashboard</td>
-<td>2026</td>
-<td>📋 Planned</td>
-</tr>
-<tr>
-<td>Customer Segmentation Module</td>
-<td>2026</td>
-<td>📋 Planned</td>
-</tr>
-<tr>
-<td>Export & Reporting Features</td>
-<td>2026</td>
-<td>📋 Planned</td>
-</tr>
-<tr>
-<td rowspan="2"><strong>Phase 3</strong><br><em>Enhancement</em></td>
-<td>Real-time Data Streaming</td>
-<td>2027</td>
-<td>🔮 Future</td>
-</tr>
-<tr>
-<td>Mobile Optimization & PWA</td>
-<td>2027</td>
-<td>🔮 Future</td>
-</tr>
-</table>
+This project was developed as a **complete, self-contained academic assignment** for the Data Warehouse and Business Intelligence course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+
+| Module | Description | Status |
+|--------|-------------|--------|
+| 🗄️ **Database Schema** | PostgreSQL schema design covering users, sales, products, regions, and bike buyers | ✅ Done |
+| ⚙️ **ETL Pipeline** | Python-based Excel-to-database transformation using Pandas and SQLAlchemy | ✅ Done |
+| 🔐 **Authentication & RBAC** | JWT-based login with role-based access for Admin, Student, Lecturer, Department Head, and Dean | ✅ Done |
+| 📊 **Sales Analytics Dashboard** | Revenue, profit, and quantity visualizations with regional and time-series breakdowns | ✅ Done |
+| 👥 **Customer Segmentation Module** | Demographic and purchase behaviour analysis for buyer persona insights | ✅ Done |
+| 📤 **Data Upload System** | Excel file upload with validation and automated ingestion into the database | ✅ Done |
+| 📋 **Export & Reporting** | PDF and CSV report generation with customizable layouts | ✅ Done |
+| 📱 **Responsive UI** | React 18 frontend optimized for desktop, tablet, and mobile via Tailwind CSS | ✅ Done |
 
 ---
 
