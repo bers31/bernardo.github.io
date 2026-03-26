@@ -193,131 +193,79 @@ streamlit run app.py
 
 ## 📊 Project Architecture
 
-<pre>
-Raw Data Sources                  ETL Pipeline                    Embedding Layer
-┌─────────────────┐              ┌─────────────────┐              ┌─────────────────┐
-│   📁 Queries   │              │                 │              │                 │
-│   Collection    │─────────────▶│  🔄 Data       │─────────────▶│  🤖 mBERT      │
-└─────────────────┘              │  Cleaning &     │              │  Encoder        │
-                                 │  Preprocessing  │              │                 │
-┌─────────────────┐              │                 │              │  Model:         │
-│  📋 Documents   │────────────▶│  • Case Folding │              │  multilingual-  │
-│   Collection    │              │  • Deduplication│              │  mpnet-base-v2  │
-└─────────────────┘              │  • Missing Data │              │                 │
-                                 │  • Text Normali │              │  Output: 768-d  │
-┌─────────────────┐              │    zation       │              │  vectors        │
-│  📊 Relevance   │────────────▶│                 │              │                 │
-│  Judgments      │              └─────────────────┘              └─────────────────┘
-│  (Qrels)        │                       │                               │
-└─────────────────┘                       ▼                               ▼
-                                                                           
-Feature Engineering                                      Ranking Algorithms
-┌─────────────────────────────────────────┐            ┌─────────────────┐
-│  📊 Feature Matrix Generation           │           │  📏 Cosine      │
-│                                         │            │  Similarity     │
-│  Primary Features:                      │◀──────────│  (Baseline)     │
-│  • Query Embeddings (768-d)            │             └─────────────────┘
-│  • Document Embeddings (768-d)         │                     │
-│  • Cosine Similarity Scores            │            ┌─────────────────┐
-│                                         │           │  🌳 XGBoost     │
-│  Additional Features:                   │◀──────────│  Learning-to-   │
-│  • Text Length Ratios                  │            │  Rank           │
-│  • Word Count Statistics               │            └─────────────────┘
-│  • Query-Document Overlap              │                     │
-│                                         │            ┌─────────────────┐
-└─────────────────────────────────────────┘            │  🧠 RankNet    │
-                         │                             │  Pairwise       │◀──┐
-                         ▼                             │  Ranking        │   │
-                                                       └─────────────────┘   │
-Evaluation Engine                                               │            │
-┌─────────────────────────────────────────┐            ┌─────────────────┐   │
-│  📈 Performance Metrics                │            │  🎯 LambdaMART  │   │
-│                                         │            │  Advanced LTR   │◀──┘
-│  Per-Query Metrics:                     │◀──────────│  Algorithm      │
-│  • Precision @ K                        │            └─────────────────┘
-│  • Recall @ K                           │                     │
-│  • F1-Score @ K                         │                     │
-│                                         │                     ▼
-│  Aggregate Metrics:                     │            
-│  • Mean Average Precision (MAP)         │            ┌─────────────────┐
-│  • Normalized DCG (NDCG)                │            │  📊 Results     │
-│  • Cross-Model Comparison               │            │  Comparison &   │
-│                                         │            │  Best Model     │
-└─────────────────────────────────────────┘            │  Selection      │
-                         │                             │                 │
-                         ▼                             │  Winner:        │
-                                                       │  🏆 LambdaMART  │
-User Interface Layer                                   │  F1: 0.817      │
-┌───────────────┐ ┌───────────────┐ ┌─────────────────┐└─────────────────┘
-│ 🖥️ Streamlit  │ │ 📓 Jupyter    │ │ 🔧 CLI Tools    │
-│ Interactive   │ │ Notebooks     │ │ • etl.py        │
-│ Web Dashboard │ │ Research &    │ │ • embedding.py  │
-│ • Live Demo   │ │ Development   │ │ • ranking_*.py  │
-│ • Visualizati │ │ • Data Explor │ │ • evaluate.py   │
-│   on          │ │   ation       │ │                 │
-└───────────────┘ └───────────────┘ └─────────────────┘
-</pre>
+The system is organized into five sequential layers, each with a distinct responsibility in the IR pipeline.
 
-### **System Flow:**
-1. **📁 Data Input** → Vaswani Dataset via `ir_datasets`
-2. **🔄 ETL Pipeline** → Data cleaning & preprocessing
-3. **🤖 mBERT Encoding** → Generate contextual embeddings
-4. **📊 Feature Engineering** → Cosine similarity + additional features
-5. **🏆 Ranking Models** → Multiple algorithm comparison
-6. **📈 Evaluation** → Precision, Recall, F1-Score metrics
+**Layer 1 — Data Input**
+
+| Source | Description |
+|--------|-------------|
+| 📁 Queries Collection | Raw search queries from the Vaswani test collection |
+| 📋 Documents Collection | Corpus of documents to be retrieved and ranked |
+| 📊 Relevance Judgments (Qrels) | Ground-truth relevance labels for evaluation |
+
+**Layer 2 — ETL Pipeline**
+
+| Step | Operation |
+|------|-----------|
+| Case Folding | Normalize text to lowercase |
+| Deduplication | Remove duplicate entries across corpus |
+| Missing Data Handling | Filter and impute incomplete records |
+| Text Normalization | Standardize punctuation, whitespace, and encoding |
+
+**Layer 3 — Embedding & Feature Engineering**
+
+| Component | Detail |
+|-----------|--------|
+| 🤖 mBERT Encoder | `paraphrase-multilingual-mpnet-base-v2` |
+| Output Dimensionality | 768-d contextual vectors per query and document |
+| Primary Features | Query embeddings, document embeddings, cosine similarity scores |
+| Additional Features | Text length ratios, word count statistics, query-document overlap |
+
+**Layer 4 — Ranking Algorithms**
+
+| Algorithm | Type | Description |
+|-----------|------|-------------|
+| 📏 Cosine Similarity | Baseline | Direct similarity scoring between embeddings |
+| 🌳 XGBoost | Learning-to-Rank | Gradient boosted tree ranker |
+| 🧠 RankNet | Pairwise Neural | Neural network trained on pairwise preferences |
+| 🎯 LambdaMART | Listwise LTR | Advanced gradient boosting with NDCG optimization — **Best: F1 0.817** |
+
+**Layer 5 — Evaluation & Interface**
+
+| Component | Description |
+|-----------|-------------|
+| 📈 Per-Query Metrics | Precision@K, Recall@K, F1-Score@K |
+| 📈 Aggregate Metrics | Mean Average Precision (MAP), Normalized DCG (NDCG) |
+| 🖥️ Streamlit Dashboard | Interactive web UI for live search and result visualization |
+| 📓 Jupyter Notebooks | Research exploration and development environment |
+| 🔧 CLI Tools | `etl.py`, `embedding.py`, `ranking_*.py`, `evaluate.py` |
+
+### System Flow
+
+1. **📁 Data Input** → Vaswani Dataset loaded via `ir_datasets`
+2. **🔄 ETL Pipeline** → Data cleaning and preprocessing
+3. **🤖 mBERT Encoding** → Generate contextual 768-d embeddings
+4. **📊 Feature Engineering** → Cosine similarity scores and auxiliary features
+5. **🏆 Ranking Models** → Four algorithms trained and compared
+6. **📈 Evaluation** → Precision, Recall, F1-Score, MAP, and NDCG computed
 
 ---
 
-## 🗓️ Development Roadmap
+## 🗺️ Project Scope
 
-<table>
-<thead>
-<tr>
-<th><strong>Phase</strong></th>
-<th><strong>Milestone</strong></th>
-<th><strong>Target Date</strong></th>
-<th><strong>Status</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Phase 1</strong></td>
-<td>Data Pipeline & ETL</td>
-<td>✅ Completed</td>
-<td><img src="https://img.shields.io/badge/100%25-success" alt="100% Complete"/></td>
-</tr>
-<tr>
-<td><strong>Phase 2</strong></td>
-<td>mBERT Integration</td>
-<td>✅ Completed</td>
-<td><img src="https://img.shields.io/badge/100%25-success" alt="100% Complete"/></td>
-</tr>
-<tr>
-<td><strong>Phase 3</strong></td>
-<td>Baseline Implementation</td>
-<td>✅ Completed</td>
-<td><img src="https://img.shields.io/badge/100%25-success" alt="100% Complete"/></td>
-</tr>
-<tr>
-<td><strong>Phase 4</strong></td>
-<td>Advanced Ranking Models</td>
-<td>🔄 In Progress</td>
-<td><img src="https://img.shields.io/badge/80%25-yellow" alt="80% Complete"/></td>
-</tr>
-<tr>
-<td><strong>Phase 5</strong></td>
-<td>Performance Optimization</td>
-<td>📅 Q1 2026</td>
-<td><img src="https://img.shields.io/badge/Planning-blue" alt="Planning"/></td>
-</tr>
-<tr>
-<td><strong>Phase 6</strong></td>
-<td>Production Deployment</td>
-<td>📅 Q2 2026</td>
-<td><img src="https://img.shields.io/badge/Planning-blue" alt="Planning"/></td>
-</tr>
-</tbody>
-</table>
+This project was developed as a **complete, self-contained academic assignment** for the Advanced Information Retrieval course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+
+| Module | Description | Status |
+|--------|-------------|--------|
+| 🔄 **ETL Pipeline** | Data loading, cleaning, deduplication, and text normalization | ✅ Done |
+| 🤖 **mBERT Embedding** | Contextual 768-d vector generation for queries and documents | ✅ Done |
+| 📊 **Feature Engineering** | Cosine similarity scores, text length ratios, query-document overlap | ✅ Done |
+| 📏 **Cosine Similarity** | Baseline ranking via embedding similarity | ✅ Done |
+| 🌳 **XGBoost LTR** | Learning-to-Rank with gradient boosted trees | ✅ Done |
+| 🧠 **RankNet** | Pairwise neural ranking model | ✅ Done |
+| 🎯 **LambdaMART** | Advanced listwise ranking algorithm (best performer: F1 0.817) | ✅ Done |
+| 📈 **Evaluation Engine** | Precision, Recall, F1-Score, MAP, and NDCG metrics | ✅ Done |
+| 🖥️ **Streamlit Demo** | Interactive web dashboard for live search and result visualization | ✅ Done |
 
 ---
 
