@@ -1,5 +1,7 @@
-# 🐦 Twitter Data Analysis & Information Diffusion
-*Mapping the viral pathways of information spread across social networks*
+<div align="center">
+  <h1>🐦 Twitter Data Analysis & Information Diffusion</h1>
+  <p><em>Mapping the viral pathways of information spread across social networks</em></p>
+</div>
 
 <p align="center">
 <img src="https://img.shields.io/badge/python-v3.8+-blue.svg" alt="Python">
