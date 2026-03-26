@@ -324,62 +324,21 @@ bernardo.github.io/
 
 <hr>
 
-<h2>🗓️ Project Roadmap</h2>
+## 🗺️ Project Scope
 
-<div align="center">
+This project was developed as a **complete, self-contained academic assignment** for the Data Mining and Machine Learning course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
 
-<table>
-<tr>
-<th align="left">🎯 <strong>Milestone</strong></th>
-<th align="center">📅 <strong>Timeline</strong></th>
-<th align="center">✅ <strong>Status</strong></th>
-<th align="left">📝 <strong>Description</strong></th>
-</tr>
-<tr>
-<td><strong>Phase 1: Data Collection</strong></td>
-<td align="center">2024</td>
-<td align="center">✅ Complete</td>
-<td>Historical CO₂ data acquisition & validation</td>
-</tr>
-<tr>
-<td><strong>Phase 2: Exploratory Analysis</strong></td>
-<td align="center">2024</td>
-<td align="center">✅ Complete</td>
-<td>Statistical analysis & trend identification</td>
-</tr>
-<tr>
-<td><strong>Phase 3: Model Development</strong></td>
-<td align="center">2024</td>
-<td align="center">✅ Complete</td>
-<td>ML pipeline & algorithm implementation</td>
-</tr>
-<tr>
-<td><strong>Phase 4: Model Evaluation</strong></td>
-<td align="center">2024</td>
-<td align="center">✅ Complete</td>
-<td>Performance testing & validation</td>
-</tr>
-<tr>
-<td><strong>Phase 5: Documentation</strong></td>
-<td align="center">2024</td>
-<td align="center">✅ Complete</td>
-<td>Technical documentation & reporting</td>
-</tr>
-<tr>
-<td><strong>Phase 6: Deployment</strong></td>
-<td align="center">2024</td>
-<td align="center">🚀 <strong>Current</strong></td>
-<td>GitHub Pages deployment & optimization</td>
-</tr>
-<tr>
-<td><strong>Phase 7: Enhancement</strong></td>
-<td align="center">2025</td>
-<td align="center">🔄 In Progress</td>
-<td>Additional features & model improvements</td>
-</tr>
-</table>
+| Module | Description | Status |
+|--------|-------------|--------|
+| 📊 **Data Collection & Validation** | Historical CO₂ emissions dataset (1990–2021) acquisition, cleaning, and preprocessing | ✅ Done |
+| 🔍 **Exploratory Data Analysis** | Descriptive statistics, trend visualization, country-wise comparisons, and pattern recognition | ✅ Done |
+| 🧠 **ML Pipeline** | Implementation of Linear Regression, Lasso, XGBoost, and SARIMAX with hyperparameter tuning | ✅ Done |
+| 📈 **Model Evaluation** | MSE, RMSE, MAE, R² metrics with residual analysis, Durbin-Watson test, and VIF analysis | ✅ Done |
+| 🔮 **Forecasting** | 5–10 year future CO₂ emission projections per country and global aggregate | ✅ Done |
+| 🖼️ **Visualization Suite** | PR curves, feature importance plots, ACF/PACF diagnostics, and trend decomposition charts | ✅ Done |
+| 📖 **Documentation** | Technical methodology write-up and key findings summary | ✅ Done |
 
-</div>
+<hr>
 
 <h3><strong>🔮 Future Enhancements</strong></h3>
 <ul>
