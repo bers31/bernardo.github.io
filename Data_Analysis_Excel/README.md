@@ -1,12 +1,16 @@
-# 📊 Data Analysis Dashboard
-*Transform Excel Analytics into Interactive Intelligence*
+<div align="center">
+  <h1>📊 Data Analysis Dashboard</h1>
+  <p><em>Transform Excel Analytics into Interactive Intelligence</em></p>
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/bers31/bernardo.github.io)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-orange)](https://github.com/bers31/bernardo.github.io/releases)
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?logo=node.js)](https://nodejs.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-4169E1?logo=postgresql)](https://www.postgresql.org/)
+  <p>
+    <a href="https://github.com/bers31/bernardo.github.io"><img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License"></a>
+    <a href="https://github.com/bers31/bernardo.github.io/releases"><img src="https://img.shields.io/badge/version-1.0.0-orange" alt="Version"></a>
+    <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react" alt="React"></a>
+    <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933?logo=node.js" alt="Node.js"></a>
+    <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/PostgreSQL-15+-4169E1?logo=postgresql" alt="PostgreSQL"></a>
+  </p>
+</div>
 
 ---
 
