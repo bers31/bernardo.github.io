@@ -15,8 +15,10 @@
 [![Thesis](https://img.shields.io/badge/Skripsi-Undip%202026-1D4ED8?style=for-the-badge)](https://undip.ac.id)
 [![Status](https://img.shields.io/badge/Status-Completed-22C55E?style=for-the-badge)]()
 [![Kappa](https://img.shields.io/badge/Fleiss%20Kappa-%3E%200.9-purple?style=for-the-badge)]()
- 
+
 ---
+</div>
+
 
 ## 📖 Project Overview
 
