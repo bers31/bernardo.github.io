@@ -236,25 +236,25 @@ docker run -p 5000:5000 --env-file .env prison-chatbot
 <h2>🏗️ System Architecture</h2>
 <pre>
 <code>
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Frontend      │    │   Flask Backend │    │   External APIs │
-│   (PWA)         │◄──►│   (backend.py)  │◄──►│   (OpenAI)      │
-├─────────────────┤    ├─────────────────┤    ├─────────────────┤
-│ • Chat UI       │    │ • Route Handler │    │ • NLP Processing│
-│ • Admin Panel   │    │ • Session Mgmt  │    │ • Email Service │
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────────┐
+│   Frontend      │    │   Flask Backend │    │   External APIs     │
+│   (PWA)         │◄──►│   (backend.py)  │◄──►│   (OpenAI)          │
+├─────────────────┤    ├─────────────────┤    ├─────────────────────┤
+│ • Chat UI       │    │ • Route Handler │    │ • NLP Processing    │
+│ • Admin Panel   │    │ • Session Mgmt  │    │ • Email Service     │
 │ • Service Worker│    │ • Database ORM  │    │ • Push Notifications│
-│ • PWA Manifest  │    │ • Security Layer│    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                              │
-                              ▼
-                    ┌─────────────────┐
-                    │   SQLite DB     │
-                    │                 │
-                    │ • Users         │
-                    │ • Messages      │
-                    │ • Chat Logs     │
-                    │ • Admin Settings│
-                    └─────────────────┘
+│ • PWA Manifest  │    │ • Security Layer│    │                     │
+└─────────────────┘    └─────────────────┘    └─────────────────────┘
+                                │
+                                ▼
+                       ┌─────────────────┐
+                       │   SQLite DB     │
+                       │                 │
+                       │ • Users         │
+                       │ • Messages      │
+                       │ • Chat Logs     │
+                       │ • Admin Settings│
+                       └─────────────────┘
 </code></pre>
 
 ---
