@@ -1,5 +1,7 @@
-# 🎓 Student Academic Information System (SI-MAS)
-*Comprehensive web-based academic management platform for universities*
+<div align="center">
+  <h1>🎓 Student Academic Information System (SI-MAS)</h1>
+  <p><em>Comprehensive web-based academic management platform for universities</em></p>
+</div>
 
 <div align="center">
 
@@ -319,60 +321,20 @@ GET  /mhs/print_irs/{nim}/{semester}  # IRS PDF export
 
 ---
 
-## 📈 **Project Roadmap**
+## 🗺️ Project Scope
 
-<div align="center">
+This project was developed as a **complete, self-contained academic assignment** for the Web-Based Application Development course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
 
-<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
-<thead>
-<tr style="background-color: #f6f8fa;">
-<th><strong>Milestone</strong></th>
-<th><strong>Features</strong></th>
-<th><strong>Target Date</strong></th>
-<th><strong>Status</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Phase 1</strong></td>
-<td>Authentication & Basic CRUD</td>
-<td>Q1 2024</td>
-<td>✅ <strong>Completed</strong></td>
-</tr>
-<tr>
-<td><strong>Phase 2</strong></td>
-<td>IRS Management System</td>
-<td>Q2 2024</td>
-<td>✅ <strong>Completed</strong></td>
-</tr>
-<tr>
-<td><strong>Phase 3</strong></td>
-<td>Multi-Role Dashboards</td>
-<td>Q2 2024</td>
-<td>✅ <strong>Completed</strong></td>
-</tr>
-<tr>
-<td><strong>Phase 4</strong></td>
-<td>Advanced Reporting</td>
-<td>Q3 2025</td>
-<td>🔄 <strong>In Progress</strong></td>
-</tr>
-<tr>
-<td><strong>Phase 5</strong></td>
-<td>Mobile Optimization</td>
-<td>Q4 2026</td>
-<td>⏳ <strong>Planned</strong></td>
-</tr>
-<tr>
-<td><strong>Phase 6</strong></td>
-<td>API Integration & Export</td>
-<td>Q1 2026</td>
-<td>⏳ <strong>Planned</strong></td>
-</tr>
-</tbody>
-</table>
-
-</div>
+| Module | Description | Status |
+|--------|-------------|--------|
+| 🔐 **Authentication & RBAC** | Laravel-based login with role middleware for Student, Lecturer, Department Head, Dean, and Admin | ✅ Done |
+| 👨‍🎓 **Student Portal** | IRS course registration, KHS grade viewing, schedule tracking, and transcript generation | ✅ Done |
+| 👨‍🏫 **Lecturer Interface** | Grade input, academic advising (perwalian), and teaching schedule management | ✅ Done |
+| 🏛️ **Department Head Panel** | Course catalog management and class schedule assignment | ✅ Done |
+| ⚖️ **Dean Approval Workflow** | Room change and schedule modification approval with bulk processing support | ✅ Done |
+| 🔧 **Admin Control Panel** | Full user management with data import/export for students and lecturers | ✅ Done |
+| 🗄️ **Database Architecture** | Relational MySQL schema covering faculty hierarchy, course catalog, enrollment, and grading | ✅ Done |
+| 🔗 **RESTful API Endpoints** | JSON endpoints for schedules, student/lecturer data, IRS approval, and PDF report export | ✅ Done |
 
 ---
 
