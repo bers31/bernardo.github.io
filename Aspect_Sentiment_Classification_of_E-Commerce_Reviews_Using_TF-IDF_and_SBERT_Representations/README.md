@@ -3,10 +3,10 @@
 # 🛍️ TF-IDF vs SBERT — Aspect Sentiment Classification
 ### on Indonesian E-Commerce Reviews (Shopee Case Study)
 
-<em>Comparative NLP Research · Aspect-Based Sentiment Analysis · Text Representation Paradigms</em>
-
+*Comparative NLP Research · Aspect-Based Sentiment Analysis · Text Representation Paradigms*
+ 
 ---
-
+ 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-SBERT-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/sentence-transformers)
@@ -15,9 +15,7 @@
 [![Thesis](https://img.shields.io/badge/Skripsi-Undip%202026-1D4ED8?style=for-the-badge)](https://undip.ac.id)
 [![Status](https://img.shields.io/badge/Status-Completed-22C55E?style=for-the-badge)]()
 [![Kappa](https://img.shields.io/badge/Fleiss%20Kappa-%3E%200.9-purple?style=for-the-badge)]()
-
-</div>
-
+ 
 ---
 
 ## 📖 Project Overview
@@ -46,25 +44,16 @@ Both representations are paired with **Logistic Regression** as the unified clas
 
 ## 🏗️ Research Pipeline
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                      RESEARCH PIPELINE                              │
-├─────────────────┬───────────────────┬───────────────────────────────┤
-│  DATA           │  ASPECT           │  MODELING &                   │
-│  ACQUISITION    │  DISCOVERY        │  EVALUATION                   │
-│                 │                   │                               │
-│ ▸ Web Scraping  │ ▸ TF-IDF Features │ ▸ TF-IDF + Logistic Reg.      │
-│   (1,000 raw    │ ▸ Truncated SVD   │ ▸ SBERT + Logistic Reg.       │
-│   reviews)      │ ▸ PCA             │ ▸ Grid Search (CV=5)          │
-│                 │ ▸ Hierarchical    │ ▸ Per-Aspect Hyperparams      │
-│ ▸ Targeted      │   Clustering      │ ▸ Universal Hyperparams       │
-│   Scraping      │   (Ward Linkage)  │ ▸ Accuracy / Precision /      │
-│   (≥100/aspect) │ ▸ Keyword Extract │   Recall / F1 / AUC           │
-│                 │ ▸ Manual Review   │ ▸ McNemar's Test              │
-├─────────────────┴───────────────────┴───────────────────────────────┤
-│  ANNOTATION: 3 Annotators · Fleiss' Kappa > 0.9 · Adjudication      │
-└─────────────────────────────────────────────────────────────────────┘
-```
+| 📥 Data Acquisition | 🔍 Aspect Discovery | ⚙️ Modeling & Evaluation |
+|---------------------|---------------------|--------------------------|
+| Web scraping (1,000 raw reviews) | TF-IDF feature extraction | TF-IDF + Logistic Regression |
+| Targeted scraping (≥100/aspect) | Truncated SVD & PCA | SBERT + Logistic Regression |
+| | Hierarchical Clustering (Ward Linkage) | Grid Search (Stratified 5-Fold CV) |
+| | Keyword extraction per cluster | Per-aspect & universal hyperparams |
+| | Manual review & aspect labeling | Accuracy / Precision / Recall / F1 / AUC |
+| | | McNemar's Test |
+ 
+> **Annotation layer:** 3 independent annotators · Fleiss' Kappa > 0.9 · Majority-vote adjudication
 
 ---
 
@@ -144,9 +133,7 @@ Logistic Regression was chosen as the shared classifier to isolate the contribut
 ---
 
 ## 🛠️ Tech Stack
-
-<div align="center">
-
+ 
 | Layer | Technology |
 |-------|------------|
 | **Language** | Python 3.10+ |
@@ -159,9 +146,7 @@ Logistic Regression was chosen as the shared classifier to isolate the contribut
 | **Visualization** | Matplotlib, Seaborn |
 | **Data Handling** | Pandas, openpyxl |
 | **Notebook** | Jupyter Notebook |
-
-</div>
-
+ 
 ---
 
 ## 🚀 Getting Started
