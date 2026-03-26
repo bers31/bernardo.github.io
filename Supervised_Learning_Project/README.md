@@ -1,5 +1,7 @@
-# 🛍️ Customer Segmentation — Supervised Multi-Class Classification
-### *Intelligent customer profiling through advanced machine learning techniques*
+<div align="center">
+  <h1>🛍️ Customer Segmentation — Supervised Multi-Class Classification</h1>
+  <p><em>Intelligent customer profiling through advanced machine learning techniques</em></p>
+</div>
 
 <div align="center">
 
@@ -204,56 +206,20 @@ nbformat>=5.4.0
 
 ---
 
-## 📊 **Project Roadmap**
+## 🗺️ Project Scope
 
-<div align="center">
+This project was developed as a **complete, self-contained academic assignment** for the Machine Learning course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
 
-<table width="100%">
-<tr align="center">
-<td><strong>Milestone</strong></td>
-<td><strong>Target Date</strong></td>
-<td><strong>Status</strong></td>
-<td><strong>Description</strong></td>
-</tr>
-<tr align="center">
-<td>🔍 <strong>Data Exploration</strong></td>
-<td>2024</td>
-<td>✅ Complete</td>
-<td>Initial EDA and data understanding</td>
-</tr>
-<tr align="center">
-<td>🧹 <strong>Data Preprocessing</strong></td>
-<td>2024</td>
-<td>✅ Complete</td>
-<td>ETL pipeline and feature engineering</td>
-</tr>
-<tr align="center">
-<td>🤖 <strong>Model Development</strong></td>
-<td>2024</td>
-<td>✅ Complete</td>
-<td>Implementation of 5 ML algorithms</td>
-</tr>
-<tr align="center">
-<td>⚙️ <strong>Hyperparameter Tuning</strong></td>
-<td>2024</td>
-<td>✅ Complete</td>
-<td>Grid search optimization</td>
-</tr>
-<tr align="center">
-<td>📈 <strong>Model Evaluation</strong></td>
-<td>2024</td>
-<td>✅ Complete</td>
-<td>Comprehensive performance analysis</td>
-</tr>
-<tr align="center">
-<td>📝 <strong>Documentation</strong></td>
-<td>2024</td>
-<td>✅ Complete</td>
-<td>README and code documentation</td>
-</tr>
-</table>
-
-</div>
+| Module | Description | Status |
+|--------|-------------|--------|
+| 🔍 **Exploratory Data Analysis** | Statistical profiling, distribution analysis, and correlation visualization of the Kaggle customer segmentation dataset | ✅ Done |
+| 🧹 **ETL & Feature Engineering** | Data cleaning, categorical encoding, feature scaling, and stratified sampling (500 samples/class) | ✅ Done |
+| 🎯 **KNN Classifier** | K-Nearest Neighbors with hyperparameter tuning via Grid Search | ✅ Done |
+| 🌲 **Random Forest Classifier** | Ensemble tree-based model with feature importance analysis | ✅ Done |
+| 🔍 **SVM Classifier** | Support Vector Machine with kernel optimization | ✅ Done |
+| ⚡ **XGBoost Classifier** | Gradient boosting model with cross-validation | ✅ Done |
+| 📈 **Logistic Regression** | Baseline multi-class classifier with regularization tuning | ✅ Done |
+| 📊 **Model Evaluation** | Comprehensive assessment using Accuracy, Precision, Recall, F1-score, and confusion matrices | ✅ Done |
 
 ---
 
