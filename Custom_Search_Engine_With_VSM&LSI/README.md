@@ -1,4 +1,6 @@
+<div align="center">
 <h1>🔍 Information Retrieval Benchmark System</h1>
+</div>
 
 <div align="center">
 <em>Comprehensive comparison of VSM, LSI, and Neural IR approaches using mBERT</em>
