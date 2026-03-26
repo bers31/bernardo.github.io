@@ -268,56 +268,19 @@ REACT_APP_ENV=development
 
 ---
 
-## 📅 Development Roadmap
+## 🗺️ Project Scope
 
-<div align="center">
+This project was developed as a **complete, self-contained academic assignment** for the Web Application Development course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
 
-<table>
-<tr>
-<th>Phase</th>
-<th>Milestone</th>
-<th>Target Date</th>
-<th>Status</th>
-</tr>
-<tr>
-<td><strong>Phase 1</strong></td>
-<td>Core Authentication System</td>
-<td>Q1 2024</td>
-<td>✅ Complete</td>
-</tr>
-<tr>
-<td><strong>Phase 2</strong></td>
-<td>Financial Form Builder</td>
-<td>Q1 2024</td>
-<td>✅ Complete</td>
-</tr>
-<tr>
-<td><strong>Phase 3</strong></td>
-<td>PDF Export & Reporting</td>
-<td>Q2 2024</td>
-<td>✅ Complete</td>
-</tr>
-<tr>
-<td><strong>Phase 4</strong></td>
-<td>Advanced Analytics</td>
-<td>Q2 2025</td>
-<td>🔄 In Progress</td>
-</tr>
-<tr>
-<td><strong>Phase 5</strong></td>
-<td>Mobile App Integration</td>
-<td>Q3 2026</td>
-<td>📋 Planned</td>
-</tr>
-<tr>
-<td><strong>Phase 6</strong></td>
-<td>API Documentation</td>
-<td>Q3 2026</td>
-<td>📋 Planned</td>
-</tr>
-</table>
-
-</div>
+| Module | Description | Status |
+|--------|-------------|--------|
+| 🔐 **Authentication & RBAC** | JWT-based login with multi-role support (Admin, Camat, Sekcam, Finance) and email verification via SendGrid | ✅ Done |
+| 📊 **Financial Form Builder** | Dynamic form generation with real-time budget validation, calculations, and performance indicator tracking | ✅ Done |
+| 🏛️ **Department Management** | Multi-department support (PEK, UMPEG, TRANTIB, etc.) with centralized document storage | ✅ Done |
+| 📋 **PDF Export & Reporting** | Report generation via jsPDF with customizable templates and batch processing | ✅ Done |
+| 📈 **Data Visualization** | Interactive charts and monthly financial analytics using Recharts | ✅ Done |
+| 👥 **User Management** | Admin panel for user creation, role assignment, and audit trail logging | ✅ Done |
+| 📤 **Bulk Import & Export** | Excel/CSV data import and export functionality across departments | ✅ Done |
 
 ---
 
