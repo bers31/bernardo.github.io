@@ -155,15 +155,18 @@ jupyter notebook 03_Information_Diffusion.ipynb     # Network analysis
 
 ---
 
-## 📈 Project Roadmap
+## 🗺️ Project Scope
 
-| **Milestone** | **Target Date** | **Status** | **Description** |
-|:---|:---:|:---:|:---|
-| 🔄 **Phase 1: Data Pipeline** | *2025* | ✅ **Complete** | Twitter scraping & ETL implementation |
-| 📊 **Phase 2: EDA & Insights** | *2025* | ✅ **Complete** | Statistical analysis & visualization |
-| 🌐 **Phase 3: Network Analysis** | *2025* | 🔄 **In Progress** | Graph construction & diffusion metrics |
-| 🎯 **Phase 4: Advanced Features** | *2026* | ⏳ **Planned** | Real-time analysis & dashboard |
-| 🚀 **Phase 5: Deployment** | *2026* | ⏳ **Planned** | Web app & API endpoints |
+This project was developed as a **complete, self-contained academic assignment** for the Social Network Analysis course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+
+| Module | Description | Status |
+|--------|-------------|--------|
+| 🔄 **Data Scraping & ETL** | Twitter data extraction via snscrape/tweepy with comprehensive cleaning, deduplication, and text normalization | ✅ Done |
+| 📊 **Exploratory Data Analysis** | Statistical profiling, temporal trend analysis, hashtag frequency, and word cloud generation | ✅ Done |
+| 🧹 **Data Preprocessing** | Noise removal, stopword filtering, tokenization, and structured dataset preparation | ✅ Done |
+| 🌐 **Network Graph Construction** | Retweet and mention network modeling using NetworkX with node/edge attribute assignment | ✅ Done |
+| 🎯 **Diffusion Metrics** | Centrality analysis (degree, betweenness, closeness) and influencer node identification | ✅ Done |
+| 📈 **Network Visualization** | Interactive diffusion maps and cascade pathway charts using pyvis and matplotlib | ✅ Done |
 
 ---
 
