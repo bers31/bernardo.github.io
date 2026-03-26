@@ -1,17 +1,18 @@
-# <img src="https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/images/Picture6.png" alt="YC Electric Logo" width="40" height="40" style="vertical-align: middle;"> YC Electric - Premium Blogger Theme for Electronics Store
+<div align="center">
+  <h1>
+    <img src="https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/images/Picture6.png" alt="YC Electric Logo" width="40" height="40" style="vertical-align: middle;">
+    YC Electric - Premium Blogger Theme for Electronics Store
+  </h1>
+  <p><strong>A modern, responsive, and SEO-optimized Blogger template designed specifically for electronics retail businesses</strong></p>
 
-> **A modern, responsive, and SEO-optimized Blogger template designed specifically for electronics retail businesses**
-
----
-
-<!-- Badges Section -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge&logo=github" alt="Build Status">
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=opensource" alt="License">
-  <img src="https://img.shields.io/badge/Version-1.0.0-orange?style=for-the-badge&logo=semantic-release" alt="Version">
-  <img src="https://img.shields.io/badge/Platform-Blogger-red?style=for-the-badge&logo=blogger" alt="Platform">
-  <img src="https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge&logo=responsive-design" alt="Responsive">
-</p>
+  <p>
+    <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge&logo=github" alt="Build Status">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=opensource" alt="License">
+    <img src="https://img.shields.io/badge/Version-1.0.0-orange?style=for-the-badge&logo=semantic-release" alt="Version">
+    <img src="https://img.shields.io/badge/Platform-Blogger-red?style=for-the-badge&logo=blogger" alt="Platform">
+    <img src="https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge&logo=responsive-design" alt="Responsive">
+  </p>
+</div>
 
 ---
 
