@@ -400,6 +400,18 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 ```
 
+### Impact and Results
+- **Simplification of Complex Data**: By using effective visualizations, this dashboard simplifies complex data into easily understandable information.
+- **Faster Decision-Making**: The dashboard helps users quickly identify relevant patterns and trends, supporting more informed decision-making.
+
+### Full Screenshots
+![Screenshot 1](images/Picture7.png)
+![Screenshot 2](images/Picture8.png)
+![Screenshot 3](images/Picture9.png)
+![Screenshot 4](images/Picture10.png)
+
+---
+
 ## 📫 Contact & Connect
 
 <p align="center">
@@ -431,14 +443,3 @@ Universitas Diponegoro 🎓
 <img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
 </p>
 
----
-
-### Full Screenshots
-![Screenshot 1](images/Picture7.png)
-![Screenshot 2](images/Picture8.png)
-![Screenshot 3](images/Picture9.png)
-![Screenshot 4](images/Picture10.png)
-
-### Impact and Results
-- **Simplification of Complex Data**: By using effective visualizations, this dashboard simplifies complex data into easily understandable information.
-- **Faster Decision-Making**: The dashboard helps users quickly identify relevant patterns and trends, supporting more informed decision-making.
