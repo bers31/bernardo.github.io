@@ -261,59 +261,18 @@ streamlitt run app_vsm.py
 
 ---
 
-## 🗓️ Project Roadmap
+## 🗺️ Project Scope
 
-<div align="center">
+This project was developed as a **complete, self-contained academic assignment** for the Information Retrieval course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
 
-<table>
-<tr>
-<th>Milestone</th>
-<th>Target Date</th>
-<th>Status</th>
-</tr>
-<tr>
-<td>🏗️ Core Architecture Setup</td>
-<td>2024</td>
-<td><strong>✅ Completed</strong></td>
-</tr>
-<tr>
-<td>📊 VSM Implementation</td>
-<td>2024</td>
-<td><strong>✅ Completed</strong></td>
-</tr>
-<tr>
-<td>🎯 LSI Integration</td>
-<td>2024</td>
-<td><strong>✅ Completed</strong></td>
-</tr>
-<tr>
-<td>🧠 Neural IR with mBERT</td>
-<td>2024</td>
-<td><strong>✅ Completed</strong></td>
-</tr>
-<tr>
-<td>📈 Evaluation Framework</td>
-<td>2024</td>
-<td><strong>✅ Completed</strong></td>
-</tr>
-<tr>
-<td>📝 Documentation & Testing</td>
-<td>2024</td>
-<td><strong>✅ Completed</strong></td>
-</tr>
-<tr>
-<td>🚀 Performance Optimization</td>
-<td>2025</td>
-<td><strong>🔄 In Progress</strong></td>
-</tr>
-<tr>
-<td>🌐 Multi-dataset Support</td>
-<td>2026</td>
-<td><strong>📋 Planned</strong></td>
-</tr>
-</table>
-
-</div>
+| Module | Description | Status |
+|--------|-------------|--------|
+| ⚙️ **ETL Pipeline** | Data extraction via `ir_datasets`, deduplication, case folding, and text normalization | ✅ Done |
+| 📊 **VSM** | TF-IDF vectorization with cosine similarity ranking | ✅ Done |
+| 🎯 **LSI** | Truncated SVD dimensionality reduction applied on top of TF-IDF | ✅ Done |
+| 🧠 **Neural IR (mBERT)** | Multilingual BERT embeddings with similarity-based ranking | ✅ Done |
+| 📈 **Evaluation Framework** | Precision@k, Recall@k, F1-Score, mAP, and Precision-Recall curves | ✅ Done |
+| 🖥️ **Streamlit Demo** | Interactive search interface for VSM and LSI via `app_vsm.py` and `app_lsi.py` | ✅ Done |
 
 ---
 
