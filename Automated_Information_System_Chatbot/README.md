@@ -219,17 +219,18 @@ docker run -p 5000:5000 --env-file .env prison-chatbot
 
 ---
 
-<h2>🗺️ Project Roadmap</h2>
-<div align="center">
-  <table>
-    <tr><th>Milestone</th><th>Features</th><th>Target Date</th><th>Status</th></tr>
-    <tr><td>Phase 1</td><td>Core chatbot functionality, basic admin panel</td><td>Q1 2025</td><td>✅ Complete</td></tr>
-    <tr><td>Phase 2</td><td>PWA implementation, offline support</td><td>Q2 2025</td><td>✅ Complete</td></tr>
-    <tr><td>Phase 3</td><td>Advanced analytics, reporting dashboard</td><td>Q3 2025</td><td>🚧 In Progress</td></tr>
-    <tr><td>Phase 4</td><td>Multi-language support, voice integration</td><td>Q4 2026</td><td>📋 Planned</td></tr>
-    <tr><td>Phase 5</td><td>Mobile app deployment, advanced AI features</td><td>Q5 2027</td><td>📋 Planned</td></tr>
-  </table>
-</div>
+## 🗺️ Project Scope
+
+This project was developed as a **complete, self-contained academic assignment** for the Web Development and AI Applications course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+
+| Module | Description | Status |
+|--------|-------------|--------|
+| 🤖 **AI Chatbot Engine** | OpenAI-powered NLP with context-aware conversation management | ✅ Done |
+| 🔒 **Authentication & Security** | Session management, password hashing, CSRF protection, rate limiting | ✅ Done |
+| 📊 **Admin Dashboard** | Real-time chat monitoring, user management, conversation logs | ✅ Done |
+| 📧 **Communication Suite** | Email notifications, web push notifications, password reset workflows | ✅ Done |
+| 📱 **Progressive Web App** | Offline support via service workers, installable, responsive design | ✅ Done |
+| 🗄️ **Data Management** | SQLite integration, automated migration, full CRUD operations | ✅ Done |
 
 ---
 
