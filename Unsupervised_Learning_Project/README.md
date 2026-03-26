@@ -1,5 +1,7 @@
-# 🧠 Student Performance Clustering — K-Means Analysis
-### *Unlocking Educational Insights Through Intelligent Student Segmentation*
+<div align="center">
+  <h1>🧠 Student Performance Clustering — K-Means Analysis</h1>
+  <p><em>Unlocking Educational Insights Through Intelligent Student Segmentation</em></p>
+</div>
 
 <div align="center">
 
@@ -158,56 +160,19 @@ Unsupervised_Learning_Project/
 
 ---
 
-## 📊 **Project Roadmap**
+## 🗺️ Project Scope
 
-<table>
-<thead>
-<tr>
-<th align="left">Milestone</th>
-<th align="center">Status</th>
-<th align="center">Target Date</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Data Collection & Cleaning</td>
-<td align="center">✅</td>
-<td align="center">2024</td>
-<td>Dataset acquisition, preprocessing, and feature engineering</td>
-</tr>
-<tr>
-<td>Exploratory Data Analysis</td>
-<td align="center">✅</td>
-<td align="center">2024</td>
-<td>Statistical analysis and data visualization</td>
-</tr>
-<tr>
-<td>Clustering Implementation</td>
-<td align="center">✅</td>
-<td align="center">2024</td>
-<td>K-Means algorithm with optimal cluster selection</td>
-</tr>
-<tr>
-<td>Results Interpretation</td>
-<td align="center">✅</td>
-<td align="center">2024</td>
-<td>Cluster analysis and educational insights</td>
-</tr>
-<tr>
-<td>Advanced Visualizations</td>
-<td align="center">✅</td>
-<td align="center">2024</td>
-<td>Streamlit dashboard and comprehensive reports</td>
-</tr>
-<tr>
-<td>Documentation & Deployment</td>
-<td align="center">✅</td>
-<td align="center">2024</td>
-<td>Final documentation and GitHub Pages deployment</td>
-</tr>
-</tbody>
-</table>
+This project was developed as a **complete, self-contained academic assignment** for the Unsupervised Learning course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+
+| Module | Description | Status |
+|--------|-------------|--------|
+| 🧹 **Data Preprocessing** | CSV ingestion, missing value handling, feature engineering, and StandardScaler normalization | ✅ Done |
+| 📊 **Exploratory Data Analysis** | Statistical summaries, distribution plots, and correlation heatmaps | ✅ Done |
+| 🎯 **Optimal Cluster Selection** | Elbow Method (SSE), Silhouette Analysis, and Gap Statistic for determining ideal cluster count | ✅ Done |
+| 🧠 **K-Means Clustering** | Euclidean distance-based segmentation with Silhouette Score and Davies-Bouldin Index evaluation | ✅ Done |
+| 📈 **PCA Visualization** | 2D cluster scatter plots via Principal Component Analysis for interpretability | ✅ Done |
+| 🖥️ **Streamlit Dashboard** | Interactive web application with drag-and-drop CSV upload, dynamic parameter tuning, and downloadable reports | ✅ Done |
+| 📋 **Cluster Interpretation** | Actionable educational insights per cluster with at-risk student identification | ✅ Done |
 
 ---
 
