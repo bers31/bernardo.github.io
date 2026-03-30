@@ -1,8 +1,9 @@
 <div align="center">
-
+ 
 # 📊 Data Analysis Dashboard
+ 
 ### *Transform Raw Data into Strategic Intelligence — Entirely in Microsoft Excel*
-
+ 
 <p>
   <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
@@ -11,7 +12,7 @@
   <img src="https://img.shields.io/badge/Type-Academic%20Project-informational" alt="Type">
   <img src="https://img.shields.io/badge/Status-Completed-22C55E" alt="Status">
 </p>
-
+ 
 </div>
 
 ---
