@@ -21,7 +21,7 @@
 
 ## 📖 Project Overview
 
-This repository contains the full implementation of my undergraduate thesis at **Universitas Diponegoro**, which investigates how different text representation paradigms affect the performance of Aspect Sentiment Classification (ASC) — a core subtask of Aspect-Based Sentiment Analysis (ABSA) — on real-world Indonesian e-commerce reviews from **Shopee**.
+This repository contains the full implementation of my - Research project at **Universitas Diponegoro**, which investigates how different text representation paradigms affect the performance of Aspect Sentiment Classification (ASC) — a core subtask of Aspect-Based Sentiment Analysis (ABSA) — on real-world Indonesian e-commerce reviews from **Shopee**.
 
 The study systematically compares two foundational yet contrasting approaches to text representation:
 
