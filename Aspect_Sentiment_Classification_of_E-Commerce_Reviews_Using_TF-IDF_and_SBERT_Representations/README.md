@@ -10,7 +10,7 @@
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-SBERT-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/sentence-transformers)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-[![Thesis](https://img.shields.io/badge/Skripsi-Undip%202026-1D4ED8?style=for-the-badge)](https://undip.ac.id)
+[![Project](https://img.shields.io/badge/Research%20Project-Undip%202026-1D4ED8?style=for-the-badge)](https://undip.ac.id)
 [![Status](https://img.shields.io/badge/Status-Completed-22C55E?style=for-the-badge)]()
 [![Kappa](https://img.shields.io/badge/Fleiss%20Kappa-%3E%200.9-purple?style=for-the-badge)]()
 
