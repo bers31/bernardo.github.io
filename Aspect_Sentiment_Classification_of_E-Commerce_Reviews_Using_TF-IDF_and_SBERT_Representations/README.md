@@ -1,11 +1,7 @@
 <div align="center">
-  <h1>🛍️ TF-IDF vs SBERT — Aspect Sentiment Classification</h1>
-  <h3>on Indonesian E-Commerce Reviews (Shopee Case Study)</h3>
+  <h1>🛍️ TF-IDF vs SBERT — Aspect Sentiment Classification on Indonesian E-Commerce Reviews (Shopee Case Study)</h1>
+  <h3>Comparative NLP Research · Aspect-Based Sentiment Analysis · Text Representation Paradigms</h3>
 </div>
-
-*Comparative NLP Research · Aspect-Based Sentiment Analysis · Text Representation Paradigms*
-
----
 
 <div align="center">
 
