@@ -1,106 +1,67 @@
 <div align="center">
-  <h1>📊 Data Analysis Dashboard</h1>
-  <p><em>Transform Excel Analytics into Interactive Intelligence</em></p>
 
-  <p>
-    <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
-    <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
-    <img src="https://img.shields.io/badge/version-1.0.0-orange" alt="Version">
-    <img src="https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white" alt="Python">
-    <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white" alt="Pandas">
-    <img src="https://img.shields.io/badge/Excel-217346?logo=microsoft-excel&logoColor=white" alt="Excel">
-  </p>
+# 📊 Data Analysis Dashboard
+### *Transform Raw Data into Strategic Intelligence — Entirely in Microsoft Excel*
+
+<p>
+  <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
+  <img src="https://img.shields.io/badge/version-1.0.0-orange" alt="Version">
+  <img src="https://img.shields.io/badge/Microsoft%20Excel-217346?logo=microsoft-excel&logoColor=white" alt="Excel">
+  <img src="https://img.shields.io/badge/Type-Academic%20Project-informational" alt="Type">
+  <img src="https://img.shields.io/badge/Status-Completed-22C55E" alt="Status">
+</p>
+
 </div>
 
 ---
 
 ## 📖 About This Project
 
-This project consolidates multiple Excel workbook analyses into a **unified, structured data analysis pipeline** with role-based data segmentation. Born from the need to transform static Excel reports into clean, reproducible insights, this project serves as a comprehensive solution for data cleaning, exploratory analysis, and business intelligence visualization — all built on top of Microsoft Excel as the primary data source and delivery format.
+This project delivers a fully interactive **business intelligence dashboard built entirely within Microsoft Excel**, transforming complex, multi-dimensional datasets into visually compelling and strategically actionable insights — with zero external tooling or programming dependencies.
 
-**Why This Matters:** Raw Excel data is rarely analysis-ready. This project establishes a disciplined ETL workflow that extracts data from Excel workbooks, cleans and transforms it using Python, and delivers actionable insights through well-structured visualizations and summary reports — bridging the gap between spreadsheet data and meaningful decision support.
+Developed as part of the Data Warehouse and Business Intelligence course at **Universitas Diponegoro**, the dashboard demonstrates that Excel, when harnessed to its full capability, is a powerful analytical platform in its own right. From dynamic visualizations and pivot-based exploration to KPI tracking and real-time interactive filters, every component was designed with both analytical rigour and end-user experience in mind.
+
+> **Core philosophy:** Data only creates value when it is understood. This dashboard bridges the gap between raw numbers and decisive, informed action.
 
 ---
 
 ## ✨ Key Features
 
-- 📥 **Excel-Driven Data Ingestion** — Reads directly from `.xlsx` workbooks using `openpyxl` and `pandas`
-- 🧹 **Automated ETL Pipeline** — Handles missing values, type normalization, deduplication, and column standardization
-- 📊 **Multi-Dataset Integration** — Unified analysis across Sales, Customer Segmentation, and Accident Report datasets
-- 🎯 **Role-Based Data Views** — Separate analysis outputs tailored for Admin, Student, Lecturer, Department Head, and Dean perspectives
-- 📈 **Rich Visualizations** — Charts, heatmaps, and summary dashboards generated with Matplotlib and Seaborn
-- 📋 **Export-Ready Outputs** — Cleaned datasets and visual reports exported back to Excel or PDF for stakeholder distribution
+**Dynamic Visualizations** — A suite of sophisticated line, bar, and pie charts communicates data trends with clarity, reducing cognitive load and enabling stakeholders to grasp complex relationships at a glance.
+
+**Pivot Table Engine** — Robust pivot tables empower users to explore, filter, and cross-analyse data across multiple dimensions simultaneously, offering precision and flexibility without requiring any technical expertise.
+
+**KPI Summary Panel** — High-impact metrics — including total sales, annual growth rates, and performance benchmarks — are surfaced through visually striking KPI cards designed for rapid strategic insight extraction.
+
+**Interactive Slicers & Filters** — Seamlessly integrated slicers deliver real-time, user-driven customisation of every data view, making the dashboard accessible to both analysts and non-technical stakeholders alike.
+
+**Advanced Excel Functions** — The analytical backbone leverages conditional formatting, `VLOOKUP`, `SUMIFS`, and automated calculations to ensure both computational accuracy and operational efficiency throughout.
+
+**Iterative UX Optimisation** — Multiple rounds of user testing informed ongoing refinements to layout, readability, and interactivity — resulting in a polished, intuitive interface with measurably improved engagement.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Category | Technologies |
-|----------|-------------|
-| **Primary Data Format** | Microsoft Excel (`.xlsx`) |
-| **Language** | Python 3.8+ |
-| **Data Processing** | Pandas, NumPy, openpyxl |
-| **Visualization** | Matplotlib, Seaborn |
-| **Development Environment** | Jupyter Notebook |
-| **Export** | openpyxl (Excel), Matplotlib (PDF/PNG) |
+| Category | Detail |
+|----------|--------|
+| **Platform** | Microsoft Excel (`.xlsx`) |
+| **Visualisation** | Native Excel charts — line, bar, pie, and combo |
+| **Data Modelling** | Pivot Tables with multi-dimensional slicing |
+| **Analytics Functions** | `VLOOKUP`, `SUMIFS`, `COUNTIFS`, `IF`, conditional formatting |
+| **Interactivity** | Slicers, dropdown filters, dynamic named ranges |
+| **Output Format** | Self-contained `.xlsx` workbook |
 
 ---
 
-## 🚀 Quick Start Guide
+## 🗃️ Data Sources
 
-### Prerequisites
-```bash
-Python >= 3.8
-pip package manager
-Microsoft Excel (for viewing source files and outputs)
-```
-
-### Installation & Setup
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/bers31/bernardo.github.io.git
-cd bernardo.github.io/Data_Analysis_Excel
-
-# 2. Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate        # macOS / Linux
-venv\Scripts\activate           # Windows
-
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Launch Jupyter Notebook
-jupyter notebook
-```
-
-### Core Dependencies
-
-```txt
-pandas>=1.3.0
-numpy>=1.21.0
-openpyxl>=3.0.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-jupyter>=1.0.0
-```
-
-### Running the Analysis
-
-Open the notebooks in the following sequence:
-
-```bash
-# Step 1 – Data cleaning and ETL
-jupyter notebook notebooks/01_etl_cleaning.ipynb
-
-# Step 2 – Exploratory data analysis per dataset
-jupyter notebook notebooks/02_sales_analysis.ipynb
-jupyter notebook notebooks/03_customer_segmentation.ipynb
-jupyter notebook notebooks/04_accident_report.ipynb
-
-# Step 3 – Role-based summary reports
-jupyter notebook notebooks/05_role_based_views.ipynb
-```
+| Dataset | Records | Key Metrics | Analysis Focus |
+|---------|---------|-------------|----------------|
+| **Sales Data** | 112,036 rows | Revenue, Profit, Quantity | Time-series trends, regional performance |
+| **Customer Segmentation** | 1,026 rows | Demographics, Purchase behaviour | Buyer personas, conversion analysis |
+| **Accident Reports** | Variable | Location, Severity, Time | Safety analytics, trend identification |
 
 ---
 
@@ -116,15 +77,19 @@ jupyter notebook notebooks/05_role_based_views.ipynb
 
 ---
 
-## 🗃️ Data Sources
+## 🗺️ Project Scope
 
-| Dataset | Records | Key Metrics | Analysis Focus |
-|---------|---------|-------------|----------------|
-| **Sales Data** | 112,036 rows | Revenue, Profit, Quantity | Time-series trends, regional performance |
-| **Customer Segmentation** | 1,026 rows | Demographics, Purchase behaviour | Buyer personas, conversion analysis |
-| **Accident Reports** | Variable | Location, Severity, Time | Safety analytics, trend identification |
+This project was developed as a **complete, self-contained academic deliverable** for the Data Warehouse and Business Intelligence course at Universitas Diponegoro. The table below reflects what was fully implemented and delivered.
 
-All datasets originate from `.xlsx` source files and are processed entirely within the Python/Pandas pipeline before results are written back to structured Excel output files.
+| Module | Description | Status |
+|--------|-------------|--------|
+| 📊 **Sales Analysis** | Revenue, profit, and quantity trend analysis with regional and time-series breakdowns | ✅ Done |
+| 👥 **Customer Segmentation** | Demographic and purchase behaviour analysis for buyer persona insights | ✅ Done |
+| 🚨 **Accident Report Analysis** | Location, severity, and temporal trend analysis for safety insights | ✅ Done |
+| 🎯 **KPI Summary Panel** | Total sales, annual growth, and performance benchmark cards for executive-level views | ✅ Done |
+| 🔁 **Pivot Table Engine** | Multi-dimensional exploration across all three datasets | ✅ Done |
+| 🎛️ **Slicers & Filters** | Real-time interactive filters for seamless data view customisation | ✅ Done |
+| 📋 **Documentation** | Development process and technical implementation notes for long-term maintainability | ✅ Done |
 
 ---
 
@@ -133,62 +98,22 @@ All datasets originate from `.xlsx` source files and are processed entirely with
 ```
 Data_Analysis_Excel/
 │
-├── 📂 data/
-│   ├── raw/                    # Original Excel workbooks (.xlsx)
-│   └── processed/              # Cleaned and transformed datasets
+├── 📂 workbooks/
+│   ├── sales_dashboard.xlsx          # Sales analysis & KPI dashboard
+│   ├── customer_segmentation.xlsx    # Customer persona analysis
+│   └── accident_report.xlsx          # Safety analytics dashboard
 │
-├── 📂 notebooks/
-│   ├── 01_etl_cleaning.ipynb
-│   ├── 02_sales_analysis.ipynb
-│   ├── 03_customer_segmentation.ipynb
-│   ├── 04_accident_report.ipynb
-│   └── 05_role_based_views.ipynb
+├── 📂 images/                        # Dashboard screenshots
 │
-├── 📂 outputs/
-│   ├── figures/                # Exported charts and visualizations
-│   └── reports/                # Summary Excel and PDF outputs
-│
-├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
 
 ---
 
-## 🗺️ Project Scope
-
-This project was developed as a **complete, self-contained academic assignment** for the Data Warehouse and Business Intelligence course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
-
-| Module | Description | Status |
-|--------|-------------|--------|
-| 🗄️ **ETL Pipeline** | Excel ingestion, missing value handling, type normalization, and deduplication using Pandas and openpyxl | ✅ Done |
-| 📊 **Sales Analysis** | Revenue, profit, and quantity trend analysis with regional and time-series breakdowns | ✅ Done |
-| 👥 **Customer Segmentation** | Demographic and purchase behaviour analysis for buyer persona insights | ✅ Done |
-| 🚨 **Accident Report Analysis** | Location, severity, and temporal trend analysis for safety insights | ✅ Done |
-| 🎯 **Role-Based Views** | Separate summary outputs tailored for Admin, Student, Lecturer, Department Head, and Dean | ✅ Done |
-| 📋 **Export & Reporting** | Cleaned datasets and visual reports exported to Excel and PDF | ✅ Done |
-| 📈 **Visualization Suite** | Charts, heatmaps, and distribution plots generated with Matplotlib and Seaborn | ✅ Done |
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 Bernardo - Universitas Diponegoro
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
 
 ---
 
