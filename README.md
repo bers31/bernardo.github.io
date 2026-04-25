@@ -27,14 +27,14 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Data+Scientist+%7C+Software+Engineer;AI+%26+Machine+Learning+Enthusiast;Full-Stack+Developer;Problem+Solver+%26+Innovation+Driver" alt="Typing SVG" />
 </div>
 
-**Highly analytical Informatics undergraduate** with a proven track record of transforming complex data into actionable insights. Skilled in **Python**, **SQL**, and **advanced data visualization**, with expertise in **machine learning**, **deep learning**, and **full-stack development**. Demonstrated ability to optimize IT systems, gather requirements, and deliver innovative solutions that drive organizational success.
+**Highly analytical Bachelor of Informatics from Universitas Diponegoro (S.Kom.)** with a proven track record of transforming complex data into actionable insights. Skilled in **Python**, **SQL**, and **advanced data visualization**, with expertise in **machine learning**, **deep learning**, and **full-stack development**. Demonstrated ability to optimize IT systems, gather requirements, and deliver innovative solutions that drive organizational success.
 
 ---
 
 ## 🎓 **Education**
 
-**Diponegoro University** | *Informatics* | **Aug 2022 - Present**  
-- **Current GPA:** 3.76/4.00  
+**Diponegoro University** | *Informatics* | **Aug 2022 - Mar 2026**  
+- **Current GPA:** 3.78/4.00  
 - **6th Semester** - Focused on Data Science, Machine Learning, and Software Engineering
 
 ---
