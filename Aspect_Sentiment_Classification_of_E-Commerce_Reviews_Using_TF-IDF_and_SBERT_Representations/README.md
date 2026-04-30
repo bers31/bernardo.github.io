@@ -1,19 +1,29 @@
 <div align="center">
   <h1>🛍️ TF-IDF vs SBERT — Aspect Sentiment Classification on Indonesian E-Commerce Reviews (Shopee Case Study)</h1>
   <h3>Comparative NLP Research · Aspect-Based Sentiment Analysis · Text Representation Paradigms</h3>
-</div>
 
-<div align="center">
+  <br/>
 
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-SBERT-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/sentence-transformers)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-[![Project](https://img.shields.io/badge/Research%20Project-Undip%202026-1D4ED8?style=for-the-badge)](https://undip.ac.id)
-[![Status](https://img.shields.io/badge/Status-Completed-22C55E?style=for-the-badge)]()
-[![Kappa](https://img.shields.io/badge/Fleiss%20Kappa-%3E%200.9-purple?style=for-the-badge)]()
-
+  <a href="https://python.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  </a>
+  <a href="https://scikit-learn.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/scikit--learn-1.3+-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
+  </a>
+  <a href="https://huggingface.co/sentence-transformers" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/HuggingFace-SBERT-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace">
+  </a>
+  <a href="https://jupyter.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge" alt="License: MIT">
+  </a>
+  <a href="https://undip.ac.id" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Research%20Project-Undip%202026-1D4ED8?style=for-the-badge" alt="Project">
+  </a>
+  <img src="https://img.shields.io/badge/Status-Completed-22C55E?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Fleiss%20Kappa-%3E%200.9-purple?style=for-the-badge" alt="Kappa">
 </div>
 
 ---
