@@ -1,5 +1,5 @@
 <div align="center">
-<h1>🔍 Information Retrieval Benchmark System</h1>
+<h1>🔍 Custom Search Engine with VSM & LSI</h1>
 </div>
 
 <div align="center">
