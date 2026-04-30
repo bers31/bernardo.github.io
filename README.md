@@ -75,19 +75,19 @@
 
 ## 🚀 **Featured Projects**
 
-### 🤖 **AI-Driven Information Center Chatbot**
-**Technologies:** `Python` `Flask` `OpenAI GPT API` `SQLite` `JavaScript` `HTML5/CSS3`
-
-- Built comprehensive chatbot system for correctional facility information management
-- Integrated advanced NLP capabilities with custom prompt engineering
-- Implemented real-time analytics and performance monitoring dashboard
-
 ### 🛍️ **TF-IDF vs SBERT — Aspect Sentiment Classification on Indonesian E-Commerce Reviews**
 **Technologies:** `Python` `scikit-learn` `sentence-transformers` `Jupyter Notebook` `NLTK` `Sastrawi` `Matplotlib`
 
 - Conducted comparative NLP research on aspect sentiment classification using Indonesian Shopee e-commerce reviews
 - Compared sparse TF-IDF and dense SBERT representations under a shared Logistic Regression classifier
 - Built a complete pipeline covering data collection, aspect discovery, annotation, modeling, and statistical evaluation
+  
+### 🤖 **AI-Driven Information Center Chatbot**
+**Technologies:** `Python` `Flask` `OpenAI GPT API` `SQLite` `JavaScript` `HTML5/CSS3`
+
+- Built comprehensive chatbot system for correctional facility information management
+- Integrated advanced NLP capabilities with custom prompt engineering
+- Implemented real-time analytics and performance monitoring dashboard
 
 ### 📊 **Twitter Information Diffusion & Sentiment Analysis**
 **Technologies:** `Python` `Tweepy` `NetworkX` `Scikit-learn` `Pandas` `Matplotlib`
