@@ -25,7 +25,7 @@
 
 ## 🎯 Professional Summary
 
-Informatics graduate (S.Kom.) from Universitas Diponegoro with hands-on experience as a Data Analyst. I turn raw data into decisions using Python, SQL, and machine learning, and my current focus is Natural Language Processing, specifically Aspect-Based Sentiment Analysis (ABSA) and Aspect Sentiment Quad Extraction (ASQE), alongside structured data analysis for business and property investment. I like owning a project end to end: designing the data schema, building the model, and shipping a dashboard that a non-technical stakeholder can actually use.
+Informatics graduate (S.Kom.) from Universitas Diponegoro with hands-on experience as a Data Analyst. Skilled in Python, SQL, machine learning, and Natural Language Processing, with a focus on ABSA and ASQE. Experienced in transforming raw data into actionable insights for business and property investment, from data modeling and analysis to building dashboards for non-technical stakeholders.
 
 ---
 
@@ -374,15 +374,13 @@ These projects show full-stack range outside my core focus on data analysis.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=bers31&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
+<img src="https://github-stats-extended.vercel.app/api?username=bers31&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
 
 <img src="https://github-readme-streak-stats-eight.vercel.app/?user=bers31&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bers31&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=bers31&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=bers31&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8" alt="GitHub Trophy" />
+<img src="https://trophy.ryglcloud.net/?username=bers31&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8" alt="GitHub Trophy" />
 
 </div>
 
@@ -406,9 +404,6 @@ Open to project discussions, collaboration, or just connecting with fellow build
 <a href="https://wa.me/6289520501678" target="_blank" rel="noopener">
 <img src="https://img.shields.io/badge/WhatsApp-Chat-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
 </a>
-
-<br/><br/>
-
 <img src="https://komarev.com/ghpvc/?username=bers31&color=6D28D9&style=for-the-badge&label=Profile+Views" alt="Profile Views" />
 
 <br/><br/>
