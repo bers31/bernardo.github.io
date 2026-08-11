@@ -31,7 +31,7 @@ Informatics graduate (S.Kom.) from Universitas Diponegoro with hands-on experien
 
 ## 🎓 Education
 
-### 🏛️ Universitas Diponegoro, B.S. in Informatics
+### 🏛️ Universitas Diponegoro, Bachelor of Science in Informatics
 **August 2022 - March 2026** · GPA 3.78/4.00
 
 - 📚 Concentrated on Data Science, Machine Learning, and Software Engineering.
