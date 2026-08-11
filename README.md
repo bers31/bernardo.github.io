@@ -93,6 +93,8 @@ Responsible for data analysis across the Maribaya and Glamping properties, cover
 - 🔗 Streamlined supply chain operations to cut costs.
 - 📈 Prepared comprehensive financial reports that supported higher profitability.
 
+[![View Code](https://img.shields.io/badge/📂_View_Project_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Custom_E_Commerce_Website)
+
 ---
 
 ## 🏆 Featured Project
@@ -104,7 +106,9 @@ Responsible for data analysis across the Maribaya and Glamping properties, cover
 ![Quad Extraction](https://img.shields.io/badge/Task-Quad%20Extraction-8B5CF6?style=flat-square)
 ![Transformer](https://img.shields.io/badge/Embedding-Transformer--Based-EE4C2C?style=flat-square)
 
-![ASQE sample output](images/asqe-output-example.png)
+<div align="center">
+  <img src="images/asqe-output-example.png" alt="ASQE sample output" width="500">
+</div>
 
 A single star rating can hide a lot. A guest might leave a 3 after writing that the pool was excellent and only the parking was cramped. This project builds an ASQE pipeline that pulls four things out of every review at once: the aspect being discussed, the opinion tied to it, its category, and its sentiment, each with a confidence score.
 
@@ -124,7 +128,9 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![SBERT](https://img.shields.io/badge/Sentence--Transformers-FFD21E?style=flat-square) ![NLTK](https://img.shields.io/badge/NLTK-306998?style=flat-square) ![Sastrawi](https://img.shields.io/badge/Sastrawi-306998?style=flat-square)
 
-![TF-IDF vs SBERT results](images/tfidf-vs-sbert-results.png)
+<div align="center">
+  <img src="images/tfidf-vs-sbert-results.png" alt="TF-IDF vs SBERT results" width="500">
+</div>
 
 - 🔬 Ran a comparative NLP study on aspect-based sentiment classification using Indonesian-language Shopee reviews.
 - ⚖️ Compared sparse TF-IDF and dense SBERT representations under the same Logistic Regression classifier.
@@ -136,7 +142,9 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square) ![HuggingFace](https://img.shields.io/badge/🤗_Transformers-FFD21E?style=flat-square)
 
-![Multilingual IR system](images/multilingual-ir-system.png)
+<div align="center">
+  <img src="images/multilingual-ir-system.png" alt="Multilingual IR system" width="500">
+</div>
 
 - ⚡ Built a multilingual neural IR system with sub-second query response time.
 - 🌐 Fine-tuned mBERT for Indonesian-English semantic search.
@@ -148,7 +156,9 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Tweepy](https://img.shields.io/badge/Tweepy-1DA1F2?style=flat-square&logo=twitter&logoColor=white) ![NetworkX](https://img.shields.io/badge/NetworkX-11557C?style=flat-square) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 
-![Twitter sentiment network](images/twitter-sentiment-network.png)
+<div align="center">
+  <img src="images/twitter-sentiment-network.png" alt="Twitter sentiment network" width="500">
+</div>
 
 - 📥 Processed **500,000+ tweets a day** through a fault-tolerant ingestion pipeline.
 - 🎯 Reached **92% accuracy** on sentiment classification using ensemble methods.
@@ -160,7 +170,9 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![RandomForest](https://img.shields.io/badge/Random%20Forest-2E8B57?style=flat-square) ![XGBoost](https://img.shields.io/badge/XGBoost-EB5E28?style=flat-square) ![SVM](https://img.shields.io/badge/SVM-4B0082?style=flat-square) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 
-![Customer segmentation dashboard](images/customer-segmentation-dashboard.png)
+<div align="center">
+  <img src="images/customer-segmentation-dashboard.png" alt="Customer segmentation dashboard" width="500">
+</div>
 
 - 🎯 Built customer segments using a mix of supervised learning algorithms: Random Forest, XGBoost, SVM, and k-NN.
 - 📊 Pushed segmentation accuracy well above the baseline model.
@@ -173,7 +185,9 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![KMeans](https://img.shields.io/badge/K--Means-2E8B57?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 
-![Student clustering dashboard](images/student-clustering-dashboard.png)
+<div align="center">
+  <img src="images/student-clustering-dashboard.png" alt="Student clustering dashboard" width="500">
+</div>
 
 - 🎓 Built a K-Means clustering system to group students by academic performance.
 - 💻 Built an interactive Streamlit interface so instructors could explore clusters on their own.
@@ -186,7 +200,9 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![VSM](https://img.shields.io/badge/VSM-0EA5E9?style=flat-square) ![LSI](https://img.shields.io/badge/LSI-0EA5E9?style=flat-square) ![TFIDF](https://img.shields.io/badge/TF--IDF-0EA5E9?style=flat-square) ![Sastrawi](https://img.shields.io/badge/Sastrawi-306998?style=flat-square)
 
-![Search engine VSM and LSI](images/search-engine-vsm-lsi.png)
+<div align="center">
+  <img src="images/search-engine-vsm-lsi.png" alt="Search engine VSM and LSI" width="500">
+</div>
 
 - 🔎 Built an interactive search engine to demonstrate Vector Space Model and Latent Semantic Indexing.
 - ✂️ Built Indonesian-language text preprocessing with Sastrawi stemming and tokenization.
@@ -199,7 +215,9 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white) ![TimeSeries](https://img.shields.io/badge/Time%20Series-0EA5E9?style=flat-square) ![Regression](https://img.shields.io/badge/Regression-0EA5E9?style=flat-square)
 
-![GHG emissions forecast](images/ghg-emissions-forecast.png)
+<div align="center">
+  <img src="images/ghg-emissions-forecast.png" alt="GHG emissions forecast" width="500">
+</div>
 
 - 🌍 Built a forecasting model projecting greenhouse gas emissions a decade out.
 - 📉 Applied time-series and regression techniques for the projection.
@@ -212,7 +230,9 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 
 ![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white) ![PivotTable](https://img.shields.io/badge/Pivot%20Table-217346?style=flat-square) ![VLOOKUP](https://img.shields.io/badge/VLOOKUP-217346?style=flat-square)
 
-![Excel analysis dashboard](images/excel-analysis-dashboard.png)
+<div align="center">
+  <img src="images/excel-analysis-dashboard.png" alt="Excel analysis dashboard" width="500">
+</div>
 
 - 💡 Built a data analysis dashboard that turns messy datasets into clear takeaways.
 - 📊 Built dynamic charts and interactive pivot tables.
@@ -231,7 +251,9 @@ These projects show full-stack range outside my core focus on data analysis.
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 
-![SI-MAS dashboard](images/si-mas-dashboard.png)
+<div align="center">
+  <img src="images/si-mas-dashboard.png" alt="SI-MAS dashboard" width="500">
+</div>
 
 - 🎓 Built a web-based system serving **1,000+ students** and **100+ faculty members**.
 - ⏱️ Cut course registration time by **30%** through process optimization.
@@ -243,7 +265,9 @@ These projects show full-stack range outside my core focus on data analysis.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
-![YC Electric e-commerce](images/yc-electric-ecommerce.png)
+<div align="center">
+  <img src="images/yc-electric-ecommerce.png" alt="YC Electric e-commerce" width="500">
+</div>
 
 - 🛒 Led development of a custom e-commerce site that reached **500+ active users**.
 - 🗄️ Built the MySQL database behind **100+ products** and **50+ daily transactions**.
@@ -256,7 +280,9 @@ These projects show full-stack range outside my core focus on data analysis.
 
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=flat-square&logo=opengl&logoColor=white)
 
-![3D Minecraft game](images/minecraft-3d-game.png)
+<div align="center">
+  <img src="images/minecraft-3d-game.png" alt="3D Minecraft game" width="500">
+</div>
 
 - 🎮 Designed and built an immersive 3D game with a bear character in an interactive environment.
 - 🌐 Built a dynamic world with interactive objects using advanced OpenGL techniques.
