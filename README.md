@@ -434,6 +434,6 @@ These projects show full-stack range outside my core focus on data analysis.
 
 <br/><br/>
 
-<p><em>Always up for a good data problem.</em></p>
+<p><strong><em>Always up for a good data problem.</em></strong></p>
 
 </div>
