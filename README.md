@@ -416,7 +416,7 @@ These projects show full-stack range outside my core focus on data analysis.
 
 <div align="center" class="hero contact-hero">
 
-Open to project discussions, collaboration, or just connecting with fellow builders.
+<p>Open to project discussions, collaboration, or just connecting with fellow builders.</p>
 
 <a href="https://linkedin.com/in/bernardo-sunia/" target="_blank" rel="noopener">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -434,6 +434,6 @@ Open to project discussions, collaboration, or just connecting with fellow build
 
 <br/><br/>
 
-*Always up for a good data problem.*
+<p><em>Always up for a good data problem.</em></p>
 
 </div>
