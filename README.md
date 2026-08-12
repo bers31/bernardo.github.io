@@ -414,7 +414,7 @@ These projects show full-stack range outside my core focus on data analysis.
 
 ## 📫 Contact
 
-<div align="center" class="hero">
+<div align="center" class="hero contact-hero">
 
 Open to project discussions, collaboration, or just connecting with fellow builders.
 
