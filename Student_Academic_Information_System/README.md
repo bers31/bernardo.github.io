@@ -19,7 +19,7 @@
 
 ## 📖 **Project Overview**
 
-SI-MAS is a robust, full-featured **Academic Information System** built with Laravel that streamlines university administration processes. Designed for **Universitas Diponegoro**, this system provides comprehensive management for student enrollment, course scheduling, academic records, and multi-role authorization.
+SI-MAS is a robust, full-featured **Academic Information System** built with Laravel that streamlines university administration processes. Designed for **Diponegoro University**, this system provides comprehensive management for student enrollment, course scheduling, academic records, and multi-role authorization.
 
 **Why SI-MAS?**
 - ✅ **Complete Academic Workflow** - From student registration to transcript generation
@@ -323,7 +323,7 @@ GET  /mhs/print_irs/{nim}/{semester}  # IRS PDF export
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Web-Based Application Development course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+This project was developed as a **complete, self-contained academic assignment** for the Web-Based Application Development course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
 
 | Module | Description | Status |
 |--------|-------------|--------|
@@ -392,7 +392,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2024 Bernardo - Universitas Diponegoro
+Copyright (c) 2024 Bernardo - Diponegoro University
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -408,7 +408,7 @@ copies or substantial portions of the Software.
 
 <p align="center">
 <strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Universitas Diponegoro 🎓
+Diponegoro University 🎓
 </p>
 
 <p align="center">
@@ -431,7 +431,7 @@ Universitas Diponegoro 🎓
 </p>
 
 <p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
 </p>
 
