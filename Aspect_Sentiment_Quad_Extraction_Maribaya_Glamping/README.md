@@ -119,8 +119,8 @@ This project was developed during my tenure as **Data Analyst at PT Wiraky Nusa 
 ## 📫 Contact & Connect
 
 <p align="center">
-<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Universitas Diponegoro 🎓
+<strong>👨‍💻 Bernardo - Bachelor of Computer Science</strong><br/>
+Diponegoro University🎓
 </p>
 
 <p align="center">
