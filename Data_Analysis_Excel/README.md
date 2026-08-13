@@ -17,7 +17,7 @@
 
 This project delivers a fully interactive **business intelligence dashboard built entirely within Microsoft Excel**, transforming complex, multi-dimensional datasets into visually compelling and strategically actionable insights — with zero external tooling or programming dependencies.
 
-Developed as part of the Data Warehouse and Business Intelligence course at **Universitas Diponegoro**, the dashboard demonstrates that Excel, when harnessed to its full capability, is a powerful analytical platform in its own right. From dynamic visualizations and pivot-based exploration to KPI tracking and real-time interactive filters, every component was designed with both analytical rigour and end-user experience in mind.
+Developed as part of the Data Warehouse and Business Intelligence course at **Diponegoro University**, the dashboard demonstrates that Excel, when harnessed to its full capability, is a powerful analytical platform in its own right. From dynamic visualizations and pivot-based exploration to KPI tracking and real-time interactive filters, every component was designed with both analytical rigour and end-user experience in mind.
 
 > **Core philosophy:** Data only creates value when it is understood. This dashboard bridges the gap between raw numbers and decisive, informed action.
 
@@ -76,7 +76,7 @@ Developed as part of the Data Warehouse and Business Intelligence course at **Un
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic deliverable** for the Data Warehouse and Business Intelligence course at Universitas Diponegoro. The table below reflects what was fully implemented and delivered.
+This project was developed as a **complete, self-contained academic deliverable** for the Data Warehouse and Business Intelligence course at Diponegoro University. The table below reflects what was fully implemented and delivered.
 
 | Module | Description | Status |
 |--------|-------------|--------|
@@ -126,7 +126,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <p align="center">
 <strong>👨‍💻 Bernardo Nandaniar Sunia — Computer Science Graduate</strong><br/>
-Universitas Diponegoro 🎓
+Diponegoro University 🎓
 </p>
 
 <p align="center">
@@ -149,6 +149,6 @@ Universitas Diponegoro 🎓
 </p>
 
 <p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
 </p>

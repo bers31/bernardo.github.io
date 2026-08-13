@@ -253,7 +253,7 @@ The system is organized into five sequential layers, each with a distinct respon
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Advanced Information Retrieval course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+This project was developed as a **complete, self-contained academic assignment** for the Advanced Information Retrieval course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
 
 | Module | Description | Status |
 |--------|-------------|--------|
@@ -361,7 +361,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2024 Bernardo - Universitas Diponegoro
+Copyright (c) 2024 Bernardo - Diponegoro University
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -377,7 +377,7 @@ copies or substantial portions of the Software.
 
 <p align="center">
 <strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Universitas Diponegoro 🎓
+Diponegoro University🎓
 </p>
 
 <p align="center">
@@ -400,7 +400,7 @@ Universitas Diponegoro 🎓
 </p>
 
 <p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
 </p>
 

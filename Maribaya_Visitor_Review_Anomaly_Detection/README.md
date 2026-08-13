@@ -111,8 +111,8 @@ This project was developed during my tenure as **Data Analyst at PT Wiraky Nusa 
 ## 📫 Contact & Connect
 
 <p align="center">
-<strong>👨‍💻 Bernardo Nandaniar Sunia, Data Analyst</strong><br/>
-Universitas Diponegoro 🎓
+<strong>👨‍💻 Bernardo - Bachelor of Computer Science</strong><br/>
+Diponegoro University🎓
 </p>
 
 <p align="center">
@@ -129,3 +129,25 @@ Universitas Diponegoro 🎓
 <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
 </a>
 </p>
+
+<p align="center">
+⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+</p>
+
+<p align="center">
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
+</p>
+
+---
+
+### Full Screenshots
+![Screenshot 1](images/Picture1.png)
+![Screenshot 2](images/Picture2.png)
+![Screenshot 3](images/Picture3.png)
+![Screenshot 4](images/Picture4.png)
+![Screenshot 5](images/Picture5.png)
+![Screenshot 6](images/Picture6.png)
+![Screenshot 7](images/Picture7.png)
+![Screenshot 8](images/Picture8.png)
+![Screenshot 9](images/Picture9.png)

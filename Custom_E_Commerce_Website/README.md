@@ -1,6 +1,6 @@
 <div align="center">
   <h1>
-    <img src="https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/images/Picture6.png" alt="YC Electric Logo" width="40" height="40" style="vertical-align: middle;">
+    <img src="https://bers31.github.io/bernardo.github.io/Custom_E_Commerce_Website/images/Picture6.png" alt="YC Electric Logo" width="60" height="40" style="vertical-align: middle;">
     YC Electric - Premium Blogger Theme for Electronics Store
   </h1>
   <p><strong>A modern, responsive, and SEO-optimized Blogger template designed specifically for electronics retail businesses</strong></p>
@@ -163,7 +163,7 @@ YC Electric Theme Structure
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Web Development course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+This project was developed as a **complete, self-contained academic assignment** for the Web Development course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
 
 | Module | Description | Status |
 |--------|-------------|--------|
@@ -218,7 +218,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2024 Bernardo - Universitas Diponegoro
+Copyright (c) 2024 Bernardo - Diponegoro University
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -234,7 +234,7 @@ copies or substantial portions of the Software.
 
 <p align="center">
 <strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Universitas Diponegoro 🎓
+Diponegoro University 🎓
 </p>
 
 <p align="center">
@@ -257,7 +257,7 @@ Universitas Diponegoro 🎓
 </p>
 
 <p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
 </p>
 

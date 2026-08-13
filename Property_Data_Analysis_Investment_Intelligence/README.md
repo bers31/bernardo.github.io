@@ -112,8 +112,8 @@ This project was developed during my tenure as **Data Analyst at PT Wiraky Nusa 
 ## 📫 Contact & Connect
 
 <p align="center">
-<strong>👨‍💻 Bernardo Nandaniar Sunia, Data Analyst</strong><br/>
-Universitas Diponegoro 🎓
+<strong>👨‍💻 Bernardo - Bachelor of Computer Science</strong><br/>
+Diponegoro University🎓
 </p>
 
 <p align="center">
@@ -130,3 +130,97 @@ Universitas Diponegoro 🎓
 <img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
 </a>
 </p>
+
+<p align="center">
+⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+</p>
+
+<p align="center">
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
+</p>
+
+---
+
+![Screenshot 1](images/Picture1.png)
+![Screenshot 2](images/Picture2.png)
+![Screenshot 3](images/Picture3.png)
+![Screenshot 4](images/Picture4.png)
+![Screenshot 5](images/Picture5.png)
+![Screenshot 6](images/Picture6.png)
+![Screenshot 7](images/Picture7.png)
+![Screenshot 8](images/Picture8.png)
+![Screenshot 9](images/Picture9.png)
+![Screenshot 10](images/Picture10.png)
+![Screenshot 11](images/Picture11.png)
+![Screenshot 12](images/Picture12.png)
+![Screenshot 13](images/Picture13.png)
+![Screenshot 14](images/Picture14.png)
+![Screenshot 15](images/Picture15.png)
+![Screenshot 16](images/Picture16.png)
+![Screenshot 17](images/Picture17.png)
+![Screenshot 18](images/Picture18.png)
+![Screenshot 19](images/Picture19.png)
+![Screenshot 20](images/Picture20.png)
+![Screenshot 21](images/Picture21.png)
+![Screenshot 22](images/Picture22.png)
+![Screenshot 23](images/Picture23.png)
+![Screenshot 24](images/Picture24.png)
+![Screenshot 25](images/Picture25.png)
+![Screenshot 26](images/Picture26.png)
+![Screenshot 27](images/Picture27.png)
+![Screenshot 28](images/Picture28.png)
+![Screenshot 29](images/Picture29.png)
+![Screenshot 30](images/Picture30.png)
+![Screenshot 31](images/Picture31.png)
+![Screenshot 32](images/Picture32.png)
+![Screenshot 33](images/Picture33.png)
+![Screenshot 34](images/Picture34.png)
+![Screenshot 35](images/Picture35.png)
+![Screenshot 36](images/Picture36.png)
+![Screenshot 37](images/Picture37.png)
+![Screenshot 38](images/Picture38.png)
+![Screenshot 39](images/Picture39.png)
+![Screenshot 40](images/Picture40.png)
+![Screenshot 41](images/Picture41.png)
+![Screenshot 42](images/Picture42.png)
+![Screenshot 43](images/Picture43.png)
+![Screenshot 44](images/Picture44.png)
+![Screenshot 45](images/Picture45.png)
+![Screenshot 46](images/Picture46.png)
+![Screenshot 47](images/Picture47.png)
+![Screenshot 48](images/Picture48.png)
+![Screenshot 49](images/Picture49.png)
+![Screenshot 50](images/Picture50.png)
+![Screenshot 51](images/Picture51.png)
+![Screenshot 52](images/Picture52.png)
+![Screenshot 53](images/Picture53.png)
+![Screenshot 54](images/Picture54.png)
+![Screenshot 55](images/Picture55.png)
+![Screenshot 56](images/Picture56.png)
+![Screenshot 57](images/Picture57.png)
+![Screenshot 58](images/Picture58.png)
+![Screenshot 59](images/Picture59.png)
+![Screenshot 60](images/Picture60.png)
+![Screenshot 61](images/Picture61.png)
+![Screenshot 62](images/Picture62.png)
+![Screenshot 63](images/Picture63.png)
+![Screenshot 64](images/Picture64.png)
+![Screenshot 65](images/Picture65.png)
+![Screenshot 66](images/Picture66.png)
+![Screenshot 67](images/Picture67.png)
+![Screenshot 68](images/Picture68.png)
+![Screenshot 69](images/Picture69.png)
+![Screenshot 70](images/Picture70.png)
+![Screenshot 71](images/Picture71.png)
+![Screenshot 72](images/Picture72.png)
+![Screenshot 73](images/Picture73.png)
+![Screenshot 74](images/Picture74.png)
+![Screenshot 75](images/Picture75.png)
+![Screenshot 76](images/Picture76.png)
+![Screenshot 77](images/Picture77.png)
+![Screenshot 78](images/Picture78.png)
+![Screenshot 79](images/Picture79.png)
+![Screenshot 80](images/Picture80.png)
+![Screenshot 81](images/Picture81.png)
+![Screenshot 82](images/Picture82.png)
