@@ -117,5 +117,6 @@ Diponegoro University🎓
 
 ---
 
+### Full Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
