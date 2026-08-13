@@ -119,7 +119,3 @@ Diponegoro University🎓
 
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
-
-<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
-</a>
-</p>
