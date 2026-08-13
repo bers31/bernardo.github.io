@@ -17,7 +17,7 @@
 
 ## 📖 **Project Description**
 
-This project implements a **supervised learning** approach for **customer segmentation** using multi-class classification techniques. Built as an academic project at Universitas Diponegoro, it leverages the Kaggle dataset `abisheksudarshan/customer-segmentation` to predict customer segments based on demographic and behavioral features.
+This project implements a **supervised learning** approach for **customer segmentation** using multi-class classification techniques. Built as an academic project at Diponegoro University, it leverages the Kaggle dataset `abisheksudarshan/customer-segmentation` to predict customer segments based on demographic and behavioral features.
 
 The solution addresses the critical business challenge of understanding customer behavior patterns, enabling companies to:
 - **Optimize marketing strategies** through targeted campaigns
@@ -208,7 +208,7 @@ nbformat>=5.4.0
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Machine Learning course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+This project was developed as a **complete, self-contained academic assignment** for the Machine Learning course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
 
 | Module | Description | Status |
 |--------|-------------|--------|
@@ -264,7 +264,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2024 Bernardo - Universitas Diponegoro
+Copyright (c) 2024 Bernardo - Diponegoro University
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -280,7 +280,7 @@ copies or substantial portions of the Software.
 
 <p align="center">
 <strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Universitas Diponegoro 🎓
+Diponegoro University 🎓
 </p>
 
 <p align="center">
@@ -303,7 +303,7 @@ Universitas Diponegoro 🎓
 </p>
 
 <p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
 </p>
 
