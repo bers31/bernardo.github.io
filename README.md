@@ -93,8 +93,6 @@ Responsible for data analysis across the Maribaya and Glamping properties, cover
 - 🔗 Streamlined supply chain operations to cut costs.
 - 📈 Prepared comprehensive financial reports that supported higher profitability.
 
-[![View Code](https://img.shields.io/badge/📂_View_Project_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Custom_E_Commerce_Website)
-
 ---
 
 ## 🏆 Featured Project
@@ -123,6 +121,48 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 ---
 
 ## 🔬 Data Science, Machine Learning & NLP Projects
+
+### 🤖 Maribaya Chatbot: NLP-Based Semantic FAQ Assistant
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![NLP](https://img.shields.io/badge/NLP-Sentence%20Embedding-FFD21E?style=flat-square) ![Railway](https://img.shields.io/badge/Deployment-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
+
+<div align="center">
+  <img src="images/maribaya-chatbot-demo.png" alt="Maribaya chatbot demo" width="500">
+</div>
+
+- 🤖 Built an NLP FAQ assistant for Maribaya using embedding-based semantic matching, so visitors get a relevant answer even when their question is loosely worded.
+- ⚡ Capped input length and added automatic 30-day log cleanup, keeping the embedding database fast and storage costs predictable.
+- 🔐 Built an access-key protected admin dashboard with full CRUD control over the chatbot's knowledge base.
+
+[![View Documentation](https://img.shields.io/badge/📄_View_Full_Documentation-6D28D9?style=flat-square)](https://github.com/bers31/bernardo.github.io/tree/main/Maribaya_Chatbot_NLP)
+
+### 🔐 Maribaya Visitor Review System: Token Security & Anomaly Detection
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Security](https://img.shields.io/badge/Security-Token%20Based-DC2626?style=flat-square) ![Railway](https://img.shields.io/badge/Deployment-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
+
+<div align="center">
+  <img src="images/review-form-anomaly-dashboard.png" alt="Review form and anomaly detection dashboard" width="500">
+</div>
+
+- 🔑 Built a visitor review form with token-based access (15-minute expiry) so unsecured links can't be reused for spam.
+- 🚨 Designed a multi-signal anomaly detection engine scoring reviews on repeated identity, text similarity, rating patterns, and off-hours submissions.
+- 📊 Delivered two filterable visualization dashboards, for Maribaya Resort and Glamping Tent, with CSV export.
+
+[![View Documentation](https://img.shields.io/badge/📄_View_Full_Documentation-6D28D9?style=flat-square)](https://github.com/bers31/bernardo.github.io/tree/main/Maribaya_Visitor_Review_Anomaly_Detection)
+
+### 🤖 AI-Driven Information Center Chatbot
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) ![OpenAI](https://img.shields.io/badge/OpenAI_GPT_API-412991?style=flat-square&logo=openai&logoColor=white)
+
+<div align="center">
+  <img src="images/ambarawa-chatbot-demo.png" alt="Ambarawa chatbot demo" width="500">
+</div>
+
+- 🤖 Built a full-stack AI chatbot with Flask and the OpenAI GPT API for a correctional facility's public information service.
+- 🔒 Built a role-based admin dashboard with authentication and brute-force protection.
+- 🔔 Improved the user experience with web push notifications and a responsive layout.
+
+[![View Code](https://img.shields.io/badge/📂_View_Project_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Automated_Information_System_Chatbot)
 
 ### 🛍️ TF-IDF vs SBERT: Aspect-Based Sentiment Classification on E-Commerce Reviews
 
@@ -246,6 +286,34 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 ## 💻 Other Development Projects
 
 These projects show full-stack range outside my core focus on data analysis.
+
+### 🏘️ Property Data Analysis & Investment Intelligence Platform
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Railway](https://img.shields.io/badge/Deployment-Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
+
+<div align="center">
+  <img src="images/property-analysis-dashboard.png" alt="Property analysis dashboard" width="500">
+</div>
+
+- 🗄️ Designed a dual-schema property database, separating fast-changing market data from slow-moving macroeconomic indicators (IHPR, BI Rate, PIR, GDP).
+- 🧭 Built a role-based frontend supporting a full investment analysis workflow, from national indicators down to individual listing evaluation.
+- 💡 Surfaced cross-indicator insights, such as population growth versus housing supply, to flag areas with rising price pressure.
+
+[![View Documentation](https://img.shields.io/badge/📄_View_Full_Documentation-6D28D9?style=flat-square)](https://github.com/bers31/bernardo.github.io/tree/main/Property_Data_Analysis_Investment_Intelligence)
+
+### 💰 Financial Reporting Application
+
+![ReactJS](https://img.shields.io/badge/ReactJS-61DAFB?style=flat-square&logo=react&logoColor=black) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma_ORM-2D3748?style=flat-square&logo=prisma&logoColor=white)
+
+<div align="center">
+  <img src="images/financial-reporting-dashboard.png" alt="Financial reporting dashboard" width="500">
+</div>
+
+- 💰 Built a financial reporting application with ReactJS, MySQL, and Prisma ORM for a district government office.
+- 🎨 Designed an interactive dashboard with real-time visualizations using Chart.js and D3.js.
+- 🔐 Implemented authentication and role-based access control.
+
+[![View Code](https://img.shields.io/badge/📂_View_Project_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Financial_Reporting_Application)
 
 ### 🎓 Student Academic Information System (SI-MAS)
 
@@ -414,9 +482,9 @@ These projects show full-stack range outside my core focus on data analysis.
 
 ## 📫 Contact
 
-<div align="center" class="hero">
+<div align="center" class="hero contact-hero">
 
-Open to project discussions, collaboration, or just connecting with fellow builders.
+<p>Open to project discussions, collaboration, or just connecting with fellow builders.</p>
 
 <a href="https://linkedin.com/in/bernardo-sunia/" target="_blank" rel="noopener">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -430,10 +498,11 @@ Open to project discussions, collaboration, or just connecting with fellow build
 <a href="https://wa.me/6289520501678" target="_blank" rel="noopener">
 <img src="https://img.shields.io/badge/WhatsApp-Chat-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
 </a>
+
 <img src="https://komarev.com/ghpvc/?username=bers31&color=6D28D9&style=for-the-badge&label=Profile+Views" alt="Profile Views" />
 
 <br/><br/>
 
-*Always up for a good data problem.*
+<p><strong><em>Always up for a good data problem.</em></strong></p>
 
 </div>
