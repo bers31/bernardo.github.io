@@ -31,7 +31,7 @@
 
 ## 📖 Project Overview
 
-This repository contains the full implementation of my - Research project at **Universitas Diponegoro**, which investigates how different text representation paradigms affect the performance of Aspect Sentiment Classification (ASC) — a core subtask of Aspect-Based Sentiment Analysis (ABSA) — on real-world Indonesian e-commerce reviews from **Shopee**.
+This repository contains the full implementation of my - Research project at **Diponegoro University**, which investigates how different text representation paradigms affect the performance of Aspect Sentiment Classification (ASC) — a core subtask of Aspect-Based Sentiment Analysis (ABSA) — on real-world Indonesian e-commerce reviews from **Shopee**.
 
 The study systematically compares two foundational yet contrasting approaches to text representation:
 
@@ -285,7 +285,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2024 Bernardo - Universitas Diponegoro
+Copyright (c) 2024 Bernardo - Diponegoro University
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -301,7 +301,7 @@ copies or substantial portions of the Software.
 
 <p align="center">
 <strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Universitas Diponegoro 🎓
+Diponegoro University 🎓
 </p>
 
 <p align="center">
@@ -324,7 +324,7 @@ Universitas Diponegoro 🎓
 </p>
 
 <p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Universitas Diponegoro</em><br/>
+<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
 <img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
 </p>
 
