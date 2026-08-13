@@ -327,7 +327,7 @@ copies or substantial portions of the Software.
 
 <p align="center">
 <strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Universitas Diponegoro 🎓
+Diponegoro University🎓
 </p>
 
 <p align="center">
