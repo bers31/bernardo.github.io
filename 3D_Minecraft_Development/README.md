@@ -257,7 +257,7 @@ g++ -o minecraft_clone main.cpp -lopengl32 -lglu32 -lfreeglut
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Computer Graphics course at Universitas Diponegoro. The scope below reflects what was fully implemented and delivered.
+This project was developed as a **complete, self-contained academic assignment** for the Computer Graphics course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
 
 | Module | Description | Status |
 |--------|-------------|--------|
@@ -311,7 +311,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2024 Bernardo - Universitas Diponegoro
+Copyright (c) 2024 Bernardo - Diponegoro University
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
