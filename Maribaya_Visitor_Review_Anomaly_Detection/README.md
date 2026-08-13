@@ -141,6 +141,7 @@ Diponegoro University🎓
 
 ---
 
+### Full Screenshots
 ![Screenshot 1](images/Picture1.png)
 ![Screenshot 2](images/Picture2.png)
 ![Screenshot 3](images/Picture3.png)
@@ -150,13 +151,3 @@ Diponegoro University🎓
 ![Screenshot 7](images/Picture7.png)
 ![Screenshot 8](images/Picture8.png)
 ![Screenshot 9](images/Picture9.png)
-
-<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
-</a>
-</p>
-<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
-<a href="https://bit.ly/bernardo-my_portfolio">
-<img src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio">
-</a>
-</p>
