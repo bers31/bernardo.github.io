@@ -219,7 +219,7 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 - 💻 Built an interactive Streamlit interface for real-time customer analysis.
 - 🚀 Turned the segments into targeting recommendations the business could act on.
 
-[![View Code](https://img.shields.io/badge/📂_View_Project_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Supervised_Learning_Project)
+[![View Code](https://img.shields.io/badge/📂_View_Project_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Customer_Segmentation_Supervised_Learning_Project)
 
 ### 🎓 Student Performance Clustering
 
@@ -234,7 +234,7 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 - 🎯 Tuned the clustering using silhouette score and hyperparameter search.
 - 📚 Used the resulting groups to support more targeted academic interventions.
 
-[![View Code](https://img.shields.io/badge/📂_View_Project_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Unsupervised_Learning_Project)
+[![View Code](https://img.shields.io/badge/📂_View_Project_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Students_Performance_Clustering_Unsupervised_Learning_Project)
 
 ### 🔎 Search Engine Built on VSM & LSI
 

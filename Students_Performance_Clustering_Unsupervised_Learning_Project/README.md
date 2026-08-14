@@ -77,7 +77,7 @@ pandas>=1.3.0, numpy>=1.21.0, scikit-learn>=1.0.0, matplotlib>=3.4.0, seaborn>=0
 ```bash
 # Clone the repository
 git clone https://github.com/bers31/bernardo.github.io.git
-cd bernardo.github.io/Unsupervised_Learning_Project
+cd bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project
 
 # Install required dependencies
 pip install -r requirements.txt
@@ -103,7 +103,7 @@ python src/clustering_analysis.py
 
 ### **Project Structure**
 ```
-Unsupervised_Learning_Project/
+Students_Performance_Clustering_Unsupervised_Learning_Project/
 ├── data/
 │   ├── raw/
 │   │   └── student_performance.csv
@@ -128,18 +128,18 @@ Unsupervised_Learning_Project/
 
 <div align="center">
 
-<img alt="Streamlit Dashboard Preview" src="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/images/image5.png" width="90%">
+<img alt="Streamlit Dashboard Preview" src="https://bers31.github.io/bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project/images/image5.png" width="90%">
 
-<p><strong>🚀 Live Demo</strong> <a href="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/" target="_blank">Launch Interactive Analysis</a></p>
+<p><strong>🚀 Live Demo</strong> <a href="https://bers31.github.io/bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project/" target="_blank">Launch Interactive Analysis</a></p>
 
 <table>
 <tr>
 <td align="center" width="50%">
-<img alt="Elbow Method Analysis" src="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/images/image.png" width="100%">
+<img alt="Elbow Method Analysis" src="https://bers31.github.io/bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project/images/image.png" width="100%">
 <br><em>Optimal Cluster Selection</em>
 </td>
 <td align="center" width="50%">
-<img alt="PCA Cluster Visualization" src="https://bers31.github.io/bernardo.github.io/Unsupervised_Learning_Project/images/image1.png" width="100%">
+<img alt="PCA Cluster Visualization" src="https://bers31.github.io/bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project/images/image1.png" width="100%">
 <br><em>Student Performance Clusters</em>
 </td>
 </tr>
