@@ -215,6 +215,40 @@
   #content blockquote p{margin:0; color:inherit;}
   #content blockquote strong{color:#92400E;}
 
+  /* ===== GitHub Project Button ===== */
+  #content .github-project-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+    padding:11px 18px;
+    border-radius:8px;
+    background:#211C2E;
+    color:#FFFFFF;
+    font-family:var(--sans);
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+    border:1px solid #211C2E;
+    box-shadow:0 6px 14px rgba(33,28,46,.16);
+    transition:all .2s ease;
+  }
+  
+  #content .github-project-btn:hover{
+    background:#4C1D95;
+    border-color:#4C1D95;
+    color:#FFFFFF;
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(76,29,149,.22);
+  }
+  
+  #content .github-project-btn svg{
+    width:18px;
+    height:18px;
+    flex-shrink:0;
+  }
+  
   @media (max-width:600px){
     #content{padding:20px 14px 72px;}
     #content .hero{padding:40px 22px; border-radius:16px;}
@@ -266,6 +300,32 @@
       var cleanHtml = DOMPurify.sanitize(rawHtml, {ADD_ATTR:['target','rel','align','class']});
 
       contentEl.innerHTML = cleanHtml;
+      // ===== GitHub Project Button =====
+      var githubBtn = document.createElement('a');
+      githubBtn.className = 'github-project-btn';
+      githubBtn.href = 'https://github.com/bers31/bernardo.github.io';
+      githubBtn.target = '_blank';
+      githubBtn.rel = 'noopener noreferrer';
+      githubBtn.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56
+          0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.53-1.33-1.28-1.68-1.28-1.68-1.04-.71.
+          08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.75.4-1.25.73-1.54
+          -2.56-.29-5.26-1.28-5.26-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31
+          3.15 1.18a10.94 10.94 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06
+          .73.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.4-5.27 5.69.41.35.78 1.04.78 2.1 0 1.52-.01 2.75-.01
+          3.12 0 .31.21.68.8.56A10.99 10.99 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+        </svg>
+        <span>View Project on GitHub</span>
+      `;
+      
+      var hero = contentEl.querySelector('.hero');
+      
+      if (hero) {
+        hero.appendChild(githubBtn);
+      } else {
+        contentEl.insertBefore(githubBtn, contentEl.firstChild);
+      }
 
       contentEl.querySelectorAll('a[href^="http"]').forEach(function(a){
         a.setAttribute('target', '_blank');
