@@ -25,13 +25,13 @@
 
 ## 🎯 Professional Summary
 
-Informatics graduate (S.Kom.) from Universitas Diponegoro with hands-on experience as a Data Analyst. Skilled in Python, SQL, machine learning, and Natural Language Processing, with a focus on ABSA and ASQE. Experienced in transforming raw data into actionable insights for business and property investment, from data modeling and analysis to building dashboards for non-technical stakeholders.
+Informatics graduate (S.Kom.) from Diponegoro University with hands-on experience as a Data Analyst. Skilled in Python, SQL, machine learning, and Natural Language Processing, with a focus on ABSA and ASQE. Experienced in transforming raw data into actionable insights for business and property investment, from data modeling and analysis to building dashboards for non-technical stakeholders.
 
 ---
 
 ## 🎓 Education
 
-### 🏛️ Universitas Diponegoro, Bachelor of Science in Informatics
+### 🏛️ Diponegoro University, Bachelor of Science in Informatics
 **August 2022 - March 2026** · GPA 3.78/4.00
 
 - 📚 Concentrated on Data Science, Machine Learning, and Software Engineering.
@@ -79,7 +79,7 @@ Responsible for data analysis across the Maribaya and Glamping properties, cover
 
 [![View Code](https://img.shields.io/badge/📂_View_Project_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Financial_Reporting_Application)
 
-### 🏫 Universitas Diponegoro, Laboratory Teaching Assistant
+### 🏫 Diponegoro University, Laboratory Teaching Assistant
 **June 2023 - June 2025** · Semarang, Indonesia
 
 - 👨‍🏫 Mentored 20+ students in Python programming and algorithmic problem solving.
@@ -449,7 +449,7 @@ These projects show full-stack range outside my core focus on data analysis.
 - 🗄️ **Database Programming with SQL** · Oracle Academy (2024)
 - ☕ **Java Programming** · Oracle Academy (2024)
 - ☁️ **Cloud Computing** · Alibaba Cloud (2024)
-- 📊 **Data Analysis Bootcamp** · Universitas Diponegoro (2023)
+- 📊 **Data Analysis Bootcamp** · Diponegoro University (2023)
 
 [![View Certificates](https://img.shields.io/badge/📂_View_Certificate_Files-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/bers31/bernardo.github.io/tree/main/Certificates)
 
