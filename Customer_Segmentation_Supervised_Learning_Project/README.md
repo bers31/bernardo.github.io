@@ -1,289 +1,786 @@
-<div align="center">
-  <h1>🛍️ Customer Segmentation — Supervised Multi-Class Classification</h1>
-  <p><em>Intelligent customer profiling through advanced machine learning techniques</em></p>
-</div>
+<div class="hero">
 
-<div align="center">
+<h1>🛍️ Customer Segmentation - Supervised Multi-Class Classification</h1>
 
-<img src="https://img.shields.io/badge/python-v3.8+-blue.svg" alt="Python">
-<img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status">
-<img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
-<img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version">
-<img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="Contributions">
+<p>Customer Profiling · Machine Learning Benchmarking · Interactive Streamlit Analytics</p>
 
-</div>
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="scikit-learn"/>
+  <img src="https://img.shields.io/badge/XGBoost-FF6600?style=flat-square&logo=xgboost&logoColor=white" alt="XGBoost"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
+  <img src="https://img.shields.io/badge/ML-Multi--Class%20Classification-6D28D9?style=flat-square" alt="Machine Learning"/>
+  <img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="MIT License"/>
+</p>
 
----
-
-## 📖 **Project Description**
-
-This project implements a **supervised learning** approach for **customer segmentation** using multi-class classification techniques. Built as an academic project at Diponegoro University, it leverages the Kaggle dataset `abisheksudarshan/customer-segmentation` to predict customer segments based on demographic and behavioral features.
-
-The solution addresses the critical business challenge of understanding customer behavior patterns, enabling companies to:
-- **Optimize marketing strategies** through targeted campaigns
-- **Improve customer retention** with personalized experiences  
-- **Enhance resource allocation** based on segment characteristics
-- **Drive revenue growth** through data-driven decision making
-
----
-
-## ✨ **Key Features**
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-<h3>🎯 <strong>Machine Learning Models</strong></h3>
-<ul>
-<li>K-Nearest Neighbors (KNN)</li>
-<li>Random Forest Classifier</li>
-<li>Support Vector Machine (SVM)</li>
-<li>XGBoost Classifier</li>
-<li>Logistic Regression</li>
-</ul>
-
-</td>
-<td width="50%" valign="top">
-
-<h3>🔧 <strong>Advanced Processing</strong></h3>
-<ul>
-<li>Comprehensive ETL pipeline</li>
-<li>Feature engineering & scaling</li>
-<li>Hyperparameter optimization</li>
-<li>Cross-validation techniques</li>
-<li>PCA dimensionality reduction</li>
-</ul>
-
-</td>
-</tr>
-</table>
-
-- **📊 Balanced Dataset Handling**: Stratified sampling with 500 samples per class
-- **🎨 Rich Visualizations**: Interactive EDA with confusion matrices and feature importance plots
-- **⚡ Pipeline Architecture**: Automated preprocessing with scikit-learn pipelines
-- **🔍 Model Interpretability**: Feature importance analysis for business insights
-- **📈 Comprehensive Evaluation**: Multi-metric assessment (Accuracy, Precision, Recall, F1-score)
-
----
-
-## 🛠️ **Technologies & Tools**
-
-<div align="center">
-
-<table width="100%">
-<tr align="center">
-<td><strong>Category</strong></td>
-<td><strong>Technologies</strong></td>
-</tr>
-<tr align="center">
-<td><strong>Programming</strong></td>
-<td><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></td>
-</tr>
-<tr align="center">
-<td><strong>Machine Learning</strong></td>
-<td><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"> <img src="https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost"></td>
-</tr>
-<tr align="center">
-<td><strong>Data Analysis</strong></td>
-<td><img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"> <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"></td>
-</tr>
-<tr align="center">
-<td><strong>Visualization</strong></td>
-<td><img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge" alt="Matplotlib"> <img src="https://img.shields.io/badge/seaborn-9cf?style=for-the-badge" alt="Seaborn"></td>
-</tr>
-<tr align="center">
-<td><strong>Development</strong></td>
-<td><img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"> <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"></td>
-</tr>
-</table>
+<p>
+A supervised machine learning system for customer-group prediction,
+model benchmarking, and interactive customer profiling through Streamlit.
+</p>
 
 </div>
 
 ---
 
-## 🚀 **Installation & Quick Start**
+## 📖 Project Overview
 
-### **Prerequisites**
-```bash
-Python >= 3.8
-pip or conda package manager
+This project develops a **supervised machine learning approach to customer segmentation**, treating predefined customer groups as a **multi-class classification problem**.
+
+Rather than using clustering to discover segments without labels, the system learns from labeled customer data and predicts which segment a new customer belongs to based on available demographic and behavioral characteristics.
+
+The project combines multiple supervised learning algorithms:
+
+```text id="7m1q2a"
+Customer Data
+      ↓
+Data Preparation
+      ↓
+Feature Engineering
+      ↓
+Train / Validation
+      ↓
+┌──────────┬────────────┬──────────┬──────────┐
+│   k-NN   │   Random   │   SVM    │ XGBoost  │
+│          │   Forest   │          │          │
+└──────────┴────────────┴──────────┴──────────┘
+                     ↓
+             Model Comparison
+                     ↓
+          Hyperparameter Tuning
+                     ↓
+          Performance Evaluation
+                     ↓
+          Streamlit Visualization
 ```
 
-### **Setup Instructions**
+The resulting system is intended to make customer-group analysis easier to explore and translate machine learning outputs into business-oriented insights.
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/bers31/bernardo.github.io.git
-   cd bernardo.github.io
-   ```
+> **Portfolio focus:** This project demonstrates supervised machine learning, multi-class classification, model benchmarking, hyperparameter optimization, evaluation, data visualization, and interactive analytical application development.
 
-2. **Create Virtual Environment**
-   ```bash
-   # Using venv
-   python -m venv venv
-   
-   # Activate (Windows)
-   venv\Scripts\activate
-   
-   # Activate (Linux/Mac)
-   source venv/bin/activate
-   ```
+---
 
-3. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🎯 Business Objective
 
-4. **Download Dataset**
-   ```bash
-   # The dataset will be automatically downloaded via kagglehub in the notebook
-   # Or manually place CSV files in data/raw/ directory
-   ```
+Customer groups often differ in their behavior, characteristics, and potential business value.
 
-5. **Run the Analysis**
-   ```bash
-   # Start Jupyter Notebook
-   jupyter notebook
-   
-   # Run notebooks in sequence:
-   # 1. KNN, Random_Forest, SVM.ipynb
-   # 2. XGBoost, Logistic_Regression.ipynb
-   ```
+A predictive segmentation system can help organizations move from generic customer treatment toward more targeted strategies.
 
-### **Dependencies (requirements.txt)**
-```txt
-python>=3.8
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-xgboost>=1.5.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-kagglehub>=0.1.0
-joblib>=1.1.0
-nbformat>=5.4.0
+| Business Need            | Analytical Use                                                   |
+| ------------------------ | ---------------------------------------------------------------- |
+| 🎯 Targeted marketing    | Identify which customer group a customer belongs to              |
+| 👥 Customer profiling    | Understand characteristics of different customer segments        |
+| 🔄 Customer engagement   | Support differentiated engagement strategies                     |
+| 📈 Strategic planning    | Use segment information as an input to business decisions        |
+| ⚙️ Resource allocation   | Focus efforts on relevant customer groups                        |
+| 📊 Data-driven decisions | Replace purely intuition-based grouping with predictive analysis |
+
+---
+
+## 🧠 Why Supervised Customer Segmentation?
+
+This project treats segmentation as a **classification problem**.
+
+The distinction is important:
+
+```text id="p4w8c2"
+Traditional Unsupervised Segmentation
+          ↓
+Discover clusters from unlabeled data
+
+This Project
+          ↓
+Learn predefined customer-group labels
+          ↓
+Predict segment for new customers
+```
+
+This approach is particularly useful when historical customer segments or business-defined labels already exist and the objective is to build a model that can consistently classify future customers.
+
+---
+
+## ✨ Key Features
+
+### 🎯 Multi-Class Customer Classification
+
+The system evaluates multiple supervised classifiers for customer-group prediction.
+
+The primary models include:
+
+* **k-Nearest Neighbors (k-NN)**
+* **Random Forest**
+* **Support Vector Machine (SVM)**
+* **XGBoost**
+
+Each model provides a different modeling strategy, allowing direct benchmarking across multiple algorithm families.
+
+### 🌲 Random Forest
+
+Random Forest provides an ensemble-based approach that can capture nonlinear relationships between customer features.
+
+It is also useful for model interpretation through feature-importance analysis.
+
+### ⚡ XGBoost
+
+XGBoost provides a gradient-boosting approach designed to learn complex feature interactions and nonlinear decision boundaries.
+
+### 🔍 Support Vector Machine
+
+SVM provides a margin-based classification approach and is useful for evaluating how a different decision-boundary strategy performs on the customer dataset.
+
+### 📍 k-Nearest Neighbors
+
+k-NN classifies observations based on the characteristics of nearby observations in feature space.
+
+This provides a distance-based perspective that complements the tree-based and margin-based models.
+
+---
+
+## 🔧 Data Processing & Feature Engineering
+
+The modeling workflow includes data preparation before classification.
+
+The general pipeline is:
+
+```text id="m3w7k1"
+Raw Customer Data
+        ↓
+Data Cleaning
+        ↓
+Feature Preparation
+        ↓
+Encoding / Transformation
+        ↓
+Feature Scaling
+        ↓
+Model Training
+```
+
+The goal is to ensure that customer attributes are represented consistently before being passed to the machine learning models.
+
+### Feature Engineering
+
+Feature engineering focuses on preparing customer characteristics in a form that can be interpreted effectively by the selected classifiers.
+
+This includes appropriate handling of:
+
+* Numerical variables.
+* Categorical variables.
+* Missing or inconsistent values.
+* Feature scales.
+* Model-specific input requirements.
+
+---
+
+## 🧪 Model Benchmarking
+
+One of the central objectives of the project is to compare different supervised learning approaches under a common evaluation framework.
+
+| Model             | Modeling Strategy             | Key Strength                                 |
+| ----------------- | ----------------------------- | -------------------------------------------- |
+| **k-NN**          | Distance-based classification | Local neighborhood patterns                  |
+| **Random Forest** | Ensemble decision trees       | Nonlinear relationships and interpretability |
+| **SVM**           | Margin-based classification   | Effective decision boundaries                |
+| **XGBoost**       | Gradient boosting             | Complex nonlinear feature interactions       |
+
+This benchmarking process makes it possible to evaluate which algorithm provides the most effective customer-group classification for the evaluated dataset.
+
+---
+
+## 🎛️ Hyperparameter Optimization
+
+Model performance is not determined only by algorithm selection.
+
+Each model can behave significantly differently depending on its hyperparameters.
+
+The project therefore incorporates **hyperparameter tuning** to search for configurations that improve classification performance.
+
+Conceptually:
+
+```text id="q8r4x2"
+Model
+  ↓
+Candidate Hyperparameters
+  ↓
+Cross-Validation / Evaluation
+  ↓
+Best Configuration
+  ↓
+Final Model
+```
+
+This prevents the comparison from relying solely on default model settings.
+
+---
+
+## 📊 Model Evaluation
+
+The models are evaluated using multiple classification metrics.
+
+### Accuracy
+
+Measures the proportion of correctly classified customers.
+
+```text id="4t8n2j"
+Accuracy =
+Correct Predictions
+------------------
+Total Predictions
+```
+
+### Precision
+
+Measures how often predictions for a given class are correct.
+
+### Recall
+
+Measures how many customers belonging to a class are successfully identified.
+
+### F1-Score
+
+Balances precision and recall:
+
+```text id="9h3x6c"
+F1 =
+2 × Precision × Recall
+----------------------
+Precision + Recall
+```
+
+Evaluating several metrics is important because a model should not be selected solely on overall accuracy when class-level behavior also matters.
+
+---
+
+## 📈 Evaluation Workflow
+
+```text id="2f8q5n"
+                   Model Training
+                         ↓
+              ┌──────────┴──────────┐
+              ↓                     ↓
+        Validation Data        Test Data
+              ↓                     ↓
+       Hyperparameter          Final Evaluation
+          Tuning                     ↓
+              └──────────┬──────────┘
+                         ↓
+                Performance Metrics
+                         ↓
+               Model Comparison
+```
+
+The resulting metrics are used to identify the strongest candidate model and understand differences between algorithms.
+
+---
+
+## 🎨 Data Visualization
+
+The project uses visualization to make the segmentation analysis easier to interpret.
+
+Visual analysis can include:
+
+* Customer feature distributions.
+* Segment distributions.
+* Confusion matrices.
+* Model comparison.
+* Feature importance.
+* Classification performance.
+
+### Feature Importance
+
+For models that expose feature-importance information, the analysis can help identify which customer attributes contribute most strongly to segment prediction.
+
+Conceptually:
+
+```text id="a5y7q2"
+Customer Features
+       ↓
+Model Prediction
+       ↓
+Feature Contribution / Importance
+       ↓
+Business Interpretation
+```
+
+This is valuable because the system is intended not only to predict a segment but also to help users understand the characteristics behind the prediction.
+
+---
+
+## 🖥️ Streamlit Application
+
+The project includes an interactive **Streamlit application** for exploring segmentation results.
+
+The interface is designed to transform model output into a more accessible analytical experience.
+
+Users can interact with:
+
+* Customer information.
+* Predicted customer groups.
+* Model outputs.
+* Performance visualizations.
+* Segment-level analysis.
+* Classification insights.
+
+### Application Workflow
+
+```text id="h7w3r5"
+Customer Input / Dataset
+        ↓
+Streamlit Interface
+        ↓
+Preprocessing
+        ↓
+Trained Model
+        ↓
+Predicted Segment
+        ↓
+Visualization / Interpretation
+```
+
+This creates a bridge between the underlying machine learning models and stakeholder-facing analytical exploration.
+
+---
+
+## 📊 Customer Profiling
+
+The system supports a customer-profiling workflow:
+
+```text id="p5n8k3"
+Customer Attributes
+       ↓
+ML Classification
+       ↓
+Predicted Segment
+       ↓
+Segment Characteristics
+       ↓
+Business Insight
+```
+
+This allows users to move from individual observations toward broader segment-level understanding.
+
+---
+
+## 🏗️ System Architecture
+
+The project can be viewed through four major layers.
+
+### 📥 Data Layer
+
+Contains the customer dataset and the features used for supervised classification.
+
+### 🔄 Processing Layer
+
+Responsible for:
+
+* Cleaning.
+* Transformation.
+* Feature preparation.
+* Scaling.
+* Dataset preparation for model training.
+
+### 🧠 Modeling Layer
+
+Contains the supervised classification algorithms:
+
+```text id="k2m7w1"
+                 Customer Data
+                      ↓
+          ┌───────────┴───────────┐
+          ↓           ↓           ↓
+         k-NN     Random Forest   SVM
+          │           │           │
+          └───────────┬───────────┘
+                      ↓
+                   XGBoost
+                      ↓
+              Model Comparison
+```
+
+### 📊 Application Layer
+
+The Streamlit interface exposes analytical outputs in an interactive form.
+
+```text id="v6j2p9"
+Machine Learning Models
+          ↓
+Evaluation Results
+          ↓
+Streamlit Dashboard
+          ↓
+Interactive Customer Insights
 ```
 
 ---
 
-## 🎥 **Demo & Screenshots**
+## 🔬 Technical Highlights
 
-<div align="center">
+### Multi-Algorithm Benchmarking
 
-<h3><strong>Project Architecture</strong></h3>
+Instead of relying on a single classifier, the project compares multiple model families to determine which modeling strategy is most effective for the customer dataset.
 
-<pre>
-┌─────────────────────────────────────────────────────────┐
-│                    DATA PIPELINE                        │
-├─────────────────────────────────────────────────────────┤
-│  📥 Data Loading    │  🧹 Data Cleaning  │  🔧 Feature │
-│  (Kaggle API)       │  (ETL Process)      │  Engineering│
-└─────────────────────┴─────────────────────┴─────────────┘
-                              │
-┌─────────────────────────────────────────────────────────┐
-│                 MACHINE LEARNING MODELS                 │
-├─────────────────────────────────────────────────────────┤
-│  🎯 KNN         │  🌲 Random Forest │  ⚡ XGBoost     │
-│  🔍 SVM         │  📈 Logistic Reg  │  🎛️ Tuning      │
-└─────────────────┴────────────────────┴─────────────────┘
-                              │
-┌─────────────────────────────────────────────────────────┐
-│                    EVALUATION                           │
-├─────────────────────────────────────────────────────────┤
-│  📊 Metrics     │  🎨 Visualizations  │  📋 Reports   │
-│  📈 Validation  │  🔍 Interpretability│  💾 Artifacts │
-└─────────────────┴────────────────────┴─────────────────┘
-</pre>
+### Hyperparameter Tuning
 
-<h3><strong>Sample Visualization</strong></h3>
-<p><em>Confusion Matrix and Feature Importance plots are generated automatically</em></p>
+Model configurations are systematically optimized rather than relying solely on default parameters.
 
-<img src="https://bers31.github.io/bernardo.github.io/Customer_Segmentation_Supervised_Learning_Project/images/image4.png" alt="Demo Placeholder">
+### Interpretability
 
-<p><strong>🔗 <a href="https://bers31.github.io/bernardo.github.io/Customer_Segmentation_Supervised_Learning_Project/">View Live Demo</a></strong></p>
+Feature-importance analysis provides an additional layer of interpretation for understanding which variables are associated with customer-group predictions.
 
-</div>
+### Interactive Analytics
+
+Streamlit converts static model outputs into an interactive analytical experience, enabling users to explore results without directly interacting with notebook code.
+
+### Reproducible Research Workflow
+
+Jupyter Notebook provides a structured environment for experimentation, analysis, and documentation of the modeling workflow.
+
+---
+
+## 📊 Project Workflow
+
+The full analytical workflow can be summarized as:
+
+```text id="s7m3y9"
+1. Load Customer Dataset
+          ↓
+2. Explore Customer Characteristics
+          ↓
+3. Clean & Prepare Data
+          ↓
+4. Engineer Features
+          ↓
+5. Train Multiple Classifiers
+          ↓
+6. Tune Hyperparameters
+          ↓
+7. Evaluate Classification Performance
+          ↓
+8. Compare Models
+          ↓
+9. Visualize Segment Insights
+          ↓
+10. Expose Results through Streamlit
+```
 
 ---
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Machine Learning course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
+This project was developed as an academic **Machine Learning project at Diponegoro University** and focuses on supervised customer-group classification.
 
-| Module | Description | Status |
-|--------|-------------|--------|
-| 🔍 **Exploratory Data Analysis** | Statistical profiling, distribution analysis, and correlation visualization of the Kaggle customer segmentation dataset | ✅ Done |
-| 🧹 **ETL & Feature Engineering** | Data cleaning, categorical encoding, feature scaling, and stratified sampling (500 samples/class) | ✅ Done |
-| 🎯 **KNN Classifier** | K-Nearest Neighbors with hyperparameter tuning via Grid Search | ✅ Done |
-| 🌲 **Random Forest Classifier** | Ensemble tree-based model with feature importance analysis | ✅ Done |
-| 🔍 **SVM Classifier** | Support Vector Machine with kernel optimization | ✅ Done |
-| ⚡ **XGBoost Classifier** | Gradient boosting model with cross-validation | ✅ Done |
-| 📈 **Logistic Regression** | Baseline multi-class classifier with regularization tuning | ✅ Done |
-| 📊 **Model Evaluation** | Comprehensive assessment using Accuracy, Precision, Recall, F1-score, and confusion matrices | ✅ Done |
-
----
-
-## 🤝 **Contributing**
-
-We welcome contributions from the community! Here's how you can help:
-
-### **Ways to Contribute**
-- 🐛 **Bug Reports**: Found an issue? Create a detailed bug report
-- ✨ **Feature Requests**: Suggest new features or improvements  
-- 📖 **Documentation**: Help improve our documentation
-- 🧪 **Testing**: Add test cases or improve existing ones
-- 🎨 **Visualizations**: Enhance charts and plots
-
-### **Contribution Guidelines**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### **Development Setup**
-```bash
-# Clone your fork
-git clone https://github.com/your-username/bernardo.github.io.git
-
-# Add upstream remote
-git remote add upstream https://github.com/bers31/bernardo.github.io.git
-
-# Create development environment
-python -m venv dev-env
-source dev-env/bin/activate  # or dev-env\Scripts\activate on Windows
-pip install -r requirements-dev.txt
-```
+| Module                        | Description                                                | Status        |
+| ----------------------------- | ---------------------------------------------------------- | ------------- |
+| 📊 **Exploratory Analysis**   | Analyze customer characteristics and segment distributions | ✅ Implemented |
+| 🧹 **Data Preparation**       | Cleaning and preparation of model inputs                   | ✅ Implemented |
+| 🔧 **Feature Engineering**    | Transform customer attributes for classification           | ✅ Implemented |
+| 📍 **k-NN**                   | Distance-based multi-class classification                  | ✅ Implemented |
+| 🌲 **Random Forest**          | Ensemble classification with interpretability              | ✅ Implemented |
+| 🔍 **SVM**                    | Margin-based classification                                | ✅ Implemented |
+| ⚡ **XGBoost**                 | Gradient-boosting classification                           | ✅ Implemented |
+| 🎛️ **Hyperparameter Tuning** | Optimize model configurations                              | ✅ Implemented |
+| 📈 **Model Evaluation**       | Accuracy, precision, recall, and F1-score                  | ✅ Implemented |
+| 🎨 **Visualization**          | Confusion matrices and model/feature analysis              | ✅ Implemented |
+| 🖥️ **Streamlit Application** | Interactive customer segmentation exploration              | ✅ Implemented |
 
 ---
 
-## 📄 **License**
+## 💼 Portfolio Alignment
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+The README is aligned with the competencies represented in the project description:
 
+| LinkedIn Capability              | Project Evidence                                       |
+| -------------------------------- | ------------------------------------------------------ |
+| Supervised customer segmentation | Multi-class customer-group classification              |
+| Random Forest                    | Ensemble classifier                                    |
+| SVM                              | Margin-based classification                            |
+| XGBoost                          | Gradient boosting classifier                           |
+| k-NN                             | Distance-based classifier                              |
+| Model benchmarking               | Cross-model performance comparison                     |
+| Hyperparameter tuning            | Optimization of model configurations                   |
+| Model evaluation                 | Precision, recall, F1-score, and accuracy              |
+| Streamlit                        | Interactive segmentation application                   |
+| UI/UX                            | User-friendly analytical visualization                 |
+| Customer insights                | Segment-level profiling                                |
+| Real-time analysis               | Interactive customer analysis within the application   |
+| Documentation                    | Notebook-based workflow and architecture documentation |
+
+> **Portfolio positioning:** This project demonstrates how supervised machine learning can convert customer attributes into actionable segment predictions and expose those predictions through an interactive analytical interface.
+
+---
+
+## 📌 Business Applications
+
+A predictive customer-segmentation framework can support use cases such as:
+
+### 🎯 Targeted Marketing
+
+Different customer segments can receive differentiated campaigns based on their characteristics.
+
+### 🤝 Customer Engagement
+
+Segment-aware strategies can help tailor engagement to customer profiles.
+
+### 📈 Decision Support
+
+Segment predictions can become an input to broader business analysis.
+
+### ⚙️ Resource Allocation
+
+Organizations can use segment information to prioritize marketing or operational resources.
+
+The core idea is:
+
+```text id="1s4x5m"
+Customer Data
+     ↓
+Predicted Segment
+     ↓
+Customer Profile
+     ↓
+Business Strategy
 ```
-MIT License
 
-Copyright (c) 2024 Bernardo - Diponegoro University
+---
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
+## 📊 From Model Output to Business Insight
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+A machine learning prediction becomes more useful when it can be interpreted in business terms.
+
+For example:
+
+```text id="b3m6q7"
+Prediction
+    ↓
+"Customer belongs to Segment A"
+    ↓
+Which features characterize Segment A?
+    ↓
+What differentiates Segment A from other segments?
+    ↓
+What business strategy is appropriate?
 ```
 
-## 📫 Contact & Connect
+This project therefore combines predictive modeling with visualization and profiling rather than treating classification output as the final analytical product.
 
-<p align="center">
-<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Diponegoro University 🎓
+---
+
+## 🖥️ Demo & Screenshots
+
+### 🌐 Live Project
+
+<div align="center">
+
+<p>
+<strong>🖥️ Interactive Customer Segmentation Application</strong>
 </p>
 
-<p align="center">
+<p>
+<a href="https://bers31.github.io/bernardo.github.io/Customer_Segmentation_Supervised_Learning_Project/">
+<strong>► View Live Project</strong>
+</a>
+</p>
+
+</div>
+
+### 📸 Application Preview
+
+![Project Visualization](images/image4.png)
+
+*Example visualization from the customer segmentation analysis.*
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer                   | Technology               | Purpose                                   |
+| ----------------------- | ------------------------ | ----------------------------------------- |
+| 🐍 **Programming**      | **Python**               | Core implementation                       |
+| 📓 **Research**         | **Jupyter Notebook**     | Experimentation and model analysis        |
+| 🖥️ **Application**     | **Streamlit**            | Interactive customer profiling            |
+| 📊 **Data Analysis**    | **Pandas / NumPy**       | Data preparation and numerical processing |
+| 🤖 **Machine Learning** | **scikit-learn**         | Classification and preprocessing          |
+| ⚡ **Boosting**          | **XGBoost**              | Gradient-boosted classification           |
+| 📈 **Visualization**    | **Matplotlib / Seaborn** | Model and customer analysis               |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Python 3.8 or newer.
+* `pip` or Conda.
+* Jupyter Notebook.
+* Streamlit.
+
+### Clone the Repository
+
+```bash id="r4c7m2"
+git clone https://github.com/bers31/bernardo.github.io.git
+cd bernardo.github.io
+```
+
+### Create a Virtual Environment
+
+Windows:
+
+```bash id="f5p3t7"
+python -m venv venv
+venv\Scripts\activate
+```
+
+macOS / Linux:
+
+```bash id="m4k8q1"
+python -m venv venv
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash id="v6r9c2"
+pip install -r requirements.txt
+```
+
+### Launch Jupyter Notebook
+
+```bash id="w2f6p8"
+jupyter notebook
+```
+
+Open the relevant analysis notebooks and execute the workflow sequentially.
+
+### Launch the Streamlit Application
+
+```bash id="p8k3v5"
+streamlit run app.py
+```
+
+The exact application filename may differ depending on the final repository structure.
+
+---
+
+## 📦 Recommended Dependencies
+
+```txt id="z4m8q1"
+pandas
+numpy
+scikit-learn
+xgboost
+matplotlib
+seaborn
+jupyter
+streamlit
+```
+
+Exact versions should be pinned in `requirements.txt` when reproducibility across environments is required.
+
+---
+
+## 📁 Project Structure
+
+A portfolio-oriented structure can be organized as:
+
+```text id="c5x7m2"
+Customer_Segmentation/
+│
+├── 📂 data/
+│   ├── raw/                     # Original customer data
+│   └── processed/               # Prepared modeling data
+│
+├── 📂 notebooks/
+│   ├── exploration.ipynb        # Exploratory data analysis
+│   ├── preprocessing.ipynb      # Data preparation
+│   ├── models.ipynb             # Model training and comparison
+│   └── evaluation.ipynb         # Model evaluation
+│
+├── 📂 src/
+│   ├── preprocessing.py         # Data preparation
+│   ├── models.py                # Model definitions
+│   ├── evaluation.py            # Evaluation utilities
+│   └── visualization.py         # Visualization utilities
+│
+├── 📂 images/
+│   ├── image.png
+│   ├── image1.png
+│   ├── image2.png
+│   ├── image3.png
+│   ├── image4.png
+│   └── image5.png
+│
+├── requirements.txt
+├── LICENSE
+└── README.md
+```
+
+---
+
+## 🔭 Future Development
+
+Potential extensions include:
+
+* Real-time customer-data ingestion.
+* Automated segment prediction APIs.
+* Customer lifetime-value integration.
+* Customer churn prediction.
+* Personalized recommendation workflows.
+* Automated marketing campaign targeting.
+* More advanced explainable-AI techniques.
+* Model monitoring and drift detection.
+* Larger and more diverse customer datasets.
+* Production-oriented deployment.
+
+These represent future directions and are not presented as current implementations unless explicitly available in the repository.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome for improvements to the machine learning pipeline, visualization, Streamlit interface, documentation, and experimentation.
+
+### Contribution Workflow
+
+```bash id="j6q2x8"
+git checkout -b feature/my-improvement
+git add .
+git commit -m "Improve customer classification"
+git push origin feature/my-improvement
+```
+
+Then open a Pull Request describing the implementation and its expected analytical impact.
+
+### Guidelines
+
+* Keep preprocessing and model components modular.
+* Document changes to model configurations.
+* Validate model modifications using the existing evaluation methodology.
+* Test Streamlit interactions after interface changes.
+* Update documentation when the analytical workflow changes.
+
+---
+
+## 📄 License
+
+The source code and original documentation intentionally published in this repository are licensed under the **MIT License**.
+
+See [`LICENSE`](LICENSE) for the complete license text.
+
+> Third-party libraries, datasets, pretrained components, and other external materials remain subject to their respective licenses and terms.
+
+---
+
+<div class="contact-hero">
+
+<p><strong>Interested in the project?</strong></p>
+
+<p>
+👨‍💻 <strong>Bernardo Nandaniar Sunia</strong><br/>
+Bachelor of Computer Science — Diponegoro University<br/>
+Machine Learning · Customer Analytics · Data Applications
+</p>
+
+<p>
 <a href="https://linkedin.com/in/bernardo-sunia/">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -298,24 +795,36 @@ Diponegoro University 🎓
 </a>
 </p>
 
-<p align="center">
-⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+<p>
+<em>Machine Learning · Customer Segmentation · Classification · Interactive Analytics</em>
 </p>
 
-<p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
-</p>
+</div>
 
 ---
 
-### Screenshots
+## 📸 Full Screenshots
+
 ![Screenshot 1](images/image.png)
+
 ![Screenshot 2](images/image1.png)
+
 ![Screenshot 3](images/image2.png)
+
 ![Screenshot 4](images/image3.png)
+
 ![Screenshot 5](images/image4.png)
+
 ![Screenshot 6](images/image5.png)
 
-### Conclusion
-This project highlights the application of advanced supervised learning techniques for effective customer segmentation. By leveraging algorithms such as k-NN, Random Forest, SVM, XGBoost, and Logistic Regression, we have successfully demonstrated how machine learning can provide actionable insights into customer behavior. The results from this project can help businesses design more targeted marketing strategies, enhance customer engagement, and optimize resource allocation. Furthermore, the outlined future work presents opportunities for improving the system with cutting-edge technologies and real-time capabilities, ensuring scalability and adaptability in dynamic business environments.
+---
+
+## 📌 Conclusion
+
+This project demonstrates how **supervised machine learning can be applied to customer segmentation as a multi-class classification problem**.
+
+By benchmarking **k-NN, Random Forest, SVM, and XGBoost**, the project provides a structured comparison of different algorithm families while incorporating hyperparameter tuning and multi-metric evaluation.
+
+The addition of an interactive **Streamlit application** transforms the resulting models from a notebook-only experiment into a more accessible analytical tool for exploring customer groups and their characteristics.
+
+Overall, the project combines **machine learning, model evaluation, customer profiling, visualization, and interactive analytics** to demonstrate how predictive customer segmentation can support more targeted and data-driven business decisions.

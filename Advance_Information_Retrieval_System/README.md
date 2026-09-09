@@ -1,15 +1,23 @@
-# 🤖 Neural Information Retrieval (IR) Based on mBERT
-### 🔍 *Multilingual document retrieval powered by transformer embeddings and advanced ranking algorithms*
+<div class="hero">
 
----
+<h1>🤖 Neural Information Retrieval Based on mBERT</h1>
 
-<div align="center">
+<p>Multilingual Semantic Search & Neural Ranking System</p>
 
-<img src="https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge" alt="Build Status"/>
-<img src="https://img.shields.io/badge/python-3.8%2B-blue.svg?style=for-the-badge&logo=python" alt="Python Version"/>
-<img src="https://img.shields.io/badge/license-MIT-orange.svg?style=for-the-badge" alt="License"/>
-<img src="https://img.shields.io/badge/model-mBERT-red.svg?style=for-the-badge&logo=tensorflow" alt="mBERT"/>
-<img src="https://img.shields.io/badge/demo-Streamlit-FF4B4B.svg?style=for-the-badge&logo=streamlit" alt="Streamlit"/>
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/mBERT-Hugging%20Face-F7931E?style=flat-square&logo=huggingface&logoColor=white" alt="mBERT"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/FAISS-Similarity%20Search-0467DF?style=flat-square" alt="FAISS"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License"/>
+</p>
+
+<p>
+A multilingual neural information retrieval system that combines transformer-based
+semantic embeddings, vector similarity search, information retrieval evaluation,
+and an interactive Streamlit interface.
+</p>
 
 </div>
 
@@ -17,370 +25,625 @@
 
 ## 📖 Project Overview
 
-<div align="center">
-<img src="https://img.shields.io/badge/Status-Active%20Development-success?style=flat-square" alt="Status"/>
-<img src="https://img.shields.io/badge/Type-Research%20Project-informational?style=flat-square" alt="Type"/>
-<img src="https://img.shields.io/badge/Domain-Information%20Retrieval-purple?style=flat-square" alt="Domain"/>
-</div>
+**Neural Information Retrieval (IR)** is a research-oriented search system designed to retrieve relevant documents based on **semantic similarity**, rather than relying exclusively on exact keyword matching.
 
-### 🎯 **Background & Motivation**
+The project uses **mBERT (Multilingual BERT)** through the Hugging Face Transformers ecosystem to encode queries and documents into dense contextual representations. These representations are then indexed and searched using **FAISS** for efficient similarity retrieval.
 
-Traditional Information Retrieval (IR) systems rely heavily on statistical methods like **BM25** and **TF-IDF**. While effective, these approaches often struggle with semantic understanding and multilingual contexts. 
+The system was designed to support **Indonesian and English documents**, providing a practical demonstration of multilingual semantic search and modern neural information retrieval techniques.
 
-This project leverages the power of **mBERT (Multilingual BERT)** to generate rich, contextual embeddings that significantly enhance search quality across multiple languages. By combining state-of-the-art transformer models with advanced ranking algorithms, we create a robust end-to-end IR pipeline.
+> **Portfolio focus:** This project demonstrates practical experience in NLP, transformer-based representation learning, information retrieval, vector search, model evaluation, data processing, visualization, and deployment-oriented application development.
 
-### 🌟 **Key Benefits**
+---
 
-- **🌍 Multilingual Support**: Search across languages without retraining
-- **🧠 Semantic Understanding**: Context-aware document matching
-- **📊 Comprehensive Evaluation**: Multiple ranking algorithms comparison  
-- **🔬 Research-Ready**: Modular framework for IR experimentation
+## 🎯 Research Objective
+
+The main objective is to investigate how a neural retrieval pipeline can improve semantic document retrieval compared with traditional lexical approaches such as **BM25**.
+
+The project focuses on four major questions:
+
+1. Can contextual transformer embeddings improve semantic matching between queries and documents?
+2. Can multilingual representations support retrieval across Indonesian and English content?
+3. Can FAISS provide efficient similarity search over dense document embeddings?
+4. How does the neural retrieval approach perform under standard information retrieval metrics?
 
 ---
 
 ## ✨ Key Features
 
-| 🚀 **Core Capabilities** | 🛠️ **Advanced Algorithms** |
-|---------------------------|----------------------------|
-| **End-to-End IR Pipeline** from raw data to evaluation | **Cosine Similarity** (Baseline approach) |
-| **Multiple Ranking Methods** comparison framework | **XGBoost** Learning-to-Rank implementation |
-| **Transformer-Based Embeddings** using mBERT | **RankNet** Pairwise ranking neural network |
-| **Comprehensive Metrics** (Precision, Recall, F1-Score) | **LambdaMART** Advanced ranking algorithm |
+### 🌍 Multilingual Semantic Search
+
+* Supports semantic retrieval for **Indonesian and English documents**.
+* Uses mBERT contextual representations rather than relying only on exact keyword overlap.
+* Allows queries and documents to be compared in a shared multilingual representation space.
+* Designed to capture semantic relationships that may not be expressed through identical words.
+
+### 🤖 Transformer-Based Document Encoding
+
+* Uses **Hugging Face Transformers** for mBERT-based representation learning.
+* Encodes queries and documents into dense vector representations.
+* Contextual embeddings provide richer semantic information than conventional bag-of-words representations.
+* PyTorch is used as the underlying deep learning framework.
+
+### ⚡ FAISS Vector Search
+
+* Uses **FAISS** for efficient similarity search over dense embeddings.
+* Supports fast retrieval from large embedding collections.
+* Designed to provide low-latency query processing.
+* Reduces the computational cost of repeatedly comparing queries against every document.
+
+### 🔎 Neural Information Retrieval Pipeline
+
+The system connects multiple stages into one retrieval workflow:
+
+```text
+Query
+  ↓
+Text Processing
+  ↓
+mBERT Encoding
+  ↓
+Dense Query Embedding
+  ↓
+FAISS Similarity Search
+  ↓
+Candidate Documents
+  ↓
+Ranking / Evaluation
+  ↓
+Top-K Results
+```
+
+### 📊 Evaluation & Benchmarking
+
+The retrieval system is evaluated using established information retrieval metrics, including:
+
+* **Mean Reciprocal Rank (MRR)**
+* **Precision@K**
+* **Recall@K**
+
+The project also compares the neural approach against a **traditional BM25 baseline** to assess retrieval improvement.
+
+### 📈 Embedding & Similarity Visualization
+
+Interactive and analytical visualizations are used to understand model behavior, including:
+
+* Embedding cluster visualization.
+* Query-document similarity patterns.
+* Similarity heatmaps.
+* Retrieval result analysis.
+
+Visualization is implemented using **Matplotlib** and **Plotly**.
+
+### 🖥️ Interactive Streamlit Application
+
+The retrieval engine is integrated into a Streamlit interface that allows users to:
+
+* Submit search queries.
+* Retrieve top-ranked documents.
+* Experiment with semantic search.
+* Inspect retrieval behavior.
+* Visualize search and model-related information.
+
+### 🐳 Reproducible Development Environment
+
+The project incorporates:
+
+* Git/GitHub for version control.
+* Docker for reproducible environments.
+* Documentation for setup and development.
+* Modular components for experimentation and future extension.
 
 ---
 
 ## 🛠️ Technology Stack
 
-<div align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
-<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn"/>
-</div>
-
-### **Core Technologies**
-
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Tools & Libraries</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>🐍 Core Language</strong></td>
-<td><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python"/></td>
-<td>Main development language</td>
-</tr>
-<tr>
-<td><strong>📊 Data Processing</strong></td>
-<td><code>pandas</code> <code>numpy</code></td>
-<td>Data manipulation and analysis</td>
-</tr>
-<tr>
-<td><strong>🔍 IR Framework</strong></td>
-<td><code>ir_datasets</code></td>
-<td>Dataset loading and management</td>
-</tr>
-<tr>
-<td><strong>🤖 ML & Embeddings</strong></td>
-<td><code>sentence-transformers</code> <code>scikit-learn</code></td>
-<td>Embedding generation and similarity</td>
-</tr>
-<tr>
-<td><strong>🏆 Ranking Models</strong></td>
-<td><code>xgboost</code> <code>lightgbm</code></td>
-<td>Advanced ranking algorithms</td>
-</tr>
-<tr>
-<td><strong>📈 Visualization</strong></td>
-<td><code>streamlit</code> <code>matplotlib</code></td>
-<td>Interactive demos and plots</td>
-</tr>
-<tr>
-<td><strong>⚡ Performance</strong></td>
-<td><code>numpy</code> vectorization</td>
-<td>Optimized computations</td>
-</tr>
-</tbody>
-</table>
+| Category               | Technology                    | Role                                            |
+| ---------------------- | ----------------------------- | ----------------------------------------------- |
+| 🐍 Programming         | **Python**                    | Main development language                       |
+| 🤗 NLP / Transformer   | **Hugging Face Transformers** | mBERT model integration and text representation |
+| 🧠 Deep Learning       | **PyTorch**                   | Model training and inference                    |
+| ⚡ Vector Search        | **FAISS**                     | Dense embedding similarity search               |
+| 📊 Data Processing     | **Pandas**                    | Data loading, cleaning, and transformation      |
+| 🔢 Numerical Computing | **NumPy**                     | Numerical and vectorized operations             |
+| 📓 Research            | **Jupyter Notebook**          | Experimentation and exploratory analysis        |
+| 🖥️ Application        | **Streamlit**                 | Interactive retrieval interface                 |
+| 📈 Visualization       | **Matplotlib**                | Analytical plots and visualizations             |
+| 📊 Visualization       | **Plotly**                    | Interactive charts and model analysis           |
+| 🐳 Reproducibility     | **Docker**                    | Containerized development and execution         |
+| 🔧 Version Control     | **Git / GitHub**              | Source control and collaboration                |
 
 ---
 
-## 🚀 Installation & Quick Start
+## 🧩 System Architecture
 
-### **Prerequisites**
-- Python 3.8 or higher
-- 8GB+ RAM recommended for embedding generation
-- CUDA-capable GPU (optional, for faster processing)
+The system can be viewed as a series of interconnected processing layers.
 
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/bers31/bernardo.github.io.git
-cd bernardo.github.io
+### 📥 Data & Corpus Layer
+
+The system begins with a collection of queries, documents, and relevance information used for training and evaluation.
+
+Typical data components include:
+
+| Component             | Purpose                                                      |
+| --------------------- | ------------------------------------------------------------ |
+| Query Collection      | User or benchmark search queries                             |
+| Document Corpus       | Collection of searchable documents                           |
+| Relevance Information | Ground-truth information for evaluation                      |
+| Custom Corpus         | Multilingual documents used by the neural retrieval pipeline |
+
+---
+
+### 🔄 Text Processing Layer
+
+The preprocessing stage prepares the raw data for both model training and inference.
+
+Typical operations include:
+
+```text
+Raw Text
+   ↓
+Cleaning
+   ↓
+Normalization
+   ↓
+Tokenization
+   ↓
+Model Input
 ```
 
-### **2. Install Dependencies**
-```bash
-# Create virtual environment (recommended)
-python -m venv neural_ir_env
-source neural_ir_env/bin/activate  # On Windows: neural_ir_env\Scripts\activate
+Python, Pandas, and NumPy are used to build a scalable preprocessing workflow.
 
-# Install required packages
-pip install -r requirements.txt
+The goal is to maintain consistent text representation throughout the pipeline.
+
+---
+
+### 🤖 Transformer Encoding Layer
+
+Queries and documents are transformed into contextual representations using mBERT.
+
+```text
+Query ──────┐
+            ├──> mBERT ──> Dense Embedding
+Document ───┘
 ```
 
-### **3. Data Preprocessing & ETL**
-```bash
-# Run ETL pipeline
-python src/etl.py --input raw/ --output processed/
+The resulting vectors represent contextual semantic information that can be used for similarity-based retrieval.
+
+Where applicable, the model can be fine-tuned using project-specific data to adapt the representation to the retrieval task.
+
+---
+
+### ⚡ Vector Retrieval Layer
+
+Dense document embeddings are indexed with **FAISS**.
+
+At inference time:
+
+```text
+New Query
+    ↓
+mBERT Encoder
+    ↓
+Query Embedding
+    ↓
+FAISS Index
+    ↓
+Nearest Neighbors
+    ↓
+Top-K Documents
 ```
 
-### **4. Generate Embeddings**
-```bash
-# Generate mBERT embeddings for queries and documents
-python src/embedding.py
+This architecture is intended to maintain efficient search performance as the embedding collection grows.
+
+---
+
+### 📈 Evaluation Layer
+
+Retrieval performance is evaluated using:
+
+| Metric              | Purpose                                                             |
+| ------------------- | ------------------------------------------------------------------- |
+| **MRR**             | Measures how highly the first relevant result is ranked             |
+| **Precision@K**     | Measures the proportion of relevant results within the top-K        |
+| **Recall@K**        | Measures how many relevant documents are retrieved within the top-K |
+| **BM25 Comparison** | Provides a traditional lexical baseline                             |
+
+> **Evaluation principle:** The neural retrieval approach is assessed against a conventional BM25 baseline to measure whether contextual semantic representations provide a measurable retrieval advantage.
+
+---
+
+## 🔬 Technical Highlights
+
+### Multilingual Representation Learning
+
+mBERT provides contextual representations across multiple languages, making it suitable for a multilingual retrieval setting.
+
+Rather than treating Indonesian and English terms purely as independent keywords, the system uses transformer representations to capture contextual information within each query and document.
+
+### Dense Vector Retrieval
+
+Instead of scoring documents only through lexical term matching, documents are represented as dense vectors.
+
+Conceptually:
+
+```text
+Document
+   ↓
+Transformer Encoder
+   ↓
+Dense Vector
+   ↓
+FAISS Index
 ```
 
-### **5. Train & Evaluate Ranking Models**
-```bash
-# Run all ranking algorithms
-python src/ranking_cosine.py
-python src/ranking_xgboost.py  
-python src/ranking_ranknet.py
-python src/ranking_lambdamart.py
+Queries follow the same representation process before similarity search.
+
+### Semantic Similarity Search
+
+Given a query vector `q` and document vectors `d`, the retrieval system searches for documents that are closest to the query in the embedding space.
+
+A conceptual similarity function can be represented as:
+
+```text
+similarity(q, d) = q · d
 ```
 
-### **6. Launch Interactive Demo**
-```bash
-# Start Streamlit application
-streamlit run app.py
+or through a normalized similarity measure such as cosine similarity, depending on the retrieval configuration.
+
+### BM25 Baseline Comparison
+
+Traditional BM25 provides a valuable lexical baseline because it establishes how much improvement is obtained from the neural representation approach.
+
+The comparison can be summarized as:
+
+```text
+BM25
+Keyword / lexical matching
+        ↓
+Baseline retrieval
+
+mBERT + FAISS
+Contextual embeddings
+        ↓
+Semantic retrieval
 ```
+
+### Low-Latency Vector Search
+
+FAISS is used to make dense-vector retrieval practical for larger embedding collections.
+
+This is particularly important because a neural retrieval system would otherwise need to compare every query embedding against every document embedding at inference time.
+
+---
+
+## 🖥️ Interactive Application
+
+The neural retrieval engine is exposed through a **Streamlit application**.
+
+The interface is intended to provide a practical way to test the model outside of a notebook environment.
+
+Users can experiment with:
+
+* Real-time search queries.
+* Top-ranked document retrieval.
+* Semantic matching behavior.
+* Retrieval result inspection.
+* Similarity and embedding visualizations.
+
+### Live Demo
+
+<div align="center">
+
+<p>
+<strong>🌐 Neural Information Retrieval Application</strong>
+</p>
+
+<p>
+<a href="https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/">
+<strong>► Launch Project Demo</strong>
+</a>
+</p>
+
+<img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit"/>
+
+</div>
 
 ---
 
 ## 🎥 Demo & Screenshots
 
+### 🌐 Application Dashboard
 
-### 🌐 Live Demo
-[**► Launch Application**](https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/)
+![Main Dashboard](images/image5.png)
 
-![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
+*Interactive interface for querying and exploring the retrieval system.*
 
-<details>
-<summary><b>📸 Click to view screenshots</b></summary>
+### 🔎 Search Results
 
-<div align="center">
+![Search Results](images/image1.png)
 
-<p><strong>Main Dashboard</strong></p>
-<img src="https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/images/image5.png" alt="Main Dashboard" width="80%"/>
+*Example of retrieved and ranked documents produced by the system.*
 
-<p><strong>Search Results Comparison</strong></p>
-<img src="https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/images/image1.png" alt="Search Results" width="80%"/>
+### 📊 Performance Visualization
 
-<p><strong>Performance Metrics Visualization</strong></p>
-<img src="https://bers31.github.io/bernardo.github.io/Advance_Information_Retrieval_System/images/image.png" alt="Performance Metrics" width="80%"/>
+![Performance Visualization](images/image.png)
 
-</div>
+*Visualization of retrieval and model-related results.*
 
-</details>
+### 📈 Additional Application Views
+
+![Application View](images/image2.png)
+
+![Application View](images/image3.png)
+
+![Application View](images/image4.png)
 
 ---
 
-## 📊 Project Architecture
+## 📊 Project Workflow
 
-The system is organized into five sequential layers, each with a distinct responsibility in the IR pipeline.
+The complete workflow can be summarized as:
 
-**Layer 1 — Data Input**
-
-| Source | Description |
-|--------|-------------|
-| 📁 Queries Collection | Raw search queries from the Vaswani test collection |
-| 📋 Documents Collection | Corpus of documents to be retrieved and ranked |
-| 📊 Relevance Judgments (Qrels) | Ground-truth relevance labels for evaluation |
-
-**Layer 2 — ETL Pipeline**
-
-| Step | Operation |
-|------|-----------|
-| Case Folding | Normalize text to lowercase |
-| Deduplication | Remove duplicate entries across corpus |
-| Missing Data Handling | Filter and impute incomplete records |
-| Text Normalization | Standardize punctuation, whitespace, and encoding |
-
-**Layer 3 — Embedding & Feature Engineering**
-
-| Component | Detail |
-|-----------|--------|
-| 🤖 mBERT Encoder | `paraphrase-multilingual-mpnet-base-v2` |
-| Output Dimensionality | 768-d contextual vectors per query and document |
-| Primary Features | Query embeddings, document embeddings, cosine similarity scores |
-| Additional Features | Text length ratios, word count statistics, query-document overlap |
-
-**Layer 4 — Ranking Algorithms**
-
-| Algorithm | Type | Description |
-|-----------|------|-------------|
-| 📏 Cosine Similarity | Baseline | Direct similarity scoring between embeddings |
-| 🌳 XGBoost | Learning-to-Rank | Gradient boosted tree ranker |
-| 🧠 RankNet | Pairwise Neural | Neural network trained on pairwise preferences |
-| 🎯 LambdaMART | Listwise LTR | Advanced gradient boosting with NDCG optimization — **Best: F1 0.817** |
-
-**Layer 5 — Evaluation & Interface**
-
-| Component | Description |
-|-----------|-------------|
-| 📈 Per-Query Metrics | Precision@K, Recall@K, F1-Score@K |
-| 📈 Aggregate Metrics | Mean Average Precision (MAP), Normalized DCG (NDCG) |
-| 🖥️ Streamlit Dashboard | Interactive web UI for live search and result visualization |
-| 📓 Jupyter Notebooks | Research exploration and development environment |
-| 🔧 CLI Tools | `etl.py`, `embedding.py`, `ranking_*.py`, `evaluate.py` |
-
-### System Flow
-
-1. **📁 Data Input** → Vaswani Dataset loaded via `ir_datasets`
-2. **🔄 ETL Pipeline** → Data cleaning and preprocessing
-3. **🤖 mBERT Encoding** → Generate contextual 768-d embeddings
-4. **📊 Feature Engineering** → Cosine similarity scores and auxiliary features
-5. **🏆 Ranking Models** → Four algorithms trained and compared
-6. **📈 Evaluation** → Precision, Recall, F1-Score, MAP, and NDCG computed
+```text
+                  ┌─────────────────────┐
+                  │  Multilingual Data  │
+                  └──────────┬──────────┘
+                             ↓
+                  ┌─────────────────────┐
+                  │ Text Preprocessing  │
+                  │ Pandas + NumPy      │
+                  └──────────┬──────────┘
+                             ↓
+                  ┌─────────────────────┐
+                  │ mBERT Fine-Tuning   │
+                  │ Hugging Face +      │
+                  │ PyTorch             │
+                  └──────────┬──────────┘
+                             ↓
+                  ┌─────────────────────┐
+                  │ Dense Embeddings    │
+                  └──────────┬──────────┘
+                             ↓
+                  ┌─────────────────────┐
+                  │ FAISS Vector Index  │
+                  └──────────┬──────────┘
+                             ↓
+                  ┌─────────────────────┐
+                  │ Similarity Search   │
+                  └──────────┬──────────┘
+                             ↓
+                  ┌─────────────────────┐
+                  │ Top-K Retrieval     │
+                  └──────────┬──────────┘
+                             ↓
+                  ┌─────────────────────┐
+                  │ Evaluation          │
+                  │ MRR / P@K / R@K    │
+                  └──────────┬──────────┘
+                             ↓
+                  ┌─────────────────────┐
+                  │ Streamlit Interface │
+                  └─────────────────────┘
+```
 
 ---
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Advanced Information Retrieval course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
+This project was developed as an **academic Advanced Information Retrieval project at Diponegoro University** and simultaneously serves as a portfolio demonstration of NLP and machine learning engineering.
 
-| Module | Description | Status |
-|--------|-------------|--------|
-| 🔄 **ETL Pipeline** | Data loading, cleaning, deduplication, and text normalization | ✅ Done |
-| 🤖 **mBERT Embedding** | Contextual 768-d vector generation for queries and documents | ✅ Done |
-| 📊 **Feature Engineering** | Cosine similarity scores, text length ratios, query-document overlap | ✅ Done |
-| 📏 **Cosine Similarity** | Baseline ranking via embedding similarity | ✅ Done |
-| 🌳 **XGBoost LTR** | Learning-to-Rank with gradient boosted trees | ✅ Done |
-| 🧠 **RankNet** | Pairwise neural ranking model | ✅ Done |
-| 🎯 **LambdaMART** | Advanced listwise ranking algorithm (best performer: F1 0.817) | ✅ Done |
-| 📈 **Evaluation Engine** | Precision, Recall, F1-Score, MAP, and NDCG metrics | ✅ Done |
-| 🖥️ **Streamlit Demo** | Interactive web dashboard for live search and result visualization | ✅ Done |
+| Module                   | Description                                        | Status        |
+| ------------------------ | -------------------------------------------------- | ------------- |
+| 🔄 **Text Processing**   | Cleaning, normalization, and tokenization pipeline | ✅ Implemented |
+| 🤖 **mBERT Encoding**    | Transformer-based contextual representation        | ✅ Implemented |
+| 🧠 **Model Fine-Tuning** | Adaptation of mBERT for the retrieval task         | ✅ Implemented |
+| ⚡ **FAISS Retrieval**    | Dense-vector similarity search                     | ✅ Implemented |
+| 🔎 **Semantic Search**   | Multilingual query-document matching               | ✅ Implemented |
+| 📏 **BM25 Baseline**     | Traditional retrieval benchmark                    | ✅ Evaluated   |
+| 📈 **IR Evaluation**     | MRR, Precision@K, and Recall@K                     | ✅ Implemented |
+| 📊 **Visualization**     | Embedding and similarity visualization             | ✅ Implemented |
+| 🖥️ **Streamlit App**    | Interactive search interface                       | ✅ Implemented |
+| 🐳 **Dockerization**     | Reproducible execution environment                 | ✅ Implemented |
+| 🔧 **Git/GitHub**        | Version control and collaboration                  | ✅ Implemented |
 
 ---
 
-## 📈 Performance Metrics
+## 📌 Portfolio Alignment
 
-<div align="center">
+The project directly reflects the following technical competencies represented in its professional project description:
 
-<table>
-<thead>
-<tr>
-<th><strong>Algorithm</strong></th>
-<th><strong>Avg Precision</strong></th>
-<th><strong>Avg Recall</strong></th>
-<th><strong>Avg F1-Score</strong></th>
-<th><strong>Training Time</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Cosine Similarity</strong></td>
-<td>0.742</td>
-<td>0.681</td>
-<td>0.710</td>
-<td>~2 min</td>
-</tr>
-<tr>
-<td><strong>XGBoost</strong></td>
-<td>0.798</td>
-<td>0.756</td>
-<td>0.776</td>
-<td>~15 min</td>
-</tr>
-<tr>
-<td><strong>RankNet</strong></td>
-<td>0.812</td>
-<td>0.773</td>
-<td>0.792</td>
-<td>~25 min</td>
-</tr>
-<tr>
-<td><strong>LambdaMART</strong></td>
-<td><strong>0.834</strong></td>
-<td><strong>0.801</strong></td>
-<td><strong>0.817</strong></td>
-<td>~20 min</td>
-</tr>
-</tbody>
-</table>
+| Professional Experience                   | Project Implementation                                  |
+| ----------------------------------------- | ------------------------------------------------------- |
+| Multilingual neural information retrieval | Semantic search across Indonesian and English documents |
+| Fine-tuning mBERT                         | Hugging Face Transformers + PyTorch workflow            |
+| Python text-processing pipeline           | Pandas and NumPy-based data processing                  |
+| Dense semantic embeddings                 | Transformer-generated query/document representations    |
+| FAISS similarity search                   | Efficient retrieval from dense embedding collections    |
+| Retrieval evaluation                      | MRR, Precision@K, and Recall@K                          |
+| BM25 comparison                           | Traditional baseline for evaluating neural retrieval    |
+| Streamlit application                     | Interactive search and result exploration               |
+| Matplotlib & Plotly                       | Embedding and similarity visualization                  |
+| Docker                                    | Reproducible environment                                |
+| Git/GitHub                                | Version control and collaboration                       |
+| Project documentation                     | Setup, architecture, and implementation documentation   |
 
-</div>
+> **Portfolio positioning:** This project demonstrates an end-to-end workflow covering data preparation, NLP model integration, semantic representation, vector retrieval, evaluation, visualization, and application delivery.
 
-<blockquote>
-<p><strong>Note</strong>: Results based on Vaswani test collection. Performance may vary with different datasets.</p>
-</blockquote>
+---
+
+## 📈 Evaluation Strategy
+
+The evaluation process is designed around standard Information Retrieval methodology.
+
+### Mean Reciprocal Rank
+
+MRR evaluates the position of the first relevant result.
+
+```text
+MRR = average(1 / rank_of_first_relevant_result)
+```
+
+A higher MRR indicates that relevant documents tend to appear earlier in the ranked results.
+
+### Precision@K
+
+Precision@K measures how many of the top-K retrieved documents are relevant.
+
+```text
+Precision@K =
+relevant documents retrieved in top-K
+-------------------------------------
+              K
+```
+
+### Recall@K
+
+Recall@K measures how many relevant documents were successfully retrieved within the top-K results.
+
+```text
+Recall@K =
+relevant documents retrieved in top-K
+-------------------------------------
+      total relevant documents
+```
+
+### Baseline Evaluation
+
+The neural retrieval system is compared with BM25 to determine whether contextual embeddings provide improved retrieval quality over conventional keyword-based retrieval.
+
+> Exact evaluation values should be treated as experiment-dependent and should be regenerated when the dataset, corpus, model checkpoint, preprocessing pipeline, or evaluation configuration changes.
+
+---
+
+## 💡 Research & Engineering Contributions
+
+The project combines several areas that are often treated separately:
+
+```text
+NLP
+ ↓
+Transformer Models
+ ↓
+Dense Representation Learning
+ ↓
+Vector Databases / Similarity Search
+ ↓
+Information Retrieval
+ ↓
+Model Evaluation
+ ↓
+Data Visualization
+ ↓
+Interactive Application
+ ↓
+Reproducible Deployment
+```
+
+This makes the project representative of a complete **machine learning / NLP application pipeline**, rather than only a standalone model experiment.
+
+---
+
+## 🔭 Future Development
+
+Potential future improvements include:
+
+* More extensive multilingual corpora.
+* Larger-scale document indexing.
+* More advanced approximate nearest-neighbor configurations.
+* Hybrid BM25 + neural retrieval.
+* Neural reranking after candidate retrieval.
+* Additional Information Retrieval metrics such as NDCG and MAP.
+* More extensive model fine-tuning.
+* Query expansion and document enrichment.
+* Improved experiment tracking and reproducibility.
+* Production-oriented deployment and monitoring.
+
+These items represent **future directions**, rather than features claimed as currently implemented.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Here's how you can help:
+Contributions are welcome for research extensions, bug fixes, optimization, documentation, and additional retrieval experiments.
 
-<details>
-<summary><b>🛠️ Development Guidelines</b></summary>
+### Contribution Process
 
-### **Getting Started**
-1. **Fork** the repository
-2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
-3. **Commit** your changes: `git commit -m 'Add some amazing feature'`
-4. **Push** to the branch: `git push origin feature/amazing-feature`
-5. **Open** a Pull Request
+1. Fork the repository.
+2. Create a feature branch.
 
-### **Code Standards**
-- Follow **PEP 8** Python style guidelines
-- Add **docstrings** to all functions and classes
-- Include **unit tests** for new features
-- Update **documentation** as needed
+```bash
+git checkout -b feature/my-feature
+```
 
-### **Areas for Contribution**
-- 🐛 **Bug fixes** and performance improvements
-- 📊 **New ranking algorithms** implementation
-- 🌍 **Additional language support**
-- 📚 **Documentation** enhancements
-- 🧪 **Test coverage** expansion
+3. Commit the changes.
 
-</details>
+```bash
+git commit -m "Add my feature"
+```
+
+4. Push the branch.
+
+```bash
+git push origin feature/my-feature
+```
+
+5. Open a Pull Request describing the implementation and evaluation results.
+
+### Development Guidelines
+
+* Follow standard Python coding conventions.
+* Keep preprocessing and retrieval components modular.
+* Document significant model or pipeline changes.
+* Provide reproducible experiment configurations where practical.
+* Validate changes against the existing evaluation methodology.
+* Update documentation when setup or system behavior changes.
 
 ---
 
-## 📄 **License**
+## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**.
 
-```
+The full license text is available in the [`LICENSE`](LICENSE) file.
+
+```text
 MIT License
 
-Copyright (c) 2024 Bernardo - Diponegoro University
+Copyright (c) 2024 Bernardo Nandaniar Sunia
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
-## 📫 Contact & Connect
+> **Third-party components:** mBERT, Hugging Face Transformers, PyTorch, FAISS, Streamlit, and other external libraries remain subject to their respective licenses and terms. Dataset-specific licensing and usage restrictions should also be respected.
 
-<p align="center">
-<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Diponegoro University🎓
+---
+
+<div class="contact-hero">
+
+<p><strong>Interested in the project?</strong></p>
+
+<p>
+👨‍💻 <strong>Bernardo Nandaniar Sunia</strong><br/>
+Computer Science — Diponegoro University
 </p>
 
-<p align="center">
+<p>
 <a href="https://linkedin.com/in/bernardo-sunia/">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -395,24 +658,32 @@ Diponegoro University🎓
 </a>
 </p>
 
-<p align="center">
-⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+<p>
+<em>Multilingual NLP, semantic search, vector retrieval, and machine learning engineering.</em>
 </p>
 
-<p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
-</p>
+</div>
 
 ---
 
-### Full Screenshots
+## 📸 Full Screenshots
+
 ![Screenshot 1](images/image.png)
+
 ![Screenshot 2](images/image1.png)
+
 ![Screenshot 3](images/image2.png)
+
 ![Screenshot 4](images/image3.png)
+
 ![Screenshot 5](images/image4.png)
+
 ![Screenshot 6](images/image5.png)
 
-### Conclusion
-This project demonstrates the implementation of a modern Information Retrieval system that combines deep learning and machine learning techniques to deliver more accurate and relevant search results compared to traditional keyword-based approaches.
+---
+
+## Conclusion
+
+This project demonstrates the development of a **multilingual neural information retrieval system** that combines transformer-based language representations, dense vector search, information retrieval evaluation, data visualization, and an interactive application.
+
+By combining **mBERT, PyTorch, FAISS, Python, and Streamlit**, the project moves beyond traditional keyword matching toward semantic retrieval while maintaining a practical workflow for experimentation, evaluation, and deployment.

@@ -1,336 +1,445 @@
-# 🐻 Mini Minecraft Clone with Interactive 3D Bear Character
-> *A stunning 3D sandbox world where creativity meets advanced graphics programming*
+<div class="hero">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status"/>
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/>
-  <img src="https://img.shields.io/badge/version-1.0.0-orange.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/OpenGL-GLUT-red.svg" alt="OpenGL"/>
-  <img src="https://img.shields.io/badge/C++-17-00599C.svg" alt="C++"/>
-  <img src="https://img.shields.io/badge/platform-Windows-lightgrey.svg" alt="Platform"/>
+<h1>🐻 Mini Minecraft Clone with Interactive 3D Bear Character</h1>
+
+<p>C++ & OpenGL 3D Game Project</p>
+
+<p>
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
+  <img src="https://img.shields.io/badge/OpenGL-Graphics-red?style=flat-square&logo=opengl&logoColor=white" alt="OpenGL"/>
+  <img src="https://img.shields.io/badge/Platform-Windows-lightgrey?style=flat-square&logo=windows&logoColor=black" alt="Windows"/>
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License"/>
+  <img src="https://img.shields.io/badge/Project-Academic%20%7C%20Portfolio-6D28D9?style=flat-square" alt="Academic Portfolio Project"/>
 </p>
+
+<p>
+A 3D sandbox game developed with C++ and OpenGL, featuring a playable bear character,
+an interactive block-based world, object interaction, and real-time graphics rendering.
+</p>
+
+</div>
 
 ---
 
 ## 📖 Project Overview
 
-**Mini Minecraft Clone** is a sophisticated 3D sandbox game implementation that demonstrates advanced computer graphics techniques and game development principles. Built from scratch using C++ and OpenGL, this project showcases a fully interactive 3D world featuring a charming bear character, dynamic lighting systems, realistic shadows, and comprehensive block manipulation mechanics.
+**Mini Minecraft Clone** is a 3D game project developed as part of a **Computer Graphics project at Diponegoro University**.
 
-**Why This Project Matters:**
-- **Technical Excellence**: Demonstrates mastery of 3D graphics programming, collision detection, and real-time rendering
-- **Creative Innovation**: Combines classic Minecraft gameplay with unique character design and advanced visual effects
-- **Educational Value**: Perfect showcase of OpenGL capabilities and modern C++ programming practices
-- **Portfolio Impact**: Highlights skills in game development, computer graphics, and software architecture
+The project explores fundamental and practical concepts in 3D graphics programming using **C++ and OpenGL**, with a focus on interactive gameplay, environment rendering, camera control, object interaction, and performance optimization.
+
+The player controls a **3D bear character** that can move through a Minecraft-inspired environment, jump, interact with objects, and manipulate blocks within the world.
+
+> **Portfolio focus:** This project demonstrates practical experience with C++, OpenGL, 3D rendering, interactive systems, performance optimization, and software documentation.
 
 ---
 
 ## ✨ Key Features
 
-<h3>🎮 Advanced Player Control System</h3>
-<ul>
-<li>Smooth WASD movement with arrow key camera rotation</li>
-<li>Realistic jump mechanics with gravity simulation</li>
-<li>Intuitive block placement and destruction controls</li>
-</ul>
+### 🎮 Player Movement & Control
 
-<h3>👤 Interactive 3D Bear Character</h3>
-<ul>
-<li>Detailed bear model with anatomically correct proportions</li>
-<li>Dynamic limb animations and walking cycles</li>
-<li>Realistic jump animations with physics-based movement</li>
-</ul>
+* WASD-based player movement.
+* Jump functionality for the bear character.
+* Arrow-key camera rotation.
+* Responsive controls designed for interactive gameplay.
+* Camera behavior designed to provide a clear view of the 3D environment.
 
-<h3>🌍 Immersive 3D Environment</h3>
-<ul>
-<li>Procedurally arranged grid-based world system</li>
-<li>Detailed 3D trees with roots, trunks, and foliage</li>
-<li>Minecraft-style textured blocks with grass and dirt materials</li>
-</ul>
+### 🐻 Interactive 3D Bear Character
 
-<h3>🌞 Dynamic Lighting & Weather System</h3>
-<ul>
-<li>Real-time sun movement simulation with day/night cycles</li>
-<li>Advanced lens flare effects for atmospheric lighting</li>
-<li>Multiple light sources for realistic illumination</li>
-</ul>
+* Custom 3D bear character used as the main player avatar.
+* Walking and jumping interactions within the environment.
+* Character movement integrated with the game's world and object interactions.
+* Designed to provide a distinctive gameplay identity compared with a conventional Minecraft-style player model.
 
-<h3>🎨 Cutting-Edge Graphics Features</h3>
-<ul>
-<li>Real-time shadow projection and rendering</li>
-<li>Advanced collision detection and physics</li>
-<li>Smooth camera following system with adjustable angles</li>
-<li>Material-based lighting with reflective surfaces</li>
-</ul>
+### 🌍 Interactive 3D World
+
+* Minecraft-inspired block-based environment.
+* Interactive environmental objects including **trees, rocks, and customizable blocks**.
+* 3D environment designed to support exploration and interaction.
+* World elements rendered through OpenGL-based graphics programming.
+
+### 🧱 Block Interaction System
+
+* Interactive block manipulation mechanics.
+* Block placement and removal.
+* Customizable world elements that allow the player to modify parts of the environment.
+* Designed around the sandbox-style interaction concept of Minecraft.
+
+### ⚙️ Rendering & Performance Optimization
+
+* Real-time 3D rendering with OpenGL.
+* Matrix manipulation for object transformations and camera operations.
+* Vector-based calculations for movement and spatial operations.
+* Performance testing and frame-rate optimization.
+* Optimization efforts focused on maintaining responsive gameplay, including on lower-specification hardware.
+
+### 🧩 Maintainability & Documentation
+
+* Code documented to make the project easier to understand and extend.
+* Project structure designed with future enhancements in mind.
+* Development decisions documented to support potential collaborative work.
+* Explored possible scalability toward future multiplayer functionality without claiming multiplayer as an implemented feature.
 
 ---
 
-## 🛠️ Technology Stack & Tools
+## 🛠️ Technology Stack
 
-<table>
-<tr>
-<td align="center"><strong>Category</strong></td>
-<td align="center"><strong>Technology</strong></td>
-<td align="center"><strong>Purpose</strong></td>
-</tr>
-<tr>
-<td><img src="https://img.shields.io/badge/Language-C++-00599C.svg" alt="C++"/></td>
-<td><strong>C++17</strong></td>
-<td>Core programming language</td>
-</tr>
-<tr>
-<td><img src="https://img.shields.io/badge/Graphics-OpenGL-red.svg" alt="OpenGL"/></td>
-<td><strong>OpenGL + GLUT</strong></td>
-<td>3D graphics rendering & window management</td>
-</tr>
-<tr>
-<td><img src="https://img.shields.io/badge/IDE-Dev_C++-blue.svg" alt="Dev-C++"/></td>
-<td><strong>Dev-C++</strong></td>
-<td>Recommended development environment</td>
-</tr>
-<tr>
-<td><img src="https://img.shields.io/badge/Platform-Windows-lightgrey.svg" alt="Windows"/></td>
-<td><strong>Windows OS</strong></td>
-<td>Primary target platform</td>
-</tr>
-</table>
+| Category                | Technology                          | Purpose                                                   |
+| ----------------------- | ----------------------------------- | --------------------------------------------------------- |
+| Programming Language    | **C++**                             | Core game and application logic                           |
+| Graphics API            | **OpenGL**                          | Real-time 3D rendering                                    |
+| Utility Toolkit         | **GLUT / FreeGLUT**                 | Windowing, input handling, and OpenGL application support |
+| Development Environment | **Dev-C++**                         | Primary development environment                           |
+| Compiler                | **MinGW / compatible C++ compiler** | Building the application                                  |
+| Target Platform         | **Windows**                         | Primary development and execution platform                |
 
-**Core Dependencies:**
-```cpp
-#include <GL/glut.h>      // OpenGL Utility Toolkit
-#include <vector>         // STL containers
-#include <math.h>         // Mathematical functions  
-#include <algorithm>      // STL algorithms
-#include <stdlib.h>       // Standard library
-#include <stdio.h>        // Input/output operations
+### Core Technologies
+
+```text
+C++
+ ├── Game logic
+ ├── Player movement
+ ├── Object interaction
+ ├── Collision / spatial calculations
+ └── Performance optimization
+
+OpenGL
+ ├── 3D object rendering
+ ├── Transformations
+ ├── Camera rendering
+ └── Environment visualization
+
+GLUT / FreeGLUT
+ ├── Window management
+ ├── Keyboard input
+ └── Application loop
 ```
 
 ---
 
 ## 🚀 Installation & Setup
 
-<h3>Prerequisites</h3>
-<ul>
-<li><strong>Windows OS</strong> (7/8/10/11)</li>
-<li><strong>Dev-C++</strong> IDE or compatible C++ compiler</li>
-<li><strong>OpenGL + GLUT</strong> libraries installed</li>
-</ul>
+### Prerequisites
 
-<h3>Quick Start Guide</h3>
+* Windows 7, 8, 10, or 11
+* Dev-C++ or another compatible C++ development environment
+* OpenGL support
+* GLUT / FreeGLUT libraries
+* MinGW or another compatible C++ compiler
+
+### Clone the Repository
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/bers31/bernardo.github.io.git
 cd bernardo.github.io
-
-# 2. Open in Dev-C++
-# Launch Dev-C++ and open the main .cpp file
-
-# 3. Configure Project Settings
-# Project → Project Options → Parameters
-# Add to Linker: -lopengl32 -lglu32 -lfreeglut
-
-# 4. Build and Run
-# Press F9 or Execute → Compile & Run
 ```
 
-<h3>Alternative Compilation (Command Line)</h3>
+### Build Using Dev-C++
+
+1. Open the C++ project/source files in Dev-C++.
+2. Make sure the OpenGL and GLUT / FreeGLUT libraries are correctly configured.
+3. Configure the linker parameters as required by the project.
+4. Compile the project.
+5. Run the generated executable.
+
+For a MinGW-based setup, the commonly required OpenGL-related linker parameters are:
 
 ```bash
-# Using MinGW compiler
-g++ -o minecraft_clone main.cpp -lopengl32 -lglu32 -lfreeglut
-
-# Run the executable
-./minecraft_clone.exe
+-lopengl32 -lglu32 -lfreeglut
 ```
 
----
+### Command-Line Compilation
 
-## 🎥 Demo
+The exact source filename depends on the project structure. A typical MinGW command is:
 
-<div align="center">
+```bash
+g++ -o minecraft_clone <source-file>.cpp -lopengl32 -lglu32 -lfreeglut
+```
 
-<h3>🎮 Gameplay Preview</h3>
-<img src="https://bers31.github.io/bernardo.github.io/3D_Minecraft_Development/images/Picture2.png" alt="Gameplay Screenshot" width="100%"/>
+Then run:
 
-<p><em>Interactive 3D bear character navigating the sandbox world</em></p>
-
-<h3>🌅 Dynamic Lighting System</h3>
-<img src="https://bers31.github.io/bernardo.github.io/3D_Minecraft_Development/images/Picture4.png" alt="Lighting Demo" width="100%"/>
-
-<p><em>Real-time sun movement with dynamic shadows and lens flare effects</em></p>
-
-<h3>🏗️ Block Building Mechanics</h3>
-<img src="https://bers31.github.io/bernardo.github.io/3D_Minecraft_Development/images/Picture5.png" alt="Building System" width="100%"/>
-
-<p><em>Intuitive block placement and destruction system</em></p>
-
-</div>
-
-<p align="center">
-<strong>🎬 <a href="https://bers31.github.io/bernardo.github.io/3D_Minecraft_Development/">Live Demo</a></strong> | 
-</p>
+```bash
+minecraft_clone.exe
+```
 
 ---
 
 ## 🎮 Controls & Gameplay
 
-<table>
-<tr>
-<th><strong>Action</strong></th>
-<th><strong>Key</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-<tr>
-<td>Move Forward</td>
-<td><code>W</code></td>
-<td>Move bear character forward</td>
-</tr>
-<tr>
-<td>Move Left</td>
-<td><code>A</code></td>
-<td>Strafe left</td>
-</tr>
-<tr>
-<td>Move Backward</td>
-<td><code>S</code></td>
-<td>Move backward</td>
-</tr>
-<tr>
-<td>Move Right</td>
-<td><code>D</code></td>
-<td>Strafe right</td>
-</tr>
-<tr>
-<td>Jump</td>
-<td><code>SPACE</code></td>
-<td>Jump with realistic physics</td>
-</tr>
-<tr>
-<td>Rotate Camera</td>
-<td><code>Arrow Keys</code></td>
-<td>Horizontal & vertical camera rotation</td>
-</tr>
-<tr>
-<td>Place Block</td>
-<td><code>Q</code></td>
-<td>Place block in front of player</td>
-</tr>
-<tr>
-<td>Remove Block</td>
-<td><code>E</code></td>
-<td>Destroy block in front of player</td>
-</tr>
-<tr>
-<td>Clear All</td>
-<td><code>C</code></td>
-<td>Remove all placed blocks</td>
-</tr>
-</table>
+| Action        | Key          | Description                          |
+| ------------- | ------------ | ------------------------------------ |
+| Move Forward  | `W`          | Move the bear forward                |
+| Move Left     | `A`          | Move the bear to the left            |
+| Move Backward | `S`          | Move the bear backward               |
+| Move Right    | `D`          | Move the bear to the right           |
+| Jump          | `SPACE`      | Make the bear jump                   |
+| Rotate Camera | `ARROW KEYS` | Adjust the camera direction          |
+| Place Block   | `Q`          | Place a block in front of the player |
+| Remove Block  | `E`          | Remove a block                       |
+| Clear Blocks  | `C`          | Clear placed blocks                  |
+
+> Controls may depend on the final configuration of the executable and source code.
 
 ---
 
 ## 🏗️ Project Architecture
 
-<h3>Core System Components</h3>
+### Rendering System
 
-```cpp
-🎨 Rendering Pipeline
-├── display()           // Main rendering function
-├── player()           // Bear character rendering
-├── drawTrees()        // 3D tree generation
-└── glShadowProjection() // Dynamic shadow system
+Responsible for drawing the player, environment, objects, and other 3D elements.
 
-🎮 Game Logic
-├── update()           // Animation & movement logic  
-├── placeBlock()       // Block placement system
-├── collision()        // Physics & collision detection
-└── camera()           // Camera following system
+Typical responsibilities include:
 
-🌟 Visual Effects
-├── lighting()         // Multi-source lighting setup
-├── drawSun()          // Sun rendering & lens flare
-├── updateSunPosition() // Day/night cycle simulation  
-└── materials()        // Surface material properties
+```text
+Rendering
+├── Player / Bear rendering
+├── Environment rendering
+├── Tree rendering
+├── Block rendering
+└── OpenGL transformations
 ```
+
+### Player & Camera System
+
+Responsible for movement, jumping, player orientation, and camera behavior.
+
+```text
+Player System
+├── Movement
+├── Jump
+├── Direction
+├── Camera rotation
+└── Spatial calculations
+```
+
+### World Interaction System
+
+Responsible for interaction between the player and the environment.
+
+```text
+World Interaction
+├── Block placement
+├── Block removal
+├── Object interaction
+├── Environment updates
+└── Spatial / collision calculations
+```
+
+### Optimization Layer
+
+Performance was considered during development through:
+
+* Matrix manipulation and transformation efficiency.
+* Vector calculation optimization.
+* Frame-rate testing.
+* Reducing unnecessary rendering workload.
+* Testing on lower-specification hardware.
 
 ---
 
-## 🗺️ Project Scope
+## 📊 Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Computer Graphics course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
+The project was developed as a **self-contained academic computer graphics project** while also functioning as a portfolio demonstration of C++ and OpenGL development.
 
-| Module | Description | Status |
-|--------|-------------|--------|
-| 🐻 **Bear Character** | 3D model with body parts, walking & jump animations | ✅ Done |
-| 🌍 **World System** | Grid-based block world with terrain layout | ✅ Done |
-| 🎮 **Player Controls** | WASD movement, jump physics, camera rotation | ✅ Done |
-| 🏗️ **Block Mechanics** | Place, destroy, and clear blocks | ✅ Done |
-| 🌳 **Environment** | 3D trees with roots, trunks, and foliage | ✅ Done |
-| 🌞 **Lighting & Sun** | Day/night cycle, lens flare, multi-source lighting | ✅ Done |
-| 🌑 **Shadow System** | Real-time dynamic shadow projection | ✅ Done |
-| 💥 **Collision Detection** | Physics-based collision with world objects | ✅ Done |
+| Area                   | Scope                                          | Status                  |
+| ---------------------- | ---------------------------------------------- | ----------------------- |
+| 🐻 Bear Character      | 3D player character with movement and jumping  | ✅ Implemented           |
+| 🎮 Player Control      | WASD movement and camera controls              | ✅ Implemented           |
+| 🌍 3D Environment      | Interactive Minecraft-inspired world           | ✅ Implemented           |
+| 🌳 Environment Objects | Trees, rocks, and other interactive objects    | ✅ Implemented           |
+| 🧱 Block Interaction   | Placement, removal, and customization          | ✅ Implemented           |
+| 🖥️ OpenGL Rendering   | Real-time 3D graphics rendering                | ✅ Implemented           |
+| ⚡ Optimization         | Performance and frame-rate optimization        | ✅ Implemented           |
+| 🤝 User Feedback       | Gameplay adjustments based on feedback         | ✅ Applied               |
+| 🌐 Multiplayer         | Scalability exploration for future development | 🔭 Future consideration |
+
+---
+
+## 🔬 Technical Highlights
+
+### Matrix Manipulation
+
+Matrix operations are used as part of the 3D rendering pipeline for transformations such as position, rotation, and camera-related operations.
+
+This enables objects to be rendered consistently within the 3D coordinate system.
+
+### Vector Optimization
+
+Vector-based calculations support spatial operations such as movement, positioning, and directional calculations.
+
+Optimization of these calculations contributes to responsive interaction and efficient real-time rendering.
+
+### Performance Testing
+
+The project included performance testing and frame-rate optimization with the goal of maintaining smooth gameplay across different hardware capabilities.
+
+Particular attention was given to lower-specification systems to improve accessibility.
+
+### User-Centered Iteration
+
+Gameplay mechanics were adjusted based on user feedback to improve the overall interaction experience.
+
+This reflects an iterative development approach rather than treating the first implementation as the final design.
+
+---
+
+## 🎥 Demo & Screenshots
+
+### 🎮 Gameplay Preview
+
+![Gameplay Screenshot](images/Picture2.png)
+
+*The bear character exploring the interactive 3D environment.*
+
+### 🌅 3D Environment
+
+![Environment Screenshot](images/Picture4.png)
+
+*Example of the rendered 3D world and environmental elements.*
+
+### 🧱 Block Interaction
+
+![Block Interaction](images/Picture5.png)
+
+*Example of the interactive block-based environment.*
+
+### 🌲 Additional Views
+
+![Screenshot 1](images/Picture1.png)
+
+![Screenshot 3](images/Picture3.png)
+
+![Screenshot 6](images/Picture6.png)
+
+---
+
+<div align="center">
+
+<strong>🎮 <a href="https://bers31.github.io/bernardo.github.io/3D_Minecraft_Development/">View Project Demo</a></strong>
+
+</div>
+
+---
+
+## 💼 Portfolio & LinkedIn Alignment
+
+This project represents several competencies highlighted in the project's professional description:
+
+| LinkedIn Project Description                           | Project Evidence                                                     |
+| ------------------------------------------------------ | -------------------------------------------------------------------- |
+| Designed and developed a 3D game inspired by Minecraft | Minecraft-inspired sandbox environment built with C++ and OpenGL     |
+| Playable bear character                                | Bear-based player character with movement and jumping                |
+| Interactive objects                                    | Trees, rocks, blocks, and other environment elements                 |
+| Matrix manipulation and vector optimization            | Used for transformations, movement, and spatial calculations         |
+| Intuitive control system                               | WASD movement, jumping, and camera controls                          |
+| Performance testing                                    | Frame-rate and lower-spec hardware optimization                      |
+| Code documentation                                     | Documentation intended to support maintenance and future development |
+| User feedback                                          | Gameplay mechanics refined through feedback                          |
+| Multiplayer scalability                                | Multiplayer explored as a potential future direction                 |
+
+> **Important:** Multiplayer functionality was explored as a scalability concept and is **not presented as an implemented feature** in this project.
+
+---
+
+## 🧠 What This Project Demonstrates
+
+This project is particularly relevant for demonstrating:
+
+```text
+C++ Programming
+        ↓
+3D Graphics Programming
+        ↓
+OpenGL Rendering
+        ↓
+Interactive Game Systems
+        ↓
+Spatial / Vector Calculations
+        ↓
+Performance Optimization
+        ↓
+User Feedback & Iteration
+        ↓
+Software Documentation
+```
+
+It demonstrates not only the ability to produce a visual result, but also the ability to combine programming, mathematics, graphics rendering, optimization, and iterative development into a single software project.
+
+---
+
+## 🔭 Future Development
+
+Several directions can be considered for future versions:
+
+* Multiplayer functionality.
+* More advanced world-generation systems.
+* Additional interactive objects.
+* More sophisticated animation systems.
+* Improved graphics and rendering effects.
+* Additional gameplay mechanics.
+* Broader platform support.
+* Further optimization and code modularization.
+
+These are **future development possibilities**, not features claimed as part of the current implementation.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions from developers of all skill levels! Here's how you can get involved:
+Contributions are welcome for improvements to the project, documentation, graphics, gameplay, and performance.
 
-<h3>🔧 Areas for Contribution</h3>
-<ul>
-<li><strong>🎨 Graphics Enhancement</strong>: Improved textures, visual effects, shaders</li>
-<li><strong>🎮 Gameplay Features</strong>: New mechanics, game modes, challenges</li>
-<li><strong>⚡ Performance Optimization</strong>: Code efficiency, memory management</li>
-<li><strong>🐛 Bug Fixes</strong>: Issue resolution and stability improvements</li>
-<li><strong>📚 Documentation</strong>: Code comments, tutorials, guides</li>
-</ul>
+### Contribution Process
 
-<h3>📝 Contribution Process</h3>
-<ol>
-<li><strong>Fork</strong> the repository</li>
-<li><strong>Create</strong> a feature branch: <code>git checkout -b feature/amazing-feature</code></li>
-<li><strong>Commit</strong> your changes: <code>git commit -m 'Add amazing feature'</code></li>
-<li><strong>Push</strong> to the branch: <code>git push origin feature/amazing-feature</code></li>
-<li><strong>Open</strong> a Pull Request with detailed description</li>
-</ol>
+1. Fork the repository.
+2. Create a feature branch.
 
-<h3>💡 Contribution Guidelines</h3>
-<ul>
-<li>Follow existing code style and conventions</li>
-<li>Include comprehensive comments for new features</li>
-<li>Test thoroughly before submitting</li>
-<li>Update documentation as needed</li>
-</ul>
+```bash
+git checkout -b feature/my-feature
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add my feature"
+```
+
+4. Push the branch.
+
+```bash
+git push origin feature/my-feature
+```
+
+5. Open a Pull Request with a clear description of the changes.
+
+### Contribution Guidelines
+
+* Keep changes focused and understandable.
+* Follow the existing coding conventions.
+* Document significant implementation changes.
+* Test changes before submitting a Pull Request.
+* Update the README when project behavior or setup requirements change.
 
 ---
 
-## 📄 **License**
+## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**.
 
-```
-MIT License
+The full license text is available in the [`LICENSE`](LICENSE) file.
 
-Copyright (c) 2024 Bernardo - Diponegoro University
+> **License note:** If this project contains third-party assets, textures, models, fonts, libraries, or other materials with separate licenses, their respective licenses still apply.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
+<div class="contact-hero">
 
-## 📫 Contact & Connect
+<p><strong>Interested in the project?</strong></p>
 
-<p align="center">
-<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Diponegoro University🎓
+<p>
+👨‍💻 <strong>Bernardo Nandaniar Sunia</strong><br/>
+Computer Science — Diponegoro University
 </p>
 
-<p align="center">
+<p>
 <a href="https://linkedin.com/in/bernardo-sunia/">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -345,24 +454,8 @@ Diponegoro University🎓
 </a>
 </p>
 
-<p align="center">
-⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+<p>
+<em>3D graphics, interactive systems, and performance-oriented C++ development.</em>
 </p>
 
-<p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
-</p>
-
----
-
-### Full Screenshots
-![Screenshot 1](images/Picture1.png) <br>
-![Screenshot 2](images/Picture2.png) <br>
-![Screenshot 3](images/Picture3.png) <br>
-![Screenshot 4](images/Picture4.png) <br>
-![Screenshot 5](images/Picture5.png) <br>
-![Screenshot 6](images/Picture6.png)
-
-## Conclusion
-This project demonstrates the creation of an engaging 3D game using C++ and OpenGL, showcasing advanced graphics techniques and interactive gameplay elements.
+</div>

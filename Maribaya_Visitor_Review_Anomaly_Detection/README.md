@@ -1,121 +1,672 @@
-<div align="center">
-  <h1>📋 Maribaya Visitor Review System: First-Party Feedback Collection & Anomaly Detection</h1>
-  <h3>Token-Secured Forms · Multi-Signal Anomaly Scoring · Real-Time Visualization Dashboards</h3>
+<div class="hero">
 
-  <br/>
+<h1>📋 Maribaya Visitor Review System</h1>
 
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Security-Token%20Based-DC2626?style=for-the-badge" alt="Token Security">
-  <img src="https://img.shields.io/badge/Deployment-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" alt="Railway">
-  <img src="https://img.shields.io/badge/Export-CSV-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="CSV Export">
-  <img src="https://img.shields.io/badge/Status-Production-22C55E?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/Project-Client%20%2F%20Confidential-1D4ED8?style=for-the-badge" alt="Client Project">
+<p>First-Party Feedback Collection · Data Validation · Multi-Signal Anomaly Detection</p>
 
-  <br/><br/>
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/REST%20API-6D28D9?style=flat-square" alt="REST API"/>
+  <img src="https://img.shields.io/badge/Data%20Validation-8B5CF6?style=flat-square" alt="Data Validation"/>
+  <img src="https://img.shields.io/badge/Dashboard-F59E0B?style=flat-square" alt="Dashboard"/>
+  <img src="https://img.shields.io/badge/CSV-217346?style=flat-square" alt="CSV Export"/>
+  <img src="https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white" alt="Railway"/>
+  <img src="https://img.shields.io/badge/Web%20Application-1D4ED8?style=flat-square" alt="Web Application"/>
+  <img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="MIT License"/>
+</p>
 
-  <sub>Part of my <a href="https://bers31.github.io/bernardo.github.io/">Data Analyst portfolio</a></sub>
+<p>
+A web-based first-party customer feedback platform for collecting structured
+visitor reviews, validating submissions, identifying anomalous patterns,
+and exposing review data through interactive dashboards.
+</p>
+
 </div>
 
 ---
 
 ## 📖 Project Overview
 
-A **first-party visitor review system** built to collect guest feedback separately for Maribaya Resort and Maribaya Glamping. The form is kept short enough that visitors actually complete it, while still capturing the fields needed for downstream analysis. It's paired with a rule-based **anomaly detection engine** that flags suspicious or spam-like review patterns before they distort the business's rating data.
+The **Maribaya Visitor Review System** is a first-party customer feedback platform designed to collect structured visitor reviews across **Maribaya Resort and Maribaya Glamping** operations.
 
-> **Core problem it solves:** open review links are easy to spam or fabricate. Rather than relying on manual moderation alone, every incoming review is scored against multiple behavioral signals and classified into a confidence tier, so the team can focus moderation effort where it actually matters.
+The system was developed around a practical problem: feedback collected through publicly accessible forms can be affected by duplicate submissions, suspicious patterns, and other anomalies that may distort downstream analysis.
 
----
+Instead of treating every submission equally, the platform combines:
 
-## 🔐 Form Access & Validation
+```text id="8x4m2q"
+Visitor Feedback
+       ↓
+Submission Validation
+       ↓
+Token Verification
+       ↓
+Multi-Signal Analysis
+       ↓
+Anomaly Risk Classification
+       ↓
+Interactive Dashboard
+       ↓
+CSV Export / Further Analysis
+```
 
-| Mechanism | Detail |
-|-----------|--------|
-| **Token-based access** | Every review link is generated with a unique, system-issued token, so the form cannot be reached without it |
-| **15-minute token expiry** | Matched to the typical time a visitor needs to complete the review, limiting the window for link reuse or sharing |
-| **Optional fields** | Food & beverage rating, email, and written review are optional, to accommodate visitors who didn't purchase food, or who prefer not to share contact details or write a comment |
+The objective is to provide a more reliable foundation for analyzing first-party customer feedback.
 
----
-
-## 🚨 Anomaly Detection Engine
-
-Four behavioral signals are combined to flag potentially anomalous or spam reviews:
-
-| Signal | Description | Strength |
-|--------|--------------|----------|
-| **Repeated identity** | Same name, age, and city submitted again within a 15-minute window, which suggests cached browser data reused for spam | Strong when combined with another signal |
-| **Review text similarity** | Generic phrases (e.g. *"bagus"*, *"recommended banget"*) repeating across submissions | Weak alone; only checkable when the review field is filled in |
-| **Rating pattern similarity** | Similar rating combinations across different submissions | Weak alone; plausible even among genuine reviewers |
-| **Off-hours submission** *(Maribaya only)* | Review submitted outside operating hours (08:00–17:00) | Strong on its own, treated as an absolute signal |
-
-**Anomaly Tiers**
-
-| Tier | Trigger Condition |
-|------|--------------------|
-| 🔴 **Strong** | Off-hours submission (absolute), or repeated identity combined with text or rating similarity on the same review pair |
-| 🟠 **Medium** | Repeated identity alone, or combined rating + text similarity across different identities *(still under discussion whether this belongs here or in Low)* |
-| 🟡 **Low** | Rating similarity alone, or text similarity alone |
+> **Portfolio focus:** This project demonstrates practical web application development, REST-oriented data handling, token-based access control, data validation, anomaly detection, dashboard development, and operational feedback analytics.
 
 ---
 
-## 📊 Visualization Dashboards
+## 🎯 Business Problem
 
-Two role-separated dashboards let the team filter and visualize collected reviews, view aggregate statistics, and export the full dataset to **.csv**:
+First-party customer feedback is valuable because it is collected directly from visitors rather than relying exclusively on public review platforms.
 
-- Maribaya Resort review dashboard
-- Maribaya Glamping Tent review dashboard
+However, the quality of the resulting dataset depends on the integrity of the submission process.
 
----
+Potential problems include:
 
-## 💡 Strategic Recommendation: Collection Method
+| Problem                   | Potential Impact                                 |
+| ------------------------- | ------------------------------------------------ |
+| Unauthorized submissions  | Contaminates the feedback dataset                |
+| Duplicate identities      | Can distort customer-level statistics            |
+| Repeated review text      | May indicate automated or suspicious submissions |
+| Similar rating patterns   | Can indicate abnormal submission behavior        |
+| Unusual submission timing | May provide an additional anomaly signal         |
+| Large unfiltered datasets | Increases manual moderation effort               |
 
-Beyond the system itself, I evaluated collection methods against a simple QR code link, which is free but carries higher spam risk if the link circulates outside intended channels, and compared paid on-site device options:
-
-| Device Option | Cost | Trade-off | Verdict |
-|----------------|------|-----------|---------|
-| Tablet + Kiosk Mode | Low | Simple, easy to configure, less durable for 24/7 use | Cheapest, easiest maintenance |
-| Android POS Terminal | Medium | Better display, durable for 24/7 use, moderate maintenance | **Recommended**, best stability-to-cost balance |
-| Industrial Touchscreen Kiosk | High | Professional look, durable, harder maintenance | Rugged, long-lasting |
-| Floor-Standing Kiosk | High | Most eye-catching, durable, harder maintenance | Strongest branding, best for high-traffic spots |
-
----
-
-## 🛠️ Tech Stack
-
-| Layer | Technology |
-|-------|------------|
-| **Backend Logic** | Python, token generation & expiry handling |
-| **Anomaly Scoring** | Rule-based multi-signal classifier |
-| **Dashboard & Visualization** | Web-based filterable dashboard with CSV export |
-| **Deployment** | Railway |
+The system addresses these challenges by combining access controls, validation, anomaly scoring, and visualization.
 
 ---
 
-## 🚀 Deployment & Access
+## 🔐 Token-Based Access Control
 
-Both dashboards are deployed and actively used to monitor incoming reviews in production. Live dashboard access is kept private to protect visitor data and Maribaya's operational review data.
+Every review submission is associated with a **system-issued token**.
+
+The token mechanism provides a controlled entry point to the feedback form.
+
+### 15-Minute Expiration
+
+Tokens expire after **15 minutes**.
+
+```text id="m4q7p1"
+System-Issued Token
+        ↓
+Visitor Opens Form
+        ↓
+Token Validation
+        ↓
+Valid → Submit Review
+Invalid / Expired → Reject Access
+```
+
+The expiration window limits the period during which a submission link remains valid.
+
+This helps reduce unauthorized reuse or sharing of review links.
 
 ---
 
-## 🔬 Outcomes
+## ✅ Submission Validation
 
-- Replaced an open, unsecured feedback link with a **token-gated, time-limited** submission flow.
-- Reduced reliance on manual review moderation through a **tiered, multi-signal anomaly scoring system**.
-- Delivered actionable device-investment guidance, balancing cost against durability and spam-resistance for on-site data collection.
+Before review data enters the feedback dataset, the submission is checked against the application's validation rules.
+
+The general workflow is:
+
+```text id="f8m2x5"
+Incoming Submission
+       ↓
+Validate Token
+       ↓
+Validate Submitted Fields
+       ↓
+Accept / Reject
+       ↓
+Persist Valid Feedback
+```
+
+Optional fields can be supported where appropriate so that visitors are not forced to provide information that is irrelevant to their experience.
+
+---
+
+## 🚨 Multi-Signal Anomaly Detection
+
+The system uses multiple behavioral signals instead of relying on a single rule.
+
+Four primary signals are evaluated:
+
+### 👤 Repeated Identity
+
+Repeated combinations of identity-related fields within a short time window can indicate that the same browser/session information is being reused.
+
+### 📝 Text Similarity
+
+Repeated or highly similar review text can indicate suspicious repetition patterns.
+
+This signal is intentionally treated cautiously because genuine visitors may sometimes use similar language.
+
+### ⭐ Rating Pattern Similarity
+
+Similar combinations of submitted ratings can provide another indication of repeated or unusual submission behavior.
+
+This signal is also not sufficient on its own to label a review as fraudulent.
+
+### 🕐 Submission Timing
+
+Unusual submission times can provide additional evidence when they fall outside expected operating conditions.
+
+---
+
+## 🧠 Anomaly Scoring Model
+
+The system combines the available signals into a practical risk-classification framework.
+
+```text id="w7k3m9"
+                 Incoming Review
+                       ↓
+        ┌──────────────┼──────────────┐
+        ↓              ↓              ↓
+   Identity         Text           Rating
+   Pattern        Similarity       Pattern
+        │              │              │
+        └──────────────┼──────────────┘
+                       ↓
+                Timing Signal
+                       ↓
+              Signal Combination
+                       ↓
+              Anomaly Risk Tier
+```
+
+### Risk Tiers
+
+| Tier          | Interpretation                                                 |
+| ------------- | -------------------------------------------------------------- |
+| 🔴 **Strong** | Multiple strong signals or a high-confidence anomaly condition |
+| 🟠 **Medium** | One meaningful signal or a combination requiring review        |
+| 🟡 **Low**    | Weak or isolated similarity pattern                            |
+| 🟢 **Normal** | No meaningful anomaly signal detected                          |
+
+The scoring framework is intended to **prioritize moderation attention**, not to automatically declare that a visitor is fraudulent.
+
+> Anomaly detection provides a risk signal for review prioritization. It should not be interpreted as definitive proof of malicious behavior.
+
+---
+
+## 📊 Why Multi-Signal Detection?
+
+A single behavioral pattern can occur naturally.
+
+For example:
+
+```text id="p5x8n2"
+Same Rating
+    ≠
+Fraud
+```
+
+Similarly:
+
+```text id="m3q7v1"
+Similar Review Text
+    ≠
+Fraud
+```
+
+The system therefore considers combinations and relative signal strength:
+
+```text id="z8k4r6"
+Weak Signal
+     +
+Weak Signal
+     ↓
+Low / Medium Risk
+
+Strong Signal
+     +
+Supporting Signal
+     ↓
+Higher Risk
+```
+
+This reduces dependence on simplistic one-rule moderation.
+
+---
+
+## 📈 Interactive Review Dashboards
+
+The collected feedback is exposed through interactive dashboards that allow users to inspect the dataset more efficiently.
+
+The dashboard supports:
+
+* Review filtering.
+* Feedback pattern monitoring.
+* Aggregate review analysis.
+* Anomaly-oriented inspection.
+* Dataset export.
+
+The system provides separate operational views for:
+
+* **Maribaya Resort**
+* **Maribaya Glamping**
+
+---
+
+## 🔎 Data Exploration Workflow
+
+```text id="c7m4x2"
+Collected Reviews
+       ↓
+Dashboard
+       ↓
+Filter
+       ↓
+Inspect Patterns
+       ↓
+Identify Relevant Reviews
+       ↓
+Export
+       ↓
+Further Analysis
+```
+
+This allows users to move from raw submissions toward targeted review analysis.
+
+---
+
+## 📤 CSV Export
+
+The dashboard supports exporting collected feedback to **CSV**.
+
+This allows the review dataset to be used in downstream workflows such as:
+
+* Statistical analysis.
+* Data cleaning.
+* Customer-experience analysis.
+* NLP processing.
+* Reporting.
+* External analytical tooling.
+
+```text id="r8m2w5"
+Dashboard
+    ↓
+Filtered / Complete Dataset
+    ↓
+CSV Export
+    ↓
+External Analysis
+```
+
+---
+
+## 🌐 REST-Oriented Application Architecture
+
+The project incorporates a web application architecture with structured data communication.
+
+Conceptually:
+
+```text id="v4q7m8"
+Visitor
+   ↓
+Web Interface
+   ↓
+Application / REST API
+   ↓
+Validation
+   ↓
+Anomaly Analysis
+   ↓
+Database
+   ↓
+Dashboard
+```
+
+The API-oriented structure provides a separation between user-facing interactions and backend processing.
+
+---
+
+## 🏗️ System Architecture
+
+The application can be understood through five logical layers.
+
+### 🌐 Presentation Layer
+
+Responsible for:
+
+* Review submission interface.
+* Dashboard interface.
+* Filtering controls.
+* Data visualization.
+* Export interaction.
+
+### 🔐 Access Layer
+
+Responsible for:
+
+* Token generation.
+* Token validation.
+* Expiration handling.
+* Submission access control.
+
+### ⚙️ Processing Layer
+
+Responsible for:
+
+* Input validation.
+* Review normalization.
+* Anomaly signal calculation.
+* Risk-tier classification.
+
+### 🗄️ Data Layer
+
+Responsible for:
+
+* Review persistence.
+* Submission metadata.
+* Anomaly indicators.
+* Dashboard data retrieval.
+
+### 📊 Analytics Layer
+
+Responsible for:
+
+* Aggregate review analysis.
+* Interactive filtering.
+* Pattern monitoring.
+* CSV export.
+
+---
+
+## 🔄 End-to-End System Flow
+
+```text id="n5x7m2"
+┌─────────────────────┐
+│       Visitor       │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│   Review Form       │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│ Token Verification  │
+│     + Validation    │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│ Review Processing    │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│ Multi-Signal        │
+│ Anomaly Detection   │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│ Persistent Review   │
+│ Data                │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│ Interactive         │
+│ Dashboard           │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│ CSV Export /        │
+│ Further Analysis    │
+└─────────────────────┘
+```
+
+---
+
+## 🧩 Data Quality Strategy
+
+The system treats **data quality as a first-class concern**.
+
+The objective is not merely to collect more reviews, but to collect feedback that can be trusted for subsequent analysis.
+
+The quality pipeline is:
+
+```text id="q2m8x4"
+Access Control
+      +
+Field Validation
+      +
+Behavioral Analysis
+      ↓
+Higher-Quality Feedback Dataset
+```
+
+This is especially relevant for first-party feedback because the collected dataset may later become an input for customer-experience analysis and decision-making.
+
+---
+
+## ⚡ Operational Design
+
+The system is designed around a lightweight feedback-collection workflow:
+
+```text id="z6p3w8"
+Visitor
+ ↓
+Short Review Flow
+ ↓
+Immediate Validation
+ ↓
+Automated Screening
+ ↓
+Dashboard Availability
+```
+
+This minimizes unnecessary complexity for the visitor while shifting anomaly screening to the application layer.
+
+---
+
+## 💼 Business Value
+
+The project supports customer-experience operations in several ways.
+
+### More Reliable First-Party Feedback
+
+Token-controlled submission reduces the exposure of the review form to uncontrolled access.
+
+### Lower Manual Moderation Burden
+
+Anomaly tiers help teams focus attention on submissions with stronger suspicious signals.
+
+### Better Data Accessibility
+
+Interactive dashboards make review patterns easier to inspect without working directly with raw records.
+
+### Easier Downstream Analysis
+
+CSV export allows the dataset to be moved into additional analytical workflows.
+
+The overall value chain is:
+
+```text id="y8m4q2"
+Feedback Collection
+       ↓
+Data Validation
+       ↓
+Anomaly Screening
+       ↓
+Structured Dataset
+       ↓
+Dashboard Exploration
+       ↓
+Customer Insight
+```
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer                  | Technology                     | Purpose                                   |
+| ---------------------- | ------------------------------ | ----------------------------------------- |
+| 🐍 **Backend / Logic** | **Python**                     | Application and anomaly-processing logic  |
+| 🌐 **API**             | **REST API**                   | Structured application data communication |
+| ✅ **Validation**       | **Data Validation**            | Submission integrity checks               |
+| 🚨 **Detection**       | **Multi-Signal Anomaly Rules** | Identify potentially suspicious reviews   |
+| 📊 **Dashboard**       | **Web Application Dashboard**  | Interactive review analysis               |
+| 📤 **Export**          | **CSV**                        | Downstream data analysis                  |
+| 🚀 **Deployment**      | **Railway**                    | Application deployment                    |
+
+---
+
+## 🔬 Technical Highlights
+
+### Token-Based Security
+
+The 15-minute token expiration window creates a controlled submission mechanism rather than exposing an unrestricted review form.
+
+### Behavioral Anomaly Detection
+
+Multiple behavioral indicators are combined instead of relying on a single hard-coded rule.
+
+### Risk-Based Classification
+
+Reviews are assigned practical risk tiers to help prioritize moderation and investigation.
+
+### Interactive Analytics
+
+The dashboard provides filtering and review-pattern exploration without requiring users to manipulate backend data directly.
+
+### Portable Data
+
+CSV export allows collected feedback to be used by external analysis workflows.
+
+### Web Application Architecture
+
+The application separates data collection, validation, anomaly processing, persistence, and dashboard presentation into logical components.
+
+---
+
+## 🗺️ Project Scope
+
+| Module                                 | Description                                                     | Status        |
+| -------------------------------------- | --------------------------------------------------------------- | ------------- |
+| 📝 **First-Party Feedback Collection** | Structured review collection for resort and glamping operations | ✅ Implemented |
+| 🔐 **Token Access Control**            | System-issued access tokens with 15-minute expiry               | ✅ Implemented |
+| ✅ **Data Validation**                  | Submission validation before persistence                        | ✅ Implemented |
+| 👤 **Identity Signal**                 | Detect repeated identity patterns                               | ✅ Implemented |
+| 📝 **Text Similarity Signal**          | Detect repeated or similar review text                          | ✅ Implemented |
+| ⭐ **Rating Signal**                    | Detect similar rating combinations                              | ✅ Implemented |
+| 🕐 **Timing Signal**                   | Detect unusual submission timing patterns                       | ✅ Implemented |
+| 🚨 **Anomaly Classification**          | Low-to-strong risk framework                                    | ✅ Implemented |
+| 📊 **Interactive Dashboard**           | Filter and monitor collected reviews                            | ✅ Implemented |
+| 📤 **CSV Export**                      | Export feedback data for further analysis                       | ✅ Implemented |
+| 🚀 **Railway Deployment**              | Web application deployment                                      | ✅ Implemented |
+
+---
+
+## 📊 Portfolio Alignment
+
+The project directly reflects the capabilities represented in your LinkedIn entry:
+
+| LinkedIn Capability                    | Project Evidence                           |
+| -------------------------------------- | ------------------------------------------ |
+| First-party customer feedback platform | Structured visitor review collection       |
+| Python                                 | Application and anomaly-processing logic   |
+| REST API                               | Structured backend communication           |
+| Data validation                        | Controlled review submission flow          |
+| Token-based access control             | 15-minute access-token expiration          |
+| Multi-signal anomaly detection         | Identity, text, rating, and timing signals |
+| Anomaly classification                 | Low-to-strong risk tiers                   |
+| Dashboard                              | Interactive review monitoring              |
+| CSV                                    | Dataset export                             |
+| Railway                                | Deployment                                 |
+| Web application                        | End-to-end browser-based feedback platform |
+
+> **Portfolio positioning:** This project demonstrates the ability to build a practical feedback-data platform that combines secure access, data validation, anomaly detection, interactive analytics, and exportable datasets into one operational workflow.
+
+---
+
+## 🔭 Future Development
+
+Potential extensions include:
+
+* More sophisticated anomaly models.
+* Statistical anomaly scoring.
+* Behavioral baselines based on historical submissions.
+* Automated anomaly-threshold calibration.
+* Review trend monitoring over time.
+* NLP-based sentiment and topic analysis.
+* Reviewer-level behavioral profiling.
+* Anomaly audit trails.
+* Automated alerts for anomaly spikes.
+* Integration with broader customer-experience analytics.
+
+These represent future development directions and are not claimed as current implementations.
+
+---
+
+## 🚀 Deployment
+
+The application is deployed using **Railway**.
+
+The deployment architecture can be represented as:
+
+```text id="m8x4q1"
+Visitor
+   ↓
+Railway Deployment
+   ↓
+Web Application
+   ↓
+Validation + Anomaly Processing
+   ↓
+Feedback Dataset
+   ↓
+Dashboard / CSV Export
+```
+
+Operational endpoints and sensitive data are intentionally not exposed through the public portfolio documentation.
+
+---
+
+## 🔐 Security & Privacy Notice
+
+The platform handles customer feedback and therefore should be deployed with appropriate protection for user-submitted information.
+
+The public portfolio should not expose:
+
+* Production credentials.
+* Authentication tokens.
+* Private environment variables.
+* Sensitive visitor data.
+* Internal operational configuration.
+* Raw production review datasets.
+
+The documentation focuses on the system's architecture and methodology rather than exposing operational information.
 
 ---
 
 ## 📄 Project Ownership
 
-This project was developed during my tenure as **Data Analyst at PT Wiraky Nusa Telekomunikasi** for the Maribaya property. It is documented here as a professional portfolio case study; the source code and production environment remain the property of PT Wiraky Nusa Telekomunikasi / Maribaya.
+This project was developed during my tenure as a **Data Analyst at PT Wiraky Nusa Telekomunikasi** for the **Maribaya** property.
 
-## 📫 Contact & Connect
+It is documented here as a professional portfolio case study.
 
-<p align="center">
-<strong>👨‍💻 Bernardo - Bachelor of Computer Science</strong><br/>
-Diponegoro University🎓
+Project materials, deployment configuration, operational data, and other non-public components should be handled according to the applicable organizational ownership and confidentiality requirements.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file for the complete license text.
+
+Third-party libraries, services, datasets, and external components remain subject to their respective licenses and terms.
+
+---
+
+<div class="contact-hero">
+
+<p><strong>Interested in the project?</strong></p>
+
+<p>
+👨‍💻 <strong>Bernardo Nandaniar Sunia</strong><br/>
+Bachelor of Computer Science — Diponegoro University<br/>
+Data Analyst · Data Validation · Anomaly Detection · Web Applications
 </p>
 
-<p align="center">
+<p>
 <a href="https://linkedin.com/in/bernardo-sunia/">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -130,24 +681,42 @@ Diponegoro University🎓
 </a>
 </p>
 
-<p align="center">
-⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+<p>
+<em>Python · REST API · Data Validation · Anomaly Detection · Dashboard · Railway</em>
 </p>
 
-<p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
-</p>
+</div>
 
 ---
 
-### Full Screenshots
+## 📸 Full Screenshots
+
 ![Screenshot 1](images/Picture1.png)
+
 ![Screenshot 2](images/Picture2.png)
+
 ![Screenshot 3](images/Picture3.png)
+
 ![Screenshot 4](images/Picture4.png)
+
 ![Screenshot 5](images/Picture5.png)
+
 ![Screenshot 6](images/Picture6.png)
+
 ![Screenshot 7](images/Picture7.png)
+
 ![Screenshot 8](images/Picture8.png)
+
 ![Screenshot 9](images/Picture9.png)
+
+---
+
+## 📌 Conclusion
+
+The **Maribaya Visitor Review System** demonstrates how a first-party feedback workflow can be strengthened through a combination of **controlled access, data validation, behavioral anomaly detection, interactive dashboards, and exportable datasets**.
+
+The platform uses **15-minute token-based access control** to restrict review submissions, then evaluates incoming feedback through multiple signals including **repeated identity patterns, text similarity, rating similarity, and unusual submission timing**.
+
+Rather than automatically rejecting potentially suspicious reviews, the system applies a **risk-based anomaly classification framework** that helps prioritize moderation and investigation.
+
+The result is a practical web application that transforms customer feedback from simple form submissions into a more structured and analyzable data asset.

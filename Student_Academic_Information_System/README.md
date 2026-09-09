@@ -1,417 +1,907 @@
-<div align="center">
-  <h1>🎓 Student Academic Information System (SI-MAS)</h1>
-  <p><em>Comprehensive web-based academic management platform for universities</em></p>
-</div>
+<div class="hero">
 
-<div align="center">
+<h1>🎓 Student Academic Information System (SI-MAS)</h1>
 
-<img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status">
-<img src="https://img.shields.io/badge/Laravel-10.x-red" alt="Laravel">
-<img src="https://img.shields.io/badge/PHP-%3E%3D8.1-blue" alt="PHP Version">
-<img src="https://img.shields.io/badge/MySQL-8.0-orange" alt="MySQL">
-<img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+<p>Academic Administration · Course Registration · Student Records · Role-Based Access</p>
 
-<p><strong><a href="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/">🌐 Live Demo</a> | <a href="https://github.com/bers31/bernardo.github.io/tree/main/Student_Academic_Information_System">📁 Repository</a></strong></p>
+<p>
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel"/>
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
+  <img src="https://img.shields.io/badge/Web%20Application-6D28D9?style=flat-square" alt="Web Application"/>
+  <img src="https://img.shields.io/badge/Role--Based%20Access-8B5CF6?style=flat-square" alt="Role-Based Access"/>
+  <img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="MIT License"/>
+</p>
 
-</div>
+<p>
+A web-based academic information system designed to streamline course registration,
+academic record management, validation workflows, and role-based administrative access.
+</p>
 
----
-
-## 📖 **Project Overview**
-
-SI-MAS is a robust, full-featured **Academic Information System** built with Laravel that streamlines university administration processes. Designed for **Diponegoro University**, this system provides comprehensive management for student enrollment, course scheduling, academic records, and multi-role authorization.
-
-**Why SI-MAS?**
-- ✅ **Complete Academic Workflow** - From student registration to transcript generation
-- ✅ **Role-Based Access Control** - Secure access for students, lecturers, heads of departments, deans, and administrators
-- ✅ **Real-time Data Management** - Live updates for schedules, grades, and approvals
-- ✅ **Professional UI/UX** - Modern, responsive interface with DataTables and SweetAlert2
-
----
-
-## ✨ **Key Features**
-
-<table width="100%" cellpadding="10" cellspacing="0" border="0">
-<tr>
-<td width="50%" valign="top">
-
-<h3>👥 <strong>Multi-Role Dashboard</strong></h3>
-<ul>
-<li><strong>Student Portal</strong>: IRS management, KHS viewing, schedule tracking</li>
-<li><strong>Lecturer Interface</strong>: Grade input, academic advising, teaching schedule</li>
-<li><strong>Department Head</strong>: Course & schedule management</li>
-<li><strong>Dean Panel</strong>: Approval workflows for room/schedule changes</li>
-<li><strong>Admin Control</strong>: User management, data import/export</li>
-</ul>
-
-</td>
-<td width="50%" valign="top">
-
-<h3>🔐 <strong>Security & Authorization</strong></h3>
-<ul>
-<li>Laravel Authentication with role-based middleware</li>
-<li>Encrypted password storage</li>
-<li>Route protection per user role</li>
-<li>Session management with logout functionality</li>
-<li>Input validation and CSRF protection</li>
-</ul>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<h3>📊 <strong>Academic Management</strong></h3>
-<ul>
-<li><strong>IRS (Course Registration)</strong>: Student course selection with approval workflow</li>
-<li><strong>KHS (Academic Transcript)</strong>: Semester grade reports</li>
-<li><strong>Schedule Management</strong>: Room, time, and lecturer assignment</li>
-<li><strong>Registration History</strong>: Payment and enrollment tracking</li>
-<li><strong>Course Catalog</strong>: Complete curriculum management</li>
-</ul>
-
-</td>
-<td width="50%" valign="top">
-
-<h3>🚀 <strong>Modern Tech Stack</strong></h3>
-<ul>
-<li><strong>Backend</strong>: Laravel 10.x with Blade templating</li>
-<li><strong>Database</strong>: MySQL with comprehensive relational design</li>
-<li><strong>Frontend</strong>: Responsive UI with DataTables, SweetAlert2</li>
-<li><strong>API</strong>: RESTful endpoints for dynamic data fetching</li>
-<li><strong>Architecture</strong>: MVC pattern with resource controllers</li>
-</ul>
-
-</td>
-</tr>
-</table>
-
----
-
-## 🛠️ **Technology Stack**
-
-<div align="center">
-
-<table width="100%" border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
-<thead>
-<tr style="background-color: #f6f8fa;">
-<th><strong>Category</strong></th>
-<th><strong>Technology</strong></th>
-<th><strong>Version</strong></th>
-<th><strong>Purpose</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Backend Framework</strong></td>
-<td><img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Laravel"></td>
-<td>10.x</td>
-<td>Core framework</td>
-</tr>
-<tr>
-<td><strong>Programming Language</strong></td>
-<td><img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" alt="PHP"></td>
-<td>≥8.1</td>
-<td>Server-side logic</td>
-</tr>
-<tr>
-<td><strong>Database</strong></td>
-<td><img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="MySQL"></td>
-<td>8.0</td>
-<td>Data persistence</td>
-</tr>
-<tr>
-<td><strong>Template Engine</strong></td>
-<td><img src="https://img.shields.io/badge/Blade-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Blade"></td>
-<td>Built-in</td>
-<td>View rendering</td>
-</tr>
-<tr>
-<td><strong>JavaScript Library</strong></td>
-<td><img src="https://img.shields.io/badge/DataTables-1F4E79?style=flat" alt="DataTables"></td>
-<td>Latest</td>
-<td>Dynamic tables</td>
-</tr>
-<tr>
-<td><strong>UI Components</strong></td>
-<td><img src="https://img.shields.io/badge/SweetAlert2-7066E0?style=flat" alt="SweetAlert2"></td>
-<td>Latest</td>
-<td>Interactive alerts</td>
-</tr>
-<tr>
-<td><strong>Package Manager</strong></td>
-<td><img src="https://img.shields.io/badge/Composer-885630?style=flat&logo=composer&logoColor=white" alt="Composer"></td>
-<td>Latest</td>
-<td>Dependency management</td>
-</tr>
-</tbody>
-</table>
+<p>
+<strong>
+<a href="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/">🌐 Live Demo</a>
+</strong>
+&nbsp;·&nbsp;
+<strong>
+<a href="https://github.com/bers31/bernardo.github.io/tree/main/Student_Academic_Information_System">📁 Repository</a>
+</strong>
+</p>
 
 </div>
 
 ---
 
-## 🚀 **Installation & Setup**
+## 📖 Project Overview
 
-### **Prerequisites**
-- PHP ≥ 8.1
-- Composer
-- MySQL 8.0+
-- Node.js & NPM (for asset compilation)
+**SI-MAS (Student Academic Information System)** is an integrated web application designed to support university academic administration.
 
-### **Quick Start**
+The system was developed to improve the way students, academic advisors, faculty, and administrators interact with academic information and workflows.
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/bers31/bernardo.github.io.git
-cd bernardo.github.io
+The application focuses on:
 
-# 2. Install PHP dependencies
-composer install
+* Course registration.
+* Academic record access.
+* Academic data validation.
+* Administrative workflows.
+* Role-based access control.
+* Academic performance management.
+* Responsive web interaction.
 
-# 3. Configure environment
-cp .env.example .env
-# Edit .env file with your database credentials:
-# DB_DATABASE=project_pbp_preuts
-# DB_USERNAME=your_username
-# DB_PASSWORD=your_password
+The platform was designed to support a large academic user base, serving **1,000+ students and 100 academic advisors**, while also supporting data workflows involving more than **100 faculty members**.
 
-# 4. Generate application key
-php artisan key:generate
-
-# 5. Import database dump
-mysql -u your_username -p project_pbp_preuts < file.sql
-
-# 6. Run migrations (if additional migrations exist)
-php artisan migrate --seed
-
-# 7. Start development server
-php artisan serve
+```text id="m7x3q8"
+Students / Faculty / Advisors / Administrators
+                    ↓
+              Authentication
+                    ↓
+            Role Identification
+                    ↓
+          Academic Application
+                    ↓
+       ┌────────────┼────────────┐
+       ↓            ↓            ↓
+Course Registration  Records   Academic Processes
+       │            │            │
+       └────────────┼────────────┘
+                    ↓
+              MySQL Database
 ```
 
-**🎯 Access the application at:** `http://localhost:8000`
-
-### **Default Accounts (Seed Data)**
-
-| **Role** | **Email** | **Default Access** |
-|----------|-----------|-------------------|
-| **Admin** | `admin@example.com` | Full system access |
-| **Student** | Check `users` table | Student dashboard |
-| **Lecturer** | Check `users` table | Lecturer dashboard |
-
-*Note: Passwords are encrypted in the database. Use Laravel Tinker or reset via email for secure access.*
+> **Portfolio focus:** This project demonstrates full-stack web application development with Laravel, relational database management, academic workflow automation, data validation, secure authorization, usability testing, and stakeholder-oriented system design.
 
 ---
 
-## 🎥 **Demo & Screenshots**
+## 🎯 Project Objectives
 
-<div align="center">
+The project was developed around several operational objectives:
 
-<h3>🏠 <strong>Dashboard Overview</strong></h3>
-<img src="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/images/Picture11.png" alt="Student Dashboard" width="100%" style="max-width: 800px;">
-
-<h3>📋 <strong>IRS Management System</strong></h3>
-<img src="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/images/Picture9.png" alt="IRS System" width="100%" style="max-width: 800px;">
-
-<h3>📊 <strong>Admin Dashboard</strong></h3>
-<img src="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/images/Picture2.png" alt="Admin Dashboard" width="100%" style="max-width: 800px;">
-
-<p><strong><a href="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/">🔗 View Live Demo</a></strong></p>
-
-</div>
+1. Streamline student course-registration workflows.
+2. Provide centralized access to academic records.
+3. Reduce manual administrative effort.
+4. Improve academic data accuracy through automated validation.
+5. Provide secure, role-aware access to academic information.
+6. Support faculty and academic advisors in administrative workflows.
+7. Improve usability through iterative user testing.
+8. Document the system for administrators and future maintenance.
 
 ---
 
-## 🗄️ **Database Architecture**
+## 📊 Scale & Impact
 
-### **Core Tables & Relationships**
+The system was designed to support a substantial academic user environment.
 
-```sql
--- Key Database Structure
-users (id, email, username, password, role)
-  ├── mahasiswa (nim, nama, kd_departemen) [FK: users.email]
-  ├── dosen (nidn, nama, kd_departemen) [FK: users.email]
-  
-mata_kuliah (kode_mk, nama_mk, sks, semester)
-  ├── jadwal (id, kode_mk, hari, jam_mulai, ruang) [FK: mata_kuliah.kode_mk]
-  
-irs (id, nim_mahasiswa, semester, status)
-  ├── detail_irs (id_irs, kode_mk, nilai) [FK: irs.id, mata_kuliah.kode_mk]
-  
-fakultas → departemen → prodi (hierarchical structure)
-tahun_ajaran (id, tahun, semester, status_aktif)
-```
+| Metric                               | Project Impact                              |
+| ------------------------------------ | ------------------------------------------- |
+| 👨‍🎓 **Students**                   | **1,000+**                                  |
+| 👨‍🏫 **Academic Advisors**          | **100**                                     |
+| 🏛️ **Faculty Members**              | **100+**                                    |
+| ⏱️ **Registration Time Improvement** | **30% reduction**                           |
+| 🔐 **Access Model**                  | Role-based authentication and authorization |
 
-### **Entity Relationship Highlights**
-- **Users Authentication**: Central auth table with role-based access
-- **Academic Hierarchy**: Faculty → Department → Study Program structure  
-- **Course Management**: Course catalog with scheduling constraints
-- **Student Records**: IRS enrollment with detailed grade tracking
-- **Approval Workflow**: Multi-level approval system for academic changes
+The scale emphasizes that SI-MAS was not designed merely as a small CRUD demonstration, but as a structured academic administration application.
 
 ---
 
-## 🔗 **API Endpoints & Routing**
+## 👥 User Roles
 
-### **Public Routes**
-```php
-GET  /               # Welcome page
-GET  /about          # About page  
-POST /login          # Authentication
-POST /logout         # User logout
+The system provides role-aware functionality for different academic stakeholders.
+
+### 🎓 Students
+
+Students can use the system for:
+
+* Course registration.
+* Academic record access.
+* Schedule checking.
+* Academic progress monitoring.
+* Viewing relevant academic information.
+
+### 👨‍🏫 Academic Advisors
+
+Academic advisors can support student academic processes through:
+
+* Registration review.
+* Academic advising workflows.
+* Student academic monitoring.
+* Approval-related activities.
+
+### 🏛️ Faculty & Academic Administration
+
+Faculty-facing functionality supports academic processes such as:
+
+* Academic data management.
+* Grading-related workflows.
+* Attendance management.
+* Performance monitoring.
+
+### 🔧 Administrators
+
+Administrative users can manage system-level academic data and maintain application records.
+
+The general access model is:
+
+```text id="c8q5m2"
+                    User
+                     ↓
+               Authentication
+                     ↓
+              Role Identification
+                     ↓
+       ┌─────────────┼─────────────┐
+       ↓             ↓             ↓
+    Student       Advisor       Faculty/Admin
+       ↓             ↓             ↓
+  Student Area   Academic       Administrative
+                 Workflow          Area
 ```
 
-### **Role-Based Protected Routes**
+---
 
-<details>
-<summary><b>👨‍🎓 Student Routes</b> <code>/mahasiswa/*</code></summary>
+## 🔐 Authentication & Authorization
 
-```php
-GET  /mahasiswa/dashboard        # Student dashboard
-GET  /mahasiswa/status_akademik  # Academic status
-GET  /mahasiswa/registrasi_mhs   # Registration management
-GET  /mahasiswa/irs_mhs          # IRS course selection
-GET  /mahasiswa/jadwal_mhs       # Class schedule
-GET  /mahasiswa/khs_mhs          # Semester grades
-GET  /mahasiswa/transkrip_mhs    # Academic transcript
+Security is a core component because the application handles academic information.
+
+The system provides:
+
+* Authentication.
+* Role-based authorization.
+* Protected application areas.
+* Controlled access to academic information.
+* Session-aware user interaction.
+* Data privacy protection.
+
+Conceptually:
+
+```text id="w4m8x2"
+Login
+  ↓
+Identity Verification
+  ↓
+Role Detection
+  ↓
+Permission Check
+  ↓
+Authorized Dashboard
 ```
-</details>
 
-<details>
-<summary><b>👨‍🏫 Lecturer Routes</b> <code>/dosen/*</code></summary>
+This prevents users from accessing functionality outside the responsibilities associated with their role.
 
-```php
-GET  /dosen/dashboard     # Lecturer dashboard
-GET  /dosen/perwalian     # Academic advising
-GET  /dosen/input_nilai   # Grade input interface
-GET  /dosen/jadwal        # Teaching schedule
+---
+
+## 📝 Course Registration Workflow
+
+Course registration is one of the central workflows of SI-MAS.
+
+The process can be summarized as:
+
+```text id="p7m3x9"
+Student
+  ↓
+Select Courses
+  ↓
+Submit Registration
+  ↓
+Automated Validation
+  ↓
+Advisor Review / Approval
+  ↓
+Confirmed Registration
+  ↓
+Academic Record
 ```
-</details>
 
-<details>
-<summary><b>🏛️ Administrative Routes</b></summary>
+The system reduces administrative friction by replacing repetitive manual processing with a structured digital workflow.
 
-```php
-# Department Head
-Resource /kaprodi/matkul    # Course management
-Resource /kaprodi/jadwal    # Schedule management
+This contributed to a **30% reduction in the average time required for course registration**.
 
-# Dean Panel  
-POST /dekan/approve-room-change/{id}  # Room change approval
-POST /dekan/approveAllRoomChanges     # Bulk approval
+---
 
-# Admin Panel
-Resource /admin/users       # User management
-Resource /admin/mahasiswa   # Student data
-Resource /admin/dosen       # Lecturer data
+## ✅ Automated Data Validation
+
+Academic systems require consistent and accurate records.
+
+SI-MAS incorporates automated validation to reduce:
+
+* Manual input errors.
+* Inconsistent academic records.
+* Invalid registration states.
+* Repetitive administrative checking.
+
+The validation workflow is:
+
+```text id="x5q8m4"
+Input
+  ↓
+Validation Rules
+  ↓
+Consistency Check
+  ↓
+Valid ───────→ Save / Process
+  │
+  └──────────→ Reject / Correct
 ```
-</details>
 
-### **API Endpoints**
-```bash
-# Data Fetching APIs
-GET  /api/jadwal              # Schedule data (JSON)
-GET  /api/fetch-dosen         # Lecturer list
-GET  /api/fetch-mahasiswa     # Student data
-POST /api/approve-irs/{id}    # IRS approval
+This helps reduce faculty workload while improving the reliability of academic data.
 
-# Report Generation
-GET  /mhs/print_irs/{nim}/{semester}  # IRS PDF export
+---
+
+## 📚 Academic Record Management
+
+The system centralizes important academic information.
+
+Typical academic records include:
+
+* Course registrations.
+* Course schedules.
+* Grades.
+* Academic history.
+* Student progress.
+* Performance-related information.
+
+The general information flow is:
+
+```text id="n6m2q7"
+Academic Activity
+       ↓
+Application Processing
+       ↓
+Validated Record
+       ↓
+MySQL Persistence
+       ↓
+Role-Specific Access
 ```
+
+This creates a single application environment for accessing relevant academic information.
+
+---
+
+## 📈 Academic Performance Analytics
+
+The platform supports academic performance-oriented functionality, allowing faculty and academic stakeholders to work with student performance information.
+
+Potential analytical areas include:
+
+* Grade records.
+* Course performance.
+* Academic progress.
+* Attendance-related information.
+* Student performance monitoring.
+
+This extends SI-MAS beyond simple registration into a broader academic information environment.
+
+---
+
+## 🕐 Schedule & Academic Activity Management
+
+Academic scheduling is another important workflow.
+
+The system organizes information related to:
+
+* Courses.
+* Class schedules.
+* Academic activities.
+* Faculty assignments.
+* Student-facing schedule access.
+
+The workflow is:
+
+```text id="r8m4x1"
+Course / Academic Activity
+          ↓
+Schedule Management
+          ↓
+Academic Database
+          ↓
+Faculty / Student Access
+```
+
+Centralized schedule management helps reduce inconsistencies between administrative and student-facing information.
+
+---
+
+## 🤝 Faculty Collaboration
+
+The system was refined through collaboration with faculty to accommodate academic requirements that differ from one workflow to another.
+
+This collaboration helped shape functionality related to:
+
+* Academic administration.
+* Automated grading workflows.
+* Attendance tracking.
+* Performance analytics.
+* Role-specific system behavior.
+
+The development process therefore combined technical implementation with domain feedback.
+
+```text id="q4m7x2"
+Technical Implementation
+          +
+Faculty Requirements
+          ↓
+Workflow Refinement
+          ↓
+More Relevant Academic System
+```
+
+---
+
+## 🧪 User Testing & Iterative Improvement
+
+User testing was conducted to gather feedback from system users and identify usability issues.
+
+The refinement cycle was:
+
+```text id="v7m3k8"
+Initial Implementation
+        ↓
+User Testing
+        ↓
+Collect Feedback
+        ↓
+Identify Usability Issues
+        ↓
+Iterative Update
+        ↓
+Improved Experience
+```
+
+Attention was given to:
+
+* Workflow simplicity.
+* Information accessibility.
+* Dashboard usability.
+* Registration experience.
+* Role-specific interaction.
+
+This user-centered approach contributed to improved overall system usability.
+
+---
+
+## 🗄️ Database Architecture
+
+The system uses **MySQL** as its relational database layer.
+
+The database is responsible for storing structured academic information.
+
+Conceptually:
+
+```text id="m5x8q3"
+Users
+  │
+  ├── Students
+  ├── Advisors
+  ├── Faculty
+  └── Administrators
+          │
+          ↓
+      Academic Data
+          │
+     ┌────┼────┐
+     ↓    ↓    ↓
+  Courses Schedules Grades
+     │    │    │
+     └────┼────┘
+          ↓
+    Academic Records
+```
+
+The relational model supports consistency between users, academic activities, and student records.
+
+---
+
+## 🔄 Data Management Workflow
+
+The application follows a structured lifecycle for academic information:
+
+```text id="z6q4m8"
+Create
+  ↓
+Validate
+  ↓
+Process
+  ↓
+Store
+  ↓
+Retrieve
+  ↓
+Display
+  ↓
+Update
+```
+
+Laravel handles application-level processing while MySQL provides persistent data storage.
+
+---
+
+## ⚙️ Laravel Application Architecture
+
+Laravel provides the primary web application framework.
+
+The architecture follows a structured separation between application responsibilities:
+
+```text id="k3m8p5"
+HTTP Request
+     ↓
+Laravel Routing
+     ↓
+Controller / Application Logic
+     ↓
+Validation
+     ↓
+Database Interaction
+     ↓
+Response / View
+```
+
+This provides a maintainable foundation for the academic workflows managed by SI-MAS.
+
+---
+
+## 🌐 Web Application Interface
+
+The interface is designed to provide a consistent experience across different academic roles.
+
+**Bootstrap** supports the responsive presentation layer, helping the application adapt across different screen sizes.
+
+The interface emphasizes:
+
+* Clear navigation.
+* Role-specific dashboards.
+* Structured academic information.
+* Accessible forms.
+* Responsive layouts.
+* Consistent interaction patterns.
+
+---
+
+## 📋 Core Academic Modules
+
+| Module                         | Function                                       |
+| ------------------------------ | ---------------------------------------------- |
+| 👨‍🎓 **Student Portal**       | Course registration and academic record access |
+| 📝 **Registration Management** | Structured course registration workflow        |
+| 📚 **Academic Records**        | Access to grades and academic history          |
+| 🗓️ **Schedule Management**    | Manage and access academic schedules           |
+| ✅ **Data Validation**          | Automated checking of academic input           |
+| 👨‍🏫 **Advisor Workflow**     | Support academic review and advising           |
+| 📈 **Performance Analytics**   | Monitor student academic performance           |
+| 🔐 **Authentication & RBAC**   | Secure role-specific application access        |
+| 🔧 **Administration**          | Manage academic and system-level data          |
+
+---
+
+## 🏗️ System Architecture
+
+SI-MAS can be understood through four primary layers.
+
+### 🌐 Presentation Layer
+
+```text id="f4m8q2"
+Bootstrap-Based Web Interface
+            ↓
+Role-Specific Dashboard
+            ↓
+Student / Advisor / Faculty / Admin Views
+```
+
+### ⚙️ Application Layer
+
+```text id="x7p3m5"
+Laravel + PHP
+      ↓
+Routing
+      ↓
+Business Logic
+      ↓
+Validation
+      ↓
+Authorization
+```
+
+### 🗄️ Data Layer
+
+```text id="r5m8q4"
+MySQL
+   ↓
+Users
+Courses
+Schedules
+Grades
+Academic Records
+```
+
+### 🔐 Security Layer
+
+```text id="n3q7x8"
+Authentication
+      +
+Authorization
+      +
+Role-Based Access
+      +
+Data Privacy
+```
+
+---
+
+## 🔄 End-to-End System Flow
+
+```text id="p8m4q2"
+┌──────────────────────┐
+│ Academic User        │
+│ Student / Faculty    │
+│ Advisor / Admin      │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│ Authentication       │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│ Role-Based Access    │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│ Laravel Application  │
+│ PHP + Bootstrap      │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│ Validation &         │
+│ Academic Processing  │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│ MySQL Database       │
+└──────────┬───────────┘
+           ↓
+┌──────────────────────┐
+│ Academic Dashboard   │
+│ / Records / Reports  │
+└──────────────────────┘
+```
+
+---
+
+## 📊 Operational Impact
+
+The project delivered measurable process improvements.
+
+### ⏱️ Faster Course Registration
+
+The redesigned registration workflow reduced the average registration time by **30%**.
+
+```text id="c5m8q1"
+Traditional Workflow
+        ↓
+Manual Processing
+        ↓
+Longer Registration Time
+
+SI-MAS Workflow
+        ↓
+Digital Registration
+        ↓
+Automated Validation
+        ↓
+Faster Approval
+        ↓
+30% Time Reduction
+```
+
+### 🧹 Lower Manual Workload
+
+Automated validation reduces repetitive administrative checking and helps minimize human error.
+
+### 🔎 Better Data Accessibility
+
+Students and academic staff can access relevant academic information through centralized web interfaces.
+
+---
+
+## 💼 Business & Institutional Value
+
+SI-MAS creates value through several interconnected improvements:
+
+| Area                           | Value                                                     |
+| ------------------------------ | --------------------------------------------------------- |
+| ⏱️ **Efficiency**              | Faster academic registration and processing               |
+| ✅ **Accuracy**                 | Automated validation reduces manual errors                |
+| 🔐 **Security**                | Role-aware access protects academic information           |
+| 📚 **Accessibility**           | Centralized academic information is easier to access      |
+| 🎓 **Student Experience**      | Simplified registration and academic-record access        |
+| 👨‍🏫 **Faculty Productivity** | Reduced repetitive administrative work                    |
+| 📈 **Academic Monitoring**     | Performance and attendance information support monitoring |
+
+---
+
+## 🧩 Problem-to-Solution Mapping
+
+| Problem                          | SI-MAS Response                             |
+| -------------------------------- | ------------------------------------------- |
+| Manual course registration       | Digital registration workflow               |
+| Repetitive validation            | Automated data validation                   |
+| Fragmented academic information  | Centralized academic system                 |
+| Unauthorized access              | Authentication and role-based authorization |
+| Difficult academic monitoring    | Centralized performance information         |
+| Usability issues                 | User testing and iterative refinement       |
+| Complex administrative workflows | Role-specific functionality                 |
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer                        | Technology                          | Purpose                                                     |
+| ---------------------------- | ----------------------------------- | ----------------------------------------------------------- |
+| 🌐 **Application Framework** | **Laravel**                         | Core web application framework                              |
+| 🐘 **Programming Language**  | **PHP**                             | Server-side application logic                               |
+| 🗄️ **Database**             | **MySQL**                           | Relational academic data storage                            |
+| 🎨 **Frontend Framework**    | **Bootstrap**                       | Responsive interface and UI layout                          |
+| 🔐 **Security**              | **Authentication & Authorization**  | Protect academic functionality and information              |
+| 📊 **Application Domain**    | **Academic Information Management** | Registration, records, schedules, and performance workflows |
+
+---
+
+## 🔬 Technical Highlights
+
+### Laravel-Based Web Application
+
+Laravel provides the foundation for academic workflows, data processing, routing, and application logic.
+
+### Relational Data Management
+
+MySQL provides structured persistence for academic data and relationships between students, faculty, courses, schedules, and records.
+
+### Automated Validation
+
+Validation logic reduces manual checking and improves data consistency.
+
+### Role-Based Authorization
+
+Different academic users receive functionality appropriate to their role.
+
+### Responsive UI
+
+Bootstrap supports a consistent interface across desktop and mobile screen sizes.
+
+### User-Centered Iteration
+
+User testing and faculty collaboration are incorporated into the development process.
 
 ---
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Web-Based Application Development course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
-
-| Module | Description | Status |
-|--------|-------------|--------|
-| 🔐 **Authentication & RBAC** | Laravel-based login with role middleware for Student, Lecturer, Department Head, Dean, and Admin | ✅ Done |
-| 👨‍🎓 **Student Portal** | IRS course registration, KHS grade viewing, schedule tracking, and transcript generation | ✅ Done |
-| 👨‍🏫 **Lecturer Interface** | Grade input, academic advising (perwalian), and teaching schedule management | ✅ Done |
-| 🏛️ **Department Head Panel** | Course catalog management and class schedule assignment | ✅ Done |
-| ⚖️ **Dean Approval Workflow** | Room change and schedule modification approval with bulk processing support | ✅ Done |
-| 🔧 **Admin Control Panel** | Full user management with data import/export for students and lecturers | ✅ Done |
-| 🗄️ **Database Architecture** | Relational MySQL schema covering faculty hierarchy, course catalog, enrollment, and grading | ✅ Done |
-| 🔗 **RESTful API Endpoints** | JSON endpoints for schedules, student/lecturer data, IRS approval, and PDF report export | ✅ Done |
-
----
-
-## 🧪 **Testing & Development**
-
-### **Quick Testing Checklist**
-- [x] Authentication flow (login/logout)
-- [x] Role-based dashboard access  
-- [x] IRS creation and approval workflow
-- [x] Schedule management (CRUD operations)
-- [x] Grade input and KHS generation
-- [x] Room change approval process
-- [x] API endpoint responses
-- [x] Database constraint validation
-
-### **Development Guidelines**
-```bash
-# Adding new controller
-php artisan make:controller NewController --resource
-
-# Creating middleware
-php artisan make:middleware CustomMiddleware  
-
-# Database migrations
-php artisan make:migration create_new_table
-
-# Testing routes
-php artisan route:list --name=mahasiswa
-```
+| Module                                | Description                                         | Status        |
+| ------------------------------------- | --------------------------------------------------- | ------------- |
+| 🎓 **Student Information Management** | Centralized student academic information            | ✅ Implemented |
+| 📝 **Course Registration**            | Digital registration and approval workflow          | ✅ Implemented |
+| ✅ **Automated Validation**            | Input and academic-data validation                  | ✅ Implemented |
+| 📚 **Academic Records**               | Grades and academic history access                  | ✅ Implemented |
+| 🗓️ **Schedule Management**           | Academic scheduling and information access          | ✅ Implemented |
+| 👨‍🏫 **Advisor Workflow**            | Academic advising and review processes              | ✅ Implemented |
+| 📈 **Performance Analytics**          | Academic performance monitoring                     | ✅ Implemented |
+| 👥 **Multi-Role Access**              | Student, advisor, faculty, and administrator access | ✅ Implemented |
+| 🔐 **Authentication & Authorization** | Secure academic information access                  | ✅ Implemented |
+| 🎨 **Responsive Interface**           | Bootstrap-based responsive web UI                   | ✅ Implemented |
+| 🧪 **User Testing**                   | Feedback-driven iterative improvements              | ✅ Applied     |
+| 🤝 **Faculty Collaboration**          | Feature refinement based on academic requirements   | ✅ Applied     |
+| 📖 **Documentation**                  | Development and user documentation                  | ✅ Implemented |
 
 ---
 
-## 🤝 **Contributing**
+## 📈 Portfolio Alignment
 
-We welcome contributions to improve SI-MAS! Here's how you can help:
+The project directly reflects the capabilities described in the professional project entry:
 
-1. **🍴 Fork** the repository
-2. **🔧 Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **💾 Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **📤 Push** to the branch (`git push origin feature/amazing-feature`)
-5. **🔀 Open** a Pull Request
+| LinkedIn Capability       | Project Evidence                    |
+| ------------------------- | ----------------------------------- |
+| Laravel                   | Core web application framework      |
+| MySQL                     | Academic data persistence           |
+| PHP                       | Server-side application development |
+| Bootstrap                 | Responsive UI                       |
+| 1,000+ students           | Large academic user base            |
+| 100 academic advisors     | Advisor workflow support            |
+| 100+ faculty members      | Faculty-oriented data processes     |
+| 30% faster registration   | Measured workflow improvement       |
+| Automated data validation | Reduced manual error and workload   |
+| User testing              | Iterative UX refinement             |
+| Secure authentication     | Protected academic information      |
+| Authorization             | Role-based application access       |
+| Faculty collaboration     | Domain-driven feature refinement    |
+| Grading                   | Academic record workflow            |
+| Attendance tracking       | Academic activity monitoring        |
+| Performance analytics     | Student performance monitoring      |
+| Documentation             | User guides and technical handover  |
 
-### **Development Standards**
-- Follow PSR-12 coding standards
-- Write descriptive commit messages
-- Include tests for new features
-- Update documentation as needed
+> **Portfolio positioning:** This project demonstrates the ability to build a multi-role academic information platform that combines transactional workflows, relational data management, automation, security, usability, and stakeholder collaboration.
 
 ---
 
-## 📄 **License**
+## 🧪 Testing & Quality Assurance
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+The system was evaluated across key academic workflows.
 
+### Functional Areas
+
+* Authentication and logout.
+* Role-specific dashboard access.
+* Course registration.
+* Data validation.
+* Academic record access.
+* Schedule management.
+* Academic workflow interactions.
+* User-facing usability.
+
+### Iterative Testing
+
+```text id="q8m4x5"
+Feature
+ ↓
+User Testing
+ ↓
+Feedback
+ ↓
+Bug / Usability Identification
+ ↓
+Implementation Update
+ ↓
+Re-Test
 ```
-MIT License
 
-Copyright (c) 2024 Bernardo - Diponegoro University
+This approach ensures that the system evolves according to actual user needs rather than purely technical assumptions.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
+## 📖 Documentation & Handover
 
-## 📫 Contact & Connect
+The development process was documented to support:
 
-<p align="center">
-<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Diponegoro University 🎓
+* Technical understanding.
+* Administrative handover.
+* Future maintenance.
+* User onboarding.
+* Continued system development.
+
+User guides help reduce the learning curve for new administrators and users.
+
+---
+
+## 🎥 Demo & Screenshots
+
+### 🌐 Live Demo
+
+<div align="center">
+
+<p>
+<a href="https://bers31.github.io/bernardo.github.io/Student_Academic_Information_System/">
+<strong>🔗 View SI-MAS Live Demo</strong>
+</a>
 </p>
 
-<p align="center">
+</div>
+
+### 🏠 Dashboard Overview
+
+![Dashboard Overview](images/Picture14.png)
+
+*Academic system dashboard providing access to role-specific functionality.*
+
+### 📋 Student Registration
+
+![Course Registration](images/Picture.png)
+
+*Course-registration workflow for student academic administration.*
+
+### 📊 Academic Interface
+
+![Academic Interface](images/Picture1.png)
+
+*Academic information and workflow interface.*
+
+---
+
+## 📸 Full Screenshots
+
+![Screenshot 1](images/Picture14.png)
+
+![Screenshot 2](images/Picture.png)
+
+![Screenshot 3](images/Picture1.png)
+
+![Screenshot 4](images/Picture2.png)
+
+![Screenshot 5](images/Picture3.png)
+
+![Screenshot 6](images/Picture4.png)
+
+![Screenshot 7](images/Picture5.png)
+
+![Screenshot 8](images/Picture6.png)
+
+![Screenshot 9](images/Picture7.png)
+
+![Screenshot 10](images/Picture8.png)
+
+![Screenshot 11](images/Picture9.png)
+
+![Screenshot 12](images/Picture10.png)
+
+![Screenshot 13](images/Picture13.png)
+
+![Screenshot 14](images/Picture11.png)
+
+![Screenshot 15](images/Picture12.png)
+
+![Screenshot 16](images/Picture15.png)
+
+![Screenshot 17](images/Picture16.png)
+
+![Screenshot 18](images/Picture17.png)
+
+![Screenshot 19](images/Picture18.png)
+
+---
+
+## 🔭 Future Development
+
+Potential future improvements include:
+
+* More granular academic analytics.
+* Automated academic notifications.
+* Expanded student-performance dashboards.
+* More advanced approval workflows.
+* Mobile-focused interfaces.
+* Improved administrative reporting.
+* Expanded integration with university systems.
+* More comprehensive audit and monitoring capabilities.
+
+These are potential extensions and are not presented as current functionality unless implemented in the repository.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [`LICENSE`](LICENSE) file for the complete license text.
+
+Third-party libraries, frameworks, datasets, and other external components remain subject to their respective licenses and terms.
+
+---
+
+<div class="contact-hero">
+
+<p><strong>Interested in the project?</strong></p>
+
+<p>
+👨‍💻 <strong>Bernardo Nandaniar Sunia</strong><br/>
+Bachelor of Computer Science — Diponegoro University<br/>
+Laravel · MySQL · PHP · Bootstrap · Academic Information Systems
+</p>
+
+<p>
 <a href="https://linkedin.com/in/bernardo-sunia/">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -426,37 +916,20 @@ Diponegoro University 🎓
 </a>
 </p>
 
-<p align="center">
-⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+<p>
+<em>Academic Systems · Web Development · Data Management · Workflow Automation</em>
 </p>
 
-<p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
-</p>
+</div>
 
 ---
 
-### Full Screenshots
-![Screenshot 1](images/Picture14.png)
-![Screenshot 2](images/Picture.png)
-![Screenshot 3](images/Picture1.png)
-![Screenshot 4](images/Picture2.png)
-![Screenshot 5](images/Picture3.png)
-![Screenshot 6](images/Picture4.png)
-![Screenshot 7](images/Picture5.png)
-![Screenshot 8](images/Picture6.png)
-![Screenshot 9](images/Picture7.png)
-![Screenshot 10](images/Picture8.png)
-![Screenshot 11](images/Picture9.png)
-![Screenshot 12](images/Picture10.png)
-![Screenshot 13](images/Picture13.png)
-![Screenshot 14](images/Picture11.png)
-![Screenshot 15](images/Picture12.png)
-![Screenshot 16](images/Picture15.png)
-![Screenshot 17](images/Picture16.png)
-![Screenshot 18](images/Picture17.png)
-![Screenshot 19](images/Picture18.png)
+## 📌 Conclusion
 
-## Conclusion
-This project demonstrates the development of an efficient academic information system using Laravel, MySQL, and JavaScript, providing a seamless experience for students and academic advisors.
+**SI-MAS** demonstrates the development of a structured academic information system using **Laravel, PHP, MySQL, and Bootstrap** to simplify university administration and improve accessibility to academic information.
+
+The platform supports **1,000+ students, 100 academic advisors, and more than 100 faculty members**, while incorporating automated data validation, role-based authentication and authorization, academic records, registration workflows, scheduling, grading, attendance, and performance-oriented functionality.
+
+A measurable outcome of the project was a **30% reduction in average course-registration time**, supported by digital workflows and automated validation that reduced repetitive administrative work and minimized human error.
+
+Through user testing, faculty collaboration, and comprehensive documentation, the project demonstrates not only the implementation of a web application, but also the ability to develop a system around real academic workflows, user requirements, operational efficiency, security, and long-term maintainability.

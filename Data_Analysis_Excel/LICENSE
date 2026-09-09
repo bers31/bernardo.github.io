@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 Bernardo Nandaniar Sunia
+Copyright (c) 2026 Bernardo Nandaniar Sunia
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,28 +20,5 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-IMPORTANT NOTICE REGARDING PROPRIETARY AND CONFIDENTIAL MATERIALS:
-
-This license applies only to the original source code and documentation that
-the author intentionally makes available in this repository.
-
-This license does not grant any rights to confidential, proprietary, private,
-or restricted materials, including but not limited to:
-
-* Institutional or organizational data
-* Real user information
-* Chat logs or conversation records
-* API keys or access tokens
-* SMTP credentials
-* VAPID private keys
-* Internal deployment configuration
-* Production database contents
-* Security credentials
-* Confidential operational information
-
-Such materials remain subject to their respective ownership, confidentiality
-requirements, contractual restrictions, applicable policies, and third-party
-terms.
-
-Third-party libraries, APIs, frameworks, models, services, and other external
-components remain subject to their respective licenses and terms.
+Third-party datasets, logos, templates, fonts, icons, and other external
+assets remain subject to their respective licenses and terms.

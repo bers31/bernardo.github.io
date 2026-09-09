@@ -1,460 +1,737 @@
-<h1 align="center">🌍 Global CO₂ Emissions Analysis & Forecasting</h1>
-<p align="center"><em>Advanced statistical modeling and machine learning pipeline for predicting global carbon dioxide emissions trends</em></p>
+<div class="hero">
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Jupyter-F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white" alt="Jupyter">
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
-  <img src="https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost">
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
-  <br><br>
-  <img src="https://img.shields.io/badge/build-passing-brightgreen?style=flat-square" alt="Build Status">
-  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License">
-  <img src="https://img.shields.io/badge/version-1.0.0-orange?style=flat-square" alt="Version">
-  <img src="https://img.shields.io/badge/last%20commit-2024-green?style=flat-square" alt="Last Commit">
-</div>
+<h1>🌍 Global CO₂ Emissions Analysis & Forecasting</h1>
 
-<hr>
+<p>Environmental Data Analysis · Regression · Time-Series Forecasting · Evidence-Based Decision Support</p>
 
-<h2>📖 Project Overview</h2>
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Microsoft%20Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white" alt="Microsoft Excel"/>
+  <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white" alt="R"/>
+  <img src="https://img.shields.io/badge/Time--Series-Forecasting-6D28D9?style=flat-square" alt="Time-Series Forecasting"/>
+  <img src="https://img.shields.io/badge/Data%20Analysis-8B5CF6?style=flat-square" alt="Data Analysis"/>
+  <img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="MIT License"/>
+</p>
 
-<p>This comprehensive data science project conducts <strong>in-depth analysis</strong> and <strong>advanced forecasting</strong> of global CO₂ emissions using historical data from multiple countries spanning 1990-2021. The project leverages cutting-edge machine learning algorithms and statistical models to predict future emission trends, providing valuable insights for environmental policy makers and climate researchers.</p>
-
-<table width="100%">
-<tr>
-<td width="70%">
-
-<p><strong>Key Benefits:</strong></p>
-<ul>
-<li>🎯 <strong>Policy Support</strong>: Enables data-driven environmental policy decisions</li>
-<li>🔬 <strong>Research Foundation</strong>: Provides reproducible pipeline for academic studies</li>
-<li>🌐 <strong>Public Awareness</strong>: Delivers interactive visualizations for broader understanding</li>
-<li>📊 <strong>Business Intelligence</strong>: Supports sustainability planning for organizations</li>
-</ul>
-
-</td>
-<td width="30%">
-
-<pre>
-🌱 Environmental Impact
-├── 🏭 Industrial Emissions
-├── 🚗 Transportation Sector  
-├── ⚡ Energy Production
-└── 🌍 Global Trends Analysis
-</pre>
-
-</td>
-</tr>
-</table>
-
-<hr>
-
-<h2>✨ Key Features</h2>
-
-<div align="center">
-<table>
-<tr>
-<th align="center">🔍 <strong>Exploratory Analysis</strong></th>
-<th align="center">🤖 <strong>Predictive Modeling</strong></th>
-<th align="center">📊 <strong>Advanced Evaluation</strong></th>
-</tr>
-<tr>
-<td align="center">Historical trend analysis</td>
-<td align="center">Multiple ML algorithms</td>
-<td align="center">Comprehensive metrics</td>
-</tr>
-<tr>
-<td align="center">Country-wise comparisons</td>
-<td align="center">Hyperparameter optimization</td>
-<td align="center">Statistical validation</td>
-</tr>
-<tr>
-<td align="center">Global aggregation</td>
-<td align="center">Time-series forecasting</td>
-<td align="center">Residual analysis</td>
-</tr>
-<tr>
-<td align="center">Interactive visualizations</td>
-<td align="center">5-10 year predictions</td>
-<td align="center">Model comparison</td>
-</tr>
-</table>
-</div>
-
-<h3>🎯 Core Capabilities</h3>
-
-<ul>
-<li><strong>📈 Comprehensive Data Exploration</strong>
-  <ul>
-  <li>Statistical descriptive analysis (mean, median, mode) for 1990-2021</li>
-  <li>Advanced data cleaning and preprocessing pipelines</li>
-  <li>Multi-dimensional trend visualization and pattern recognition</li>
-  </ul>
-</li>
-
-<li><strong>🧠 Machine Learning Pipeline</strong>
-  <ul>
-  <li>Multiple algorithm comparison: Linear/Lasso Regression, XGBoost, SARIMAX</li>
-  <li>Automated hyperparameter tuning and cross-validation</li>
-  <li>Train-test split optimization with temporal considerations</li>
-  </ul>
-</li>
-
-<li><strong>📊 Advanced Statistical Evaluation</strong>
-  <ul>
-  <li>Comprehensive metrics: MSE, RMSE, MAE, R²</li>
-  <li>Residual analysis: Durbin-Watson test, VIF analysis</li>
-  <li>Time-series diagnostics: ACF/PACF plots</li>
-  </ul>
-</li>
-</ul>
-
-<hr>
-
-<h2>🛠️ Technology Stack & Tools</h2>
-
-<div align="center">
-
-<h3><strong>Core Technologies</strong></h3>
-
-<table>
-<tr>
-<th>Category</th>
-<th>Technologies</th>
-<th>Purpose</th>
-</tr>
-<tr>
-<td><strong>🐍 Language</strong></td>
-<td><img src="https://img.shields.io/badge/Python-3.8+-3776ab?style=flat&logo=python&logoColor=white" alt="Python"></td>
-<td>Primary development language</td>
-</tr>
-<tr>
-<td><strong>📊 Data Processing</strong></td>
-<td><img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" alt="Pandas"> <img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white" alt="NumPy"></td>
-<td>Data manipulation & numerical computing</td>
-</tr>
-<tr>
-<td><strong>📈 Visualization</strong></td>
-<td><img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat" alt="Matplotlib"> <img src="https://img.shields.io/badge/Seaborn-3776ab?style=flat" alt="Seaborn"></td>
-<td>Statistical plots & visualizations</td>
-</tr>
-<tr>
-<td><strong>🤖 Machine Learning</strong></td>
-<td><img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white" alt="scikit-learn"> <img src="https://img.shields.io/badge/XGBoost-FF6600?style=flat" alt="XGBoost"></td>
-<td>ML algorithms & model training</td>
-</tr>
-<tr>
-<td><strong>📊 Statistics</strong></td>
-<td><img src="https://img.shields.io/badge/Statsmodels-4051B5?style=flat" alt="Statsmodels"> <img src="https://img.shields.io/badge/SciPy-654FF0?style=flat&logo=scipy&logoColor=white" alt="SciPy"></td>
-<td>Statistical modeling & time-series</td>
-</tr>
-</table>
+<p>
+A predictive environmental analytics project that combines historical CO₂ data,
+data preparation, trend analysis, regression, time-series forecasting,
+model validation, and stakeholder-oriented reporting.
+</p>
 
 </div>
 
-<h3><strong>Development Environment</strong></h3>
+---
 
-<pre><code># Core Dependencies
-pandas>=1.3.0          # Data manipulation
-numpy>=1.21.0          # Numerical computing
-matplotlib>=3.4.0      # Base plotting
-seaborn>=0.11.0        # Statistical visualization
-scikit-learn>=1.0.0    # Machine learning
-xgboost>=1.5.0         # Gradient boosting
-statsmodels>=0.13.0    # Statistical modeling
-scipy>=1.7.0           # Scientific computing
-tqdm>=4.62.0           # Progress bars
-</code></pre>
+## 📖 Project Overview
 
-<hr>
+This project analyzes historical **greenhouse gas / carbon dioxide emissions data** and develops predictive models to forecast future emission trends.
 
-<h2>🚀 Installation & Quick Start</h2>
+The objective is to transform historical environmental observations into interpretable forecasts that can support:
 
-<h3><strong>Prerequisites</strong></h3>
-<ul>
-<li>Python 3.8+ installed</li>
-<li>Git for version control</li>
-<li>Jupyter Notebook/Lab</li>
-</ul>
+* Environmental policy development.
+* Emissions-reduction planning.
+* Identification of historical trends.
+* Understanding of contributing patterns.
+* Evidence-based stakeholder discussions.
 
-<h3><strong>Step-by-Step Setup</strong></h3>
+The project combines **Microsoft Excel, Python, R, and time-series forecasting techniques** across the analytical workflow.
 
-<pre><code># 1. Clone the repository
-git clone https://github.com/bers31/bernardo.github.io.git
-cd bernardo.github.io
+The overall process can be summarized as:
 
-# 2. Create virtual environment (recommended)
-python -m venv venv
+```text id="x7m2q9"
+Environmental Data
+       ↓
+Data Collection
+       ↓
+Data Cleaning & Validation
+       ↓
+Exploratory Analysis
+       ↓
+Trend Analysis
+       ↓
+Regression / Time-Series Modeling
+       ↓
+Model Validation
+       ↓
+Future Forecasts
+       ↓
+Visualization & Reporting
+       ↓
+Decision Support
+```
 
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
+> **Portfolio focus:** This project demonstrates the complete progression from environmental data preparation to predictive modeling, validation, visualization, and communication of forecasting results to non-technical stakeholders.
 
-# 3. Install dependencies
-pip install -r requirements.txt
+---
 
-# 4. Launch Jupyter Notebook
-jupyter notebook
+## 🎯 Project Objectives
 
-# 5. Open and run notebooks in sequence:
-# - notebooks/exploratory_analysis.ipynb
-# - notebooks/predictive_modeling.ipynb
-</code></pre>
+The project was developed around several analytical objectives:
 
-<h3><strong>Alternative: Quick Run</strong></h3>
-<pre><code># Direct execution (if you have all dependencies)
-git clone https://github.com/bers31/bernardo.github.io.git
-cd bernardo.github.io
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost statsmodels scipy tqdm
-jupyter notebook
-</code></pre>
+1. Collect and prepare historical greenhouse gas emissions data.
+2. Explore long-term emissions trends and patterns.
+3. Apply regression and time-series techniques to model historical behavior.
+4. Forecast future emissions over the coming decade.
+5. Validate model behavior against historical environmental trends.
+6. Visualize predicted and observed patterns clearly.
+7. Translate technical findings into actionable environmental insights.
+8. Present the final analysis in a format accessible to both technical and non-technical audiences.
 
-<hr>
+---
 
-<h2>🎥 Demo & Screenshots</h2>
+## 🌱 Environmental Context
 
-<div align="center">
+Greenhouse gas emissions are influenced by multiple economic, industrial, transportation, and energy-related activities.
 
-<h3><strong>🌍 Live Demo</strong></h3>
-<a href="https://bers31.github.io/bernardo.github.io/Greenhouse_Gas_Emissions_Prediction%26Analysis/" target="_blank">
-<img src="https://img.shields.io/badge/🌐_Live_Demo-View_Project-success?style=for-the-badge" alt="View Demo">
-</a>
+The analysis therefore treats emissions as a longitudinal phenomenon rather than a single static measurement.
 
-</div>
+```text id="m6q3w8"
+Historical Emissions
+        ↓
+Annual Trend
+        ↓
+Rate of Change
+        ↓
+Pattern Identification
+        ↓
+Forecast
+        ↓
+Potential Intervention Areas
+```
 
-<h3><strong>📊 Key Visualizations</strong></h3>
+The project is intended to help answer questions such as:
 
-<table>
-<tr>
-<td width="50%">
+* How have emissions changed over time?
+* Which historical patterns are persistent?
+* What do current trends imply for future emissions?
+* Where might intervention be most relevant?
+* How reliable are the resulting predictions?
 
-<p><strong>Global CO₂ Trends (1990-2021)</strong></p>
-<pre>
-📈 Emission Patterns
-├── 🔴 Increasing Trends: 65% countries
-├── 🟡 Stable Patterns: 25% countries  
-├── 🟢 Decreasing Trends: 10% countries
-└── 📊 Peak Years: 2005-2010
-</pre>
+---
 
-</td>
-<td width="50%">
+## 📊 Data Collection & Preparation
 
-<p><strong>Model Performance Comparison</strong></p>
-<pre>
-🏆 Algorithm Rankings
-├── 🥇 XGBoost: R² = 0.94
-├── 🥈 SARIMAX: R² = 0.91
-├── 🥉 Lasso: R² = 0.87
-└── 📊 Linear: R² = 0.82
-</pre>
+### 🗃️ Data Collection
 
-</td>
-</tr>
-</table>
+Historical environmental data were collected and organized to provide a consistent basis for analysis.
 
-<h3><strong>🖼️ Sample Output Visualizations</strong></h3>
+**Microsoft Excel** was used as part of the data preparation workflow to organize, inspect, and clean the environmental dataset.
 
-<details>
-<summary><b>📊 Click to view analysis output</b></summary>
+### 🧹 Data Cleaning
 
-<pre>
-🎯 Exploratory Analysis Outputs:
-├── Time-series plots of global emissions
-├── Country-wise emission comparisons  
-├── Correlation matrices and heatmaps
-├── Distribution analysis and box plots
-└── Trend decomposition visualizations
+Data preparation focused on improving consistency and analytical readiness.
 
-🤖 Predictive Modeling Results:
-├── Model performance comparison charts
-├── Prediction vs actual value plots
-├── Residual analysis visualizations
-├── Feature importance rankings
-└── Future projection scenarios
-</pre>
+Typical activities include:
 
-</details>
+```text id="t8f4k1"
+Raw Environmental Data
+        ↓
+Consistency Checking
+        ↓
+Missing / Invalid Data Review
+        ↓
+Formatting & Standardization
+        ↓
+Analysis-Ready Dataset
+```
 
-<hr>
+The goal was to ensure that downstream forecasting models received reliable historical observations.
 
-<h2>📁 Project Architecture</h2>
+### ✅ Data Validation
 
-<div align="center">
-<pre>
-🏗️ PROJECT STRUCTURE
-</pre>
-</div>
+Validation was performed to check whether the prepared data were consistent with the expected environmental trends and suitable for predictive analysis.
 
-<pre>
-bernardo.github.io/
-│
-├── 📁 data/
-│   ├── 📊 sejarah_emisi.csv         # Historical CO₂ emissions dataset
-│   └── 📋 sample_submission.csv     # Kaggle submission template
-│
-├── 📁 notebooks/
-│   ├── 🔍 exploratory_analysis.ipynb    # EDA & statistical analysis
-│   │   ├── Data loading & cleaning
-│   │   ├── Descriptive statistics  
-│   │   ├── Trend visualization
-│   │   └── Pattern recognition
-│   │
-│   └── 🤖 predictive_modeling.ipynb     # ML pipeline & forecasting
-│       ├── Feature engineering
-│       ├── Model training & tuning
-│       ├── Performance evaluation
-│       └── Future predictions
-│
-├── 📁 src/                          # Modular code components
-│   ├── 🔧 data_preprocess.py           # Data preprocessing utilities
-│   ├── 🎯 modeling.py                  # ML model implementations  
-│   └── 📊 visualization.py             # Custom plotting functions
-│
-├── 📁 docs/                         # Documentation
-│   ├── 📖 methodology.md               # Technical methodology
-│   └── 📈 results_summary.md           # Key findings summary
-│
-├── 📋 requirements.txt              # Python dependencies
-├── 📜 LICENSE                       # MIT License
-└── 📘 README.md                     # This file
-</pre>
+---
 
-<hr>
+## 🔍 Exploratory Data Analysis
+
+Exploratory analysis provides the foundation for understanding historical emissions before applying predictive models.
+
+The analysis focuses on:
+
+* Historical trends.
+* Temporal patterns.
+* Changes in emission levels.
+* Comparative behavior across observations.
+* Potential relationships relevant to forecasting.
+
+### 📈 Trend Analysis
+
+Historical observations are visualized over time to identify:
+
+* Increasing trends.
+* Decreasing trends.
+* Stable periods.
+* Structural changes.
+* Unusual observations.
+
+Conceptually:
+
+```text id="p3c8v2"
+Emission Level
+     │
+     │       ╭─────╮
+     │   ╭───╯     ╰───
+     │───╯
+     └──────────────────→ Time
+```
+
+Understanding historical behavior is essential before extrapolating future emissions.
+
+---
+
+## 🧠 Predictive Modeling
+
+The project applies **regression and time-series forecasting techniques** to estimate future greenhouse gas emission levels.
+
+Rather than treating forecasting as a black-box exercise, the modeling process follows a structured analytical workflow:
+
+```text id="k9w4m2"
+Historical Data
+      ↓
+Feature / Time Preparation
+      ↓
+Model Development
+      ↓
+Forecast Generation
+      ↓
+Validation
+      ↓
+Interpretation
+```
+
+### 📐 Regression Analysis
+
+Regression techniques are used to model relationships between historical observations and relevant explanatory patterns.
+
+The regression stage provides a quantitative basis for understanding how emission values evolve in relation to the available variables and temporal behavior.
+
+### ⏳ Time-Series Forecasting
+
+Time-series forecasting is used to model the chronological structure of emissions data.
+
+The forecasting objective is:
+
+```text id="c7m5x8"
+Past Emissions
+      ↓
+Temporal Pattern
+      ↓
+Forecast Model
+      ↓
+Future Emissions
+```
+
+The resulting model is intended to provide an evidence-based view of possible emissions trajectories over the coming decade.
+
+---
+
+## 🧪 Model Validation & Testing
+
+Forecasting results are not accepted solely because a model generates predictions.
+
+The project includes validation and testing to assess whether predictions remain consistent with historical environmental behavior.
+
+### Validation Workflow
+
+```text id="d8q2m5"
+Training / Historical Data
+          ↓
+Model Fitting
+          ↓
+Prediction
+          ↓
+Validation / Testing
+          ↓
+Compare with Observed Data
+          ↓
+Assess Robustness
+```
+
+Validation helps determine whether the model captures meaningful patterns rather than simply reproducing noise.
+
+### Robustness Perspective
+
+The final forecasting interpretation considers:
+
+* Agreement with historical trends.
+* Prediction behavior.
+* Model stability.
+* Relevance to environmental observations.
+* Practical applicability.
+
+> Forecasts should be interpreted as model-based projections rather than guaranteed future outcomes.
+
+---
+
+## 📈 Visualization & Communication
+
+Visualization is a key part of the project because emissions forecasting results need to be understood beyond the modeling environment.
+
+The project uses visual analysis to communicate:
+
+* Historical emissions trends.
+* Forecast trajectories.
+* Observed vs. predicted behavior.
+* Key patterns.
+* Potential areas of concern.
+
+The communication workflow is:
+
+```text id="m7c5x1"
+Model Output
+     ↓
+Data Visualization
+     ↓
+Trend Interpretation
+     ↓
+Stakeholder Insight
+```
+
+This makes the technical output accessible to decision-makers and other non-technical audiences.
+
+---
+
+## 💡 Actionable Insights
+
+The purpose of forecasting is not simply to produce a future number.
+
+The analysis is intended to support questions such as:
+
+| Analytical Question               | Potential Insight                            |
+| --------------------------------- | -------------------------------------------- |
+| What is the historical direction? | Identify persistent emissions trends         |
+| What could happen next?           | Understand projected trajectories            |
+| Where are changes most visible?   | Highlight areas for closer investigation     |
+| How reliable is the projection?   | Evaluate model robustness                    |
+| What action may be relevant?      | Support evidence-based intervention planning |
+
+The project therefore connects:
+
+```text id="b4m9q7"
+Data
+ ↓
+Evidence
+ ↓
+Forecast
+ ↓
+Interpretation
+ ↓
+Potential Policy Action
+```
+
+---
+
+## 🏛️ Policy & Decision Support
+
+The resulting forecasts are designed to support environmental policy discussions by providing quantitative evidence about possible future emissions trajectories.
+
+Potential applications include:
+
+* Emissions-reduction planning.
+* Environmental program prioritization.
+* Sustainability strategy development.
+* Scenario discussion.
+* Long-term monitoring.
+
+> **Important:** The project provides analytical evidence for decision support; it does not replace expert policy judgment, domain expertise, or formal environmental assessment.
+
+---
+
+## 🤝 Collaboration with Environmental Experts
+
+The project incorporated collaboration with environmental experts to refine model parameters and improve the practical relevance of the analysis.
+
+This collaboration helped connect:
+
+```text id="x9m5v4"
+Technical Modeling
+      +
+Environmental Domain Knowledge
+      ↓
+More Relevant Forecasting
+```
+
+This is an important part of the project because forecasting quality depends not only on statistical technique, but also on whether assumptions and outputs make sense in the real-world domain.
+
+---
+
+## 📊 Reporting
+
+A detailed final report was prepared to communicate:
+
+* Data preparation methodology.
+* Analytical approach.
+* Modeling decisions.
+* Forecasting results.
+* Validation findings.
+* Visualized trends.
+* Recommended areas for intervention.
+
+The reporting workflow can be represented as:
+
+```text id="w3q8z2"
+Analysis
+  ↓
+Results
+  ↓
+Interpretation
+  ↓
+Visualization
+  ↓
+Recommendations
+  ↓
+Final Report
+```
+
+The report was designed to make technically complex results accessible to a broader audience.
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer                        | Technology                              | Purpose                                                   |
+| ---------------------------- | --------------------------------------- | --------------------------------------------------------- |
+| 🐍 **Data Science**          | **Python**                              | Data analysis, visualization, and model development       |
+| 📊 **Data Preparation**      | **Microsoft Excel**                     | Environmental data collection, cleaning, and organization |
+| 📐 **Statistical Computing** | **R**                                   | Statistical / analytical workflow support                 |
+| ⏳ **Forecasting**            | **Time-Series Forecasting**             | Future emissions prediction                               |
+| 📈 **Modeling**              | **Regression Techniques**               | Quantitative relationship and trend modeling              |
+| 📊 **Visualization**         | Python / analytical visualization tools | Communicating trends and forecasts                        |
+
+---
+
+## 🏗️ Project Architecture
+
+The project can be understood as five analytical layers.
+
+### 📥 Data Layer
+
+Historical emissions observations are collected and organized into an analysis-ready dataset.
+
+### 🧹 Preparation Layer
+
+Excel and analytical tooling are used to clean, validate, and prepare the data.
+
+### 📐 Modeling Layer
+
+Regression and time-series techniques are applied to historical observations.
+
+### 📈 Evaluation Layer
+
+Predictions are validated against observed environmental data to assess robustness.
+
+### 📋 Communication Layer
+
+The final results are converted into visualizations, written findings, and recommendations.
+
+```text id="z5c2m7"
+┌─────────────────────────┐
+│      Environmental      │
+│          Data           │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ Data Cleaning &        │
+│ Validation              │
+│ Excel / Python / R      │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ Trend & Exploratory     │
+│ Analysis                │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ Regression / Time-Series│
+│ Forecasting             │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ Validation & Testing    │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ Visualization & Report  │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ Decision Support        │
+└─────────────────────────┘
+```
+
+---
+
+## 🔬 Technical Highlights
+
+### 📊 Historical Trend Modeling
+
+The project analyzes historical emissions as a time-dependent phenomenon, allowing long-term changes to be interpreted before generating forecasts.
+
+### 📐 Regression-Based Analysis
+
+Regression methods provide a statistical framework for estimating relationships and trends within the emissions data.
+
+### ⏳ Time-Series Forecasting
+
+Temporal dependencies are incorporated into the forecasting workflow to produce future emissions projections.
+
+### ✅ Model Validation
+
+Predictions are compared against observed environmental patterns to evaluate whether the model behaves consistently with historical evidence.
+
+### 📈 Visualization
+
+Results are transformed into clear visualizations so that forecast behavior can be communicated to both technical and non-technical audiences.
+
+### 📝 Professional Reporting
+
+The final deliverable combines technical methodology with practical interpretation and intervention-oriented recommendations.
+
+---
+
+## 🧭 Forecasting Workflow
+
+```text id="r8m4q2"
+                    Historical Data
+                          ↓
+                 Data Cleaning / QA
+                          ↓
+                  Exploratory Analysis
+                          ↓
+                  Trend Identification
+                          ↓
+              ┌───────────┴───────────┐
+              ↓                       ↓
+         Regression             Time-Series
+              │                       │
+              └───────────┬───────────┘
+                          ↓
+                    Forecast Results
+                          ↓
+                   Model Validation
+                          ↓
+                 Visual Interpretation
+                          ↓
+                  Final Recommendations
+```
+
+---
 
 ## 🗺️ Project Scope
 
-This project was developed as a **complete, self-contained academic assignment** for the Data Mining and Machine Learning course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
+This project was developed as an academic **Data Mining / Machine Learning and environmental forecasting project at Diponegoro University**.
 
-| Module | Description | Status |
-|--------|-------------|--------|
-| 📊 **Data Collection & Validation** | Historical CO₂ emissions dataset (1990–2021) acquisition, cleaning, and preprocessing | ✅ Done |
-| 🔍 **Exploratory Data Analysis** | Descriptive statistics, trend visualization, country-wise comparisons, and pattern recognition | ✅ Done |
-| 🧠 **ML Pipeline** | Implementation of Linear Regression, Lasso, XGBoost, and SARIMAX with hyperparameter tuning | ✅ Done |
-| 📈 **Model Evaluation** | MSE, RMSE, MAE, R² metrics with residual analysis, Durbin-Watson test, and VIF analysis | ✅ Done |
-| 🔮 **Forecasting** | 5–10 year future CO₂ emission projections per country and global aggregate | ✅ Done |
-| 🖼️ **Visualization Suite** | PR curves, feature importance plots, ACF/PACF diagnostics, and trend decomposition charts | ✅ Done |
-| 📖 **Documentation** | Technical methodology write-up and key findings summary | ✅ Done |
+| Module                        | Description                                          | Status        |
+| ----------------------------- | ---------------------------------------------------- | ------------- |
+| 📥 **Data Collection**        | Collect and organize historical environmental data   | ✅ Implemented |
+| 🧹 **Data Cleaning**          | Prepare the dataset for analysis                     | ✅ Implemented |
+| ✅ **Data Validation**         | Check data quality and analytical consistency        | ✅ Implemented |
+| 🔍 **Trend Analysis**         | Examine historical emissions behavior                | ✅ Implemented |
+| 📐 **Regression Modeling**    | Apply regression-based predictive analysis           | ✅ Implemented |
+| ⏳ **Time-Series Forecasting** | Generate future emissions projections                | ✅ Implemented |
+| 🧪 **Model Validation**       | Test forecasting robustness against observations     | ✅ Implemented |
+| 📊 **Visualization**          | Communicate trends and predictions                   | ✅ Implemented |
+| 📝 **Final Reporting**        | Document findings and recommendations                | ✅ Implemented |
+| 🤝 **Domain Collaboration**   | Refine model parameters with environmental expertise | ✅ Applied     |
 
-<hr>
+---
 
-<h3><strong>🔮 Future Enhancements</strong></h3>
-<ul>
-<li>🌐 <strong>Interactive Dashboard</strong>: Web-based visualization interface</li>
-<li>📱 <strong>Mobile App</strong>: CO₂ tracking mobile application</li>
-<li>🔌 <strong>API Development</strong>: RESTful API for emission data access</li>
-<li>🧪 <strong>Advanced Models</strong>: Deep learning & ensemble methods</li>
-</ul>
+## 💼 Portfolio Alignment
 
-<hr>
+The project directly reflects the capabilities described in the professional project entry:
 
-<h2>🤝 Contributing</h2>
+| LinkedIn Capability                   | Project Evidence                                      |
+| ------------------------------------- | ----------------------------------------------------- |
+| Predictive greenhouse gas forecasting | Regression and time-series forecasting workflow       |
+| Python                                | Data analysis, visualization, and model development   |
+| Excel                                 | Environmental data collection and cleaning            |
+| R                                     | Statistical / analytical workflow support             |
+| Historical trend analysis             | Longitudinal emissions analysis                       |
+| Data preparation                      | Cleaning and validation                               |
+| Model validation                      | Prediction testing against environmental observations |
+| Stakeholder insights                  | Visual interpretation of forecast results             |
+| Expert collaboration                  | Environmental-domain refinement                       |
+| Reporting                             | Detailed final analytical report                      |
+| Non-technical communication           | Clear visualizations and professional presentation    |
 
-<p>We welcome contributions from the community! Here's how you can help improve this project:</p>
+> **Portfolio positioning:** This project demonstrates the ability to move from environmental data preparation through predictive modeling, validation, visualization, and stakeholder-oriented recommendations.
 
-<h3><strong>🎯 Ways to Contribute</strong></h3>
+---
 
-<table>
-<tr>
-<td width="25%">
+## 📊 From Data to Environmental Insight
 
-<p><strong>🐛 Bug Reports</strong></p>
-<ul>
-<li>Issue identification</li>
-<li>Detailed reproduction steps</li>
-<li>Environment specifications</li>
-</ul>
+The project's analytical value can be summarized as:
 
-</td>
-<td width="25%">
-
-<p><strong>✨ Feature Requests</strong></p>
-<ul>
-<li>New algorithm suggestions</li>
-<li>UI/UX improvements</li>
-<li>Performance optimizations</li>
-</ul>
-
-</td>
-<td width="25%">
-
-<p><strong>📚 Documentation</strong></p>
-<ul>
-<li>Code documentation</li>
-<li>Tutorial creation</li>
-<li>Translation support</li>
-</ul>
-
-</td>
-<td width="25%">
-
-<p><strong>🧪 Testing</strong></p>
-<ul>
-<li>Unit test development</li>
-<li>Integration testing</li>
-<li>Performance benchmarks</li>
-</ul>
-
-</td>
-</tr>
-</table>
-
-<h3><strong>📝 Contribution Guidelines</strong></h3>
-
-<pre><code># 1. Fork the repository
-git fork https://github.com/bers31/bernardo.github.io.git
-
-# 2. Create feature branch
-git checkout -b feature/amazing-feature
-
-# 3. Make your changes
-git commit -m "Add amazing feature"
-
-# 4. Push to branch
-git push origin feature/amazing-feature
-
-# 5. Open Pull Request
-</code></pre>
-
-<h3><strong>🔍 Code Standards</strong></h3>
-<ul>
-<li>Follow PEP 8 Python style guidelines</li>
-<li>Include comprehensive docstrings</li>
-<li>Add unit tests for new features</li>
-<li>Ensure backward compatibility</li>
-</ul>
-
-<hr>
-
-## 📄 **License**
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 Bernardo - Diponegoro University
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+```text id="q6w3p9"
+Historical Environmental Data
+           ↓
+      Clean & Validate
+           ↓
+       Analyze Trends
+           ↓
+      Build Forecast
+           ↓
+       Validate Model
+           ↓
+    Visualize Results
+           ↓
+   Interpret Implications
+           ↓
+ Recommend Intervention Areas
 ```
 
-## 📫 Contact & Connect
+This emphasizes the complete analytical lifecycle rather than treating the forecasting model as an isolated technical component.
 
-<p align="center">
-<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Diponegoro University 🎓
+---
+
+## 🔭 Future Development
+
+Potential extensions include:
+
+* Interactive environmental dashboards.
+* Automated data-refresh pipelines.
+* Scenario-based emissions forecasting.
+* Additional explanatory variables.
+* Comparative forecasting models.
+* More granular regional or sectoral analysis.
+* Confidence intervals and uncertainty visualization.
+* REST API access to forecast outputs.
+* Automated monitoring of forecast drift.
+* Integration with sustainability KPI reporting.
+
+These are future directions and are not presented as current project functionality.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Python 3.8 or newer.
+* Microsoft Excel.
+* R / RStudio where required by the analytical workflow.
+* Jupyter Notebook for Python-based analysis.
+* Git.
+
+### Clone the Repository
+
+```bash id="g4k8x2"
+git clone https://github.com/bers31/bernardo.github.io.git
+cd bernardo.github.io
+```
+
+### Python Environment
+
+```bash id="m7p3q9"
+python -m venv venv
+```
+
+Windows:
+
+```bash id="v6k2r4"
+venv\Scripts\activate
+```
+
+macOS / Linux:
+
+```bash id="j5q8w1"
+source venv/bin/activate
+```
+
+Install Python dependencies:
+
+```bash id="z2m6c8"
+pip install -r requirements.txt
+```
+
+### Launch Jupyter
+
+```bash id="x4p9n7"
+jupyter notebook
+```
+
+Open the project notebooks and follow the documented analytical sequence.
+
+> The exact notebook and source filenames depend on the final repository structure.
+
+---
+
+## 📦 Python Ecosystem
+
+The Python-side workflow may use common analytical packages such as:
+
+```text id="w5k2m8"
+pandas
+numpy
+matplotlib
+scikit-learn
+statsmodels
+scipy
+```
+
+Exact dependencies should be maintained in `requirements.txt` according to the version of the project actually published in the repository.
+
+---
+
+## 🎥 Demo
+
+### 🌍 Live Project Presentation
+
+<div align="center">
+
+<p>
+<strong>🌱 Global CO₂ Emissions Analysis & Forecasting</strong>
 </p>
 
-<p align="center">
+<p>
+<a href="https://bers31.github.io/bernardo.github.io/Greenhouse_Gas_Emissions_Prediction%26Analysis/">
+<strong>► View Project Presentation</strong>
+</a>
+</p>
+
+</div>
+
+---
+
+## 📸 Project Screenshots
+
+![Screenshot 1](images/Picture1.png)
+
+![Screenshot 2](images/Picture2.png)
+
+![Screenshot 3](images/Picture3.png)
+
+![Screenshot 4](images/Picture4.png)
+
+![Screenshot 5](images/Picture5.png)
+
+![Screenshot 6](images/Picture6.png)
+
+---
+
+## 📄 License
+
+The original source code and documentation intentionally published in this repository are licensed under the **MIT License**.
+
+See [`LICENSE`](LICENSE) for the complete license text.
+
+> Third-party datasets, environmental data sources, analytical libraries, and other external materials remain subject to their respective licenses and terms.
+
+---
+
+<div class="contact-hero">
+
+<p><strong>Interested in the project?</strong></p>
+
+<p>
+👨‍💻 <strong>Bernardo Nandaniar Sunia</strong><br/>
+Bachelor of Computer Science — Diponegoro University<br/>
+Data Analysis · Forecasting · Environmental Analytics
+</p>
+
+<p>
 <a href="https://linkedin.com/in/bernardo-sunia/">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -469,24 +746,18 @@ Diponegoro University 🎓
 </a>
 </p>
 
-<p align="center">
-⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+<p>
+<em>Environmental analytics · Time-series forecasting · Data-driven decision support</em>
 </p>
 
-<p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
-</p>
+</div>
 
 ---
 
-### Full Screenshots
-![Screenshot 1](images/Picture1.png)
-![Screenshot 2](images/Picture2.png)
-![Screenshot 3](images/Picture3.png)
-![Screenshot 4](images/Picture4.png)
-![Screenshot 5](images/Picture5.png)
-![Screenshot 6](images/Picture6.png)
+## 📌 Conclusion
 
-### Conclusion
-This project provides a comprehensive approach to understanding and predicting greenhouse gas emissions over the next decade. By leveraging advanced statistical models and interactive visualizations, it offers valuable insights for policymakers and industries aiming to reduce emissions and achieve sustainability goals. The integration of Python, Excel, and R ensures robust data analysis and accurate predictions, making this project a crucial tool in the fight against climate change.
+This project demonstrates an end-to-end approach to **greenhouse gas emissions analysis and forecasting**, combining historical environmental data preparation, exploratory analysis, regression, time-series forecasting, model validation, visualization, and professional reporting.
+
+By combining **Python, Microsoft Excel, R, and forecasting techniques**, the project transforms historical emissions data into forward-looking analytical evidence that can support environmental planning and policy discussion.
+
+The most important aspect of the project is the connection between **technical forecasting and practical interpretation**: model outputs are validated against observed environmental trends, translated into clear visualizations, and presented as evidence that can help stakeholders identify potential areas for intervention.

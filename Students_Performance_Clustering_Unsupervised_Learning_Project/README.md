@@ -1,249 +1,820 @@
-<div align="center">
-  <h1>🧠 Student Performance Clustering — K-Means Analysis</h1>
-  <p><em>Unlocking Educational Insights Through Intelligent Student Segmentation</em></p>
+<div class="hero">
+
+<h1>🧠 Student Performance Clustering</h1>
+
+<p>K-Means Analysis · Student Segmentation · Educational Data Exploration</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter Notebook"/>
+  <img src="https://img.shields.io/badge/K--Means-6D28D9?style=flat-square" alt="K-Means"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="Scikit-learn"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit"/>
+  <img src="https://img.shields.io/badge/Unsupervised%20Learning-8B5CF6?style=flat-square" alt="Unsupervised Learning"/>
+  <img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="MIT License"/>
+</p>
+
+<p>
+An interactive unsupervised-learning system that segments students into
+meaningful performance groups and turns clustering results into interpretable
+educational insights.
+</p>
+
 </div>
 
-<div align="center">
-
-<img src="https://img.shields.io/badge/python-v3.8+-blue.svg" alt="Python">
-<img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status">
-<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
-<img src="https://img.shields.io/badge/version-1.0.0-orange.svg" alt="Version">
-<img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions">
-
-</div>
-
 ---
 
-## 📖 **Project Overview**
+## 📖 Project Overview
 
-In the evolving landscape of education, understanding student performance patterns is crucial for creating targeted interventions and personalized learning strategies. This project leverages **machine learning clustering techniques** to analyze student performance datasets, identifying distinct groups of students based on their academic performance, demographic attributes, and behavioral patterns.
+The **Student Performance Clustering** project applies **K-Means clustering** to student performance data in order to discover groups of students with similar characteristics.
 
-**Why This Matters:** By segmenting students into homogeneous clusters, educators can develop data-driven strategies to improve learning outcomes, identify at-risk students early, and optimize resource allocation for maximum educational impact.
+Unlike supervised classification, the objective is not to predict a predefined label. Instead, the system identifies naturally occurring patterns in the data and groups students according to similarity.
 
----
+The overall analytical objective is:
 
-## ✨ **Key Features**
-
-• **🎯 Intelligent Student Segmentation** — Groups students into meaningful clusters using K-Means algorithm<br>
-• **📊 Optimal Cluster Detection** — Employs Elbow Method and Silhouette Analysis for determining ideal cluster count<br>
-• **🔍 Comprehensive Data Preprocessing** — Advanced ETL pipeline with feature engineering and scaling<br>
-• **📈 Interactive Dashboard** — Real-time Streamlit web application for dynamic data exploration<br>
-• **📊 Rich Visualizations** — Interactive plots, PCA scatter plots, and cluster characteristic heatmaps<br>
-• **🧠 Actionable Insights** — Detailed cluster interpretation with educational intervention recommendations<br>
-• **📋 Export-Ready Results** — Clustered datasets and comprehensive analysis reports
-
----
-
-## 🛠️ **Technology Stack & Tools**
-
-<table align="center">
-<tr>
-<td align="center"><strong>Core Language</strong></td>
-<td align="center"><strong>Data Processing</strong></td>
-<td align="center"><strong>Machine Learning</strong></td>
-<td align="center"><strong>Visualization & Dashboard</strong></td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/><br>
-<img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn"/>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white" alt="Streamlit"/><br>
-<img src="https://img.shields.io/badge/matplotlib-11557c?style=for-the-badge" alt="Matplotlib"/><br>
-<img src="https://img.shields.io/badge/seaborn-3776AB?style=for-the-badge" alt="Seaborn"/><br>
-<img src="https://img.shields.io/badge/plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly"/>
-</td>
-</tr>
-</table>
-
-**Dependencies:**
+```text id="m8q3x7"
+Student Performance Data
+          ↓
+Data Preprocessing
+          ↓
+Feature Engineering
+          ↓
+Feature Scaling
+          ↓
+K-Means Clustering
+          ↓
+Cluster Evaluation
+          ↓
+Cluster Interpretation
+          ↓
+Educational Insights
 ```
-pandas>=1.3.0, numpy>=1.21.0, scikit-learn>=1.0.0, matplotlib>=3.4.0, seaborn>=0.11.0, plotly>=5.0.0, streamlit>=1.28.0
+
+The project combines analytical experimentation with an interactive **Streamlit** interface so educators and non-technical users can explore clustering outcomes more easily.
+
+> **Portfolio focus:** This project demonstrates unsupervised machine learning, student segmentation, data preprocessing, feature engineering, model evaluation, interactive visualization, and translation of analytical results into practical educational insights.
+
+---
+
+## 🎯 Problem Statement
+
+Educational datasets can contain multiple dimensions of student behavior and performance.
+
+Looking at individual records independently makes it difficult to identify broader patterns such as:
+
+* Groups of students with similar academic characteristics.
+* Differences between high- and low-performing groups.
+* Relationships between performance-related features.
+* Groups that may require different educational strategies.
+
+Clustering provides a way to move from individual records toward **student-level segments**.
+
+```text id="x5m8p2"
+Individual Students
+       ↓
+Feature Representation
+       ↓
+Similarity Analysis
+       ↓
+Student Clusters
+       ↓
+Segment Interpretation
 ```
 
 ---
 
-## 🚀 **Quick Start Guide**
+## 🧠 Why K-Means?
 
-### **Installation & Setup**
+K-Means is used as the primary clustering algorithm because it provides a clear and interpretable way to group observations based on similarity.
+
+Conceptually:
+
+```text id="q7m4x3"
+Data Points
+   ↓
+Choose K Clusters
+   ↓
+Initialize Centroids
+   ↓
+Assign Students to Nearest Centroid
+   ↓
+Update Centroids
+   ↓
+Repeat Until Convergence
+   ↓
+Final Student Segmentation
+```
+
+The resulting clusters can then be analyzed according to the characteristics of the students assigned to them.
+
+---
+
+## 🧹 Data Preprocessing Pipeline
+
+Clustering quality depends heavily on the quality of the input data.
+
+The project includes a preprocessing workflow covering:
+
+### 📥 Data Loading
+
+Student data is loaded from CSV-based sources.
+
+### 🔎 Data Quality Assessment
+
+The data is examined for issues such as:
+
+* Missing values.
+* Inconsistent values.
+* Incorrect data types.
+* Statistical irregularities.
+
+### 🛠️ Feature Engineering
+
+Relevant variables are transformed or aggregated into features suitable for clustering.
+
+### 📏 Feature Scaling
+
+Numerical features are standardized so that variables with different scales do not disproportionately influence the clustering process.
+
+The full pipeline is:
+
+```text id="c4m9x7"
+Raw Dataset
+    ↓
+Quality Check
+    ↓
+Cleaning
+    ↓
+Feature Engineering
+    ↓
+Standardization
+    ↓
+Clustering-Ready Dataset
+```
+
+---
+
+## 📐 Feature Representation
+
+The clustering process operates on a numerical feature representation of student characteristics.
+
+Depending on the dataset, the analytical feature space can incorporate:
+
+* Academic performance.
+* Attendance-related attributes.
+* Study behavior.
+* Demographic characteristics.
+* Other measurable student indicators.
+
+The objective is to represent students consistently so that K-Means can identify meaningful similarities.
+
+---
+
+## 🎯 Cluster Selection
+
+Choosing the number of clusters is an important modeling decision.
+
+The project evaluates candidate cluster counts using clustering-quality analysis.
+
+### Elbow Method
+
+The **Elbow Method** examines how within-cluster variation changes as the number of clusters increases.
+
+```text id="p8m3q5"
+K = 2
+   ↓
+K = 3
+   ↓
+K = 4
+   ↓
+...
+   ↓
+Identify diminishing improvement
+```
+
+### Silhouette Analysis
+
+The **Silhouette Score** evaluates how well each observation fits within its assigned cluster relative to neighboring clusters.
+
+A higher score generally indicates stronger separation and internal cohesion.
+
+```text id="v4m7x2"
+High Silhouette
+      ↓
+Better-separated clusters
+
+Low Silhouette
+      ↓
+More overlap between groups
+```
+
+These techniques are used together to support a more informed cluster-count decision.
+
+---
+
+## 🧠 K-Means Clustering
+
+After preprocessing and cluster-count exploration, the K-Means algorithm is applied to the standardized student feature matrix.
+
+The conceptual process is:
+
+```text id="m3x8q6"
+Standardized Features
+        ↓
+K-Means
+        ↓
+Cluster Assignment
+        ↓
+Cluster Centroids
+        ↓
+Student Segments
+```
+
+Each student receives a cluster label, allowing subsequent comparison of the characteristics of each group.
+
+---
+
+## 📊 Cluster Evaluation
+
+Clustering requires evaluation because a mathematically valid grouping is not automatically a meaningful grouping.
+
+The project evaluates cluster quality using measures such as:
+
+### Silhouette Score
+
+Measures the relationship between:
+
+* Similarity to observations in the same cluster.
+* Separation from observations in other clusters.
+
+### Cluster Separation
+
+The resulting groups are inspected to determine whether their characteristics are sufficiently distinct to support interpretation.
+
+### Cluster Characteristics
+
+Each cluster is profiled by examining its feature patterns.
+
+```text id="k8m4p1"
+Cluster ID
+    ↓
+Feature Statistics
+    ↓
+Characteristic Profile
+    ↓
+Interpretation
+```
+
+---
+
+## 🔎 Student Segment Interpretation
+
+The most important analytical step occurs after clustering.
+
+Cluster labels themselves have no inherent meaning.
+
+For example:
+
+```text id="r7m3x5"
+Cluster 0
+Cluster 1
+Cluster 2
+```
+
+does not automatically mean:
+
+```text
+High Performer
+Moderate Performer
+At-Risk
+```
+
+Those interpretations must be derived from the actual characteristics of each cluster.
+
+The project therefore analyzes the feature profile of each cluster before translating it into educational meaning.
+
+Possible interpretations may include:
+
+| Example Segment                 | Possible Characteristics                                  | Potential Educational Use                      |
+| ------------------------------- | --------------------------------------------------------- | ---------------------------------------------- |
+| 🟢 **Higher-Performance Group** | Strong academic performance and consistent study behavior | Enrichment and advanced learning opportunities |
+| 🟡 **Developing Group**         | Moderate performance with room for improvement            | Targeted academic support                      |
+| 🔴 **Higher-Risk Group**        | Weaker performance or problematic attendance patterns     | Earlier intervention and closer monitoring     |
+
+These labels are interpretive examples rather than fixed labels produced by K-Means itself.
+
+---
+
+## 📈 Interactive Streamlit Dashboard
+
+The project includes a **Streamlit-based interactive interface** that makes the clustering results easier to explore.
+
+The dashboard supports dynamic analytical exploration rather than presenting only static notebook outputs.
+
+### Dashboard Workflow
+
+```text id="x4m8q7"
+Load Student Data
+       ↓
+Select / Configure Analysis
+       ↓
+Run Clustering
+       ↓
+View Cluster Distribution
+       ↓
+Explore Cluster Characteristics
+       ↓
+Interpret Results
+```
+
+The interface is intended to make machine-learning results more accessible to educators and non-technical stakeholders.
+
+---
+
+## 📊 Data Visualization
+
+Visualizations are used to transform numerical clustering output into interpretable patterns.
+
+The analytical presentation can include:
+
+### Cluster Distribution
+
+Shows how student observations are distributed across clusters.
+
+### PCA Projection
+
+Principal Component Analysis can be used to project a high-dimensional feature space into two dimensions for visualization.
+
+```text id="j6m4q8"
+High-Dimensional Features
+          ↓
+          PCA
+          ↓
+       2D Space
+          ↓
+Cluster Visualization
+```
+
+PCA is used for **visual interpretation**, not as the clustering algorithm itself.
+
+### Cluster Characteristic Visualization
+
+Feature-level comparisons help users understand why clusters differ from each other.
+
+---
+
+## 🖥️ User-Centered Analytical Interface
+
+The dashboard was designed with accessibility in mind.
+
+The objective is to bridge the gap between:
+
+```text id="n5q8m2"
+Machine Learning Model
+        ↓
+Complex Numerical Output
+        ↓
+Interactive Visualization
+        ↓
+Human Interpretation
+```
+
+This makes the system more useful for users who may not have a machine-learning background.
+
+---
+
+## 📤 Exportable Results
+
+Clustering outputs can be transformed into analysis-ready results for further exploration.
+
+A typical workflow is:
+
+```text id="p3x7m8"
+Original Student Data
+        ↓
+K-Means Assignment
+        ↓
+Cluster Labels
+        ↓
+Clustered Dataset
+        ↓
+Further Analysis / Reporting
+```
+
+This supports continued analysis outside the interactive dashboard.
+
+---
+
+## 🏗️ System Architecture
+
+The project consists of four logical analytical layers.
+
+### 📥 Data Layer
+
+Contains raw student-performance data.
+
+### 🧹 Processing Layer
+
+Handles:
+
+* Data cleaning.
+* Feature engineering.
+* Scaling.
+* Preparation of the clustering matrix.
+
+### 🧠 Modeling Layer
+
+Contains:
+
+* K-Means clustering.
+* Cluster-count analysis.
+* Clustering-quality evaluation.
+
+### 🖥️ Presentation Layer
+
+Contains:
+
+* Streamlit dashboard.
+* Interactive visualizations.
+* Cluster exploration.
+* Result interpretation.
+
+The overall architecture is:
+
+```text id="q4m8x1"
+┌──────────────────────────┐
+│       Student Data       │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│   Preprocessing Layer    │
+│                          │
+│ Cleaning                 │
+│ Feature Engineering     │
+│ Standardization          │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│    Clustering Layer      │
+│                          │
+│ K-Means                  │
+│ Cluster Selection        │
+│ Evaluation               │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│    Interpretation Layer  │
+│                          │
+│ Cluster Profiles         │
+│ PCA Visualization        │
+│ Educational Insights     │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│    Streamlit Interface   │
+└──────────────────────────┘
+```
+
+---
+
+## 🔄 End-to-End Workflow
+
+```text id="m9x4q7"
+              Student Dataset
+                    ↓
+           Data Quality Check
+                    ↓
+           Feature Engineering
+                    ↓
+             Feature Scaling
+                    ↓
+          Candidate Cluster Counts
+                    ↓
+        Elbow + Silhouette Analysis
+                    ↓
+             K-Means Training
+                    ↓
+            Cluster Evaluation
+                    ↓
+       Cluster Characterization
+                    ↓
+           PCA Visualization
+                    ↓
+      Educational Interpretation
+                    ↓
+        Interactive Streamlit App
+```
+
+---
+
+## 🧩 Technical Highlights
+
+### Unsupervised Segmentation
+
+The system discovers student groups without requiring predefined target labels.
+
+### Feature Engineering
+
+Raw student information is transformed into meaningful numerical representations suitable for clustering.
+
+### Standardization
+
+Scaling ensures that variables measured on different numerical ranges contribute more appropriately to the distance-based clustering process.
+
+### K-Means Modeling
+
+Students are grouped according to similarity in the selected feature space.
+
+### Silhouette-Based Evaluation
+
+Cluster quality is assessed using separation and cohesion characteristics.
+
+### Interactive Analysis
+
+Streamlit turns the analytical pipeline into an accessible user-facing application.
+
+### Visual Interpretation
+
+PCA and cluster-level visualizations help communicate multidimensional patterns more clearly.
+
+---
+
+## 💡 Educational Value
+
+The analytical output can support educators in identifying groups of students with different needs.
+
+The value chain is:
+
+```text id="z7m3x5"
+Student Data
+     ↓
+Pattern Discovery
+     ↓
+Student Segmentation
+     ↓
+Cluster Profiling
+     ↓
+Educational Interpretation
+     ↓
+Targeted Intervention
+```
+
+This shifts analysis from looking at individual records toward understanding **groups of students with shared characteristics**.
+
+---
+
+## ⚠️ Interpretation & Responsible Use
+
+Clustering does not determine that a student is inherently “good,” “bad,” or “at risk.”
+
+Cluster labels are analytical abstractions derived from the selected data and features.
+
+Therefore:
+
+* A cluster should be interpreted from its feature profile.
+* Different datasets may produce different cluster structures.
+* Cluster labels should not be treated as deterministic judgments.
+* Educational decisions should incorporate human context beyond the clustering output.
+
+The system is intended to support analysis and intervention planning, not replace educator judgment.
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer                       | Technology                        | Purpose                                      |
+| --------------------------- | --------------------------------- | -------------------------------------------- |
+| 🐍 **Programming Language** | **Python**                        | Data processing and machine learning         |
+| 📓 **Research Environment** | **Jupyter Notebook**              | Exploratory analysis and experimentation     |
+| 📊 **Data Processing**      | **Pandas / NumPy**                | Data manipulation and numerical computation  |
+| 🧠 **Machine Learning**     | **scikit-learn**                  | K-Means, scaling, PCA, clustering evaluation |
+| 🖥️ **Dashboard**           | **Streamlit**                     | Interactive analysis interface               |
+| 📈 **Visualization**        | **Matplotlib / Seaborn / Plotly** | Cluster exploration and result visualization |
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+```text
+Python 3.8+
+pip
+```
+
+### Installation
+
 ```bash
 # Clone the repository
 git clone https://github.com/bers31/bernardo.github.io.git
+
+# Navigate to the project
 cd bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project
 
-# Install required dependencies
+# Install dependencies
 pip install -r requirements.txt
-
-# Alternative: Install individual packages
-pip install pandas numpy scikit-learn matplotlib seaborn plotly streamlit umap-learn
 ```
 
-### **Running the Analysis**
+### Run the Notebook
+
 ```bash
-# Ensure your dataset is in the correct location
-# Place student_performance.csv in data/raw/ directory
-
-# Option 1: Launch Jupyter Notebook
 jupyter notebook student_performance_clustering_K-Means.ipynb
+```
 
-# Option 2: Run the Streamlit Dashboard
+### Run the Dashboard
+
+```bash
 streamlit run app.py
+```
 
-# Option 3: Run the Python script directly
+### Run the Analysis Script
+
+```bash
 python src/clustering_analysis.py
 ```
 
-### **Project Structure**
-```
+---
+
+## 📁 Project Structure
+
+```text
 Students_Performance_Clustering_Unsupervised_Learning_Project/
-├── data/
+│
+├── 📂 data/
 │   ├── raw/
 │   │   └── student_performance.csv
 │   └── processed/
 │       └── clustered_students.csv
-├── notebooks/
+│
+├── 📂 notebooks/
 │   └── student_performance_clustering_K-Means.ipynb
-├── src/
+│
+├── 📂 src/
 │   └── clustering_analysis.py
-├── app.py                 # Streamlit Dashboard
-├── outputs/
+│
+├── 📂 outputs/
 │   ├── visualizations/
 │   └── reports/
+│
+├── app.py
+├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
 ---
 
-## 🎥 **Demo & Results**
+## 🗺️ Project Scope
 
-### **Sample Visualizations**
+| Module                        | Description                                                 | Status        |
+| ----------------------------- | ----------------------------------------------------------- | ------------- |
+| 🧹 **Data Preprocessing**     | Data cleaning, feature engineering, and standardization     | ✅ Implemented |
+| 🔎 **Data Exploration**       | Statistical and visual exploration of student data          | ✅ Implemented |
+| 🎯 **Cluster Selection**      | Elbow and Silhouette analysis for cluster-count evaluation  | ✅ Implemented |
+| 🧠 **K-Means Clustering**     | Student segmentation using distance-based clustering        | ✅ Implemented |
+| 📏 **Cluster Evaluation**     | Silhouette-based assessment and cluster comparison          | ✅ Implemented |
+| 📊 **PCA Visualization**      | 2D projection for cluster interpretation                    | ✅ Implemented |
+| 🖥️ **Streamlit Dashboard**   | Interactive clustering and result exploration               | ✅ Implemented |
+| 📈 **Cluster Interpretation** | Translate cluster characteristics into educational insights | ✅ Implemented |
+| 📋 **Result Export**          | Export clustered data and analysis outputs                  | ✅ Implemented |
+| 🧪 **Model Refinement**       | Parameter refinement based on clustering evaluation         | ✅ Applied     |
+| 📖 **Documentation**          | Workflow and system documentation                           | ✅ Implemented |
+
+---
+
+## 📈 Portfolio Alignment
+
+The project directly reflects the capabilities described in the professional project entry:
+
+| LinkedIn Capability         | Project Evidence                                          |
+| --------------------------- | --------------------------------------------------------- |
+| Python                      | Core analytical and modeling language                     |
+| Jupyter Notebook            | Research and experimentation environment                  |
+| Streamlit                   | Interactive clustering interface                          |
+| K-Means                     | Primary unsupervised learning algorithm                   |
+| Student segmentation        | Groups students according to shared characteristics       |
+| Data preprocessing          | Cleaning and preparation pipeline                         |
+| Feature engineering         | Transform raw student attributes into clustering features |
+| Data visualization          | Cluster and feature-pattern visualization                 |
+| Silhouette evaluation       | Validate clustering quality                               |
+| Hyperparameter refinement   | Refine clustering configuration based on evaluation       |
+| Dynamic exploration         | Interactive analysis through Streamlit                    |
+| Educational insights        | Translate clusters into potential intervention strategies |
+| Non-technical accessibility | User-oriented dashboard design                            |
+| Documentation               | Project workflow and system documentation                 |
+
+> **Portfolio positioning:** This project demonstrates the ability to take an unsupervised machine-learning method from raw educational data through preprocessing, clustering, evaluation, visualization, and finally into an interactive application that non-technical stakeholders can understand and use.
+
+---
+
+## 🧪 Analytical Validation
+
+The project emphasizes validation rather than assuming every clustering result is meaningful.
+
+The evaluation cycle is:
+
+```text id="b8m4q6"
+Initial K-Means Configuration
+          ↓
+Cluster Evaluation
+          ↓
+Silhouette Analysis
+          ↓
+Inspect Cluster Profiles
+          ↓
+Refine Configuration
+          ↓
+Validate Final Groupings
+```
+
+This iterative process helps ensure that the final segmentation is both mathematically defensible and interpretable.
+
+---
+
+## 🔭 Future Development
+
+Potential extensions include:
+
+* Comparison with hierarchical clustering.
+* DBSCAN-based density clustering.
+* Gaussian Mixture Models.
+* Automated cluster profiling.
+* Longitudinal student segmentation.
+* Early-warning analytical indicators.
+* Expanded educational dashboards.
+* More advanced dimensionality-reduction techniques.
+* Real-time data ingestion.
+* Integration with broader academic information systems.
+
+These are future development directions and are not presented as current functionality.
+
+---
+
+## 🎥 Demo & Screenshots
+
+### 🌐 Live Demo
 
 <div align="center">
 
-<img alt="Streamlit Dashboard Preview" src="https://bers31.github.io/bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project/images/image5.png" width="90%">
-
-<p><strong>🚀 Live Demo</strong> <a href="https://bers31.github.io/bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project/" target="_blank">Launch Interactive Analysis</a></p>
-
-<table>
-<tr>
-<td align="center" width="50%">
-<img alt="Elbow Method Analysis" src="https://bers31.github.io/bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project/images/image.png" width="100%">
-<br><em>Optimal Cluster Selection</em>
-</td>
-<td align="center" width="50%">
-<img alt="PCA Cluster Visualization" src="https://bers31.github.io/bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project/images/image1.png" width="100%">
-<br><em>Student Performance Clusters</em>
-</td>
-</tr>
-</table>
+<p>
+<strong>
+<a href="https://bers31.github.io/bernardo.github.io/Students_Performance_Clustering_Unsupervised_Learning_Project/">
+🔗 Launch Interactive Analysis
+</a>
+</strong>
+</p>
 
 </div>
 
-### **Expected Cluster Insights**
-- **🟢 High Performers:** Students with excellent grades, high attendance, optimal study time
-- **🟡 Moderate Achievers:** Average performance, room for targeted improvement  
-- **🔴 At-Risk Students:** Low grades, high absenteeism, requiring immediate intervention
+### 🖥️ Dashboard Preview
 
-### **🎛️ Streamlit Dashboard Features**
-- **📊 Real-time Data Upload:** Drag-and-drop CSV file functionality
-- **⚙️ Interactive Parameter Tuning:** Adjust clustering parameters dynamically
-- **📈 Live Visualizations:** Real-time plot updates and cluster analysis
-- **📋 Downloadable Reports:** Export clustered data and insights instantly
+![Streamlit Dashboard](images/image5.png)
 
----
+### 📐 Cluster Visualization
 
-## 🗺️ Project Scope
+![PCA Cluster Visualization](images/image1.png)
 
-This project was developed as a **complete, self-contained academic assignment** for the Unsupervised Learning course at Diponegoro University. The scope below reflects what was fully implemented and delivered.
+### 🎯 Cluster Selection
 
-| Module | Description | Status |
-|--------|-------------|--------|
-| 🧹 **Data Preprocessing** | CSV ingestion, missing value handling, feature engineering, and StandardScaler normalization | ✅ Done |
-| 📊 **Exploratory Data Analysis** | Statistical summaries, distribution plots, and correlation heatmaps | ✅ Done |
-| 🎯 **Optimal Cluster Selection** | Elbow Method (SSE), Silhouette Analysis, and Gap Statistic for determining ideal cluster count | ✅ Done |
-| 🧠 **K-Means Clustering** | Euclidean distance-based segmentation with Silhouette Score and Davies-Bouldin Index evaluation | ✅ Done |
-| 📈 **PCA Visualization** | 2D cluster scatter plots via Principal Component Analysis for interpretability | ✅ Done |
-| 🖥️ **Streamlit Dashboard** | Interactive web application with drag-and-drop CSV upload, dynamic parameter tuning, and downloadable reports | ✅ Done |
-| 📋 **Cluster Interpretation** | Actionable educational insights per cluster with at-risk student identification | ✅ Done |
+![Elbow Method](images/image.png)
 
 ---
 
-## 🧪 **Methodology Deep Dive**
+## 📸 Full Screenshots
 
-### **1. Data Preprocessing Pipeline**
-- **Data Loading:** Robust CSV parsing with error handling
-- **Quality Assessment:** Missing value detection and statistical summaries
-- **Feature Engineering:** Grade aggregation and categorical encoding
-- **Standardization:** StandardScaler for optimal clustering performance
+![Screenshot 1](images/image.png)
 
-### **2. Optimal Cluster Selection**
-- **Elbow Method:** SSE minimization analysis
-- **Silhouette Analysis:** Cluster quality evaluation
-- **Gap Statistic:** Additional validation metric
+![Screenshot 2](images/image1.png)
 
-### **3. Clustering & Evaluation**
-- **K-Means Algorithm:** Euclidean distance-based clustering
-- **Performance Metrics:** Silhouette score, Davies-Bouldin index
-- **Validation:** Cross-validation and stability analysis
+![Screenshot 3](images/image2.png)
+
+![Screenshot 4](images/image3.png)
+
+![Screenshot 5](images/image4.png)
+
+![Screenshot 6](images/image5.png)
 
 ---
 
-## 🤝 **Contributing**
+## 📄 License
 
-We welcome contributions from the community! Here's how you can get involved:
+This project is licensed under the **MIT License** — see the [`LICENSE`](LICENSE) file for the complete license text.
 
-### **How to Contribute**
-1. **🍴 Fork** the repository
-2. **🌿 Create** your feature branch (`git checkout -b feature/AmazingFeature`)
-3. **💾 Commit** your changes (`git commit -m 'Add AmazingFeature'`)
-4. **📤 Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **🔄 Open** a Pull Request
-
-### **Contribution Areas**
-- 🐛 Bug fixes and optimization<br>
-- 📊 New visualization techniques<br>
-- 🧠 Alternative clustering algorithms<br>
-- 🎛️ Streamlit dashboard enhancements<br>
-- 📚 Documentation improvements<br>
-- 🧪 Unit tests and validation
+Third-party libraries, datasets, and other external components remain subject to their respective licenses and terms.
 
 ---
 
-## 📄 **License**
+<div class="contact-hero">
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+<p><strong>Interested in the project?</strong></p>
 
-```
-MIT License
-
-Copyright (c) 2024 Bernardo - Diponegoro University
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
-## 📫 Contact & Connect
-
-<p align="center">
-<strong>👨‍💻 Bernardo - Computer Science Student</strong><br/>
-Diponegoro University 🎓
+<p>
+👨‍💻 <strong>Bernardo Nandaniar Sunia</strong><br/>
+Bachelor of Computer Science — Diponegoro University<br/>
+Python · K-Means · Streamlit · Educational Data Analysis
 </p>
 
-<p align="center">
+<p>
 <a href="https://linkedin.com/in/bernardo-sunia/">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>
@@ -258,24 +829,38 @@ Diponegoro University 🎓
 </a>
 </p>
 
-<p align="center">
-⭐ <strong>If you found this project helpful, please give it a star!</strong> ⭐
+<p>
+<em>Unsupervised Learning · Student Segmentation · Data Visualization · Interactive Analytics</em>
 </p>
 
-<p align="center">
-<em>Made with ❤️ by <a href="https://github.com/bers31">Bernardo</a> at Diponegoro University</em><br/>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=bers31.bernardo.github.io" alt="Visitor Count">
-</p>
+</div>
 
 ---
 
-### Full Screenshots
-![Screenshot 1](images/image.png)
-![Screenshot 2](images/image1.png)
-![Screenshot 3](images/image2.png)
-![Screenshot 4](images/image3.png)
-![Screenshot 5](images/image4.png)
-![Screenshot 6](images/image5.png)
+## 📌 Conclusion
 
-### Conclusion
-This project demonstrates the application of K-Means clustering to uncover actionable insights from student performance data. By providing an interactive interface through Streamlit, the system enables educators and stakeholders to explore and interpret clustering results effectively. The findings can guide tailored educational strategies, foster student success, and support data-driven decision-making. Future enhancements could include integrating advanced clustering algorithms, adding real-time data processing capabilities, and expanding the visualization suite for deeper analysis. Contributions and feedback are warmly welcomed to elevate this project further
+The **Student Performance Clustering** project demonstrates how unsupervised machine learning can be applied to educational data to uncover groups of students with similar performance characteristics.
+
+Using **Python, K-Means, data preprocessing, feature engineering, Silhouette-based evaluation, and Streamlit**, the project moves through the complete analytical workflow:
+
+```text
+Raw Student Data
+      ↓
+Preprocessing
+      ↓
+Feature Engineering
+      ↓
+K-Means Clustering
+      ↓
+Cluster Evaluation
+      ↓
+Visualization
+      ↓
+Interpretation
+      ↓
+Educational Insight
+```
+
+The interactive dashboard makes the analytical results easier for educators and non-technical users to explore, while the clustering evaluation process helps ensure that the resulting segments are sufficiently meaningful and interpretable.
+
+Ultimately, the project demonstrates the practical value of combining **machine learning, visualization, and user-centered analytical design** to turn student-performance data into actionable educational insights.
