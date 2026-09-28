@@ -561,7 +561,7 @@ The intended architecture keeps **generation, validation, AI review, and orchest
 <p><strong>🧠 99 Group AI Property Knowledge Quiz Builder</strong></p>
 
 <p>
-<a href="https://your-app-name.streamlit.app">
+<a href="https://employee-quiz-builder-kdgdcd9rlvphaws8zspuu9.streamlit.app/">
 <strong>► View Live Application</strong>
 </a>
 </p>
