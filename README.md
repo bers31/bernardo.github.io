@@ -41,8 +41,15 @@ Informatics graduate (S.Kom.) from Diponegoro University with hands-on experienc
 
 ## 💼 Professional Experience
 
+### ⚡ YC Electric, Assistant Manager & Supply Chain Assistant
+**July 2019 - Present** · Semarang, Indonesia
+
+- 📦 Optimized inventory management through better tracking and data analysis.
+- 🔗 Streamlined supply chain operations to cut costs.
+- 📈 Prepared comprehensive financial reports that supported higher profitability.
+
 ### 🏨 PT Wiraky Nusa Telekomunikasi, Data Analyst
-**May 2026 - July 2026**
+**May 2026 - July 2026**· Bandung, Indonesia
 
 Responsible for data analysis across the Maribaya and Glamping properties, covering NLP model development, visitor review collection, and property analytics.
 
@@ -85,13 +92,6 @@ Responsible for data analysis across the Maribaya and Glamping properties, cover
 - 👨‍🏫 Mentored 20+ students in Python programming and algorithmic problem solving.
 - 📚 Designed structured assignments and an evaluation framework for core IT competencies.
 - 📈 Helped raise average lab scores by **15%** through more effective teaching methods.
-
-### ⚡ YC Electric, Assistant Manager & Supply Chain Assistant
-**January 2022 - December 2024** · Semarang, Indonesia
-
-- 📦 Optimized inventory management through better tracking and data analysis.
-- 🔗 Streamlined supply chain operations to cut costs.
-- 📈 Prepared comprehensive financial reports that supported higher profitability.
 
 ---
 
