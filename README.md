@@ -48,8 +48,8 @@ Informatics graduate (S.Kom.) from Diponegoro University with hands-on experienc
 - 🔗 Streamlined supply chain operations to cut costs.
 - 📈 Prepared comprehensive financial reports that supported higher profitability.
 
-### 🏨 PT Wiraky Nusa Telekomunikasi, Data Analyst
-**May 2026 - July 2026**· Bandung, Indonesia
+### 🏨 PT Wiraky Nusa Telekomunikasi, IT Staff Data Analyst
+**May 2026 - July 2026** · Bandung, Indonesia
 
 Responsible for data analysis across the Maribaya and Glamping properties, covering NLP model development, visitor review collection, and property analytics.
 
