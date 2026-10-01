@@ -131,7 +131,7 @@ A single star rating can hide a lot. A guest might leave a 3 after writing that 
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square)
 
 <div align="center">
-  <img src="images/foto15.png" alt="Ask Lee Kuan Yew grounded RAG chatbot" width="500">
+  <img src="images/LKY-Chatbot.png" alt="Ask Lee Kuan Yew grounded RAG chatbot" width="500">
 </div>
 
 A grounded RAG chatbot answering questions from Lee Kuan Yew's documented speeches and public archival records through decoupled document indexing and real-time query processing.
@@ -157,7 +157,7 @@ A grounded RAG chatbot answering questions from Lee Kuan Yew's documented speech
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto14.png" alt="Property Knowledge Quiz Builder" width="500">
+  <img src="images/Property-Quiz-chatbot.png" alt="Property Knowledge Quiz Builder" width="500">
 </div>
 
 An AI-powered employee training quiz generator with schema-constrained generation, deterministic validation, LLM-based quality review, automatic retry, and interactive assessment.
@@ -183,7 +183,7 @@ An AI-powered employee training quiz generator with schema-constrained generatio
 ![Railway](https://img.shields.io/badge/Deployment-Railway-0B0D0E?style=flat-square\&logo=railway\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto1.png" alt="Maribaya information chatbot" width="500">
+  <img src="images/maribaya-chatbot-demo.png" alt="Maribaya information chatbot" width="500">
 </div>
 
 An NLP-based information chatbot that uses sentence embeddings and semantic matching to return the most relevant answer to a user's question.
@@ -208,7 +208,7 @@ An NLP-based information chatbot that uses sentence embeddings and semantic matc
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square\&logo=streamlit\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto3.png" alt="Advanced Information Retrieval System" width="500">
+  <img src="images/multilingual-ir-system.png" alt="Advanced Information Retrieval System" width="500">
 </div>
 
 A multilingual Indonesian-English semantic search system with fine-tuned mBERT and FAISS indexing.
@@ -230,7 +230,7 @@ A multilingual Indonesian-English semantic search system with fine-tuned mBERT a
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square\&logo=sqlite\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto1.png" alt="AI chatbot automated information system" width="500">
+  <img src="images/ambarawa-chatbot-demo.png" alt="AI chatbot automated information system" width="500">
 </div>
 
 An automated information chatbot for a correctional facility, built end to end as a public information service.
@@ -255,7 +255,7 @@ An automated information chatbot for a correctional facility, built end to end a
 ![Sastrawi](https://img.shields.io/badge/Sastrawi-306998?style=flat-square)
 
 <div align="center">
-  <img src="images/foto13.png" alt="TF-IDF vs SBERT aspect-based sentiment classification" width="500">
+  <img src="images/tfidf-vs-sbert-results.png" alt="TF-IDF vs SBERT aspect-based sentiment classification" width="500">
 </div>
 
 A comparative NLP study on Indonesian-language e-commerce reviews, comparing sparse TF-IDF and dense SBERT representations for aspect-based sentiment classification.
@@ -279,7 +279,7 @@ A comparative NLP study on Indonesian-language e-commerce reviews, comparing spa
 ![Sastrawi](https://img.shields.io/badge/Sastrawi-306998?style=flat-square)
 
 <div align="center">
-  <img src="images/foto10.png" alt="Custom search engine with VSM and LSI" width="500">
+  <img src="images/search-engine-vsm-lsi.png" alt="Custom search engine with VSM and LSI" width="500">
 </div>
 
 An Indonesian-language document search engine comparing Vector Space Model and Latent Semantic Indexing.
@@ -305,7 +305,7 @@ An Indonesian-language document search engine comparing Vector Space Model and L
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto2.png" alt="Twitter sentiment and information diffusion analysis" width="500">
+  <img src="images/twitter-sentiment-network.png" alt="Twitter sentiment and information diffusion analysis" width="500">
 </div>
 
 A Twitter analysis pipeline for understanding information diffusion and sentiment, from API scraping to network modeling.
@@ -328,7 +328,7 @@ A Twitter analysis pipeline for understanding information diffusion and sentimen
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square\&logo=streamlit\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto5.png" alt="Student performance clustering dashboard" width="500">
+  <img src="images/student-clustering-dashboard.png" alt="Student performance clustering dashboard" width="500">
 </div>
 
 An unsupervised learning system grouping student performance to support more targeted educational intervention.
@@ -352,7 +352,7 @@ An unsupervised learning system grouping student performance to support more tar
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square\&logo=streamlit\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto9.png" alt="Advanced customer segmentation dashboard" width="500">
+  <img src="images/customer-segmentation-dashboard.png" alt="Advanced customer segmentation dashboard" width="500">
 </div>
 
 A supervised learning system for customer segmentation, supporting more targeted marketing analysis.
@@ -375,7 +375,7 @@ A supervised learning system for customer segmentation, supporting more targeted
 ![Railway](https://img.shields.io/badge/Deployment-Railway-0B0D0E?style=flat-square\&logo=railway\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto14.png" alt="Property analytics and investment intelligence platform" width="500">
+  <img src="images/property-analysis-dashboard.png" alt="Property analytics and investment intelligence platform" width="500">
 </div>
 
 A property intelligence system combining listing data, macroeconomic indicators, price-to-income analysis, and area-level trends for investment evaluation.
@@ -399,7 +399,7 @@ A property intelligence system combining listing data, macroeconomic indicators,
 ![Regression](https://img.shields.io/badge/Regression-0EA5E9?style=flat-square)
 
 <div align="center">
-  <img src="images/foto11.png" alt="Greenhouse gas emissions forecast" width="500">
+  <img src="images/ghg-emissions-forecast.png" alt="Greenhouse gas emissions forecast" width="500">
 </div>
 
 A predictive analysis projecting greenhouse gas emission trends over a ten-year horizon.
@@ -446,7 +446,7 @@ A data analysis dashboard built in Microsoft Excel to transform messy datasets i
 ![Railway](https://img.shields.io/badge/Deployment-Railway-0B0D0E?style=flat-square\&logo=railway\&logoColor=white)
 
 <div align="center">
-  <img src="images/wiraky-formulir-anomali.png" alt="Maribaya guest review form and anomaly detection dashboard" width="500">
+  <img src="images/review-form-anomaly-dashboard.png" alt="Maribaya guest review form and anomaly detection dashboard" width="500">
 </div>
 
 A first-party guest review collection system for Maribaya Resort and Glamping, combining secure access, review validation, anomaly detection, and operational dashboards.
@@ -472,7 +472,7 @@ A first-party guest review collection system for Maribaya Resort and Glamping, c
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square\&logo=node.js\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto4.png" alt="Financial reporting application dashboard" width="500">
+  <img src="images/financial-reporting-dashboard.png" alt="Financial reporting application dashboard" width="500">
 </div>
 
 A full-stack financial reporting application supporting district operations, reporting workflows, and data accuracy.
@@ -495,7 +495,7 @@ A full-stack financial reporting application supporting district operations, rep
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square\&logo=bootstrap\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto8.png" alt="Student Academic Information System dashboard" width="500">
+  <img src="images/si-mas-dashboard.png" alt="Student Academic Information System dashboard" width="500">
 </div>
 
 An integrated academic management platform supporting course registration and academic data management.
@@ -520,7 +520,7 @@ An integrated academic management platform supporting course registration and ac
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square\&logo=php\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto6.png" alt="YC Electric e-commerce platform" width="500">
+  <img src="images/yc-electric-ecommerce.png" alt="YC Electric e-commerce platform" width="500">
 </div>
 
 The company's first custom e-commerce platform, developed from planning through launch.
@@ -544,7 +544,7 @@ The company's first custom e-commerce platform, developed from planning through 
 ![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=flat-square\&logo=opengl\&logoColor=white)
 
 <div align="center">
-  <img src="images/foto7.png" alt="3D Minecraft-themed game" width="500">
+  <img src="images/minecraft-3d-game.png" alt="3D Minecraft-themed game" width="500">
 </div>
 
 An interactive 3D game with an explorable world, built from scratch with OpenGL.
